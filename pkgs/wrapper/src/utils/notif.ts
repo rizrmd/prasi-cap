@@ -1,8 +1,11 @@
 import { PushNotifications } from "@capacitor/push-notifications";
+(window as any).iframe = {};
 
 export const addListeners = async () => {
   await PushNotifications.addListener("registration", (token) => {
-    console.info("Registration token: ", token.value);
+    iframe.loaded = (send) => {
+      send({ type: "notification-token", token });
+    };
   });
 
   await PushNotifications.addListener("registrationError", (err) => {

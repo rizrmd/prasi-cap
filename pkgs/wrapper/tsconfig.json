@@ -2,6 +2,10 @@
   "exclude": [
     "build"
   ],
+  "include": [
+    "./src/**/*",
+    "../../../../res/config.json"
+  ],
   "compilerOptions": {
     "module": "ESNext",
     "target": "es5",
@@ -16,6 +20,8 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   }
 }

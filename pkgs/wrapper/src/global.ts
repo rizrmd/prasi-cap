@@ -29,4 +29,5 @@ w.css = gooberCSS;
 declare global {
   const css: typeof gooberCSS;
   const cx: typeof gooberCX;
+  const iframe: { loaded: (send: (data: any) => void) => void };
 }

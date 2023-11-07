@@ -31,7 +31,7 @@ g.bundler = await context({
   absWorkingDir: PROJECT_ROOT,
   entryPoints: [dir.path("src/index.tsx")],
   minify: true,
-  sourcemap: true,
+  // sourcemap: true,
   outdir: dir.path("build"),
   bundle: true,
   format: "iife",
