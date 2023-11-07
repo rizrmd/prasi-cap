@@ -16,5 +16,6 @@ $.verbose = true;
 await $`bun cap add android`;
 
 $.verbose = false;
-await $`cp ${dir.root("res/google-services.json")} android`;
+await $`cp ${dir.root("res/google-services.json")} android/app`;
 await $`bun cap sync`;
+await $`bun cap update`;

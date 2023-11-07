@@ -3,8 +3,10 @@ import { addListeners, registerNotifications } from "../utils/notif";
 
 export default () => {
   useEffect(() => {
-    addListeners();
-    registerNotifications();
+    (async () => {
+      await registerNotifications();
+      await addListeners();
+    })();
   }, []);
 
   return (

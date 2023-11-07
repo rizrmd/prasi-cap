@@ -22,7 +22,7 @@ export const addListeners = async () => {
       console.log(
         "Push notification action performed",
         notification.actionId,
-        notification.inputValue
+        notification.notification.data
       );
     }
   );

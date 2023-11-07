@@ -8,6 +8,7 @@
     "pkgs/*"
   ],
   "scripts": {
+    "cap": "cd pkgs/capacitor && bun cap",
     "dev": " bun --hot run pkgs/scripts/dev.ts",
     "setup": " bun run pkgs/scripts/setup.ts"
   },
@@ -18,8 +19,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@capacitor/android": "^5.5.1",
-    "@capacitor/push-notifications": "^5.1.0",
     "@types/react": "^18.2.36",
     "@types/react-dom": "^18.2.14",
     "esbuild": "^0.19.5",
