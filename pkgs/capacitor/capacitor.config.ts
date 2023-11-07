@@ -5,7 +5,8 @@ const config: CapacitorConfig = {
   appName: "Medic Link",
   webDir: "www",
   server: {
-    androidScheme: "https",
+    url: "http://192.168.18.214:3000",
+    cleartext: true,
   },
   plugins: {
     PushNotifications: {

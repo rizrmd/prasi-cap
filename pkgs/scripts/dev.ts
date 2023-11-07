@@ -24,6 +24,9 @@ if (g.bundler) {
 }
 $.verbose = false;
 
+await $`rm -rf  ${dir.path("build")}`;
+await $`cp -r ${dir.path("public")} ${dir.path("build")}`;
+
 g.bundler = await context({
   absWorkingDir: PROJECT_ROOT,
   entryPoints: [dir.path("src/index.tsx")],
@@ -42,7 +45,7 @@ g.bundler = await context({
           await $`rm -rf ${dir.root("pkgs/capacitor/www")}`;
           await $`cp -r ${dir.path("build")} ${dir.root("pkgs/capacitor/www")}`;
           const res = await $`cd ${dir.root("pkgs/capacitor")} && npx cap sync`;
-          console.log(res.stdout); 
+          console.log(res.stdout);
         });
       },
     },

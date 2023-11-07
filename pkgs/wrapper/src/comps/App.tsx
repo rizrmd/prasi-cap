@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+import { addListeners, registerNotifications } from "../utils/notif";
+
 export default () => {
+  useEffect(() => {
+    addListeners();
+    registerNotifications();
+  }, []);
+
   return (
     <div
       className={cx(
@@ -9,7 +17,7 @@ export default () => {
         `
       )}
     >
-      Hello Makjum
+      Hello
     </div>
   );
 };
