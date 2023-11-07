@@ -1,0 +1,31 @@
+{
+  "name": "prasi-cap",
+  "version": "0.1.0",
+  "private": true,
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "pkgs/*"
+  ],
+  "scripts": {
+    "dev": " bun --hot run pkgs/scripts/dev.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.5.1",
+    "@capacitor/push-notifications": "^5.1.0",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.14",
+    "esbuild": "^0.19.5",
+    "fs-jetpack": "^5.1.0",
+    "goober": "^2.1.13",
+    "parcel": "^2.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
