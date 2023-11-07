@@ -1,6 +1,7 @@
 import { BuildContext, context } from "esbuild";
 import { statSync } from "fs";
 import * as path from "path";
+import { $ } from "zx";
 
 const PROJECT_ROOT = path.join(process.cwd(), "pkgs", "wrapper");
 const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
@@ -10,24 +11,44 @@ const g = global as unknown as {
 };
 
 const dir = {
+  root: (to: string) => {
+    return path.join(process.cwd(), to);
+  },
   path: (to: string) => {
     return path.join(PROJECT_ROOT, to);
   },
 };
 
-if (!g.bundler) {
-  g.bundler = await context({
-    absWorkingDir: PROJECT_ROOT,
-    entryPoints: [dir.path("src/index.tsx")],
-    minify: true,
-    sourcemap: true,
-    outdir: dir.path("build"),
-    bundle: true,
-    format: "iife",
-    target: "es2016",
-  });
-  await g.bundler.watch({});
+if (g.bundler) {
+  await g.bundler.dispose();
 }
+$.verbose = false;
+
+g.bundler = await context({
+  absWorkingDir: PROJECT_ROOT,
+  entryPoints: [dir.path("src/index.tsx")],
+  minify: true,
+  sourcemap: true,
+  outdir: dir.path("build"),
+  bundle: true,
+  format: "iife",
+  target: "es2016",
+  plugins: [
+    {
+      name: "cap",
+      setup(build) {
+        build.onEnd(async (result) => {
+          console.clear();
+          await $`rm -rf ${dir.root("pkgs/capacitor/www")}`;
+          await $`cp -r ${dir.path("build")} ${dir.root("pkgs/capacitor/www")}`;
+          const res = await $`cd ${dir.root("pkgs/capacitor")} && npx cap sync`;
+          console.log(res.stdout); 
+        });
+      },
+    },
+  ],
+});
+await g.bundler.watch({});
 
 function serveFromDir(config: {
   directory: string;

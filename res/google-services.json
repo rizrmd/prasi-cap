@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "815062284746",
+    "project_id": "medic-link",
+    "storage_bucket": "medic-link.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815062284746:android:0bb9ff80c152c7111ff733",
+        "android_client_info": {
+          "package_name": "med.avolut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtH9bK0drhjB8LYrPOUZUafsv2L7_gRfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

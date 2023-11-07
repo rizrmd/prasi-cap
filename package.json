@@ -8,7 +8,8 @@
     "pkgs/*"
   ],
   "scripts": {
-    "dev": " bun --hot run pkgs/scripts/dev.ts"
+    "dev": " bun --hot run pkgs/scripts/dev.ts",
+    "setup": " bun run pkgs/scripts/setup.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
@@ -22,10 +23,10 @@
     "@types/react": "^18.2.36",
     "@types/react-dom": "^18.2.14",
     "esbuild": "^0.19.5",
-    "fs-jetpack": "^5.1.0",
     "goober": "^2.1.13",
     "parcel": "^2.10.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zx": "^7.2.3"
   }
 }
