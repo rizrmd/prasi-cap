@@ -4,7 +4,7 @@ import { PushNotifications } from "@capacitor/push-notifications";
 export const addListeners = async () => {
   await PushNotifications.addListener("registration", (token) => {
     iframe.loaded = (send) => {
-      send({ type: "notification-token", token });
+      send({ type: "notification-token", token: token.value });
     };
   });
 
