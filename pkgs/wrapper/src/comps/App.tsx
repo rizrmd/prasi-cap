@@ -51,10 +51,62 @@ export default () => {
                       local.loading = false;
                       local.render();
 
-                      if (iframe && typeof iframe.loaded === "function") {
-                        iframe.loaded((data: any) => {
+                      if (notif && typeof notif.loaded === "function") {
+                        notif.loaded((data: any) => {
                           win.postMessage({ mobile: true, ...data }, "*");
                         });
+
+                        notif.onReceive = (data) => {
+                          localStorage[`notif-` + data.id] =
+                            JSON.stringify(data);
+                          win.postMessage(
+                            {
+                              mobile: true,
+                              type: "notification-receive",
+                              notif: data,
+                            },
+                            "*"
+                          );
+                        };
+                        notif.onTap = (data) => {
+                          if (data) {
+                            try {
+                              const msg =
+                                localStorage[`notif-` + data.notification.id];
+                              if (msg) {
+                                win.postMessage(
+                                  {
+                                    mobile: true,
+                                    type: "notification-tap",
+                                    notif: JSON.parse(msg),
+                                  },
+                                  "*"
+                                );
+                                localStorage.removeItem(
+                                  `notif-` + data.notification.id
+                                );
+                              } else {
+                                win.postMessage(
+                                  {
+                                    mobile: true,
+                                    type: "notification-tap",
+                                    notif: null,
+                                  },
+                                  "*"
+                                );
+                              }
+                            } catch (e) {}
+                          } else {
+                            win.postMessage(
+                              {
+                                mobile: true,
+                                type: "notification-tap",
+                                notif: null,
+                              },
+                              "*"
+                            );
+                          }
+                        };
                       }
                     }
                   }

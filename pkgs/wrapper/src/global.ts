@@ -25,9 +25,17 @@ const gooberCX = (...classNames: any[]) => {
 };
 w.cx = gooberCX;
 w.css = gooberCSS;
+import {
+  PushNotificationSchema,
+  ActionPerformed,
+} from "@capacitor/push-notifications";
 
 declare global {
   const css: typeof gooberCSS;
   const cx: typeof gooberCX;
-  const iframe: { loaded: (send: (data: any) => void) => void };
+  const notif: {
+    loaded: (send: (data: any) => void) => void;
+    onReceive: (notif: PushNotificationSchema) => void | Promise<void>;
+    onTap: (notif: null | ActionPerformed) => void | Promise<void>;
+  };
 }
