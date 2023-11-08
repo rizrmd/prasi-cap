@@ -68,6 +68,7 @@ export default () => {
                             "*"
                           );
                         };
+                        
                         notif.onTap = (data) => {
                           if (data) {
                             try {
