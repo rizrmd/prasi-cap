@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "815062284746",
-    "project_id": "medic-link",
-    "storage_bucket": "medic-link.appspot.com"
+    "project_number": "145355602294",
+    "project_id": "medic-link-prod",
+    "storage_bucket": "medic-link-prod.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:815062284746:android:0bb9ff80c152c7111ff733",
+        "mobilesdk_app_id": "1:145355602294:android:b398176f8fd9a5703e2257",
         "android_client_info": {
-          "package_name": "med.avolut"
+          "package_name": "logbookorthouns2023.app.id"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDtH9bK0drhjB8LYrPOUZUafsv2L7_gRfA"
+          "current_key": "AIzaSyBKGHn9OOcdwB_C-bbFHKFxItsiOZYF9-Y"
         }
       ],
       "services": {

@@ -41,6 +41,7 @@ export default () => {
             window.addEventListener(
               "message",
               ({ data: raw, currentTarget }) => {
+                console.log(raw);
                 if (typeof raw === "object" && win) {
                   const msg = raw as unknown as { mobile: true } & {
                     type: "ready";
@@ -68,7 +69,7 @@ export default () => {
                             "*"
                           );
                         };
-                        
+
                         notif.onTap = (data) => {
                           if (data) {
                             try {
