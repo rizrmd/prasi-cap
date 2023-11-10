@@ -3,6 +3,7 @@ import { initNotif, registerNotifications } from "../utils/notif";
 import config from "../../../../res/config.json";
 import { useLocal } from "../utils/use-local";
 import { Loading } from "./Loading";
+import { Toast } from "@capacitor/toast";
 
 export default () => {
   const local = useLocal({
@@ -13,6 +14,10 @@ export default () => {
 
   useEffect(() => {
     (async () => {
+      if (!localStorage.getItem("installed")) {
+        localStorage.setItem("installed", "1");
+        Toast.show({ text: config.welcome });
+      }
       await registerNotifications();
       await initNotif();
     })();
@@ -60,7 +65,6 @@ export default () => {
 
                     if (msg.type === "ready") {
                       if (local.loading) {
-                        alert("iframe sudah keload");
                         local.loading = false;
                         local.render();
 
