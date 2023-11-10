@@ -2,7 +2,7 @@ import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
   appId: "logbookorthouns2023.app.id",
-  appName: "Medic Link",
+  appName: "E-Logbook Ortho UNS 2023",
   webDir: "www",
   server: {
     androidScheme: "https",
@@ -10,7 +10,7 @@ const config: CapacitorConfig = {
   plugins: {
     SplashScreen: {
       launchShowDuration: 30 * 1000,
-      "launchAutoHide": false,
+      "launchAutoHide": true,
       useDialog: false,
       splashFullScreen: true,
     },
