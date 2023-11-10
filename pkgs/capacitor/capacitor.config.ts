@@ -10,7 +10,9 @@ const config: CapacitorConfig = {
   plugins: {
     SplashScreen: {
       launchShowDuration: 30 * 1000,
-      launchAutoHide: true,
+      "launchAutoHide": false,
+      useDialog: false,
+      splashFullScreen: true,
     },
     PushNotifications: {
       presentationOptions: ["badge", "sound", "alert"],
