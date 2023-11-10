@@ -8,10 +8,6 @@ const config: CapacitorConfig = {
     androidScheme: "https",
   },
   plugins: {
-    SplashScreen: {
-      useDialog: false,
-      splashFullScreen: true,
-    },
     PushNotifications: {
       presentationOptions: ["badge", "sound", "alert"],
     },

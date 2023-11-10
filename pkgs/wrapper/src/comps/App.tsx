@@ -3,7 +3,6 @@ import { initNotif, registerNotifications } from "../utils/notif";
 import config from "../../../../res/config.json";
 import { useLocal } from "../utils/use-local";
 import { Loading } from "./Loading";
-import { SplashScreen } from "@capacitor/splash-screen";
 
 export default () => {
   const local = useLocal({
@@ -14,7 +13,6 @@ export default () => {
 
   useEffect(() => {
     (async () => {
-      SplashScreen.hide();
       await registerNotifications();
       await initNotif();
     })();
@@ -62,6 +60,7 @@ export default () => {
 
                     if (msg.type === "ready") {
                       if (local.loading) {
+                        alert("iframe sudah keload");
                         local.loading = false;
                         local.render();
 
