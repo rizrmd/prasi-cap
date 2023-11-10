@@ -2,7 +2,7 @@ import { PushNotifications } from "@capacitor/push-notifications";
 import { waitUntil } from "./wait-until";
 (window as any).notif = {};
 
-export const addListeners = async () => {
+export const initNotif = async () => {
   await PushNotifications.addListener("registration", (token) => {
     notif.loaded = (send) => {
       send({ type: "notification-token", token: token.value });

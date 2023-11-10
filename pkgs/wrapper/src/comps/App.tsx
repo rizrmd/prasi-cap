@@ -1,18 +1,21 @@
 import { useEffect } from "react";
-import { addListeners, registerNotifications } from "../utils/notif";
+import { initNotif, registerNotifications } from "../utils/notif";
 import config from "../../../../res/config.json";
 import { useLocal } from "../utils/use-local";
 import { Loading } from "./Loading";
+import { SplashScreen } from "@capacitor/splash-screen";
 
 export default () => {
   const local = useLocal({
     ref: null as null | HTMLIFrameElement,
     loading: true,
   });
+
   useEffect(() => {
     (async () => {
+      SplashScreen.hide();
       await registerNotifications();
-      await addListeners();
+      await initNotif();
     })();
   }, []);
 

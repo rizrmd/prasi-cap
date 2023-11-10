@@ -1,3 +1,7 @@
 {
-  "name": "wrapper"
+  "name": "wrapper",
+  "dependencies": {
+    "@capacitor/push-notifications": "^5.1.0",
+    "@capacitor/splash-screen": "^5.0.6"
+  }
 }
