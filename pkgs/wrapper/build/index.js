@@ -12,7 +12,7 @@ Error generating stack: `+o.message+`
                 }
               `),children:[(0,se.jsx)("div",{className:"text-[10px] text-slate-400 whitespace-nowrap",children:l}),(0,se.jsx)("div",{className:"pr-outer w-full h-[3px] flex items-stretch rounded-sm overflow-hidden",children:(0,se.jsx)("div",{className:cx("bg-blue-800 transition-all duration-200 rounded-sm w-full",css`
                     transform: translate(${-100+i.value*200}%);
-                  `)})}),o]})})]})};Gl();var Tf=Pn("SplashScreen",{web:()=>Promise.resolve().then(()=>(Lf(),Nf)).then(e=>new e.SplashScreenWeb)});var kr=ze(Qt()),Of=()=>{let e=Xl({ref:null,loading:!0,reload:!1});return(0,zf.useEffect)(()=>{L(void 0,null,function*(){Tf.hide(),yield kf(),yield wf()})},[]),(0,kr.jsxs)("div",{className:cx(css`
+                  `)})}),o]})})]})};Gl();var Tf=Pn("SplashScreen",{web:()=>Promise.resolve().then(()=>(Lf(),Nf)).then(e=>new e.SplashScreenWeb)});var kr=ze(Qt()),Of=()=>{let e=Xl({ref:null,loading:!0,reload:!1});return(0,zf.useEffect)(()=>{L(void 0,null,function*(){alert("halo nila coba ini"),Tf.hide(),yield kf(),yield wf()})},[]),(0,kr.jsxs)("div",{className:cx(css`
           display: flex;
           width: 100%;
           height: 100%;
