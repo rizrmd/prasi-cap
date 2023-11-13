@@ -22,7 +22,6 @@ export default () => {
       await initNotif();
     })();
   }, []);
-
   return (
     <div
       className={cx(
@@ -57,7 +56,7 @@ export default () => {
               window.addEventListener(
                 "message",
                 ({ data: raw, currentTarget }) => {
-                  console.log(raw);
+                  console.log("cap dapet", raw);
                   if (typeof raw === "object" && win) {
                     const msg = raw as unknown as { mobile: true } & {
                       type: "ready";
@@ -133,7 +132,7 @@ export default () => {
               );
             }
           }}
-          src={config.url}
+          src="https://med.avolut.com"
           className={cx(
             css`
               display: flex;
