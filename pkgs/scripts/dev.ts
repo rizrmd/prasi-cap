@@ -41,14 +41,14 @@ if (g.bundler) {
     const md5 = await fetch(await urlmap("content.md5"));
     await Bun.write(Bun.file(`${pubdir}/content.md5`), await md5.arrayBuffer());
     const gz = await fetch(await urlmap("content.gz"));
-    await Bun.write(Bun.file(`${pubdir}/content.gz`), await gz.arrayBuffer());
+    await Bun.write(Bun.file(`${pubdir}/content.z`), await gz.arrayBuffer());
   } else {
     const md5 = await fetch(await urlmap("content.md5"));
     const md5text = await md5.text();
     if (md5text !== (await Bun.file(`${pubdir}/content.md5`).text())) {
       await Bun.write(Bun.file(`${pubdir}/content.md5`), md5text);
       const gz = await fetch(await urlmap("content.gz"));
-      await Bun.write(Bun.file(`${pubdir}/content.gz`), await gz.arrayBuffer());
+      await Bun.write(Bun.file(`${pubdir}/content.z`), await gz.arrayBuffer());
     }
   }
 
