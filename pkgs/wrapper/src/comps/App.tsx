@@ -63,7 +63,7 @@ export default () => {
                   local.render();
                   console.log(local);
                 }, local.timeoutLimit * 1000);
-                
+
                 setTimeout(() => {
                   local.reload = false;
                   local.loading = true;
@@ -103,7 +103,6 @@ export default () => {
                     "message",
                     ({ data: raw, currentTarget }) => {
                       if (typeof raw === "object" && win) {
-                        console.log("raw", local.timeout);
                         clearTimeout(local.timeout);
                         if (local.loading) {
                           local.error = "";
