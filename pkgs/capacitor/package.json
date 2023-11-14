@@ -1,11 +1,11 @@
 {
   "name": "capacitor",
   "dependencies": {
-    "@capacitor/core": "6.0.0-alpha.1",
     "@capacitor/android": "6.0.0-alpha.1",
+    "@capacitor/core": "6.0.0-alpha.1",
+    "@capacitor/filesystem": "^5.1.4",
     "@capacitor/push-notifications": "^5.1.0",
-    "@capacitor/toast": "^5.0.6",
-    "@capacitor/filesystem": "^5.1.4"
+    "@capacitor/toast": "^5.0.6"
   },
   "devDependencies": {
     "@capacitor/assets": "^3.0.1",

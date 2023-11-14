@@ -37,7 +37,9 @@ if (confile) {
 $.verbose = false;
 await $`cp ${dir.root("res/google-services.json")} android/app`;
 await $`rm -rf resources`;
-await $`cp -r ${dir.root("res")} resources`;
+await $`mkdir resources`;
+await $`cp ${dir.root("res/icon.png")} resources/icon.png`;
+await $`cp ${dir.root("res/splash.png")} resources/splash.png`;
 await $`bun capacitor-assets generate`;
 await $`bun cap sync`;
 await $`bun cap update`;

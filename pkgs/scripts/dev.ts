@@ -1,7 +1,9 @@
 import { BuildContext, context } from "esbuild";
 import { statSync } from "fs";
 import * as path from "path";
-import { $ } from "zx";
+import { $, cd } from "zx";
+import { urlmap } from "../wrapper/src/utils/site-cache";
+import { spawn } from "bun";
 
 const PROJECT_ROOT = path.join(process.cwd(), "pkgs", "wrapper");
 const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
@@ -21,6 +23,49 @@ const dir = {
 
 if (g.bundler) {
   await g.bundler.dispose();
+} else {
+  spawn({
+    cmd: [
+      "bun",
+      "tailwindcss",
+      "-w",
+      "-o",
+      "./public/tailwind.css",
+      "--minify",
+    ],
+    cwd: dir.root("pkgs/wrapper"),
+  });
+
+  const pubdir = dir.root("pkgs/wrapper/public");
+  if (!(await Bun.file(`${pubdir}/content.md5`).exists())) {
+    const md5 = await fetch(await urlmap("content.md5"));
+    await Bun.write(Bun.file(`${pubdir}/content.md5`), await md5.arrayBuffer());
+    const gz = await fetch(await urlmap("content.gz"));
+    await Bun.write(Bun.file(`${pubdir}/content.gz`), await gz.arrayBuffer());
+  } else {
+    const md5 = await fetch(await urlmap("content.md5"));
+    const md5text = await md5.text();
+    if (md5text !== (await Bun.file(`${pubdir}/content.md5`).text())) {
+      await Bun.write(Bun.file(`${pubdir}/content.md5`), md5text);
+      const gz = await fetch(await urlmap("content.gz"));
+      await Bun.write(Bun.file(`${pubdir}/content.gz`), await gz.arrayBuffer());
+    }
+  }
+
+  if (!(await Bun.file(`${pubdir}/site.md5`).exists())) {
+    const md5 = await fetch(await urlmap("site.md5"));
+    await Bun.write(Bun.file(`${pubdir}/site.md5`), await md5.arrayBuffer());
+    const zip = await fetch(await urlmap("site.zip"));
+    await Bun.write(Bun.file(`${pubdir}/site.zip`), await zip.arrayBuffer());
+  } else {
+    const md5 = await fetch(await urlmap("site.md5"));
+    const md5text = await md5.text();
+    if (md5text !== (await Bun.file(`${pubdir}/site.md5`).text())) {
+      await Bun.write(Bun.file(`${pubdir}/site.md5`), md5text);
+      const zip = await fetch(await urlmap("site.zip"));
+      await Bun.write(Bun.file(`${pubdir}/site.zip`), await zip.arrayBuffer());
+    }
+  }
 }
 $.verbose = false;
 
@@ -41,11 +86,9 @@ g.bundler = await context({
       name: "cap",
       setup(build) {
         build.onEnd(async (result) => {
-          console.clear();
           await $`rm -rf ${dir.root("pkgs/capacitor/www")}`;
           await $`cp -r ${dir.path("build")} ${dir.root("pkgs/capacitor/www")}`;
-          const res = await $`cd ${dir.root("pkgs/capacitor")} && npx cap sync`;
-          console.log(res.stdout);
+          await $`cd ${dir.root("pkgs/capacitor")} && npx cap sync`;
         });
       },
     },

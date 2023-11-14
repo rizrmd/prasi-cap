@@ -57,6 +57,7 @@ export default () => {
                 local.reload = true;
                 local.loading = false;
                 local.render();
+                local.timeoutLimit += 5;
 
                 local.timeout = setTimeout(() => {
                   local.error = "Jaringan tidak stabil";
@@ -79,14 +80,7 @@ export default () => {
         <>
           {!local.reload && (
             <iframe
-              className={cx(
-                css`
-                  opacity: ${!local.loading ? 1 : 0};
-                  display: flex;
-                  width: 100%;
-                  height: 100%;
-                `
-              )}
+              className={cx(`flex flex-1`, local.loading && "opacity-0")}
               src={config.url}
               onLoad={(e) => {
                 const el = e.currentTarget;
