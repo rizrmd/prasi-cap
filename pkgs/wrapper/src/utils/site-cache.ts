@@ -1,6 +1,7 @@
 import { Directory, Encoding, Filesystem } from "@capacitor/filesystem";
 import { AsyncUnzipInflate, Unzip, gunzipSync } from "fflate";
 import config from "../../../../res/config.json";
+import { AppState } from "./app-state";
 const directory = Directory.Data;
 export const siteCache = async () => {
   const asset = {
@@ -12,16 +13,23 @@ export const siteCache = async () => {
     (await Filesystem.readdir({ directory, path: "" })).files[0].uri
   );
 
-  const arr = uri.pathname.split("/");
-  arr.pop();
-  const base = arr.filter((e) => !!e).join("/");
+  let base = localStorage.getItem("base_path");
+  if (!base) {
+    const arr = uri.pathname.split("/");
+    arr.pop();
+    arr.unshift("_capacitor_file_");
+    base = arr.filter((e) => !!e).join("/");
+    localStorage.setItem("base", base);
+  }
+  AppState.base_path = base;
+  AppState.render();
 
   const local = {
     content: {
-      md5: await getText(`/_capacitor_file_/${base}/content.md5`),
+      md5: await getText(`/${base}/content.md5`),
     },
     site: {
-      md5: await getText(`/_capacitor_file_/${base}/site.md5`),
+      md5: await getText(`/${base}/site.md5`),
     },
   };
 
@@ -30,8 +38,16 @@ export const siteCache = async () => {
     site: { md5: await getText(await urlmap("site.md5")) },
   };
 
-  load("content", local.content, asset.content);
-  load("site", local.site, asset.site);
+  await load("content", local.content, asset.content);
+  await load("site", local.site, asset.site);
+  AppState.ready = true;
+  AppState.render();
+
+  console.log(
+    (await Filesystem.readdir({ path: "/site", directory })).files
+      .map((e) => e.name)
+      .join("\n")
+  );
 };
 const load = async (
   type: string,
@@ -40,6 +56,7 @@ const load = async (
 ) => {
   const write_blob = (await import("capacitor-blob-writer")).default;
   let ext = type === "site" ? "zip" : "z";
+
   if (!local.md5) {
     await Filesystem.writeFile({
       data: asset.md5,
@@ -65,20 +82,45 @@ const load = async (
       });
     } else {
       try {
-        await Filesystem.rmdir({ path: `/site`, directory });
+        await Filesystem.rmdir({ path: `/site`, directory, recursive: true });
       } catch (e) {}
       await Filesystem.mkdir({ path: `/site`, directory });
+
+      let html = await getText(await urlmap(`site.html`));
+      html = html.replace(
+        /\[\[base_url\]\]/gi,
+        `https://localhost/${AppState.base_path}/site`
+      );
+      html = html.replace(/\[\[site_id\]\]/gi, AppState.site_id);
+
+      await Promise.all([
+        await Filesystem.writeFile({
+          data: html,
+          path: `/site/index.html`,
+          directory,
+          encoding: Encoding.UTF8,
+        }),
+        await Filesystem.writeFile({
+          data: await getText(`https://prasi.app/index.css`),
+          path: `/site/index.css`,
+          directory,
+          encoding: Encoding.UTF8,
+        }),
+      ]);
+
       const unzip = new Unzip((stream) => {
         const files = {} as Record<string, Uint8Array[]>;
         if (!files[stream.name]) files[stream.name] = [];
         stream.ondata = async (err, chunk, final) => {
-          files[stream.name].push(chunk);
-          if (final) {
-            await write_blob({
-              blob: new Blob(files[stream.name]),
-              path: `/content.json`,
-              directory,
-            });
+          if (stream.size) {
+            files[stream.name].push(chunk);
+            if (final) {
+              await write_blob({
+                blob: new Blob(files[stream.name]),
+                path: stream.name,
+                directory,
+              });
+            }
           }
         };
         stream.start();
@@ -110,27 +152,25 @@ const url = (strings: any, ...values: string[]) => {
 };
 
 export const urlmap = async (
-  file: "site.zip" | "site.md5" | "content.gz" | "content.md5"
+  file: "site.html" | "site.zip" | "site.md5" | "content.gz" | "content.md5"
 ) => {
-  if (!conf.site_id) {
-    if (file === "content.gz" || file === "content.md5") {
-      const res = await fetch(`${config.url}/site_id`);
-      conf.site_id = await res.text();
-    }
+  if (!AppState.site_id) {
+    const res = await fetch(`${config.url}/site_id`);
+    AppState.site_id = await res.text();
   }
 
   const map = {
+    "site.html": "/_file/site-html",
     "site.zip": "/_file/site-zip",
     "site.md5": "/_file/site-md5",
-    "content.gz": `/_file/current-${conf.site_id}`,
-    "content.md5": `/_file/current-md5-${conf.site_id}`,
+    "content.gz": `/_file/current-${AppState.site_id}`,
+    "content.md5": `/_file/current-md5-${AppState.site_id}`,
   };
 
   return url`${map[file]}`;
 };
 
 const conf = {
-  site_id: "",
   write: async (raw: any) => {
     await Filesystem.writeFile({
       data: JSON.stringify(raw, null, 2),

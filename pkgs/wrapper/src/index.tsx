@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import "./global";
 import App from "./comps/App";
 import "./default.css";
+import "./global";
 import { siteCache } from "./utils/site-cache";
 
 siteCache();
