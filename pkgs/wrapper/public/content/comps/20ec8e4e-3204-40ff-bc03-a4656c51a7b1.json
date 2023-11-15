@@ -1,0 +1,163 @@
+{
+  "id": "20ec8e4e-3204-40ff-bc03-a4656c51a7b1",
+  "name": "low-level-sub-menu-with-icon",
+  "content_tree": {
+    "id": "x8qcj97mvmk5pdo6rvrutori",
+    "adv": {
+      "js": "<div {...props}>{children}</div>",
+      "css": "",
+      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "low-level-sub-menu-with-icon",
+    "type": "item",
+    "childs": [
+      {
+        "id": "oqnksnh8qlrc1qc3l4lmczhb",
+        "adv": {
+          "js": "<div {...props}>{sub_menu_name}</div>",
+          "css": "& {\r\n  display: flex;\r\n  font-weight: 800;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},sub_menu_name));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Nameee",
+        "name": "menu-name",
+        "text": "",
+        "type": "text",
+        "childs": [],
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "border": {
+            "color": "",
+            "style": "solid"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "gasfglcdc9vnpd95dnxhj9z8",
+        "adv": {
+          "js": "<button\r\n  {...props}\r\n  onClick={(e) => {\r\n    e.preventDefault();\r\n    navigate(url);\r\n  }}\r\n>\r\n  {children}\r\n</button>",
+          "css": "",
+          "html": "",
+          "jsBuilt": "render(React.createElement(\"button\",{...props,onClick:e=>{e.preventDefault(),navigate(url)}},children));\n"
+        },
+        "name": "icon-wrapped",
+        "type": "item",
+        "childs": [
+          {
+            "id": "ofz5gfzjoch3543tgj8pfffw",
+            "adv": {
+              "js": "<div {...props}>\r\n  {icon_props === \"add\" ? (\r\n    <svg\r\n      width=\"21\"\r\n      height=\"22\"\r\n      viewBox=\"0 0 24 24\"\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n    >\r\n      <path\r\n        fill=\"#002B5B\"\r\n        d=\"M11 13v3q0 .425.288.713T12 17q.425 0 .713-.288T13 16v-3h3q.425 0 .713-.288T17 12q0-.425-.288-.713T16 11h-3V8q0-.425-.288-.713T12 7q-.425 0-.713.288T11 8v3H8q-.425 0-.713.288T7 12q0 .425.288.713T8 13h3Zm1 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z\"\r\n      />\r\n    </svg>\r\n  ) : icon_props === \"edit\" ? (\r\n    <svg\r\n      width=\"21\"\r\n      height=\"22\"\r\n      viewBox=\"0 0 24 24\"\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n    >\r\n      <path\r\n        fill=\"#002B5B\"\r\n        d=\"M5 23.7q-.825 0-1.413-.587T3 21.7v-14q0-.825.588-1.413T5 5.7h8.925l-2 2H5v14h14v-6.95l2-2v8.95q0 .825-.588 1.413T19 23.7H5Zm7-9Zm4.175-8.425l1.425 1.4l-6.6 6.6V15.7h1.4l6.625-6.625l1.425 1.4l-7.2 7.225H9v-4.25l7.175-7.175Zm4.275 4.2l-4.275-4.2l2.5-2.5q.6-.6 1.438-.6t1.412.6l1.4 1.425q.575.575.575 1.4T22.925 8l-2.475 2.475Z\"\r\n      />\r\n    </svg>\r\n  ) : (\r\n    <svg\r\n      width=\"21\"\r\n      height=\"22\"\r\n      viewBox=\"0 0 24 24\"\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n    >\r\n      <path\r\n        fill=\"#002B5B\"\r\n        d=\"M5 23.7q-.825 0-1.413-.587T3 21.7v-14q0-.825.588-1.413T5 5.7h8.925l-2 2H5v14h14v-6.95l2-2v8.95q0 .825-.588 1.413T19 23.7H5Zm7-9Zm4.175-8.425l1.425 1.4l-6.6 6.6V15.7h1.4l6.625-6.625l1.425 1.4l-7.2 7.225H9v-4.25l7.175-7.175Zm4.275 4.2l-4.275-4.2l2.5-2.5q.6-.6 1.438-.6t1.412.6l1.4 1.425q.575.575.575 1.4T22.925 8l-2.475 2.475Z\"\r\n      />\r\n    </svg>\r\n  )}\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},icon_props===\"add\"?React.createElement(\"svg\",{width:\"21\",height:\"22\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#002B5B\",d:\"M11 13v3q0 .425.288.713T12 17q.425 0 .713-.288T13 16v-3h3q.425 0 .713-.288T17 12q0-.425-.288-.713T16 11h-3V8q0-.425-.288-.713T12 7q-.425 0-.713.288T11 8v3H8q-.425 0-.713.288T7 12q0 .425.288.713T8 13h3Zm1 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z\"})):icon_props===\"edit\"?React.createElement(\"svg\",{width:\"21\",height:\"22\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#002B5B\",d:\"M5 23.7q-.825 0-1.413-.587T3 21.7v-14q0-.825.588-1.413T5 5.7h8.925l-2 2H5v14h14v-6.95l2-2v8.95q0 .825-.588 1.413T19 23.7H5Zm7-9Zm4.175-8.425l1.425 1.4l-6.6 6.6V15.7h1.4l6.625-6.625l1.425 1.4l-7.2 7.225H9v-4.25l7.175-7.175Zm4.275 4.2l-4.275-4.2l2.5-2.5q.6-.6 1.438-.6t1.412.6l1.4 1.425q.575.575.575 1.4T22.925 8l-2.475 2.475Z\"})):React.createElement(\"svg\",{width:\"21\",height:\"22\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#002B5B\",d:\"M5 23.7q-.825 0-1.413-.587T3 21.7v-14q0-.825.588-1.413T5 5.7h8.925l-2 2H5v14h14v-6.95l2-2v8.95q0 .825-.588 1.413T19 23.7H5Zm7-9Zm4.175-8.425l1.425 1.4l-6.6 6.6V15.7h1.4l6.625-6.625l1.425 1.4l-7.2 7.225H9v-4.25l7.175-7.175Zm4.275 4.2l-4.275-4.2l2.5-2.5q.6-.6 1.438-.6t1.412.6l1.4 1.425q.575.575.575 1.4T22.925 8l-2.475 2.475Z\"}))));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid"
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 0,
+        "l": 37,
+        "r": 37,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "20ec8e4e-3204-40ff-bc03-a4656c51a7b1",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "url": {
+          "idx": 3,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"/default-url\"",
+          "valueBuilt": "\"/default-url\";\n"
+        },
+        "icon_props": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "oldName": "new_prop",
+            "options": "[\n  {\n    label: \"edit\",\n    value: \"edit\"\n  },\n  {\n    label: \"add\",\n    value: \"add\"\n  },\n]"
+          },
+          "type": "string",
+          "value": "\"edit\"",
+          "valueBuilt": "\"edit\";\n"
+        },
+        "sub_menu_name": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"Sub Menu Default\"",
+          "valueBuilt": "\"Sub Menu Default\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-04T09:15:30.332Z",
+  "updated_at": "2023-08-15T06:32:15.130Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

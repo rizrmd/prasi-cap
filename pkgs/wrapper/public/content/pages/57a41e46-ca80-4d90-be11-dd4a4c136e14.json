@@ -1,0 +1,270 @@
+{
+  "id": "57a41e46-ca80-4d90-be11-dd4a4c136e14",
+  "name": "list-khs",
+  "url": "/staff-pengajar/data-management/khs/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "sly0c01gptfvbpdtrkee5oq7",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "zj19ea22fm6cl5h9gyndqb9g",
+            "name": "page-tittle",
+            "type": "item",
+            "childs": [
+              {
+                "id": "n4mc2l549nfx6y1ao6reu8la",
+                "adv": {},
+                "name": "page-title-with-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/ppds/home/home-ppds/detail\"",
+                      "valueBuilt": "\"/ppds/home/home-ppds/detail\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"KHS\"",
+                      "valueBuilt": "\"KHS\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          },
+          {
+            "id": "liaip7luk1yo6yvuib8q3v3v",
+            "name": "header-khs-staffpengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "id": "49634ce1-7251-4244-af85-58e4468e156c",
+              "name": "",
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        }
+      },
+      {
+        "id": "uga5j9yolx661rt8f0wm8nzz",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: auto;\n  padding-top: 10%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "j9kzbgpxeapsr6cabvpvussv",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          subject: \"Perioperatif\",\r\n          credits: \"3 SKS\",\r\n          gpa: \"-\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          subject: \"Trauma Muskuloskeletal\",\r\n          credits: \"2 SKS\",\r\n          gpa: \"3.95\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          subject: \"Ostheosynthesis\",\r\n          credits: \"3 SKS\",\r\n          gpa: \"3.89\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          subject: \"Perioperatif\",\r\n          credits: \"4 SKS\",\r\n          gpa: \"-\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "css": "& {\n  display: flex;\n  padding-bottom: 150px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",subject:\"Perioperatif\",credits:\"3 SKS\",gpa:\"-\"},{id:\"02\",subject:\"Trauma Muskuloskeletal\",credits:\"2 SKS\",gpa:\"3.95\"},{id:\"03\",subject:\"Ostheosynthesis\",credits:\"3 SKS\",gpa:\"3.89\"},{id:\"04\",subject:\"Perioperatif\",credits:\"4 SKS\",gpa:\"-\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-khs",
+            "type": "item",
+            "childs": [
+              {
+                "id": "bm901nh2es9343w6eswdsrqr",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-khs",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ombhk00ah71kqg5w4qirj7nk",
+                    "name": "khs-staff-pengajar",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "f372de26-80d9-4b36-8d38-f7151b9e7411",
+                      "props": {
+                        "gpa": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "item.gpa",
+                          "valueBuilt": " item.gpa;\n"
+                        },
+                        "credits": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "item.credits",
+                          "valueBuilt": " item.credits;\n"
+                        },
+                        "subject": {
+                          "idx": 0,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "item.subject",
+                          "valueBuilt": " item.subject;\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 20,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-wrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "igxultvx6iwke8qxja9n7rwh",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 0%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "if2zs4oauck7m5b9uawqisuu",
+            "name": "new-menu-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dbff71a3-2123-4f33-b9b6-7155d4418522",
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-28T15:57:29.030Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-30T03:08:54.970Z",
+  "id_folder": "f413ce98-f5d4-4fb6-ae25-e9fe0a0024fc",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

@@ -1,0 +1,365 @@
+{
+  "id": "7113e2df-590e-4146-a933-11ea69543213",
+  "name": "item-transcript",
+  "content_tree": {
+    "id": "z29xf47hsa2uzqebr49sd8we",
+    "adv": {
+      "js": "",
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  \n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "item-transcript",
+    "type": "item",
+    "childs": [
+      {
+        "id": "nvkxu0vamzh4yiq4qp5j221l",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "data-transcript",
+        "type": "item",
+        "childs": [
+          {
+            "id": "kcap9590h5yauk8ybp1fxdqn",
+            "adv": {
+              "css": "",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\">\r\n<mask id=\"mask0_535_7132\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"25\">\r\n<rect y=\"0.5\" width=\"24\" height=\"24\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_535_7132)\">\r\n<path d=\"M10 14.5H14V12.5H10V14.5ZM10 11.5H18V9.5H10V11.5ZM10 8.5H18V6.5H10V8.5ZM8 18.5C7.45 18.5 6.97917 18.3042 6.5875 17.9125C6.19583 17.5208 6 17.05 6 16.5V4.5C6 3.95 6.19583 3.47917 6.5875 3.0875C6.97917 2.69583 7.45 2.5 8 2.5H20C20.55 2.5 21.0208 2.69583 21.4125 3.0875C21.8042 3.47917 22 3.95 22 4.5V16.5C22 17.05 21.8042 17.5208 21.4125 17.9125C21.0208 18.3042 20.55 18.5 20 18.5H8ZM8 16.5H20V4.5H8V16.5ZM4 22.5C3.45 22.5 2.97917 22.3042 2.5875 21.9125C2.19583 21.5208 2 21.05 2 20.5V6.5H4V20.5H18V22.5H4Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon",
+            "type": "item",
+            "childs": []
+          },
+          {
+            "id": "jpckaqlf4u7haw8t4wguss6y",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-text",
+            "type": "item",
+            "childs": [
+              {
+                "id": "zngv1yi3uhkbw7rxqgjm3td6",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "text-top",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "m16kjd7t7i6kmn3gd5unsqr2",
+                    "name": "subject",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "bgil90kfrpmmjso2ncs5r6pp",
+                        "adv": {
+                          "js": "<div {...props}>{subject}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},subject));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Mk 1801 - Spine II",
+                        "name": "subject",
+                        "text": "",
+                        "type": "text",
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "align": "left",
+                            "color": "#002B5B",
+                            "height": "auto",
+                            "wordBreak": "break-normal",
+                            "whitespace": "whitespace-normal"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "i3z7iur6g92tuj5d2go3fdbe",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "gpa",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "pi13p81vn7q43vj8afyggyj8",
+                        "adv": {
+                          "js": "<div {...props}>{gpa}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},gpa));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "3.97",
+                        "name": "gpa",
+                        "text": "",
+                        "type": "text",
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "align": "left",
+                            "color": "#ffffff",
+                            "height": "auto",
+                            "wordBreak": "break-normal",
+                            "whitespace": "whitespace-normal"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#1A5F7A"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 10,
+                        "r": 10,
+                        "t": 0
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": "auto",
+                    "wrap": "flex-wrap",
+                    "align": "center"
+                  }
+                }
+              },
+              {
+                "id": "akz5n8h8pzl7thetuyxbudlo",
+                "adv": {
+                  "js": "<div {...props}>{notes}</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},notes));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "notes nih",
+                "name": "notes",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 27,
+                    "align": "left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-wrap",
+                "align": "center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 10,
+                "r": 10,
+                "t": 0
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-wrap",
+            "align": "left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 5,
+            "r": 5,
+            "t": 0
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "wrap": "flex-wrap",
+        "align": "center"
+      },
+      "padding": {
+        "b": 0,
+        "l": 15,
+        "r": 15,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "7113e2df-590e-4146-a933-11ea69543213",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "gpa": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop_1",
+          "type": "string",
+          "value": "\"3.97\"",
+          "valueBuilt": "\"3.97\";\n"
+        },
+        "notes": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "subject": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Mk 1801 - Spine\"",
+          "valueBuilt": "\"Mk 1801 - Spine\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-15T18:59:09.828Z",
+  "updated_at": "2023-08-15T19:13:47.371Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

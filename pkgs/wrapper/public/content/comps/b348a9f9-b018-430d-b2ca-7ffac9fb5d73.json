@@ -1,0 +1,135 @@
+{
+  "id": "b348a9f9-b018-430d-b2ca-7ffac9fb5d73",
+  "name": "field-detail",
+  "content_tree": {
+    "id": "mpt8mwb8x28ncvo2uxc405hj",
+    "adv": {
+      "css": ""
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "field-detail",
+    "type": "item",
+    "childs": [
+      {
+        "id": "ce0hf86dy2f1gse34n3rr10j",
+        "adv": {
+          "js": "<div {...props}>{label}</div>",
+          "css": "& {\n  display: flex;\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Name",
+        "name": "label",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 14,
+            "align": "left",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        }
+      },
+      {
+        "id": "pp2ela0sduchgpetsanueph0",
+        "adv": {
+          "js": "<div {...props}>{value}</div>",
+          "css": "",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},value));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "dr Yeon Seok",
+        "name": "value",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "font": {
+        "size": 15,
+        "align": "left",
+        "color": "#002B5B",
+        "family": "Poppins",
+        "height": "auto",
+        "wordBreak": "break-normal",
+        "whitespace": "whitespace-normal"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "stretch"
+      }
+    },
+    "component": {
+      "id": "b348a9f9-b018-430d-b2ca-7ffac9fb5d73",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "label": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Name\"",
+          "valueBuilt": "\"Name\";\n"
+        },
+        "value": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"dr Yeon Seok\"",
+          "valueBuilt": "\"dr Yeon Seok\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-11T07:35:56.864Z",
+  "updated_at": "2023-09-15T03:14:09.010Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

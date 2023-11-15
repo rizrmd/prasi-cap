@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["node_modules/.pnpm/@prisma+client@4.11.0/node_modules/.prisma/client/index-browser.js", "node_modules/.pnpm/@prisma+client@4.11.0/node_modules/@prisma/client/index-browser.js", "input.js"],
+  "sourcesContent": ["class PrismaClient {\n  constructor() {\n    throw new Error(\n      `@prisma/client did not initialize yet. Please run \"prisma generate\" and try to import it again.\nIn case this error is unexpected for you, please report it in https://github.com/prisma/prisma/issues/new`,\n    )\n  }\n}\n\nmodule.exports = {\n  PrismaClient,\n}\n", "const prisma = require('.prisma/client/index-browser')\n\nmodule.exports = prisma\n", "import { Prisma as __Prisma } from \"@prisma/client\";\nwindow.exports.Prisma = __Prisma;"],
+  "mappings": "+gBAAA,IAAAA,EAAAC,EAAA,CAAAC,EAAAC,IAAA,KAAMC,EAAN,KAAmB,CACjB,aAAc,CACZ,MAAM,IAAI,MACR;AAAA,0GAEF,CACF,CACF,EAEAD,EAAO,QAAU,CACf,aAAAC,CACF,ICXA,IAAAC,EAAAC,EAAA,CAAAC,EAAAC,IAAA,KAAMC,EAAS,IAEfD,EAAO,QAAUC,ICFjB,IAAAC,EAAmC,OACnC,OAAO,QAAQ,OAAS,EAAAC",
+  "names": ["require_index_browser", "__commonJSMin", "exports", "module", "PrismaClient", "require_index_browser", "__commonJSMin", "exports", "module", "prisma", "import_client", "__Prisma"]
+}

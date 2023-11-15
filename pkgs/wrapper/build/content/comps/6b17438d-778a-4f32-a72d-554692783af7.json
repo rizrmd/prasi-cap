@@ -1,0 +1,422 @@
+{
+  "id": "6b17438d-778a-4f32-a72d-554692783af7",
+  "name": "list",
+  "content_tree": {
+    "id": "s3l7bc39jzexar9c5zhy51zd",
+    "adv": {
+      "css": ""
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "list",
+    "type": "item",
+    "childs": [
+      {
+        "id": "jxmyazq7z9x4zafawgv97gza",
+        "adv": {
+          "js": "<div {...props}>\n  <Local\n    name=\"data\"\n    value={{\n      //local object\n      ready: false,\n      list: [],\n    }}\n    cache={false}\n    deps={[debug]}\n    effect={async (local) => {\n      const query = async (filter: any) => {\n        if (\n          filter &&\n          Object.keys(filter).filter((e) => e.startsWith(\"_\") && e !== \"render\")\n            .length > 0 &&\n          local.list.length === 0\n        ) {\n          local.ready = false;\n          local.render();\n        }\n\n        const w = window as any;\n\n        if (isEditor) {\n          try {\n            if (mode === \"sample\") {\n              local.list = await sample(filter);\n            } else {\n              local.list = await load(filter);\n            }\n          } catch (e) {}\n        } else {\n          try {\n            local.ready = false;\n            local.render();\n            local.list = await load(filter);\n            if (local.list === null) {\n              try {\n                local.list = await sample(filter);\n              } catch (e) {}\n            }\n\n            local.ready = true;\n            local.render();\n          } catch (e) {\n            console.log(e);\n          }\n        }\n      };\n\n      if (!(window as any).filterForm) {\n        (window as any).filterForm = {};\n      }\n      if (!(window as any).filterForm[location.pathname]) {\n        (window as any).filterForm[location.pathname] = {};\n      }\n\n      const f = (window as any).filterForm[location.pathname];\n      if (typeof id_filter !== \"undefined\" && !!id_filter) {\n        if (!f[id_filter]) {\n          f[id_filter] = {\n            filter: {},\n            query: query,\n          };\n        }\n\n        if (f[id_filter]) {\n          f[id_filter].query = query;\n        }\n\n        await query(f[id_filter].filter);\n      }\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"data\",value:{ready:!1,list:[]},cache:!1,deps:[debug],effect:async e=>{let r=async i=>{i&&Object.keys(i).filter(t=>t.startsWith(\"_\")&&t!==\"render\").length>0&&e.list.length===0&&(e.ready=!1,e.render());let n=window;if(isEditor)try{mode===\"sample\"?e.list=await sample(i):e.list=await load(i)}catch{}else try{if(e.ready=!1,e.render(),e.list=await load(i),e.list===null)try{e.list=await sample(i)}catch{}e.ready=!0,e.render()}catch(t){console.log(t)}};window.filterForm||(window.filterForm={}),window.filterForm[location.pathname]||(window.filterForm[location.pathname]={});let a=window.filterForm[location.pathname];typeof id_filter<\"u\"&&id_filter&&(a[id_filter]||(a[id_filter]={filter:{},query:r}),a[id_filter]&&(a[id_filter].query=r),await r(a[id_filter].filter))}},children)));\n"
+        },
+        "name": "local-list",
+        "type": "item",
+        "childs": [
+          {
+            "id": "fnke9eshdk08mu7gj1pecbkg",
+            "adv": {
+              "js": "<>\n  {debug === \"y\" && (\n    <div {...props}>\n      {data.ready ? \"READY\" : \"LOADING\"}\n      <br />\n      {JSON.stringify(data.list, null, 2)}\n    </div>\n  )}\n</>",
+              "css": "& {\n  display: flex;\n  white-space: pre;\n  font-size: 13px;\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,debug===\"y\"&&React.createElement(\"div\",{...props},data.ready?\"READY\":\"LOADING\",React.createElement(\"br\",null),JSON.stringify(data.list,null,2))));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "debug",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "padding": {
+                "b": 4,
+                "l": 9,
+                "r": 9,
+                "t": 4
+              }
+            }
+          },
+          {
+            "id": "dicqo2grxguktletsz6ofc5d",
+            "adv": {
+              "js": "<>\n  {((isEditor && preview === \"loading\") || (!isEditor && !data.ready)) && (\n    <div {...props}>{loading}</div>\n  )}\n</>",
+              "css": "& {\n  display: flex;\n  position: sticky;\n  left: 0px;\n  top: 0px;\n  right: 0px;\n\n  .shine {\n    background: #f6f7f8;\n    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);\n    background-repeat: no-repeat;\n    background-size: 800px 104px;\n    display: inline-block;\n    position: relative;\n\n    animation-duration: 2s;\n    animation-fill-mode: forwards;\n    animation-iteration-count: infinite;\n    animation-name: placeholderShimmer;\n    animation-timing-function: linear;\n  }\n\n  @keyframes placeholderShimmer {\n    0% {\n      background-position: -468px 0;\n    }\n\n    100% {\n      background-position: 468px 0;\n    }\n  }\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,(isEditor&&preview===\"loading\"||!isEditor&&!data.ready)&&React.createElement(\"div\",{...props},loading)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "loading",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              }
+            }
+          },
+          {
+            "id": "p3us10r0z7i8lrny99lnw0ns",
+            "adv": {
+              "js": "<div {...props} className={cx(props.className)}>\n  {children}\n</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className)},children));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "ready",
+            "type": "item",
+            "childs": [
+              {
+                "id": "flyrh3mzw0ynbwcxigrbl587",
+                "adv": {
+                  "js": "<PassProp items={data.list || []} ready={data.ready}>\n  {typeof ready_header !== 'undefined' && ready_header}\n</PassProp>",
+                  "css": "",
+                  "jsBuilt": "return React.createElement(PassProp,{items:data.list||[],ready:data.ready},typeof ready_header<\"u\"&&ready_header);\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "header",
+                "type": "item",
+                "childs": []
+              },
+              {
+                "id": "x5w21ybjih390t7se7xehlbu",
+                "adv": {
+                  "js": "<>{data.list.length !== 0 && (<div {...props}>{children}</div>)}</>",
+                  "css": "",
+                  "html": "",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,data.list.length!==0&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "name": "ready",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "y72a7t5cvf9a31wdutfsh6x7",
+                    "adv": {
+                      "js": "<div {...props}>\n  {(data.list || []).map((item, idx) => (\n    <PassProp item={item} items={data.list || []} idx={idx} key={idx}>\n      {children}\n    </PassProp>\n  ))}\n</div>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(data.list||[]).map((a,s)=>React.createElement(PassProp,{item:a,items:data.list||[],idx:s,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "l-item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "veir8c41dk5ynegnjq7hkckr",
+                        "adv": {
+                          "js": "<div {...props}>{typeof ready_item !== \"undefined\" && ready_item}</div>",
+                          "css": "",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},typeof ready_item<\"u\"&&ready_item));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "lx-item",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "top-left"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  }
+                }
+              },
+              {
+                "id": "jduop5r6z8ty84e42rvmnc0e",
+                "adv": {
+                  "js": "<>{data.list.length === 0 && data.ready && <div {...props}>{children}</div>}</>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,data.list.length===0&&data.ready&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "empty",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "dy09ujmj17uut3ru2l00mvu0",
+                    "adv": {
+                      "css": "",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" data-imageid=\"full-inbox-0\" imageName=\"Empty Inbox\"\n  class=\"illustrations_image\" style=\"width: 232px;\">\n  <g id=\"_296_empty_inbox_outline\" data-name=\"#296_empty_inbox_outline\">\n    <path\n      d=\"M287.57,149.09l-32.58-44a7.2,7.2,0,0,0-5.8-2.92H150.81a7.2,7.2,0,0,0-5.8,2.92l-32.58,44v53.62a11,11,0,0,0,11,11H276.59a11,11,0,0,0,11-11Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M276.59,214.69H123.41a12,12,0,0,1-12-12V149.09a1,1,0,0,1,.19-.6l32.58-44a8.26,8.26,0,0,1,6.61-3.33h98.38a8.26,8.26,0,0,1,6.61,3.33l32.58,44a1,1,0,0,1,.19.6v53.62A12,12,0,0,1,276.59,214.69ZM113.43,149.42v53.29a10,10,0,0,0,10,10H276.59a10,10,0,0,0,10-10V149.42l-32.38-43.75a6.25,6.25,0,0,0-5-2.52H150.81a6.25,6.25,0,0,0-5,2.52Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M287.57,149.09v53.62a11,11,0,0,1-11,11H123.41a11,11,0,0,1-11-11V149.09h47.41l4.46,22a8.75,8.75,0,0,0,8.58,7h54.84a8.78,8.78,0,0,0,8.62-7.15l4.12-21.91Z\"\n      fill=\"#68e1fd\" class=\"target-color\" />\n    <path\n      d=\"M276.58,214.69H123.41a12,12,0,0,1-12-12V149.09a1,1,0,0,1,1-1h47.41a1,1,0,0,1,1,.8l4.46,22a7.77,7.77,0,0,0,7.6,6.23h54.84a7.77,7.77,0,0,0,7.63-6.34l4.12-21.91a1,1,0,0,1,1-.81h47.11a1,1,0,0,1,1,1v53.62A12,12,0,0,1,276.58,214.69Zm-163.15-64.6v52.62a10,10,0,0,0,10,10H276.58a10,10,0,0,0,10-10V150.09H241.29l-4,21.09a9.78,9.78,0,0,1-9.6,8H172.88a9.77,9.77,0,0,1-9.56-7.83L159,150.09Z\"\n      fill=\"#093f68\" />\n    <path d=\"M150.9,191.86H131.26a1,1,0,0,1,0-2H150.9a1,1,0,0,1,0,2Z\" fill=\"#093f68\" />\n    <path d=\"M164.5,89a2,2,0,0,1-1.59-.8l-13.61-18a2,2,0,0,1,3.2-2.41l13.6,18a2,2,0,0,1-.39,2.8A2,2,0,0,1,164.5,89Z\"\n      fill=\"#dfeaef\" />\n    <path\n      d=\"M228.94,89a2.05,2.05,0,0,1-1.21-.41,2,2,0,0,1-.39-2.8l13.61-18a2,2,0,0,1,3.19,2.41l-13.6,18A2,2,0,0,1,228.94,89Z\"\n      fill=\"#dfeaef\" />\n    <path d=\"M198.29,83a2,2,0,0,1-2-2V56.15a2,2,0,0,1,4,0V81A2,2,0,0,1,198.29,83Z\" fill=\"#dfeaef\" />\n    <rect x=\"231.96\" y=\"184.22\" width=\"65.37\" height=\"34.09\" rx=\"3.89\" fill=\"#ffbc0e\" />\n    <path\n      d=\"M293.44,219.32H235.85a4.9,4.9,0,0,1-4.89-4.89V188.11a4.9,4.9,0,0,1,4.89-4.89h57.59a4.9,4.9,0,0,1,4.89,4.89v26.32A4.9,4.9,0,0,1,293.44,219.32Zm-57.59-34.1a2.89,2.89,0,0,0-2.89,2.89v26.32a2.89,2.89,0,0,0,2.89,2.89h57.59a2.9,2.9,0,0,0,2.89-2.89V188.11a2.9,2.9,0,0,0-2.89-2.89Z\"\n      fill=\"#093f68\" />\n    <path d=\"M241.81,194.5h7.66v2.3h-5.18v2.1h4.89v2.29h-4.89v2.3h5.46v2.29h-7.94Z\" fill=\"#093f68\" />\n    <path\n      d=\"M251.44,198h2.3v1.05h0a1.59,1.59,0,0,1,.32-.44,2,2,0,0,1,.49-.4,3,3,0,0,1,.65-.29,2.92,2.92,0,0,1,.8-.11,3.06,3.06,0,0,1,1.44.33,2.15,2.15,0,0,1,.95,1.06,2.55,2.55,0,0,1,1-1.07,3.46,3.46,0,0,1,2.77-.06,2.27,2.27,0,0,1,.84.72,3,3,0,0,1,.45,1.07,6,6,0,0,1,.13,1.31v4.57h-2.39v-4.51a1.83,1.83,0,0,0-.23-.93.87.87,0,0,0-.82-.39,1.54,1.54,0,0,0-.69.14,1.1,1.1,0,0,0-.45.37,1.67,1.67,0,0,0-.24.56,2.87,2.87,0,0,0-.07.67v4.09h-2.39v-4.09c0-.14,0-.31,0-.51a1.94,1.94,0,0,0-.12-.58,1,1,0,0,0-.31-.46,1,1,0,0,0-.63-.19,1.47,1.47,0,0,0-.74.17,1.1,1.1,0,0,0-.44.44,1.86,1.86,0,0,0-.2.63,5.87,5.87,0,0,0,0,.74v3.85h-2.39Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M265.52,198h2.2v1h0a2.4,2.4,0,0,1,.38-.42,2.2,2.2,0,0,1,.54-.39,3.66,3.66,0,0,1,.67-.29,2.9,2.9,0,0,1,.79-.11,4.13,4.13,0,0,1,1.56.29,3.74,3.74,0,0,1,1.2.83,3.79,3.79,0,0,1,.77,1.27,4.61,4.61,0,0,1,.27,1.61,5,5,0,0,1-.24,1.55,4.25,4.25,0,0,1-.71,1.31,3.36,3.36,0,0,1-1.1.92,3.13,3.13,0,0,1-1.48.34,4,4,0,0,1-1.4-.23,2.18,2.18,0,0,1-1.06-.79h0v4.46h-2.39Zm2.2,3.87a2,2,0,0,0,.5,1.42,1.85,1.85,0,0,0,1.41.54,1.82,1.82,0,0,0,1.41-.54,2.27,2.27,0,0,0,0-2.84,1.82,1.82,0,0,0-1.41-.54,1.85,1.85,0,0,0-1.41.54A2,2,0,0,0,267.72,201.91Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M280.61,200H278.5v2.58a3.45,3.45,0,0,0,0,.58,1.08,1.08,0,0,0,.14.46.76.76,0,0,0,.34.29,1.48,1.48,0,0,0,.61.11c.13,0,.3,0,.51,0a.88.88,0,0,0,.47-.19v2a3.44,3.44,0,0,1-.83.19,6.15,6.15,0,0,1-.85.05,4.33,4.33,0,0,1-1.11-.13,2.5,2.5,0,0,1-.89-.4,1.86,1.86,0,0,1-.6-.73,2.47,2.47,0,0,1-.22-1.08V200h-1.53V198h1.53v-2.29h2.39V198h2.11Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M286.28,207c-.16.41-.32.78-.47,1.1a2.35,2.35,0,0,1-.56.8,2.19,2.19,0,0,1-.87.5,4.75,4.75,0,0,1-1.38.16,5.63,5.63,0,0,1-1.79-.28l.32-2a2.71,2.71,0,0,0,1.11.24,2,2,0,0,0,.66-.09,1,1,0,0,0,.42-.26,1.5,1.5,0,0,0,.28-.4l.24-.56.17-.45L281,198h2.58l2,5.11h0l1.71-5.11h2.45Z\"\n      fill=\"#093f68\" />\n  </g>\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "originalId": "ek2dewhvy5qlcx7srtdpisld"
+                  },
+                  {
+                    "id": "oqoftxcxndqqdiu8po345n14",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Tidak ada aktivitas",
+                    "name": "New Text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "originalId": "k2lqbks9m9boldkjdsv8gvu8"
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 79,
+                    "l": 0,
+                    "r": 0,
+                    "t": 79
+                  }
+                },
+                "originalId": "ggqolcleiofnqtfex9bk8b4f"
+              },
+              {
+                "id": "c0hlxqw5oi7ycyrx50bo88xa",
+                "adv": {
+                  "js": "<PassProp items={data.list || []} ready={data.ready}>\n  {typeof ready_footer !== 'undefined' &&  ready_footer}\n</PassProp>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(PassProp,{items:data.list||[],ready:data.ready},typeof ready_footer<\"u\"&&ready_footer));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "footer",
+                "type": "item",
+                "childs": []
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "center"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": ""
+      },
+      "dim": {
+        "h": "full",
+        "w": "full"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "center"
+      }
+    },
+    "component": {
+      "id": "6b17438d-778a-4f32-a72d-554692783af7",
+      "group": {
+        "id": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc"
+      },
+      "props": {
+        "load": {
+          "idx": 11,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "(filter:any) => Promise<any[]>",
+          "value": "async (f) => {\n  const filter = {};\n\n  if (f.id_pengajar) {\n    filter[\"t_logbook_participants\"] = {\n      some: { id_user: parseInt(f.id_pengajar), id_logbook_role: 2 },\n    };\n  }\n\n  const data = await db.t_logbook.findMany({\n    orderBy: { date: \"asc\" },\n    where: {\n      id_action: 1,\n      id_user: user.id,\n      ...filter,\n    },\n    select: {\n      id: true,\n      date: true,\n      verified: true,\n      t_logbook_participants: {\n        where: {\n          id_logbook_role: 2,\n        },\n        select: {\n          m_user: {\n            select: {\n              display_name: true,\n            },\n          },\n        },\n      },\n    },\n  });\n  return data.map((item) => {\n    const parti = item.t_logbook_participants;\n    return {\n      id: item.id,\n      title: moment(item.date).format(\"DD MMMM YYYY - hh:mm\"),\n      status: item.verified ? \"Verified\" : \"-\",\n      doctor: parti.length > 0 ? parti[0].m_user.display_name : \"...\",\n    };\n  });\n}",
+          "valueBuilt": " async t=>{let r={};return t.id_pengajar&&(r.t_logbook_participants={some:{id_user:parseInt(t.id_pengajar),id_logbook_role:2}}),(await db.t_logbook.findMany({orderBy:{date:\"asc\"},where:{id_action:1,id_user:user.id,...r},select:{id:!0,date:!0,verified:!0,t_logbook_participants:{where:{id_logbook_role:2},select:{m_user:{select:{display_name:!0}}}}}})).map(e=>{let a=e.t_logbook_participants;return{id:e.id,title:moment(e.date).format(\"DD MMMM YYYY - hh:mm\"),status:e.verified?\"Verified\":\"-\",doctor:a.length>0?a[0].m_user.display_name:\"...\"}})};\n"
+        },
+        "mode": {
+          "idx": 14,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"load\"",
+          "valueBuilt": "\"load\";\n"
+        },
+        "debug": {
+          "idx": 13,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"y\"",
+          "valueBuilt": "\"y\";\n"
+        },
+        "sample": {
+          "idx": 12,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "(filter:any) => Promise<any[]>",
+          "value": "async (filter) => {\n  return [];\n}",
+          "valueBuilt": " async r=>[];\n"
+        },
+        "loading": {
+          "idx": 3,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "preview": {
+          "idx": 5,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"ready\"",
+          "valueBuilt": "\"ready\";\n"
+        },
+        "id_filter": {
+          "idx": 4,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"filter-1\"",
+          "valueBuilt": "\"filter-1\";\n"
+        },
+        "ready_item": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "ready_footer": {
+          "idx": 2,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "ready_header": {
+          "idx": 0,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-10T16:17:51.562Z",
+  "updated_at": "2023-11-09T05:29:31.536Z",
+  "type": "item",
+  "id_component_group": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc",
+  "props": []
+}

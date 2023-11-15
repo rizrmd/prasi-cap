@@ -1,0 +1,804 @@
+{
+  "id": "2a09792d-42f0-46ca-8277-f07f77610f29",
+  "name": "classes",
+  "url": "/institution/data/classes",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "sdksy7e6zequ8up2wftxdrt3",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  top: 0%;\r\n  z-index: 50;\r\n\r\n  // &.mobile {}\r\n  // &.desktop {}\r\n  // &:hover {}\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "shdfb1la8dfnxqk1tusr095j",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/institution/data-management\"",
+                  "valueBuilt": "\"/institution/data-management\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Classes\"",
+                  "valueBuilt": "\"Classes\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "br18xp34x7zi7jycoiq4g569",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  padding-top: 10%;\r\n\r\n  // &.mobile {}\r\n  // &.desktop {}\r\n  // &:hover {}\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "g5eoiy43tgii3atjylpx8d0v",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          classes: \"Mk 1801 - Bedah Dasar\",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          classes: \"Mk 1802 - Spine I\",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          classes: \"Mk 1803 - Spine II\",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          classes: \"Mk 1804 - Bedah Lanjut\",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          classes: \"Mk 1805 - Spine \",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n        {\r\n          id: \"06\",\r\n          classes: \"Mk 1801 - Bedah Dasar\",\r\n          year: \"2023 / 2024\",\r\n          date: \"Monday 12:00 - 13:00\",\r\n          senior: \"dr Angela Sorpolia, Sp. OT.\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "css": "& {\r\n  display: flex;\r\n  padding-bottom: 100px;\r\n\r\n  // &.mobile {}\r\n  // &.desktop {}\r\n  // &:hover {}\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",classes:\"Mk 1801 - Bedah Dasar\",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"},{id:\"02\",classes:\"Mk 1802 - Spine I\",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"},{id:\"03\",classes:\"Mk 1803 - Spine II\",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"},{id:\"04\",classes:\"Mk 1804 - Bedah Lanjut\",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"},{id:\"05\",classes:\"Mk 1805 - Spine \",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"},{id:\"06\",classes:\"Mk 1801 - Bedah Dasar\",year:\"2023 / 2024\",date:\"Monday 12:00 - 13:00\",senior:\"dr Angela Sorpolia, Sp. OT.\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-classes",
+            "type": "item",
+            "childs": [
+              {
+                "id": "dczzfkvgn3goyh5mh6xg4dhv",
+                "adv": {},
+                "name": "item-classes",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "w9l97ylxoamm8zlv9pwfor13",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  padding-bottom: 150px;\n  \n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "data-classes",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "id535yzn6mnjmf564shi5duk",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1081 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1081 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "d23901g3u9lo90upi6tcn03c",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 15:00 - 16:00\"",
+                              "valueBuilt": "\"Monday 15:00 - 16:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1082 - Spine I\"",
+                              "valueBuilt": "\"Mk 1082 - Spine I\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "bvoes4bc3wmlx250nsf3j0at",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1083 - Spine II\"",
+                              "valueBuilt": "\"Mk 1083 - Spine II\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "jau4ga8iqpt8wfq8n6qgbm9r",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1084 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1084 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "aotvjfmuri58a21bvvji0guq",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1085 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1085 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "v7z5losna31xqabog90qyp68",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1086 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1086 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "e51b9i5np3zp6e28vymczel1",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1086 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1086 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      },
+                      {
+                        "id": "faefa7hyn7l8qx828299aj4b",
+                        "adv": {},
+                        "name": "data-classes",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "41e09109-da93-493f-a2df-b8673ab54811",
+                          "props": {
+                            "url": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/url-default\"",
+                              "valueBuilt": "\"/url-default\";\n"
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Monday 12:00 - 13:00\"",
+                              "valueBuilt": "\"Monday 12:00 - 13:00\";\n"
+                            },
+                            "year": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"2023 / 2024\"",
+                              "valueBuilt": "\"2023 / 2024\";\n"
+                            },
+                            "senior": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Mellisa Siregar, Sp.OT.\"",
+                              "valueBuilt": "\"dr Mellisa Siregar, Sp.OT.\";\n"
+                            },
+                            "classes": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Mk 1086 - Bedah Dasar\"",
+                              "valueBuilt": "\"Mk 1086 - Bedah Dasar\";\n"
+                            }
+                          },
+                          "updated_at": 1692081776038
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 20,
+                        "align": "top-center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "yvt6jpll1m9svngz6hlefh5j",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "uujz8tv5bsvj2rjkrdmomitj",
+            "adv": {},
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "l1730xb83lihhlv0o8e0al4p",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Create\"",
+                      "valueBuilt": "\"Create\";\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "tmg12lt2dp2auku5gec2if7m",
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1692087006906
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T05:56:19.704Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-20T08:48:01.491Z",
+  "id_folder": "4318af64-34b1-4b23-a305-39c6f0df2e0b",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

@@ -1,0 +1,591 @@
+{
+  "id": "ed0b3565-7127-4810-bbb4-d17511c32f91",
+  "name": "comps-data",
+  "url": "/comps/data",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "gcp9g1khtcueazpkya3g9f7n",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "New Section",
+        "type": "section",
+        "childs": [
+          {
+            "id": "yyn27lgurdy21gmmddg3bxt3",
+            "adv": {},
+            "name": "Assignment Item",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "80f823d6-2b1b-4fbb-99df-2626c8abeffd",
+              "props": {
+                "title": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Assignment 1\"",
+                  "valueBuilt": "\"Assignment 1\";\n"
+                },
+                "status": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Submitted\"",
+                  "valueBuilt": "\"Submitted\";\n"
+                },
+                "status_color": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "status-color",
+                    "options": "[\n  {\n    label: \"GREEN\",\n    value: \"#159895\"\n  },\n  {\n    label: \"BLUE\",\n    value: \"#0062A3\"\n  },\n]"
+                  },
+                  "type": "option",
+                  "value": "\"#159895\"",
+                  "valueBuilt": "\"#159895\";\n"
+                }
+              },
+              "updated_at": 1692075526015
+            }
+          },
+          {
+            "id": "nfl35wxov2awljf52qjjrn78",
+            "adv": {},
+            "name": "item",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "92fc21b6-152d-4239-aa3b-9ec3fd430033",
+              "props": {
+                "pic": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"dr Mellisa, Sp. OT.\"",
+                  "valueBuilt": "\"dr Mellisa, Sp. OT.\";\n"
+                },
+                "url": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/url-default\"",
+                  "valueBuilt": "\"/url-default\";\n"
+                },
+                "label": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"Turned In\",\n    value: \"Turned In\"\n  },\n  {\n    label: \"Returned\",\n    value: \"Returned\"\n  },\n  {\n   label:\"Late\",\n   value:\"Late\"\n  }\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Turned In\"",
+                  "valueBuilt": "\"Turned In\";\n"
+                },
+                "title": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "name"
+                  },
+                  "type": "text",
+                  "value": "\"Assignment 1\"",
+                  "valueBuilt": "\"Assignment 1\";\n"
+                },
+                "schedule": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Visite 12/01/2023\"",
+                  "valueBuilt": "\"Visite 12/01/2023\";\n"
+                }
+              },
+              "updated_at": 1692080647506
+            }
+          },
+          {
+            "id": "r68ckcmn1rlu7wwcnkka8l5m",
+            "adv": {},
+            "name": "Wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "txwzfrwxu0mqltt6by1wp5u4",
+                "name": "one-row-data",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2cf26f9f-a176-4d43-9538-c254a0a49f5f",
+                  "props": {
+                    "bg_color": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"#ffffff\"",
+                      "valueBuilt": "\"#ffffff\";\n"
+                    },
+                    "year_props": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Default Row\"",
+                      "valueBuilt": "\"Default Row\";\n"
+                    }
+                  },
+                  "updated_at": 1692088518006
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "v0xysqj0zeadkqnf126qdzfu",
+            "adv": {},
+            "name": "one_data_icon",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "80781ba1-692b-45b9-bbb9-efeed83203ea",
+              "props": {
+                "coba": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"sabar\",\n    value: \"sabar\"\n  },\n  {\n    label: \"extra_sabar\",\n    value: \"extra_sabar\"\n  },\n  {\n    label: \"info\",\n    value: \"info\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"extra_sabar\"",
+                  "valueBuilt": "\"extra_sabar\";\n"
+                },
+                "icon_props": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "icon",
+                    "options": "[\n  {\n    label: \"patient\",\n    value: \"patient\"\n  },\n  {\n    label: \"B\",\n    value: \"B\"\n  },\n  {\n   label: \"comment\",\n   value: \"comment\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"B\"",
+                  "valueBuilt": "\"B\";\n"
+                }
+              },
+              "updated_at": 1692003589009
+            }
+          },
+          {
+            "id": "idx4pixbjhgg1aryhtfj6ym4",
+            "adv": {},
+            "name": "two-row-data-with-icon",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "9af51c54-f813-440e-88af-0323cb88d7f5",
+              "props": {
+                "icon_props": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"medical\",\n    value: \"medical\"\n  },\n  {\n    label: \"comment\",\n    value: \"comment\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"medical\"",
+                  "valueBuilt": "\"medical\";\n"
+                },
+                "row1_props": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "item.semester",
+                  "valueBuilt": " item.semester;\n"
+                },
+                "row2_props": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"hello\""
+                }
+              },
+              "updated_at": 1691386809182
+            }
+          },
+          {
+            "id": "l4386xymu67z515xbnkul9or",
+            "adv": {
+              "js": "<PassProp ><div {...props}>{children}</div></PassProp>",
+              "css": "& {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  position: absolute;\r\n  bottom: 0;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(PassProp,null,React.createElement(\"div\",{...props},children)));\n"
+            },
+            "name": "menu-senior-ppds",
+            "type": "item",
+            "childs": [
+              {
+                "id": "x4be1xb7ul0q32vex8yaxe08",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/senior_ppds/home\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/senior_ppds/home\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/senior_ppds/home\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/senior_ppds/home\")}},children)));\n"
+                },
+                "name": "home",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ijjuj14i0n7u6ydzop10qzog",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<mask id=\"mask0_219_6248\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"40\" height=\"40\">\r\n<rect width=\"40\" height=\"40\" fill=\"#002B5B\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_219_6248)\">\r\n<path d=\"M10.0003 31.6667H15.0003V21.6667H25.0003V31.6667H30.0003V16.6667L20.0003 9.16667L10.0003 16.6667V31.6667ZM6.66699 35V15L20.0003 5L33.3337 15V35H21.667V25H18.3337V35H6.66699Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "home",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "w46gdm985muzijbs1sw8mng2",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/senior_ppds/home\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/senior_ppds/home\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/senior_ppds/home\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/senior_ppds/home\")}},children)));\n"
+                },
+                "name": "home-active",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "wqss145uzbco6tadwz4qkiwo",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n  <mask id=\"mask0_1471_4848\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"40\" height=\"40\">\r\n    <rect width=\"40\" height=\"40\" fill=\"#002B5B\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_1471_4848)\">\r\n    <path\r\n      d=\"M10.0001 31.6667H15.0001V21.6667H25.0001V31.6667H30.0001V16.6667L20.0001 9.16667L10.0001 16.6667V31.6667ZM6.66675 35V15L20.0001 5L33.3334 15V35H21.6667V25H18.3334V35H6.66675Z\"\r\n      fill=\"#0062A3\" />\r\n  </g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "home-active",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "vxw9d6l795k3eh6u40s4b8am",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/ppds_senior/schedule/assignment/list-assignment-cloned\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/ppds_senior/schedule/assignment/list-assignment-cloned\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/ppds_senior/schedule/assignment/list-assignment-cloned\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/ppds_senior/schedule/assignment/list-assignment-cloned\")}},children)));\n"
+                },
+                "name": "assignment",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "efr2vtf471oq4pu2dcxrkxou",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"34\" height=\"34\" viewBox=\"0 0 34 34\" fill=\"none\">\r\n  <mask id=\"mask0_219_6251\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"34\" height=\"34\">\r\n    <rect width=\"34\" height=\"34\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_219_6251)\">\r\n    <path\r\n      d=\"M7.08333 29.75C6.30417 29.75 5.63715 29.4725 5.08229 28.9177C4.52743 28.3628 4.25 27.6958 4.25 26.9166V7.08329C4.25 6.30413 4.52743 5.63711 5.08229 5.08225C5.63715 4.52739 6.30417 4.24996 7.08333 4.24996H13.0333C13.3403 3.39996 13.8538 2.71524 14.574 2.19579C15.2941 1.67635 16.1028 1.41663 17 1.41663C17.8972 1.41663 18.7059 1.67635 19.426 2.19579C20.1462 2.71524 20.6597 3.39996 20.9667 4.24996H26.9167C27.6958 4.24996 28.3628 4.52739 28.9177 5.08225C29.4726 5.63711 29.75 6.30413 29.75 7.08329V26.9166C29.75 27.6958 29.4726 28.3628 28.9177 28.9177C28.3628 29.4725 27.6958 29.75 26.9167 29.75H7.08333ZM7.08333 26.9166H26.9167V7.08329H7.08333V26.9166ZM9.91667 24.0833H19.8333V21.25H9.91667V24.0833ZM9.91667 18.4166H24.0833V15.5833H9.91667V18.4166ZM9.91667 12.75H24.0833V9.91663H9.91667V12.75ZM17 6.02079C17.3069 6.02079 17.5608 5.92045 17.7615 5.71975C17.9622 5.51906 18.0625 5.26524 18.0625 4.95829C18.0625 4.65135 17.9622 4.39753 17.7615 4.19683C17.5608 3.99614 17.3069 3.89579 17 3.89579C16.6931 3.89579 16.4392 3.99614 16.2385 4.19683C16.0378 4.39753 15.9375 4.65135 15.9375 4.95829C15.9375 5.26524 16.0378 5.51906 16.2385 5.71975C16.4392 5.92045 16.6931 6.02079 17 6.02079Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "assignment",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "qhd7yczldi5jweijri7pjvzr",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/ppds_senior/schedule/assignment/list-assignment-cloned\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/ppds_senior/schedule/assignment/list-assignment-cloned\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/ppds_senior/schedule/assignment/list-assignment-cloned\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/ppds_senior/schedule/assignment/list-assignment-cloned\")}},children)));\n"
+                },
+                "name": "assignment-active",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "gs8l4aapvs0l444qs1f47ad4",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"34\" height=\"34\" viewBox=\"0 0 34 34\" fill=\"none\">\r\n<mask id=\"mask0_1471_4851\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"34\" height=\"34\">\r\n<rect width=\"34\" height=\"34\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_1471_4851)\">\r\n<path d=\"M7.08333 29.75C6.30417 29.75 5.63715 29.4725 5.08229 28.9177C4.52743 28.3628 4.25 27.6958 4.25 26.9166V7.08329C4.25 6.30413 4.52743 5.63711 5.08229 5.08225C5.63715 4.52739 6.30417 4.24996 7.08333 4.24996H13.0333C13.3403 3.39996 13.8538 2.71524 14.574 2.19579C15.2941 1.67635 16.1028 1.41663 17 1.41663C17.8972 1.41663 18.7059 1.67635 19.426 2.19579C20.1462 2.71524 20.6597 3.39996 20.9667 4.24996H26.9167C27.6958 4.24996 28.3628 4.52739 28.9177 5.08225C29.4726 5.63711 29.75 6.30413 29.75 7.08329V26.9166C29.75 27.6958 29.4726 28.3628 28.9177 28.9177C28.3628 29.4725 27.6958 29.75 26.9167 29.75H7.08333ZM7.08333 26.9166H26.9167V7.08329H7.08333V26.9166ZM9.91667 24.0833H19.8333V21.25H9.91667V24.0833ZM9.91667 18.4166H24.0833V15.5833H9.91667V18.4166ZM9.91667 12.75H24.0833V9.91663H9.91667V12.75ZM17 6.02079C17.3069 6.02079 17.5608 5.92045 17.7615 5.71975C17.9622 5.51906 18.0625 5.26524 18.0625 4.95829C18.0625 4.65135 17.9622 4.39753 17.7615 4.19683C17.5608 3.99614 17.3069 3.89579 17 3.89579C16.6931 3.89579 16.4392 3.99614 16.2385 4.19683C16.0378 4.39753 15.9375 4.65135 15.9375 4.95829C15.9375 5.26524 16.0378 5.51906 16.2385 5.71975C16.4392 5.92045 16.6931 6.02079 17 6.02079Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "assignment-active",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "tuxne6rpn48pidyl0loyuh59",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/ppds/lm/cal-schedule\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/ppds/lm/cal-schedule\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/ppds/lm/cal-schedule\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/ppds/lm/cal-schedule\")}},children)));\n"
+                },
+                "name": "schedule",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "dow2y5u3dzlcq94m2uj30c7w",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\">\r\n<mask id=\"mask0_219_6254\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"36\" height=\"36\">\r\n<rect width=\"36\" height=\"36\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_219_6254)\">\r\n<path d=\"M12 21C11.575 21 11.2188 20.8563 10.9312 20.5688C10.6437 20.2812 10.5 19.925 10.5 19.5C10.5 19.075 10.6437 18.7188 10.9312 18.4313C11.2188 18.1438 11.575 18 12 18C12.425 18 12.7812 18.1438 13.0688 18.4313C13.3562 18.7188 13.5 19.075 13.5 19.5C13.5 19.925 13.3562 20.2812 13.0688 20.5688C12.7812 20.8563 12.425 21 12 21ZM18 21C17.575 21 17.2188 20.8563 16.9313 20.5688C16.6438 20.2812 16.5 19.925 16.5 19.5C16.5 19.075 16.6438 18.7188 16.9313 18.4313C17.2188 18.1438 17.575 18 18 18C18.425 18 18.7813 18.1438 19.0688 18.4313C19.3563 18.7188 19.5 19.075 19.5 19.5C19.5 19.925 19.3563 20.2812 19.0688 20.5688C18.7813 20.8563 18.425 21 18 21ZM24 21C23.575 21 23.2188 20.8563 22.9313 20.5688C22.6438 20.2812 22.5 19.925 22.5 19.5C22.5 19.075 22.6438 18.7188 22.9313 18.4313C23.2188 18.1438 23.575 18 24 18C24.425 18 24.7812 18.1438 25.0688 18.4313C25.3563 18.7188 25.5 19.075 25.5 19.5C25.5 19.925 25.3563 20.2812 25.0688 20.5688C24.7812 20.8563 24.425 21 24 21ZM7.5 33C6.675 33 5.96875 32.7063 5.38125 32.1188C4.79375 31.5312 4.5 30.825 4.5 30V9C4.5 8.175 4.79375 7.46875 5.38125 6.88125C5.96875 6.29375 6.675 6 7.5 6H9V3H12V6H24V3H27V6H28.5C29.325 6 30.0312 6.29375 30.6188 6.88125C31.2063 7.46875 31.5 8.175 31.5 9V30C31.5 30.825 31.2063 31.5312 30.6188 32.1188C30.0312 32.7063 29.325 33 28.5 33H7.5ZM7.5 30H28.5V15H7.5V30ZM7.5 12H28.5V9H7.5V12Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "schedule",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "cqld0ckmhikyxb9vn1y9mwf0",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/ppds/lm/cal-schedule\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/ppds/lm/cal-schedule\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/ppds/lm/cal-schedule\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/ppds/lm/cal-schedule\")}},children)));\n"
+                },
+                "name": "schedule-active",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "prmwqpogxq94gcnn8rpm0apv",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\">\r\n<mask id=\"mask0_1471_4854\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"36\" height=\"36\">\r\n<rect width=\"36\" height=\"36\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_1471_4854)\">\r\n<path d=\"M12 21C11.575 21 11.2187 20.8563 10.9312 20.5688C10.6437 20.2813 10.5 19.925 10.5 19.5C10.5 19.075 10.6437 18.7188 10.9312 18.4313C11.2187 18.1438 11.575 18 12 18C12.425 18 12.7813 18.1438 13.0688 18.4313C13.3563 18.7188 13.5 19.075 13.5 19.5C13.5 19.925 13.3563 20.2813 13.0688 20.5688C12.7813 20.8563 12.425 21 12 21ZM18 21C17.575 21 17.2188 20.8563 16.9313 20.5688C16.6438 20.2813 16.5 19.925 16.5 19.5C16.5 19.075 16.6438 18.7188 16.9313 18.4313C17.2188 18.1438 17.575 18 18 18C18.425 18 18.7813 18.1438 19.0688 18.4313C19.3563 18.7188 19.5 19.075 19.5 19.5C19.5 19.925 19.3563 20.2813 19.0688 20.5688C18.7813 20.8563 18.425 21 18 21ZM24 21C23.575 21 23.2188 20.8563 22.9313 20.5688C22.6438 20.2813 22.5 19.925 22.5 19.5C22.5 19.075 22.6438 18.7188 22.9313 18.4313C23.2188 18.1438 23.575 18 24 18C24.425 18 24.7813 18.1438 25.0688 18.4313C25.3563 18.7188 25.5 19.075 25.5 19.5C25.5 19.925 25.3563 20.2813 25.0688 20.5688C24.7813 20.8563 24.425 21 24 21ZM7.5 33C6.675 33 5.96875 32.7063 5.38125 32.1188C4.79375 31.5313 4.5 30.825 4.5 30V9C4.5 8.175 4.79375 7.46875 5.38125 6.88125C5.96875 6.29375 6.675 6 7.5 6H9V3H12V6H24V3H27V6H28.5C29.325 6 30.0313 6.29375 30.6188 6.88125C31.2063 7.46875 31.5 8.175 31.5 9V30C31.5 30.825 31.2063 31.5313 30.6188 32.1188C30.0313 32.7063 29.325 33 28.5 33H7.5ZM7.5 30H28.5V15H7.5V30ZM7.5 12H28.5V9H7.5V12Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "schedule-active",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "x7a6aogkjss7y1wte4674hn0",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/home-ppds\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        window.location.href = \"/site/PPDS/main\";\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/home-ppds\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{window.location.href=\"/site/PPDS/main\"}},children)));\n"
+                },
+                "name": "profile",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "bfc12a3a3a76uwiounj27utb",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"37\" height=\"37\" viewBox=\"0 0 37 37\" fill=\"none\">\r\n<mask id=\"mask0_219_6257\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"37\" height=\"37\">\r\n<rect width=\"37\" height=\"37\" fill=\"#002B5B\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_219_6257)\">\r\n<path d=\"M18.5003 18.5C16.8045 18.5 15.3528 17.8961 14.1451 16.6885C12.9375 15.4809 12.3337 14.0291 12.3337 12.3333C12.3337 10.6375 12.9375 9.18572 14.1451 7.97808C15.3528 6.77045 16.8045 6.16663 18.5003 6.16663C20.1962 6.16663 21.6479 6.77045 22.8555 7.97808C24.0632 9.18572 24.667 10.6375 24.667 12.3333C24.667 14.0291 24.0632 15.4809 22.8555 16.6885C21.6479 17.8961 20.1962 18.5 18.5003 18.5ZM6.16699 30.8333V26.5166C6.16699 25.643 6.39182 24.8401 6.84147 24.1078C7.29112 23.3755 7.88852 22.8166 8.63366 22.4312C10.2267 21.6347 11.8455 21.0373 13.4899 20.639C15.1344 20.2408 16.8045 20.0416 18.5003 20.0416C20.1962 20.0416 21.8663 20.2408 23.5107 20.639C25.1552 21.0373 26.7739 21.6347 28.367 22.4312C29.1121 22.8166 29.7095 23.3755 30.1592 24.1078C30.6088 24.8401 30.8337 25.643 30.8337 26.5166V30.8333H6.16699ZM9.25033 27.75H27.7503V26.5166C27.7503 26.234 27.6797 25.977 27.5383 25.7458C27.397 25.5145 27.2107 25.3347 26.9795 25.2062C25.592 24.5125 24.1916 23.9921 22.7785 23.6453C21.3653 23.2984 19.9392 23.125 18.5003 23.125C17.0614 23.125 15.6354 23.2984 14.2222 23.6453C12.809 23.9921 11.4087 24.5125 10.0212 25.2062C9.78991 25.3347 9.60362 25.5145 9.4623 25.7458C9.32099 25.977 9.25033 26.234 9.25033 26.5166V27.75ZM18.5003 15.4166C19.3482 15.4166 20.0741 15.1147 20.6779 14.5109C21.2818 13.9071 21.5837 13.1812 21.5837 12.3333C21.5837 11.4854 21.2818 10.7595 20.6779 10.1557C20.0741 9.55187 19.3482 9.24996 18.5003 9.24996C17.6524 9.24996 16.9265 9.55187 16.3227 10.1557C15.7189 10.7595 15.417 11.4854 15.417 12.3333C15.417 13.1812 15.7189 13.9071 16.3227 14.5109C16.9265 15.1147 17.6524 15.4166 18.5003 15.4166Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "profile",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "qb1pp78ana1iv39p2qu20h14",
+                "adv": {
+                  "js": "<>\r\n  {location.pathname.includes(\"/main\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        window.location.href = \"/site/PPDS/main\";\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/main\")===!0&&React.createElement(\"div\",{...props,onClick:i=>{window.location.href=\"/site/PPDS/main\"}},children)));\n"
+                },
+                "name": "profile-active",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "hdi5lxvyntbga7xklqt4yfzf",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"37\" height=\"37\" viewBox=\"0 0 37 37\" fill=\"none\">\r\n<mask id=\"mask0_1471_4857\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"37\" height=\"37\">\r\n<rect width=\"37\" height=\"37\" fill=\"#002B5B\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_1471_4857)\">\r\n<path d=\"M18.5003 18.5C16.8045 18.5 15.3528 17.8961 14.1451 16.6885C12.9375 15.4809 12.3337 14.0291 12.3337 12.3333C12.3337 10.6375 12.9375 9.18572 14.1451 7.97808C15.3528 6.77045 16.8045 6.16663 18.5003 6.16663C20.1962 6.16663 21.6479 6.77045 22.8555 7.97808C24.0632 9.18572 24.667 10.6375 24.667 12.3333C24.667 14.0291 24.0632 15.4809 22.8555 16.6885C21.6479 17.8961 20.1962 18.5 18.5003 18.5ZM6.16699 30.8333V26.5166C6.16699 25.643 6.39182 24.8401 6.84147 24.1078C7.29112 23.3755 7.88852 22.8166 8.63366 22.4312C10.2267 21.6347 11.8455 21.0373 13.4899 20.639C15.1344 20.2408 16.8045 20.0416 18.5003 20.0416C20.1962 20.0416 21.8663 20.2408 23.5107 20.639C25.1552 21.0373 26.7739 21.6347 28.367 22.4312C29.1121 22.8166 29.7095 23.3755 30.1592 24.1078C30.6088 24.8401 30.8337 25.643 30.8337 26.5166V30.8333H6.16699ZM9.25033 27.75H27.7503V26.5166C27.7503 26.234 27.6797 25.977 27.5383 25.7458C27.397 25.5145 27.2107 25.3347 26.9795 25.2062C25.592 24.5125 24.1916 23.9921 22.7785 23.6453C21.3653 23.2984 19.9392 23.125 18.5003 23.125C17.0614 23.125 15.6354 23.2984 14.2222 23.6453C12.809 23.9921 11.4087 24.5125 10.0212 25.2062C9.78991 25.3347 9.60362 25.5145 9.4623 25.7458C9.32099 25.977 9.25033 26.234 9.25033 26.5166V27.75ZM18.5003 15.4166C19.3482 15.4166 20.0741 15.1147 20.6779 14.5109C21.2818 13.9071 21.5837 13.1812 21.5837 12.3333C21.5837 11.4854 21.2818 10.7595 20.6779 10.1557C20.0741 9.55187 19.3482 9.24996 18.5003 9.24996C17.6524 9.24996 16.9265 9.55187 16.3227 10.1557C15.7189 10.7595 15.417 11.4854 15.417 12.3333C15.417 13.1812 15.7189 13.9071 16.3227 14.5109C16.9265 15.1147 17.6524 15.4166 18.5003 15.4166Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "profile-active",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#FFFFFF"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "align": "center"
+              }
+            },
+            "component": {}
+          },
+          {
+            "id": "idudyo9xy2u81vqo2n0mw0wq",
+            "name": "checkbox_field",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "250edfef-0e4a-4d9c-a265-680add0b7bde",
+              "props": {
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"hello\""
+                },
+                "checked": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"true\", \n    value: \"true\" \n  },\n  { \n    label: \"false\", \n    value: \"false\" \n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"true\"",
+                  "valueBuilt": "\"true\";\n"
+                },
+                "onClick": {
+                  "idx": 3,
+                  "meta": {
+                    "oldName": "onChecked"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                }
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 33,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 22,
+            "l": 14,
+            "r": 14,
+            "t": 22
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-03T07:26:08.433Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-29T07:49:40.072Z",
+  "id_folder": "5a7f80cf-2a33-4798-ac38-852c002e9adf",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

@@ -1,0 +1,1396 @@
+{
+  "id": "f7bb697d-46e7-4b2f-910c-b37a9692a59d",
+  "name": "home-ppds-kelola",
+  "url": "/ppds/home/kelola",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ort8icvvsacwy6io83crcaml",
+        "adv": {
+          "js": "isLogin(props, children, \"ppds\")",
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  &.desktop {\n    max-width: 450px;\n    margin: 0px auto;\n  }\n}",
+          "jsBuilt": "render(isLogin(props,children,\"ppds\"));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "xtowg3ecl6o08dko9gcfamij",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t94zvjehu5yuenxxf70tmym0",
+                "adv": {
+                  "js": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "name": "title-back",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "rgxfqgnhqjzfthz4x01kl1sy",
+                    "adv": {
+                      "js": "<div\r\n  {...props}\r\n  onClick={async (e) => {\r\n    if (url !== \"null\") {\r\n      navigate(url);\r\n    } else {\r\n      window.history.back();\r\n    }\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:async i=>{url!==\"null\"?navigate(url):window.history.back()}},children));\n"
+                    },
+                    "dim": {
+                      "h": 40,
+                      "w": "full"
+                    },
+                    "font": {
+                      "size": 18,
+                      "align": "left",
+                      "height": "auto",
+                      "wordBreak": "break-normal",
+                      "whitespace": "whitespace-normal"
+                    },
+                    "name": "Wrapped",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "qbco2anw0gc6ifhgomfkc7md",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"26\" viewBox=\"0 0 26 26\">\r\n  <path d=\"M15.1667 19.5L8.66667 13L15.1667 6.5L16.6833 8.01667L11.7 13L16.6833 17.9833L15.1667 19.5Z\" fill=\"#002B5B\" />\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "New Item",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "cocqop8q18rf1ltcr0ummmtd",
+                        "adv": {
+                          "js": "<div {...props}>{label}</div>",
+                          "css": "& {\r\n  display: flex;\r\n  text-transform: capitalize;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "font": {
+                          "size": 18,
+                          "color": "#002B5B",
+                          "family": "Poppins",
+                          "height": "auto"
+                        },
+                        "html": "Academic Year",
+                        "name": "New Text",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "left"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 16,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 2,
+                            "l": 0,
+                            "r": 0,
+                            "t": 2
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": 50,
+                        "w": "fit"
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 5,
+                        "align": "left"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 8,
+                        "r": 8,
+                        "t": 0
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": 0,
+                    "w": "full",
+                    "hUnit": "px"
+                  },
+                  "font": {
+                    "size": 18,
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col-reverse",
+                    "gap": 0,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "name": "title-back",
+                  "group": {
+                    "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                    "name": "All"
+                  },
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/ppds/home\"",
+                      "valueBuilt": "\"/ppds/home\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Atur Shortcut Home\"",
+                      "valueBuilt": "\"Atur Shortcut Home\";\n"
+                    },
+                    "name_page": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "hidden": false,
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "d7soi5vgam2ecugidi8xcryb",
+            "adv": {
+              "js": "<div {...props}>\n  <Local\n    name=\"local\"\n    value={{\n      id_hide: [],\n    }}\n    effect={async (local) => {\n      sessionStorage.setItem(\"previousPage\", window.location.href);\n      sessionStorage.setItem(\"root\", \"/ppds/home\");\n      auditTrail({\n        type: \"visit\",\n        activity: `Membuka Halaman Kelola Shortcut`,\n        meta: {\n          url: window.location.href,\n        },\n      });\n\n      const res = await db.m_user_action.findMany({\n        where: {\n          id_client: Number(user.id_client),\n          id_user: Number(user.id),\n        },\n        select: {\n          id: true,\n          id_action_hidden: true,\n        },\n      });\n\n      if (res) {\n        local.id_hide = [];\n        res.forEach((e) => {\n          local.id_hide.push(e.id_action_hidden);\n        });\n      }\n      local.render();\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{id_hide:[]},effect:async e=>{sessionStorage.setItem(\"previousPage\",window.location.href),sessionStorage.setItem(\"root\",\"/ppds/home\"),auditTrail({type:\"visit\",activity:\"Membuka Halaman Kelola Shortcut\",meta:{url:window.location.href}});let i=await db.m_user_action.findMany({where:{id_client:Number(user.id_client),id_user:Number(user.id)},select:{id:!0,id_action_hidden:!0}});i&&(e.id_hide=[],i.forEach(d=>{e.id_hide.push(d.id_action_hidden)})),e.render()}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "r97gwsvwfdtiqaezat7o2k96",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                },
+                "name": "list-menu",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "gqid4j7wrliuzokgspjawj1d",
+                    "name": "loader",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "26b6abde-53e3-4061-9295-11930f7aba22",
+                      "props": {
+                        "load": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => Promise<any>",
+                          "value": "async () => {\n  return {};\n}",
+                          "valueBuilt": " async()=>({});\n"
+                        },
+                        "mode": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"sample\"",
+                          "valueBuilt": "\"sample\";\n"
+                        },
+                        "debug": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"n\"",
+                          "valueBuilt": "\"n\";\n"
+                        },
+                        "ready": {
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "content": {
+                            "id": "g08jp783od9os8ymnxxky68s",
+                            "adv": {
+                              "css": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "ready",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "eexuhnscl8d6mucohqur3hjd",
+                                "adv": {
+                                  "js": "<div {...props}>\n  {(data.actions || []).map((item, idx) => (\n    <PassProp item={item} key={idx}>\n      {children}\n    </PassProp>\n  ))}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props},(data.actions||[]).map((a,r)=>React.createElement(PassProp,{item:a,key:r},children))));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "items",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "magjk2a8x3lz6ybu1i1gkxo5",
+                                    "adv": {
+                                      "js": "<PassProp name={item.name} navigate_link={`/ppds/action/${item.id}`}>\n  <div {...props}>{children}</div>\n</PassProp>",
+                                      "jsBuilt": "render(React.createElement(PassProp,{name:item.name,navigate_link:`/ppds/action/${item.id}`},React.createElement(\"div\",{...props},children)));\n"
+                                    },
+                                    "name": "item",
+                                    "type": "item",
+                                    "childs": [
+                                      {
+                                        "id": "wkqm87lgaqhnjuou0j6ufpbs",
+                                        "adv": {
+                                          "js": "<div\r\n  {...props}\r\n  onClick={async () => {\r\n    let hide = local.id_hide?.find((o) => o === item.id);\r\n    local.id_hide = local.id_hide.filter((e) => e !== item.id);\r\n    if (!hide) {\r\n      local.id_hide.push(item.id);\r\n    }\r\n    local.render();\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                                          "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  min-height: 170px !important;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                                          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:async()=>{let d=local.id_hide?.find(i=>i===item.id);local.id_hide=local.id_hide.filter(i=>i!==item.id),d||local.id_hide.push(item.id),local.render()}},children));\n"
+                                        },
+                                        "dim": {
+                                          "h": "fit",
+                                          "w": "fit"
+                                        },
+                                        "name": "menu",
+                                        "type": "item",
+                                        "childs": [
+                                          {
+                                            "id": "a6041h4al83xvonwsjbf57d1",
+                                            "adv": {
+                                              "css": "",
+                                              "html": ""
+                                            },
+                                            "name": "checkbox",
+                                            "type": "item",
+                                            "childs": [
+                                              {
+                                                "id": "zqgb6jk7c5lyibmxahio8orb",
+                                                "adv": {
+                                                  "js": "<>\n  {local.id_hide?.find((o) => o === item.id) === undefined && (\n    <div {...props}>{children}</div>\n  )}\n</>",
+                                                  "css": "",
+                                                  "html": "",
+                                                  "jsBuilt": "render(React.createElement(React.Fragment,null,local.id_hide?.find(d=>d===item.id)===void 0&&React.createElement(\"div\",{...props},children)));\n"
+                                                },
+                                                "name": "check",
+                                                "type": "item",
+                                                "childs": [
+                                                  {
+                                                    "id": "njap7wwjvvt28sfjeejvc5ei",
+                                                    "adv": {
+                                                      "css": "",
+                                                      "html": "<svg width=\"25\" height=\"25\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path fill=\"#002b5b\"\n    d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7a.996.996 0 1 1 1.41-1.41L10 14.17l6.88-6.88a.996.996 0 1 1 1.41 1.41l-7.59 7.59a.996.996 0 0 1-1.41 0z\" />\n</svg>"
+                                                    },
+                                                    "dim": {
+                                                      "h": "fit",
+                                                      "w": "fit"
+                                                    },
+                                                    "name": "check",
+                                                    "type": "item",
+                                                    "childs": [],
+                                                    "mobile": {
+                                                      "dim": {
+                                                        "h": "fit",
+                                                        "w": "full"
+                                                      },
+                                                      "layout": {
+                                                        "dir": "col",
+                                                        "gap": 0,
+                                                        "wrap": "flex-nowrap",
+                                                        "align": "top-right"
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "id": "ne97f504n6u5mu48hk6muesl",
+                                                "adv": {
+                                                  "js": "<>\n  {local.id_hide?.find((o) => o === item.id) !== undefined && (\n    <div {...props}>{children}</div>\n  )}\n</>",
+                                                  "css": "",
+                                                  "html": "",
+                                                  "jsBuilt": "render(React.createElement(React.Fragment,null,local.id_hide?.find(d=>d===item.id)!==void 0&&React.createElement(\"div\",{...props},children)));\n"
+                                                },
+                                                "name": "uncheck",
+                                                "type": "item",
+                                                "childs": [
+                                                  {
+                                                    "id": "t7enb13z08vdqiaqq82bn27f",
+                                                    "adv": {
+                                                      "css": "",
+                                                      "html": "<svg width=\"25\" height=\"25\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path fill=\"#002b5b\"\n    d=\"M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z\" />\n</svg>"
+                                                    },
+                                                    "dim": {
+                                                      "h": "fit",
+                                                      "w": "fit"
+                                                    },
+                                                    "name": "uncheck",
+                                                    "type": "item",
+                                                    "childs": [],
+                                                    "mobile": {
+                                                      "dim": {
+                                                        "h": "fit",
+                                                        "w": "full"
+                                                      },
+                                                      "layout": {
+                                                        "dir": "col",
+                                                        "gap": 0,
+                                                        "wrap": "flex-nowrap",
+                                                        "align": "top-right"
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "mobile": {
+                                              "dim": {
+                                                "h": "fit",
+                                                "w": "full",
+                                                "hUnit": "px",
+                                                "wUnit": "px"
+                                              },
+                                              "layout": {
+                                                "dir": "col",
+                                                "gap": 0,
+                                                "wrap": "flex-nowrap",
+                                                "align": "top-right"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "id": "prl11o7hducwss4a5ss6cj0z",
+                                            "adv": {
+                                              "js": "<>{item.m_action_type.id === 1 && <div {...props}>{children}</div>}</>",
+                                              "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===1&&React.createElement(\"div\",{...props},children)));\n"
+                                            },
+                                            "name": "activity",
+                                            "type": "item",
+                                            "childs": [
+                                              {
+                                                "id": "z1bh563fbmw0o4mgk4586zus",
+                                                "adv": {
+                                                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 32 33\" fill=\"none\">\r\n  <rect width=\"31.1379\" height=\"33\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\" />\r\n  <mask id=\"mask0_2312_1748\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"3\" y=\"3\" width=\"26\" height=\"27\">\r\n    <rect x=\"3\" y=\"3\" width=\"25.1379\" height=\"27\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2312_1748)\">\r\n    <path\r\n      d=\"M17.141 27.75C15.2556 27.75 13.6496 27.0375 12.3229 25.6125C10.9961 24.1875 10.3328 22.4625 10.3328 20.4375V19.7906C8.83148 19.5281 7.58331 18.7734 6.58827 17.5266C5.59322 16.2797 5.0957 14.8125 5.0957 13.125V6.375H8.23794V5.25H10.3328V9.75H8.23794V8.625H7.19053V13.125C7.19053 14.3625 7.60077 15.4219 8.42124 16.3031C9.24172 17.1844 10.228 17.625 11.3802 17.625C12.5323 17.625 13.5187 17.1844 14.3391 16.3031C15.1596 15.4219 15.5698 14.3625 15.5698 13.125V8.625H14.5224V9.75H12.4276V5.25H14.5224V6.375H17.6647V13.125C17.6647 14.8125 17.1671 16.2797 16.1721 17.5266C15.1771 18.7734 13.9289 19.5281 12.4276 19.7906V20.4375C12.4276 21.8438 12.8858 23.0391 13.8023 24.0234C14.7188 25.0078 15.8317 25.5 17.141 25.5C18.4502 25.5 19.5631 25.0078 20.4796 24.0234C21.3961 23.0391 21.8543 21.8438 21.8543 20.4375V18.5531C21.2433 18.3281 20.7414 17.925 20.3487 17.3438C19.9559 16.7625 19.7595 16.1063 19.7595 15.375C19.7595 14.4375 20.065 13.6406 20.676 12.9844C21.287 12.3281 22.0289 12 22.9017 12C23.7746 12 24.5165 12.3281 25.1275 12.9844C25.7385 13.6406 26.044 14.4375 26.044 15.375C26.044 16.1063 25.8476 16.7625 25.4548 17.3438C25.062 17.925 24.5601 18.3281 23.9492 18.5531V20.4375C23.9492 22.4625 23.2858 24.1875 21.9591 25.6125C20.6323 27.0375 19.0263 27.75 17.141 27.75ZM22.9017 16.5C23.1985 16.5 23.4473 16.3922 23.648 16.1766C23.8488 15.9609 23.9492 15.6937 23.9492 15.375C23.9492 15.0563 23.8488 14.7891 23.648 14.5734C23.4473 14.3578 23.1985 14.25 22.9017 14.25C22.605 14.25 22.3562 14.3578 22.1555 14.5734C21.9547 14.7891 21.8543 15.0563 21.8543 15.375C21.8543 15.6937 21.9547 15.9609 22.1555 16.1766C22.3562 16.3922 22.605 16.5 22.9017 16.5Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                                                },
+                                                "dim": {
+                                                  "h": "fit",
+                                                  "w": "fit"
+                                                },
+                                                "name": "icon",
+                                                "type": "item",
+                                                "childs": [],
+                                                "mobile": {
+                                                  "padding": {
+                                                    "b": 3,
+                                                    "l": 0,
+                                                    "r": 0,
+                                                    "t": 3
+                                                  }
+                                                },
+                                                "component": {
+                                                  "props": {}
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "b5nq389lqwptgsizgnz6x5ho",
+                                            "adv": {
+                                              "js": "<>{item.m_action_type.id === 2 && <div {...props}>{children}</div>}</>",
+                                              "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===2&&React.createElement(\"div\",{...props},children)));\n"
+                                            },
+                                            "name": "academic",
+                                            "type": "item",
+                                            "childs": [
+                                              {
+                                                "id": "wupau0myvjgsov2e122uovk8",
+                                                "adv": {
+                                                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 47\" fill=\"none\">\r\n  <rect x=\"0.5\" width=\"47\" height=\"47\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\" />\r\n  <mask id=\"mask0_2499_4799\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"6\" y=\"5\" width=\"36\" height=\"37\">\r\n    <rect x=\"6\" y=\"5.5\" width=\"36\" height=\"36\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2499_4799)\">\r\n    <path\r\n      d=\"M24 37L13.5 31.3V22.3L7.5 19L24 10L40.5 19V31H37.5V20.65L34.5 22.3V31.3L24 37ZM24 24.55L34.275 19L24 13.45L13.725 19L24 24.55ZM24 33.5875L31.5 29.5375V23.875L24 28L16.5 23.875V29.5375L24 33.5875Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                                                },
+                                                "dim": {
+                                                  "h": "fit",
+                                                  "w": "fit"
+                                                },
+                                                "name": "icon",
+                                                "type": "item",
+                                                "childs": [],
+                                                "mobile": {
+                                                  "dim": {
+                                                    "h": "full",
+                                                    "w": "full"
+                                                  },
+                                                  "padding": {
+                                                    "b": 3,
+                                                    "l": 0,
+                                                    "r": 0,
+                                                    "t": 3
+                                                  }
+                                                },
+                                                "component": {
+                                                  "props": {}
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "qzwc4mco7cne1im6m5sjukf8",
+                                            "adv": {
+                                              "js": "<>{item.m_action_type.id === 3 && <div {...props}>{children}</div>}</>",
+                                              "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===3&&React.createElement(\"div\",{...props},children)));\n"
+                                            },
+                                            "name": "others",
+                                            "type": "item",
+                                            "childs": [
+                                              {
+                                                "id": "q9ftkzl630sj1ns5oq8ycvfo",
+                                                "adv": {
+                                                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"47\" viewBox=\"0 0 48 47\" fill=\"none\">\r\n<rect x=\"0.5\" width=\"47\" height=\"47\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\"/>\r\n<mask id=\"mask0_2499_4847\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"7\" y=\"7\" width=\"34\" height=\"33\">\r\n<rect x=\"7.625\" y=\"7.125\" width=\"32.75\" height=\"32.75\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4847)\">\r\n<path d=\"M11.7188 22.1354V11.2188H22.6354V22.1354H11.7188ZM11.7188 35.7812V24.8646H22.6354V35.7812H11.7188ZM25.3646 22.1354V11.2188H36.2812V22.1354H25.3646ZM25.3646 35.7812V24.8646H36.2812V35.7812H25.3646ZM14.4479 19.4062H19.9062V13.9479H14.4479V19.4062ZM28.0938 19.4062H33.5521V13.9479H28.0938V19.4062ZM28.0938 33.0521H33.5521V27.5938H28.0938V33.0521ZM14.4479 33.0521H19.9062V27.5938H14.4479V33.0521Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                                                },
+                                                "dim": {
+                                                  "h": "fit",
+                                                  "w": "fit"
+                                                },
+                                                "name": "icon",
+                                                "type": "item",
+                                                "childs": [],
+                                                "mobile": {
+                                                  "dim": {
+                                                    "h": "full",
+                                                    "w": "full"
+                                                  },
+                                                  "padding": {
+                                                    "b": 3,
+                                                    "l": 0,
+                                                    "r": 0,
+                                                    "t": 3
+                                                  }
+                                                },
+                                                "component": {
+                                                  "props": {}
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "bf0q2u122purpcv19s1e2159",
+                                            "adv": {
+                                              "js": "<div {...props}>{name}</div>",
+                                              "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+                                            },
+                                            "dim": {
+                                              "h": "fit",
+                                              "w": "full"
+                                            },
+                                            "html": "Laporan Jaga",
+                                            "name": "text",
+                                            "text": "",
+                                            "type": "text",
+                                            "childs": [],
+                                            "layout": {
+                                              "dir": "col",
+                                              "gap": 0,
+                                              "align": "center"
+                                            },
+                                            "mobile": {
+                                              "dim": {
+                                                "h": "fit",
+                                                "w": 100,
+                                                "wUnit": "px"
+                                              },
+                                              "font": {
+                                                "size": 14,
+                                                "align": "center",
+                                                "color": "#002B5B",
+                                                "family": "Poppins",
+                                                "height": 130,
+                                                "wordBreak": "break-normal",
+                                                "whitespace": "whitespace-normal"
+                                              },
+                                              "layout": {
+                                                "dir": "col",
+                                                "gap": 0,
+                                                "align": "center"
+                                              },
+                                              "padding": {
+                                                "b": 0,
+                                                "l": 5,
+                                                "r": 5,
+                                                "t": 0
+                                              }
+                                            },
+                                            "component": {
+                                              "props": {}
+                                            }
+                                          }
+                                        ],
+                                        "mobile": {
+                                          "bg": {
+                                            "pos": "center",
+                                            "color": "#FFFFFF"
+                                          },
+                                          "dim": {
+                                            "h": "fit",
+                                            "w": "fit"
+                                          },
+                                          "border": {
+                                            "style": "solid",
+                                            "rounded": {
+                                              "bl": 5,
+                                              "br": 5,
+                                              "tl": 5,
+                                              "tr": 5
+                                            }
+                                          },
+                                          "layout": {
+                                            "dir": "col",
+                                            "gap": 5,
+                                            "wrap": "flex-nowrap",
+                                            "align": "top-center"
+                                          },
+                                          "padding": {
+                                            "b": 10,
+                                            "l": 2,
+                                            "r": 2,
+                                            "t": 10
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": "fit",
+                                        "w": "fit",
+                                        "hUnit": "px",
+                                        "wUnit": "px"
+                                      },
+                                      "layout": {
+                                        "dir": "col",
+                                        "gap": 0,
+                                        "align": "top-center"
+                                      },
+                                      "padding": {
+                                        "b": 20,
+                                        "l": 0,
+                                        "r": 0,
+                                        "t": 0
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full"
+                                  },
+                                  "layout": {
+                                    "dir": "row",
+                                    "gap": 10,
+                                    "wrap": "flex-wrap",
+                                    "align": "top-center"
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "full",
+                                "w": "full"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "wrap": "flex-nowrap",
+                                "align": "top-left"
+                              }
+                            }
+                          }
+                        },
+                        "sample": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => Promise<any>",
+                          "value": "async () => {\n  let actions = await db.m_action.findMany({\n    select: { id: true, name: true, m_action_type: true },\n    orderBy: { m_action_type: { id: \"asc\" } },\n    where: {\n      id_client: Number(user.id_client),\n      m_action_semester: {\n        some: {\n          id_semester: user.id_smt,\n        },\n      },\n    },\n  });\n  // actions.map((item) => {\n  //   let hide = local.id_hide?.find((o) => o === item.id);\n  //   console.log(hide)\n  //   if (hide !== undefined) {\n  //     item[\"hide\"] = true;\n  //   } else {\n  //     item[\"hide\"] = false;\n  //   }\n  // });\n\n  return { actions };\n}",
+                          "valueBuilt": " async()=>({actions:await db.m_action.findMany({select:{id:!0,name:!0,m_action_type:!0},orderBy:{m_action_type:{id:\"asc\"}},where:{id_client:Number(user.id_client),m_action_semester:{some:{id_semester:user.id_smt}}}})});\n"
+                        },
+                        "loading": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "kuj0o068aylztpe2ei51nlgm",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "loading",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "h3jo8ruh2lway6i38rltxapk",
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "gbhz75mp7byon3kvdqn3dpjl",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 49,
+                                          "br": 49,
+                                          "tl": 49,
+                                          "tr": 49
+                                        }
+                                      },
+                                      "padding": {
+                                        "b": 29,
+                                        "l": 27,
+                                        "r": 27,
+                                        "t": 29
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "q7j8yz6kcv76nqfxzue47adc",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "z0z5aalqlot4yjxa52j45obx",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 8,
+                                    "wrap": "flex-nowrap",
+                                    "align": "center"
+                                  },
+                                  "padding": {
+                                    "b": 8,
+                                    "l": 13,
+                                    "r": 13,
+                                    "t": 8
+                                  }
+                                }
+                              },
+                              {
+                                "id": "vijufbssq16gz3ug50pf2kdl",
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "i7jcdtdowv83obixntxhe5jv",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 49,
+                                          "br": 49,
+                                          "tl": 49,
+                                          "tr": 49
+                                        }
+                                      },
+                                      "padding": {
+                                        "b": 29,
+                                        "l": 27,
+                                        "r": 27,
+                                        "t": 29
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "c3n28guqcyf6bnlo6syox3qo",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "zhy0f5e9ijnd304sy0gtp13n",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 8,
+                                    "wrap": "flex-nowrap",
+                                    "align": "center"
+                                  },
+                                  "padding": {
+                                    "b": 8,
+                                    "l": 13,
+                                    "r": 13,
+                                    "t": 8
+                                  }
+                                }
+                              },
+                              {
+                                "id": "hrlzysn46g19vozbn07tufqg",
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "s8o3143ltah0kftnq4wpe27l",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 49,
+                                          "br": 49,
+                                          "tl": 49,
+                                          "tr": 49
+                                        }
+                                      },
+                                      "padding": {
+                                        "b": 29,
+                                        "l": 27,
+                                        "r": 27,
+                                        "t": 29
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "sh4t768wx2iy01kwthqi6naj",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "q2j2rne8vbna378qmsgy440c",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "padding": {
+                                        "b": 6,
+                                        "l": 42,
+                                        "r": 42,
+                                        "t": 6
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 8,
+                                    "wrap": "flex-nowrap",
+                                    "align": "center"
+                                  },
+                                  "padding": {
+                                    "b": 8,
+                                    "l": 13,
+                                    "r": 13,
+                                    "t": 8
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "wrap": "flex-nowrap",
+                                "align": "top-center"
+                              }
+                            },
+                            "parentInstanceId": "vm81u5esw0gsqsjtnnnde9jd"
+                          },
+                          "valueBuilt": "\"hello\""
+                        },
+                        "preview": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"ready\"",
+                          "valueBuilt": "\"ready\";\n"
+                        },
+                        "id_cache": {
+                          "idx": 0,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"home-ppds\"",
+                          "valueBuilt": "\"home-ppds\";\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "hidden": false,
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "y4794edvdjlj06qt4w9u1zyc",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 0%;\n  z-index: 50;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "html": ""
+                },
+                "name": "Wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ckck0fvpl6l42h6pp94jwe1j",
+                    "adv": {
+                      "js": "",
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": 0,
+                      "wUnit": "px"
+                    },
+                    "name": "button",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "qfflgb38dgtdmb6i4q2yvtgd",
+                        "adv": {
+                          "js": "<button\n  {...props}\n  style={{\n    backgroundColor:\n      type_button === \"Success\"\n        ? \"green\"\n        : type_button === \"Edit\"\n        ? \"#FFFFFF\"\n        : type_button === \"Danger\"\n        ? \"#ffffff\"\n        : type_button === \"Checkout\"\n        ? \"#159895\"\n        : type_button === \"Disabled\"\n        ? \"gray\"\n        : \"#0062A3\",\n    border:\n      type_button === \"Edit\"\n        ? \"2px solid #002B5B\"\n        : type_button === \"Danger\"\n        ? \"2px solid #870707\"\n        : \"0px\",\n    borderRadius: type_button === \"Checkout\" ? \"20px\" : \"10px\",\n    width: type_button === \"Checkout\" ? \"100px\" : width_button,\n  }}\n  type={type_button === \"Submit\" ? \"submit\" : \"button\"}\n  onPointerUp={(e) => {\n    if (type_button !== \"Disabled\" && type_button !== \"Submit\") {\n      if (action === \"navigate\") {\n        navigate(navigate_link);\n      } else {\n        action_function(e);\n      }\n    }\n  }}\n>\n  {children}\n</button>",
+                          "css": "& {\n  display: flex;\n  min-height: 39px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(\"button\",{...props,style:{backgroundColor:type_button===\"Success\"?\"green\":type_button===\"Edit\"?\"#FFFFFF\":type_button===\"Danger\"?\"#ffffff\":type_button===\"Checkout\"?\"#159895\":type_button===\"Disabled\"?\"gray\":\"#0062A3\",border:type_button===\"Edit\"?\"2px solid #002B5B\":type_button===\"Danger\"?\"2px solid #870707\":\"0px\",borderRadius:type_button===\"Checkout\"?\"20px\":\"10px\",width:type_button===\"Checkout\"?\"100px\":width_button},type:type_button===\"Submit\"?\"submit\":\"button\",onPointerUp:t=>{type_button!==\"Disabled\"&&type_button!==\"Submit\"&&(action===\"navigate\"?navigate(navigate_link):action_function(t))}},children));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "inside",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "x5wa5sdqi26ilgvia4wawymy",
+                            "adv": {
+                              "js": "<div\n  {...props}\n  style={{\n    color:\n      type_button === \"Edit\"\n        ? \"#002B5B\"\n        : type_button === \"Danger\"\n        ? \"#870707\"\n        : \"white\",\n  }}\n>\n  {label_button}\n</div>",
+                              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:type_button===\"Edit\"?\"#002B5B\":type_button===\"Danger\"?\"#870707\":\"white\"}},label_button));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "html": "Login",
+                            "name": "text_button",
+                            "text": "",
+                            "type": "text",
+                            "childs": [],
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "bg": {
+                                "pos": "center",
+                                "size": "cover",
+                                "color": ""
+                              },
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "font": {
+                                "size": 16,
+                                "color": "",
+                                "family": "Poppins",
+                                "height": "auto"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "bg": {
+                            "pos": "center",
+                            "size": "cover",
+                            "color": ""
+                          },
+                          "dim": {
+                            "h": 39,
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "height": "auto"
+                          },
+                          "border": {
+                            "color": "",
+                            "style": "solid",
+                            "rounded": {
+                              "bl": 0,
+                              "br": 0,
+                              "tl": 0,
+                              "tr": 0
+                            }
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "center"
+                          },
+                          "linktag": {
+                            "link": ""
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "left"
+                    },
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 0,
+                          "br": 0,
+                          "tl": 0,
+                          "tr": 0
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      },
+                      "linktag": {
+                        "link": ""
+                      }
+                    },
+                    "component": {
+                      "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                      "name": "button",
+                      "group": {
+                        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                        "name": "All"
+                      },
+                      "props": {
+                        "action": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"function\"",
+                          "visible": "type_button !== 'Submit'",
+                          "valueBuilt": "\"function\";\n"
+                        },
+                        "type_button": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Action\", \n    value: \"Action\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"Action\"",
+                          "valueBuilt": "\"Action\";\n"
+                        },
+                        "label_button": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Simpan\"",
+                          "valueBuilt": "\"Simpan\";\n"
+                        },
+                        "width_button": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"250px\"",
+                          "valueBuilt": "\"250px\";\n"
+                        },
+                        "navigate_link": {
+                          "idx": 6,
+                          "meta": {
+                            "oldName": "navigate"
+                          },
+                          "type": "string",
+                          "value": "\"/login\"",
+                          "visible": "type_button !== 'Submit' && action === 'navigate'",
+                          "valueBuilt": "\"/login\";\n"
+                        },
+                        "action_function": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop_1"
+                          },
+                          "type": "() => void",
+                          "value": "async () => {\n  // if (\n  //   !confirm(\n  //     \"Anda yakin ingin menyimpan perubahan ini? Anda dapat mengubahnya kapanpun\"\n  //   )\n  // ) {\n  //   return;\n  // }\n\n  let delete_old = await db.m_user_action.deleteMany({\n    where: {\n      id_user: user.id,\n      id_client: 1,\n    },\n  });\n  local.id_hide.map(async (item) => {\n    let save = await db.m_user_action.create({\n      data: {\n        id_action_hidden: Number(item),\n        id_user: user.id,\n        id_client: 1,\n      },\n    });\n  });\n\n  const w = window as any as {\n    homeActions: any[];\n    hideActions: any[];\n  };\n  w.hideActions = null;\n  navigate(\"/ppds/home\");\n  local.render();\n}",
+                          "visible": "type_button !== 'Submit' && action === 'function'",
+                          "valueBuilt": " async()=>{let i=await db.m_user_action.deleteMany({where:{id_user:user.id,id_client:1}});local.id_hide.map(async a=>{let d=await db.m_user_action.create({data:{id_action_hidden:Number(a),id_user:user.id,id_client:1}})});let e=window;e.hideActions=null,navigate(\"/ppds/home\"),local.render()};\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  }
+                }
+              }
+            ],
+            "hidden": false,
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 45,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "ugvb4t0kj3cj014vkwi1n8g2",
+            "adv": {},
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1692086434694
+            }
+          }
+        ],
+        "mobile": {
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-06-26T02:46:54.291Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-11-06T04:42:02.303Z",
+  "id_folder": "f52c66fb-f24a-4e54-beac-e3b072525e35",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

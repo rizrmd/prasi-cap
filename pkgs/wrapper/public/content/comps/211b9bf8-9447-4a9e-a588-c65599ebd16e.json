@@ -1,0 +1,254 @@
+{
+  "id": "211b9bf8-9447-4a9e-a588-c65599ebd16e",
+  "name": "toggle",
+  "content_tree": {
+    "id": "aejj844by0cdpcumqig1pons",
+    "adv": {
+      "js": ""
+    },
+    "name": "toggle",
+    "type": "item",
+    "childs": [
+      {
+        "id": "cbsg71dkzbw8tifn0mxbveqz",
+        "adv": {
+          "js": "<div {...props}>\n  {children}\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "",
+        "name": "Label",
+        "text": "",
+        "type": "text",
+        "childs": [],
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "left"
+        },
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "tbot1s89bnigrym4z23vowxu",
+        "adv": {
+          "js": "<>{!value && <div {...props}>{children}</div>}</>;\n",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,!value&&React.createElement(\"div\",{...props},children)));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "Off",
+        "type": "item",
+        "childs": [
+          {
+            "id": "of3tuwcs6iao28oq4f5xv3r8",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "New Item",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#000000"
+              },
+              "dim": {
+                "h": 32,
+                "w": 30
+              },
+              "border": {
+                "color": "#6d6d6d",
+                "style": "solid",
+                "stroke": 2,
+                "rounded": {
+                  "bl": 150,
+                  "br": 150,
+                  "tl": 150,
+                  "tr": 150
+                }
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": 32,
+            "w": 70
+          },
+          "border": {
+            "color": "#6d6d6d",
+            "style": "solid",
+            "stroke": 2,
+            "rounded": {
+              "bl": 150,
+              "br": 150,
+              "tl": 150,
+              "tr": 150
+            }
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "dl6uhhl5sibejfbldd5cw9ie",
+        "adv": {
+          "js": "<>{value && <div {...props}>{children}</div>}</>;\n",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,value&&React.createElement(\"div\",{...props},children)));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "On",
+        "type": "item",
+        "childs": [
+          {
+            "id": "a5o4e0s4zfv5qbvkvltutn3e",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "New Item",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#000000"
+              },
+              "dim": {
+                "h": 32,
+                "w": 30
+              },
+              "border": {
+                "color": "#6d6d6d",
+                "style": "solid",
+                "stroke": 2,
+                "rounded": {
+                  "bl": 150,
+                  "br": 150,
+                  "tl": 150,
+                  "tr": 150
+                }
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#6e96df"
+          },
+          "dim": {
+            "h": 32,
+            "w": 70
+          },
+          "border": {
+            "color": "#6d6d6d",
+            "style": "solid",
+            "stroke": 2,
+            "rounded": {
+              "bl": 150,
+              "br": 150,
+              "tl": 150,
+              "tr": 150
+            }
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "top-right"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": 0,
+        "w": 381
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 1,
+        "l": 5,
+        "r": 5,
+        "t": 1
+      }
+    },
+    "padding": {
+      "b": 1,
+      "l": 7,
+      "r": 7,
+      "t": 1
+    },
+    "component": {
+      "id": "211b9bf8-9447-4a9e-a588-c65599ebd16e",
+      "name": "toggle",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "label": {
+          "idx": 1,
+          "meta": {
+            "oldName": "valuea"
+          },
+          "type": "string",
+          "value": "\"hello\""
+        },
+        "value": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "oldName": "label",
+            "options": "[\n  { \n    label: \"ON\", \n    value: true \n  },\n  { \n    label: \"OFF\", \n    value: false\n  },\n]"
+          },
+          "type": "string",
+          "value": "\"O\"",
+          "valueBuilt": "\"O\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-07-17T07:22:42.261Z",
+  "updated_at": "2023-08-09T08:04:00.485Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

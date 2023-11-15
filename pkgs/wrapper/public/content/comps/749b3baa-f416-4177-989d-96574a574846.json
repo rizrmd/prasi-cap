@@ -1,0 +1,103 @@
+{
+  "id": "749b3baa-f416-4177-989d-96574a574846",
+  "name": "filter",
+  "content_tree": {
+    "id": "o2dgsy23tp9uvwuukd5o37xa",
+    "adv": {
+      "js": "",
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "filter",
+    "type": "item",
+    "childs": [
+      {
+        "id": "l19bmwo1wtupx8mr5nfngr2z",
+        "adv": {
+          "css": "",
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\r\n<path d=\"M5.25192 12.5C5.03997 12.5 4.8623 12.4281 4.71892 12.2844C4.57554 12.1406 4.50385 11.9625 4.50385 11.75V7.25L0.165016 1.7C-0.0220022 1.45 -0.050055 1.1875 0.0808581 0.9125C0.211771 0.6375 0.439311 0.5 0.763476 0.5H11.2365C11.5607 0.5 11.7882 0.6375 11.9191 0.9125C12.0501 1.1875 12.022 1.45 11.835 1.7L7.49615 7.25V11.75C7.49615 11.9625 7.42446 12.1406 7.28108 12.2844C7.1377 12.4281 6.96003 12.5 6.74807 12.5H5.25192ZM6 6.725L9.70297 2H2.29703L6 6.725Z\" fill=\"#002B5B\"/>\r\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": []
+      },
+      {
+        "id": "ildmsoqq0cc0c7wnxw5ks0po",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "",
+        "name": "New Text",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "full",
+        "w": "fit"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 5,
+        "wrap": "flex-wrap",
+        "align": "left"
+      },
+      "padding": {
+        "b": 3,
+        "l": 5,
+        "r": 5,
+        "t": 3
+      }
+    },
+    "component": {
+      "id": "749b3baa-f416-4177-989d-96574a574846",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "text": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"filter\"",
+          "valueBuilt": "\"filter\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-15T18:04:13.652Z",
+  "updated_at": "2023-08-28T04:22:44.790Z",
+  "type": "item",
+  "id_component_group": "947acf75-2762-49ab-878c-2e82fabf2577",
+  "props": []
+}

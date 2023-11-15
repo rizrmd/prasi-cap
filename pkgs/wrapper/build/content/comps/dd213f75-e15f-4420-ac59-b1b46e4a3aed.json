@@ -1,0 +1,213 @@
+{
+  "id": "dd213f75-e15f-4420-ac59-b1b46e4a3aed",
+  "name": "data-quantity",
+  "content_tree": {
+    "id": "vct26vzy6lzr8qzk72ddzll6",
+    "adv": {
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "name": "data-quantity",
+    "type": "item",
+    "childs": [
+      {
+        "id": "rydb1l52msff977qp354z8wp",
+        "adv": {
+          "js": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "text",
+        "type": "item",
+        "childs": [
+          {
+            "id": "t2y2zd1qt4shv8y19sf8ynwi",
+            "adv": {
+              "js": "<div {...props}>{name}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "PPDS Senior",
+            "name": "name",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 16,
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 10,
+                "r": 10,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "crq34tx0pcz47ez4w24yi2zp",
+            "adv": {
+              "js": "<div {...props}>{quantity}</div>",
+              "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "10",
+            "name": "quantity",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#E6EFF6"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "font": {
+                "size": 14,
+                "color": "#000000",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 6,
+                  "br": 6,
+                  "tl": 6,
+                  "tr": 6
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "padding": {
+                "b": 1,
+                "l": 8,
+                "r": 8,
+                "t": 1
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 15,
+            "align": "left"
+          },
+          "padding": {
+            "b": 7,
+            "l": 14,
+            "r": 14,
+            "t": 7
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full",
+        "hUnit": "px",
+        "wUnit": "px"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      }
+    },
+    "component": {
+      "id": "dd213f75-e15f-4420-ac59-b1b46e4a3aed",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Laporan Jaga\"",
+          "valueBuilt": "\"Laporan Jaga\";\n"
+        },
+        "quantity": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"10\"",
+          "valueBuilt": "\"10\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-06T03:25:32.107Z",
+  "updated_at": "2023-09-06T03:26:35.645Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

@@ -1,0 +1,67 @@
+{
+  "id": "65cc4cb8-6120-4553-ae5a-6d42466a70a7",
+  "name": "coba",
+  "url": "/ppppp/coba",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "gvn2zn3xozjlikdc8pyhfmpg",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "New Section",
+        "type": "section",
+        "childs": [
+          {
+            "id": "w1g044zk7hgyf18mp1w1qsbo",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "New Item",
+            "type": "item",
+            "childs": [
+              {
+                "id": "qh1sfrtgyhb5ec17392mragj",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "msaifoasf asoifn aoinf oiasnfion a",
+                "name": "New Text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-18T02:18:30.994Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-10-07T07:30:58.615Z",
+  "id_folder": "0275f87f-bd6f-460c-be70-dcecfa36336a",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

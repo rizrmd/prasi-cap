@@ -1,0 +1,405 @@
+{
+  "id": "41085aaf-f710-41d7-8934-beaa778cc05e",
+  "name": "participants-assesment",
+  "url": "/institution/data/participants-assesment",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "bkitnorf34r4bwhq4tfs6xx1",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  top: 0%;\n  z-index: 50;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "cwv70rc32tfcowajlulyznb1",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/institution/data-management\"",
+                  "valueBuilt": "\"/institution/data-management\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Participant's Assesment\"",
+                  "valueBuilt": "\"Participant's Assesment\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          },
+          {
+            "id": "f0tyyw0fkxr16f1tc93q84jn",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "filter",
+            "type": "item",
+            "childs": [
+              {
+                "id": "g5qh2hauvloictag6vsrnf8v",
+                "adv": {
+                  "js": "<PassProp text={\"filter\"}><div {...props}>{children}</div></PassProp>",
+                  "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(PassProp,{text:\"filter\"},React.createElement(\"div\",{...props},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "fit"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 5,
+                    "wrap": "flex-nowrap",
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 15,
+                    "r": 15,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                  "name": "",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": "auto",
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "gvd0jua9rvdaubmcyjcuddig",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: auto;\n  padding-top: 20%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "pxo2icruryq5lcybn7vof20r",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          name: \"dr Sabrinna Faradisa\",\r\n          gpa: \"3.95\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          name: \"dr Raya Hartawan Negara\",\r\n          gpa: \"3.92\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          name: \"dr Harsa Sandiaga\",\r\n          gpa: \"3.88\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          name: \"dr Fera Handoko\",\r\n          gpa: \"3.85\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          name: \"dr Sabrinna Faradisa\",\r\n          gpa: \"3.95\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          name: \"dr Raya Hartawan Negara\",\r\n          gpa: \"3.92\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          name: \"dr Harsa Sandiaga\",\r\n          gpa: \"3.88\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          name: \"dr Fera Handoko\",\r\n          gpa: \"3.85\",\r\n          semester: \"2023/2024 - Gasal\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",name:\"dr Sabrinna Faradisa\",gpa:\"3.95\",semester:\"2023/2024 - Gasal\"},{id:\"02\",name:\"dr Raya Hartawan Negara\",gpa:\"3.92\",semester:\"2023/2024 - Gasal\"},{id:\"03\",name:\"dr Harsa Sandiaga\",gpa:\"3.88\",semester:\"2023/2024 - Gasal\"},{id:\"04\",name:\"dr Fera Handoko\",gpa:\"3.85\",semester:\"2023/2024 - Gasal\"},{id:\"05\",name:\"dr Sabrinna Faradisa\",gpa:\"3.95\",semester:\"2023/2024 - Gasal\"},{id:\"02\",name:\"dr Raya Hartawan Negara\",gpa:\"3.92\",semester:\"2023/2024 - Gasal\"},{id:\"03\",name:\"dr Harsa Sandiaga\",gpa:\"3.88\",semester:\"2023/2024 - Gasal\"},{id:\"03\",name:\"dr Fera Handoko\",gpa:\"3.85\",semester:\"2023/2024 - Gasal\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-participants-assesment",
+            "type": "item",
+            "childs": [
+              {
+                "id": "bf7sq6dhdi7oehmydxo2h31l",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                  "css": "& {\n  display: flex;\n  padding-bottom: 150px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-participants-assesment",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "z19sttnldtlrzjntnptdbfio",
+                    "adv": {
+                      "css": ""
+                    },
+                    "name": "participants-assesment",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "43e8b460-0480-439d-96a2-0fa022e1eb32",
+                      "props": {
+                        "gpa": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "item.gpa",
+                          "valueBuilt": " item.gpa;\n"
+                        },
+                        "name": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "dr Sabrinna Anugerah"
+                          },
+                          "type": "string",
+                          "value": "item.name",
+                          "valueBuilt": " item.name;\n"
+                        },
+                        "semester": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "item.semester",
+                          "valueBuilt": " item.semester;\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 20,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-wrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-wrap",
+            "align": "top-center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "jx6x97c9ys1sonn36f3y4kmu",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 0%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "pb9p67poiquabxklv6u6azj5",
+            "adv": {},
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t266tfn7v2c21xo7snw97gk6",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Create\"",
+                      "valueBuilt": "\"Create\";\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "j6qym6kwa0rdzc3dzeknjh69",
+            "adv": {},
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1692087006906
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T07:25:19.238Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-28T16:12:02.543Z",
+  "id_folder": "cf7b47ff-6a6d-42f0-a920-4d3b2db0a798",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

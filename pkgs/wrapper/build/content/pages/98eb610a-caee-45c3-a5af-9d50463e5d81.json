@@ -1,0 +1,453 @@
+{
+  "id": "98eb610a-caee-45c3-a5af-9d50463e5d81",
+  "name": "coba [Cloned]",
+  "url": "/coba-cloned",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ut81bstjjwx01dl79p7upfiq",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "New Section",
+        "type": "section",
+        "childs": [
+          {
+            "id": "yr9gc74jq630bdj87l4l4q1w",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "operasi-ppds",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 10,
+                "l": 15,
+                "r": 15,
+                "t": 10
+              }
+            },
+            "component": {
+              "id": "900f734a-c402-4b68-b8c5-7837a631a285",
+              "name": "",
+              "props": {
+                "code": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Ujian Nihhh\"",
+                  "valueBuilt": "\"Ujian Nihhh\";\n"
+                },
+                "date": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"17 Agustus\"",
+                  "valueBuilt": "\"17 Agustus\";\n"
+                },
+                "role": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Observer\"",
+                  "valueBuilt": "\"Observer\";\n"
+                },
+                "doctor": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"dr Modin\"",
+                  "valueBuilt": "\"dr Modin\";\n"
+                },
+                "status": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Verified\"",
+                  "valueBuilt": "\"Verified\";\n"
+                },
+                "exam_name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Ujian Nihhh\"",
+                  "valueBuilt": "\"Ujian Nihhh\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "kt0072crv5ret4kmdub3obk1",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "exam-ppds",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 10,
+                "l": 15,
+                "r": 15,
+                "t": 10
+              }
+            },
+            "component": {
+              "id": "8f2146a7-47c4-4801-b7a1-fe5f3af2bec8",
+              "name": "",
+              "props": {
+                "date": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"17 Agustus 2023\"",
+                  "valueBuilt": "\"17 Agustus 2023\";\n"
+                },
+                "hasil": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Tidak Lulus\"",
+                  "valueBuilt": "\"Tidak Lulus\";\n"
+                },
+                "location": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"R.21.11.01\"",
+                  "valueBuilt": "\"R.21.11.01\";\n"
+                },
+                "exam_name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Ujian nihh\"",
+                  "valueBuilt": "\"Ujian nihh\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "xjp59ijya7j9icg3s5ay34os",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "milestone",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#EEEFC0"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 5,
+                "l": 15,
+                "r": 15,
+                "t": 5
+              }
+            },
+            "component": {
+              "id": "ae4b8522-aff9-4e1a-add7-27bbccf6ee90",
+              "name": "",
+              "props": {
+                "date": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"27 September 2023\"",
+                  "valueBuilt": "\"27 September 2023\";\n"
+                },
+                "name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Reanimasi\"",
+                  "valueBuilt": "\"Reanimasi\";\n"
+                },
+                "doctor": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"dr Selvy Ananda\"",
+                  "valueBuilt": "\"dr Selvy Ananda\";\n"
+                },
+                "status": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Verified\"",
+                  "valueBuilt": "\"Verified\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "lfjok1zm448czgerfp9xdnai",
+            "adv": {
+              "js": "<PassProp ><div {...props}>{children}</div></PassProp>",
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(PassProp,null,React.createElement(\"div\",{...props},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "milestone-verified",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 3,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 8,
+                "l": 15,
+                "r": 15,
+                "t": 5
+              }
+            },
+            "component": {
+              "id": "4156f254-084b-4cf6-bacb-e39dc4f4149f",
+              "name": "",
+              "props": {
+                "name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Reanimasi\"",
+                  "valueBuilt": "\"Reanimasi\";\n"
+                },
+                "status": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Verified\"",
+                  "valueBuilt": "\"Verified\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "vct26vzy6lzr8qzk72ddzll6",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "name": "data-quantity",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              }
+            },
+            "component": {
+              "id": "dd213f75-e15f-4420-ac59-b1b46e4a3aed",
+              "name": "",
+              "props": {
+                "name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Laporan Jaga\"",
+                  "valueBuilt": "\"Laporan Jaga\";\n"
+                },
+                "quantity": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"10\"",
+                  "valueBuilt": "\"10\";\n"
+                }
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 15,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-29T07:31:44.839Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-06T03:26:11.924Z",
+  "id_folder": "5a7f80cf-2a33-4798-ac38-852c002e9adf",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

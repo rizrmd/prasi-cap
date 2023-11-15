@@ -1,0 +1,2283 @@
+{
+  "id": "af250c34-ebc6-422a-bb95-dc19f91e5d50",
+  "name": "assignments",
+  "url": "/ppds/schedule/assignments",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "cyp0x8pguzteimgv1oifnmxj",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow-y: auto;\r\n  overflow-x: hidden;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-data",
+        "type": "section",
+        "childs": [
+          {
+            "id": "z30izlcl4etvdovkcm0oxufr",
+            "adv": {},
+            "name": "menu-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "o0rcuislfd0jjsfidefr5p3f",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/detail-schedule\"",
+                      "valueBuilt": "\"/detail-schedule\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Assignment\"",
+                      "valueBuilt": "\"Assignment\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 28,
+                "r": 28,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "g0sepcn8shd79xnetwf524w1",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n  position: relative;\r\n  overflow: auto;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "name": "Wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "a3hfsdynzrro479w0zi8lb9w",
+                "adv": {
+                  "js": ""
+                },
+                "name": "Assignment Item",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "80f823d6-2b1b-4fbb-99df-2626c8abeffd",
+                  "props": {
+                    "title": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Assignment 1\"",
+                      "valueBuilt": "\"Assignment 1\";\n"
+                    },
+                    "status": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"hjvjhvhvhj\"",
+                      "valueBuilt": "\"hjvjhvhvhj\";\n"
+                    },
+                    "status_color": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "status-color",
+                        "options": "[\n  {\n    label: \"GREEN\",\n    value: \"#159895\"\n  },\n  {\n    label: \"BLUE\",\n    value: \"#0062A3\"\n  },\n]"
+                      },
+                      "type": "option",
+                      "value": "\"#159895\"",
+                      "valueBuilt": "\"#159895\";\n"
+                    }
+                  },
+                  "updated_at": 1692075526015
+                }
+              },
+              {
+                "id": "tpc7gyb5044awxffa21qy0x8",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "m7aymimezhi6lk0xvpffz32s",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "jn3i9j7kal7s1odken9t83i3",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "qrjdh69l2lt2pq1sk1ryzpwr",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "utztyllv3j2df2nh88tla6xj",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "w71swk7w20fitpxxrx7qygr1",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "xhbpp1h5jcav6hepi8nim03a",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "xqdfkpfzg0b4exyenuer7cbq",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "k4vsu7indkrk19h05xfqo0d7",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "a93t5g77enkf1nnhtz4nffa7",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "wjw76abupketvt68uj0dixuh",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "lja02qolpoekk91iuulekxzn",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "vxn5vsghkrxyyart8kwflnr9",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "tmpa3ai0hk9ykzqeplvxy3we",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "da9qja1lhcls58qay1ajfnln",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "v1p06cdpe1sls69hc035di8o",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "la2xdvtu4i1bdfk8fox3a4b4",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "szfppa9ae9vg58jmh118alux",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "b89tjfb9v6rik17wxyn2f16k",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "p5aqrvk2qgj9s0k81wz0tnwa",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "lfvezjnlllx8xtddywxklt1v",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "hzb7ysa9kuoumccgvbd00om1",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "imu4sj3f337hsr81a5ajpo98",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "l8498uzbgymvsbeihs60de8g",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "pniwhlo2x8ez59afx0d8uv6c",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "v3mvgmewt18mteco4rf0rhsg",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "eqmkm7b20dw4txd1tken2pj3",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "tng2f8hflkcjln77grkgrt17",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "aoibm9nn9l2inr8d3lst29a2",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "v5wo75q60in1hjov7zhka623",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "ysimhe42s6zqskt47yv4eulq",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "pian31hbfqz44hgxun4upqaq",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "eamgm055f8o76ghr23qpl75h",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "d0mp4zji30rsd77wt0ju1g2i",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "we2adnpbg4ie2v83okdhmp9g",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "uz67fzb5dw976pi59p0d8w44",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "c0s4g1xz6hpc3uuti2aafrcz",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "llmt33e96y4pci7gfdixg1aw",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "loh64gq0j0m3ca6aa0znhxlc",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "fe80v0dsyrldm0prqlzlav0r",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "f1yr84jmv7ic0szndxjiez8t",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "p31b45yzmv3gmnde5pncbg3s",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "mi9hghajgwq35itpwulmgzux",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "y16n0e0jyd0dxb1qvsuahhsq",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "i2r3his5ty78sbklrbe96hc3",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "awq2q1rie4d560imtzw22wn9",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ch1oetcr1jko6us9bfznk3v1",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "o2ctnaz4eq39snfkl5ja2mp1",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "bpbf0v622rohdztp7echr0wj",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "khoy0e9csc8ubrx8uq1p9xny",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "j8hhpuuvsogb0bkkxr7ks1te",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "irh6750bo76rx9ewcokyuq4c",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "sqq1ohxjy14rooe9brek67u3",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "y1wppt28tqh8m2rwjm92xt29",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "nkkcxie8djmwhqbi05865hfv",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "yzztkirqoe00xcnn8dh3fov8",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "hs1p46oztybbxa4ty6a07s2g",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "zmakpwrncezq2acnuobxdrzc",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "zlb0bxlv5x8q8gveshkepflh",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "cttxrpos2yav35wsk7qh26it",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Submitted Late",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#ED5D3C",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "f1i3l01ulabx44kmpko8aab2",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ff9aywx844kxb1mhp0is50pg",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "uwtlehtkyjvyk1d3foeb5f1y",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "secpfmrhbu57w4on9xqrebrd",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Assignment Project 1",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "n8ot453iwlnjck3wi48gbvpb",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 550;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Turned in",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#0062A3",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 15,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 20,
+                "r": 20,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 17,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "ja4ekpp3p6kdz2xa7yjxxkn6",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "q5enesyq5xdxssk03d8oar8m",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1692086434694
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 61,
+            "align": "center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 25,
+            "r": 25,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-26T03:09:41.648Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-13T02:32:09.911Z",
+  "id_folder": "22a53fc0-00ac-47f9-8357-6ce7b3cccad4",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

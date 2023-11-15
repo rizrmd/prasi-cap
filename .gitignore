@@ -175,3 +175,5 @@ dist
 .DS_Store
 pkgs/capacitor/android
 pkgs/capacitor/android/*
+pkgs/capacitor/www
+pkgs/capacitor/www/*

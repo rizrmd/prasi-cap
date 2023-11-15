@@ -1,0 +1,888 @@
+{
+  "id": "0525af02-94df-4d61-b306-feac9e58f482",
+  "name": "learning-material-details ",
+  "url": "/ppds-senior/schedule/lm/details",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "j5waukfofps3s22jopyab56a",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+          "html": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "b3iovf2ci1bq8hdv00y61gxf",
+            "adv": {},
+            "name": "title_wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "anhxzzu2meglhjvrf8oth2kl",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/learning-materials\"",
+                      "valueBuilt": "\"/learning-materials\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Detail Learning Material\"",
+                      "valueBuilt": "\"Detail Learning Material\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 21,
+                "r": 21,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "a03hxtebx09w799whnc7jgc4",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "detail",
+            "type": "item",
+            "childs": [
+              {
+                "id": "d8ca21mppszjvn90faywhhbj",
+                "adv": {},
+                "name": "Wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "rth0aceejoblo3xg6h3rxg1i",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "19 January 2023",
+                    "name": "New Text",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "i8b8piih1nfsv79fwcabido5",
+                    "adv": {
+                      "js": "<div {...props}>{children}</div>",
+                      "css": "",
+                      "html": "<svg width=\"25\" height=\"25\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\r\n    <path fill=\"#002B5B\"\r\n        d=\"M5 23.7q-.825 0-1.413-.587T3 21.7v-14q0-.825.588-1.413T5 5.7h8.925l-2 2H5v14h14v-6.95l2-2v8.95q0 .825-.588 1.413T19 23.7H5Zm7-9Zm4.175-8.425l1.425 1.4l-6.6 6.6V15.7h1.4l6.625-6.625l1.425 1.4l-6.625 6.625q-.275.275-.638.438t-.762.162H10q-.425 0-.713-.288T9 16.7v-2.425q0-.4.15-.763t.425-.637l6.6-6.6Zm4.275 4.2l-4.275-4.2l2.5-2.5q.6-.6 1.438-.6t1.412.6l1.4 1.425q.575.575.575 1.4T22.925 8l-2.475 2.475Z\" />\r\n</svg>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "New Item",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 0,
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "ybatlvwo6rcr3vjsilg6j2fp",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Orthopedic trauma refers to a severe injury of the skeletal or muscular system caused by an external force, such as a fall, car accident, or sports injury",
+                "name": "New Text",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "gs28nzwzyo4rwr11fv2h9hw1",
+                "adv": {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"2\" viewBox=\"0 0 300 2\" fill=\"none\">\r\n<path d=\"M0 1H300\" stroke=\"#0062A3\"/>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "rob4sl5jpr3bjvysa3eunxhq",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  font-weight: 500;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Material Reference",
+                "name": "New Text",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 17,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "j0sd3xtzldjorv7rphszs5ox",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "attachment-list",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "t0mb433m40ovkvsvgnb7oww4",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "attachment-item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "gbckwqocrw0hkxad3jxvj1r9",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"51\" height=\"52\" viewBox=\"0 0 51 52\" fill=\"none\">\r\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.64286 1H43.3571C45.2515 1 47.0684 1.75255 48.4079 3.09209C49.7474 4.43164 50.5 6.24845 50.5 8.14286V43.8571C50.5 45.7515 49.7474 47.5684 48.4079 48.9079C47.0684 50.2474 45.2515 51 43.3571 51H7.64286C5.74845 51 3.93164 50.2474 2.59209 48.9079C1.25255 47.5684 0.5 45.7515 0.5 43.8571V8.14286C0.5 6.24845 1.25255 4.43164 2.59209 3.09209C3.93164 1.75255 5.74845 1 7.64286 1Z\" stroke=\"#159895\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\r\n<path d=\"M50.5 36.7142L39.7857 25.9999L29.0714 36.6606M43.3571 50.9999L11.2143 18.8571L0.5 29.5713\" stroke=\"#159895\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\r\n<path d=\"M37.9997 17.0713C39.9721 17.0713 41.5711 15.4723 41.5711 13.4999C41.5711 11.5274 39.9721 9.92847 37.9997 9.92847C36.0272 9.92847 34.4282 11.5274 34.4282 13.4999C34.4282 15.4723 36.0272 17.0713 37.9997 17.0713Z\" fill=\"#159895\"/>\r\n</svg>\r\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "preview",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "mb65r0lcvltvyq40tyh2dn9n",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "file-name",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "aqdd7rv1in55gncbeqejhmvu",
+                            "adv": {
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"20\" viewBox=\"0 0 16 20\" fill=\"none\">\r\n<path d=\"M10 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H14C14.5304 20 15.0391 19.7893 15.4142 19.4142C15.7893 19.0391 16 18.5304 16 18V6L10 0ZM11.2 18H9.8L8 11.2L6.2 18H4.8L2.6 9H4.1L5.5 15.8L7.3 9H8.6L10.4 15.8L11.8 9H13.3L11.2 18ZM9 7V1.5L14.5 7H9Z\" fill=\"#0062A3\"/>\r\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "logo",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "rj82v2zb6sba372ku3agfywy",
+                            "adv": {
+                              "css": "",
+                              "html": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "PPPPPPPPPPPPPP",
+                            "name": "name",
+                            "text": "",
+                            "type": "text",
+                            "childs": [],
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "color": "#002B5B",
+                                "family": "Poppins",
+                                "height": "auto"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "top-left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "yr8aw925wxab1jj9mvvvslmf",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "attachment-item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "fmwtbc50np4j0srjzuxpt507",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"51\" height=\"52\" viewBox=\"0 0 51 52\" fill=\"none\">\r\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.64286 1H43.3571C45.2515 1 47.0684 1.75255 48.4079 3.09209C49.7474 4.43164 50.5 6.24845 50.5 8.14286V43.8571C50.5 45.7515 49.7474 47.5684 48.4079 48.9079C47.0684 50.2474 45.2515 51 43.3571 51H7.64286C5.74845 51 3.93164 50.2474 2.59209 48.9079C1.25255 47.5684 0.5 45.7515 0.5 43.8571V8.14286C0.5 6.24845 1.25255 4.43164 2.59209 3.09209C3.93164 1.75255 5.74845 1 7.64286 1Z\" stroke=\"#159895\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\r\n<path d=\"M50.5 36.7142L39.7857 25.9999L29.0714 36.6606M43.3571 50.9999L11.2143 18.8571L0.5 29.5713\" stroke=\"#159895\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\r\n<path d=\"M37.9997 17.0713C39.9721 17.0713 41.5711 15.4723 41.5711 13.4999C41.5711 11.5274 39.9721 9.92847 37.9997 9.92847C36.0272 9.92847 34.4282 11.5274 34.4282 13.4999C34.4282 15.4723 36.0272 17.0713 37.9997 17.0713Z\" fill=\"#159895\"/>\r\n</svg>\r\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "preview",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "puafvnjs1jixmg7wdx470g2s",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "file-name",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "z13gigyc13sap1vux0u954yk",
+                            "adv": {
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"20\" viewBox=\"0 0 16 20\" fill=\"none\">\r\n<path d=\"M10 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H14C14.5304 20 15.0391 19.7893 15.4142 19.4142C15.7893 19.0391 16 18.5304 16 18V6L10 0ZM11.2 18H9.8L8 11.2L6.2 18H4.8L2.6 9H4.1L5.5 15.8L7.3 9H8.6L10.4 15.8L11.8 9H13.3L11.2 18ZM9 7V1.5L14.5 7H9Z\" fill=\"#0062A3\"/>\r\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "logo",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "iqekuvs784p4gbwjz2vqs7xl",
+                            "adv": {
+                              "css": "",
+                              "html": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "PPPPPPPPPPPPPpp",
+                            "name": "name",
+                            "text": "",
+                            "type": "text",
+                            "childs": [],
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "color": "#002B5B",
+                                "family": "Poppins",
+                                "height": "auto"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "top-left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 7,
+                    "l": 3,
+                    "r": 3,
+                    "t": 7
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 7,
+                "align": "left"
+              },
+              "padding": {
+                "b": 12,
+                "l": 54,
+                "r": 54,
+                "t": 12
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "im35nlyo68m6h4r3vedu3ryq",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom:60px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "discussion",
+            "type": "item",
+            "childs": [
+              {
+                "id": "cdw7accn6i3biufmsjfyxdnw",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "header",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "w8wdyu1xgcfea98d0smnqom2",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"25\" height=\"25\" viewBox=\"0 0 25 25\" fill=\"none\">\r\n<path d=\"M9.82141 2.67847C8.45094 2.67821 7.10318 3.02846 5.90624 3.69592C4.70929 4.36338 3.70294 5.32588 2.98285 6.49192C2.26275 7.65796 1.85284 8.98879 1.79208 10.3579C1.73132 11.727 2.02173 13.0889 2.6357 14.3142L1.82498 17.3401C1.77453 17.5292 1.77468 17.7282 1.82544 17.9172C1.87619 18.1062 1.97576 18.2786 2.11415 18.417C2.25254 18.5554 2.42488 18.6549 2.6139 18.7057C2.80292 18.7564 3.00196 18.7566 3.19105 18.7061L6.21516 17.8972C7.29899 18.4408 8.49177 18.732 9.70414 18.7491C10.9165 18.7662 12.117 18.5087 13.2157 17.996C14.3145 17.4832 15.2829 16.7285 16.0485 15.7883C16.8142 14.8481 17.3571 13.7468 17.6367 12.567C17.9162 11.3872 17.9252 10.1594 17.6629 8.97565C17.4006 7.79188 16.8738 6.68282 16.1219 5.73156C15.3701 4.7803 14.4128 4.0115 13.3217 3.48276C12.2305 2.95403 11.0339 2.67906 9.82141 2.67847ZM9.82141 15.6249C9.58461 15.6249 9.35751 15.5308 9.19007 15.3634C9.02262 15.1959 8.92855 14.9688 8.92855 14.732C8.92855 14.4952 9.02262 14.2681 9.19007 14.1007C9.35751 13.9333 9.58461 13.8392 9.82141 13.8392C10.0582 13.8392 10.2853 13.9333 10.4528 14.1007C10.6202 14.2681 10.7143 14.4952 10.7143 14.732C10.7143 14.9688 10.6202 15.1959 10.4528 15.3634C10.2853 15.5308 10.0582 15.6249 9.82141 15.6249ZM8.48213 8.26418V8.26507C8.4813 8.44267 8.40995 8.61267 8.28378 8.73767C8.15761 8.86266 7.98696 8.93242 7.80936 8.93159C7.63176 8.93076 7.46176 8.85942 7.33676 8.73325C7.21177 8.60708 7.14201 8.43642 7.14284 8.25882V8.24186C7.14343 8.20399 7.14551 8.16617 7.14909 8.12847C7.18006 7.74536 7.2927 7.37333 7.47945 7.0374C7.8473 6.38561 8.56963 5.80347 9.82141 5.80347C11.0741 5.80347 11.7964 6.38561 12.1625 7.0374C12.3639 7.39853 12.4794 7.8012 12.5 8.21418L12.5009 8.25882V8.25972C12.5009 9.26329 11.883 9.93829 11.4357 10.4276L11.3241 10.5499C10.8366 11.091 10.4919 11.541 10.4919 12.2776C10.4919 12.4552 10.4214 12.6255 10.2958 12.7511C10.1702 12.8767 9.99991 12.9472 9.8223 12.9472C9.6447 12.9472 9.47438 12.8767 9.3488 12.7511C9.22321 12.6255 9.15266 12.4552 9.15266 12.2776C9.15266 11.0053 9.81248 10.2276 10.3294 9.65347L10.3455 9.63561C10.8893 9.03115 11.1598 8.73115 11.1616 8.26507V8.2624C11.1485 8.06363 11.0921 7.87014 10.9964 7.69543C10.8598 7.45347 10.5777 7.14275 9.82141 7.14275C9.06516 7.14275 8.78302 7.45347 8.64731 7.69454C8.55081 7.86987 8.4944 8.06442 8.48213 8.26418ZM15.1786 22.3213C14.0424 22.3227 12.919 22.0825 11.8827 21.6167C10.8465 21.1509 9.92104 20.4701 9.16784 19.6195C9.79591 19.6653 10.4271 19.6449 11.0509 19.5588C12.2281 20.483 13.6819 20.9843 15.1786 20.982C16.2986 20.9837 17.401 20.7031 18.3839 20.166C18.5353 20.0832 18.7128 20.0621 18.8794 20.107L21.7812 20.8838L21.0027 17.9803C20.9582 17.8142 20.9793 17.6374 21.0616 17.4865C21.5969 16.5046 21.8766 15.4039 21.875 14.2856C21.8755 13.0967 21.5594 11.9291 20.9592 10.9029C20.359 9.87662 19.4963 9.02872 18.4598 8.44632C18.2999 7.83668 18.0754 7.24584 17.7902 6.68382C18.8738 7.05641 19.8652 7.65634 20.6981 8.44341C21.5309 9.23048 22.1858 10.1865 22.619 11.2474C23.0521 12.3082 23.2535 13.4494 23.2096 14.5945C23.1656 15.7395 22.8774 16.8619 22.3643 17.8865L23.175 20.9115C23.2255 21.1007 23.2254 21.2998 23.1746 21.489C23.1238 21.6781 23.0241 21.8505 22.8856 21.9889C22.7471 22.1273 22.5746 22.2269 22.3855 22.2776C22.1963 22.3282 21.9972 22.3282 21.808 22.2776L18.7848 21.4686C17.666 22.031 16.4308 22.3231 15.1786 22.3213ZM11.1607 8.26418V8.26597V8.2615\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "x936ewdqw8ry5bb82fu3ywho",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Discussion Group",
+                    "name": "title",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "layout": {
+                    "dir": "row",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "cgl1wfm8l92bnhsfk8ptzl5e",
+                "adv": {
+                  "css": "& {\r\n  display: flex;\r\n    \r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-comments",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "xm8nhgoswbyqo4kpsxnm8pnu",
+                    "adv": {
+                      "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "comment-item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "bn0s2ehrtz9ya2ueskirrll3",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 500;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "dr meikarta, Sp. OT.",
+                        "name": "name",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "lasvw6wkjw0a0xsl6wpcgf5c",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "<span data-metadata=\"<!--(figmeta)eyJmaWxlS2V5IjoialFsYndZM0E1akcwbElxY1ljaHJ0NiIsInBhc3RlSUQiOjExMDYzNzkxNzMsImRhdGFUeXBlIjoic2NlbmUifQo=(/figmeta)-->\"></span><span style=\"white-space-collapse: preserve;\">This is comments coments </span><span style=\"white-space-collapse: preserve;\">coments </span><span style=\"white-space-collapse: preserve;\">coments </span><span style=\"white-space-collapse: preserve;\">coments </span><span style=\"white-space-collapse: preserve;\">coments </span><span style=\"white-space-collapse: preserve;\">coments  </span><span style=\"white-space-collapse: preserve;\">coments </span><span style=\"white-space-collapse: preserve;\">coments</span>",
+                        "name": "comments",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "btp7yhmnnqrwewgimgkkdxjc",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "2 minutes ago",
+                        "name": "timestamps",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#ffffff"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 15,
+                          "br": 15,
+                          "tl": 15,
+                          "tr": 15
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 5,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 7,
+                        "l": 27,
+                        "r": 27,
+                        "t": 7
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "layout": {
+                    "dir": "col",
+                    "gap": 11,
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "ufa9orw2uuphb76h4pbusenw",
+                "adv": {
+                  "css": "& {\r\n  display: flex;\r\n  font-weight: 450;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "View All Discussion",
+                "name": "New Text",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "color": "#159895",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#FBFBFB"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 11,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 44,
+                "r": 44,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "cxd92nmnmmecjh1qufa34jem",
+        "adv": {
+          "js": "",
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "tg4ybw9sfdemczc7g8jgqqgc",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1691996458029
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 61,
+            "align": "center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 21,
+            "r": 21,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-26T03:12:14.867Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-13T02:31:23.988Z",
+  "id_folder": "0f2d4398-7436-4620-be8c-7fd72b6c673c",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

@@ -1,0 +1,99 @@
+{
+  "id": "82cf44ec-05ac-4506-94c6-d9b6bdb9f3f7",
+  "name": "tab",
+  "content_tree": {
+    "id": "qgbq3mpueo6e5dqkvxjv35ei",
+    "adv": {
+      "js": "<>\n  {[{label: 'a'}, {label: 'b'}].map((item, idx) => {\n    console.log(item, idx, '_coba')\n    return(\n    <PassProp item={item} key={idx}>\n      {children}\n    </PassProp>\n  )})}\n</>;\n",
+      "jsBuilt": "render(React.createElement(React.Fragment,null,[{label:\"a\"},{label:\"b\"}].map((e,a)=>(console.log(e,a,\"_coba\"),React.createElement(PassProp,{item:e,key:a},children)))));\n"
+    },
+    "name": "tab",
+    "type": "item",
+    "childs": [
+      {
+        "id": "nfg05g5qle4jk1wjajaiivl7",
+        "adv": {
+          "js": "<div {...props}>\n  {item.label}\n</div>",
+          "css": "& {\n  display: flex;\n  font-weight: 500;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},item.label));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Senior PPDS",
+        "name": "header",
+        "text": "",
+        "type": "text",
+        "childs": [],
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "color": "#000000",
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "padding": {
+            "b": 10,
+            "l": 0,
+            "r": 0,
+            "t": 10
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "layout": {
+        "dir": "row",
+        "gap": "auto",
+        "align": "center"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "82cf44ec-05ac-4506-94c6-d9b6bdb9f3f7",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "tab_item": {
+          "meta": {
+            "type": "option",
+            "oldName": "new_prop",
+            "options": "[\n  { \n    label: \"YES\", \n    value: \"y\" \n  },\n  { \n    label: \"NO\", \n    value: \"n\" \n  },\n]"
+          },
+          "type": "string",
+          "value": "\"YES\"",
+          "valueBuilt": "\"YES\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-07-24T15:42:54.657Z",
+  "updated_at": "2023-07-24T15:42:54.657Z",
+  "type": "item",
+  "id_component_group": "947acf75-2762-49ab-878c-2e82fabf2577",
+  "props": []
+}

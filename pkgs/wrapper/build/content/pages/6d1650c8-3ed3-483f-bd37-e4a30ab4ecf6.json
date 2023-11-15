@@ -1,0 +1,231 @@
+{
+  "id": "6d1650c8-3ed3-483f-bd37-e4a30ab4ecf6",
+  "name": "list-assignment",
+  "url": "/ppds-senior/schedule/assignment/list-assignment",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "guly6z2dfp6e4ba3va715nke",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "nepq4hyoi0mfvvjcmy332sqt",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "title",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t1tk4bkr3wrh393ym3i7ekqz",
+                "adv": {},
+                "name": "page-title",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "f728c1a4-1507-4706-9572-a84be40fbbc0",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Assignment\"",
+                      "valueBuilt": "\"Assignment\";\n"
+                    }
+                  },
+                  "updated_at": 1690879327084
+                }
+              }
+            ],
+            "mobile": {
+              "padding": {
+                "b": 0,
+                "l": 21,
+                "r": 21,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "n38heg78htqtg99af4e2rcf8",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          assignment_name: \"Assignment Project 1\",\r\n          schedule_name: \"Visite 01/01/2023\",\r\n          total_submitted: 12,\r\n          total_late: 8,\r\n          total_scored: 12,\r\n        },\r\n        {\r\n          id: \"02\",\r\n          assignment_name: \"Assignment Project 2\",\r\n          schedule_name: \"Visite 05/07/2023\",\r\n          total_submitted: 15,\r\n          total_late: 9,\r\n          total_scored: 11,\r\n        },\r\n        {\r\n          id: \"03\",\r\n          assignment_name: \"Assignment Project 3\",\r\n          schedule_name: \"Visite 12/07/2023\",\r\n          total_submitted: 17,\r\n          total_late: 10,\r\n          total_scored: 2,\r\n        },\r\n        {\r\n          id: \"03\",\r\n          assignment_name: \"Assignment Project 4\",\r\n          schedule_name: \"Visite 12/08/2023\",\r\n          total_submitted: 29,\r\n          total_late: 1,\r\n          total_scored: 11,\r\n        },\r\n      ],\r\n    }}\r\n    effect={async (local) => {\r\n      // local.data= [\"world!\"];\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",assignment_name:\"Assignment Project 1\",schedule_name:\"Visite 01/01/2023\",total_submitted:12,total_late:8,total_scored:12},{id:\"02\",assignment_name:\"Assignment Project 2\",schedule_name:\"Visite 05/07/2023\",total_submitted:15,total_late:9,total_scored:11},{id:\"03\",assignment_name:\"Assignment Project 3\",schedule_name:\"Visite 12/07/2023\",total_submitted:17,total_late:10,total_scored:2},{id:\"03\",assignment_name:\"Assignment Project 4\",schedule_name:\"Visite 12/08/2023\",total_submitted:29,total_late:1,total_scored:11}]},effect:async t=>{t.render()}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-assignment",
+            "type": "item",
+            "childs": [
+              {
+                "id": "iu1yhdw9lzvva3209m3tu3zs",
+                "adv": {},
+                "name": "assignment-list-with-total",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "9b1e109c-eba5-48f9-ba9e-9f8cb9bdcd96",
+                  "props": {},
+                  "updated_at": 1691745411250
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 20,
+                  "br": 20,
+                  "tl": 20,
+                  "tr": 20
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 13,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 20,
+                "r": 20,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "vntb6uj5lz1w2cuknob19dm1",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n  position: relative;\r\n  top: 200px;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "name": "button-create",
+            "type": "item",
+            "childs": [
+              {
+                "id": "spvj89t41a2vrqj96mtgmmqx",
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 10,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "kp9u5nphnh45cosx849dj9sj",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "azily6pninrvrr6c0j9mqjk7",
+            "name": "menu-senior-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dea9302f-d473-48f1-9da8-a6897bb3e999",
+              "props": {},
+              "updated_at": 1691996254641
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-09T06:09:47.572Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-15T06:27:07.556Z",
+  "id_folder": "82c80820-4fea-40ed-bc05-e79d820106b7",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

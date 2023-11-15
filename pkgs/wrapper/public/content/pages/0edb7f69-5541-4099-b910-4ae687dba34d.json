@@ -1,0 +1,410 @@
+{
+  "id": "0edb7f69-5541-4099-b910-4ae687dba34d",
+  "name": "subject",
+  "url": "/ppds-senior/data/subject",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "bkitnorf34r4bwhq4tfs6xx1",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  top: 0%;\n  z-index: 50;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "cwv70rc32tfcowajlulyznb1",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/ppds-senior/data-management\"",
+                  "valueBuilt": "\"/ppds-senior/data-management\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Subject\"",
+                  "valueBuilt": "\"Subject\";\n"
+                },
+                "name_page": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"\"",
+                  "valueBuilt": "\"\";\n"
+                }
+              },
+              "child_ids": {
+                "jzs4f7pqesf82f0c0wbsjb8g": "ek9nxt2rjfldknhufy5gdhbw",
+                "kk01mmgdeev5fsniwb47hbsj": "n4hq4nw2o0qbnvh2qeiftk26",
+                "sk60ygaym1y056tlymedyccj": "a6l9glj7x92q6p2so8n1rqdz",
+                "wgmya2spijp28j59sf2iypbh": "ouddlhcue4rup5bihq7djucp"
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "gvd0jua9rvdaubmcyjcuddig",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: auto;\n  padding-top: 10%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "pxo2icruryq5lcybn7vof20r",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          subject: \"Trauma Orthopaedi\",\r\n          sub_category: \"Orthopaedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          subject: \"Pedriatic Orthopaedi\",\r\n          sub_category: \"Orthopaedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          subject: \"Perioperatif\",\r\n          sub_category: \"Orthopaedi Dasar\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          subject: \"Trauma Orthopaedi\",\r\n          sub_category: \"Orthopaedi Dasar\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          subject: \"Pedriatic Orthopaedi\",\r\n          sub_category: \"Orthopaedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"06\",\r\n          subject: \"Perioperatif\",\r\n          sub_category: \"Orthopaedi Dasar\",\r\n        },\r\n        {\r\n          id: \"07\",\r\n          subject: \"Trauma Orthopaedi\",\r\n          sub_category: \"Orthopaedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"08\",\r\n          subject: \"Pedriatic Orthopaedi\",\r\n          sub_category: \"Orthopaedi Dasar\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",subject:\"Trauma Orthopaedi\",sub_category:\"Orthopaedi Lanjut\"},{id:\"02\",subject:\"Pedriatic Orthopaedi\",sub_category:\"Orthopaedi Lanjut\"},{id:\"03\",subject:\"Perioperatif\",sub_category:\"Orthopaedi Dasar\"},{id:\"04\",subject:\"Trauma Orthopaedi\",sub_category:\"Orthopaedi Dasar\"},{id:\"05\",subject:\"Pedriatic Orthopaedi\",sub_category:\"Orthopaedi Lanjut\"},{id:\"06\",subject:\"Perioperatif\",sub_category:\"Orthopaedi Dasar\"},{id:\"07\",subject:\"Trauma Orthopaedi\",sub_category:\"Orthopaedi Lanjut\"},{id:\"08\",subject:\"Pedriatic Orthopaedi\",sub_category:\"Orthopaedi Dasar\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-participants-assesment",
+            "type": "item",
+            "childs": [
+              {
+                "id": "bf7sq6dhdi7oehmydxo2h31l",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                  "css": "& {\n  display: flex;\n  padding-bottom: 150px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-participants-assesment",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "h0tte0kh2jv554egg0rkwgho",
+                    "adv": {
+                      "js": "<div {...props}>{subje}</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},subje));\n"
+                    },
+                    "name": "item-subject",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "padding": {
+                        "b": 10,
+                        "l": 0,
+                        "r": 0,
+                        "t": 5
+                      }
+                    },
+                    "component": {
+                      "id": "0be86f86-7e55-4569-86d8-f4c0b93b51ee",
+                      "props": {
+                        "subject": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "subject_prop"
+                          },
+                          "type": "string",
+                          "value": "item.subject",
+                          "valueBuilt": " item.subject;\n"
+                        },
+                        "sub_category": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "item.sub_category",
+                          "valueBuilt": " item.sub_category;\n"
+                        }
+                      },
+                      "child_ids": {
+                        "b9tjd8n0jo0lcxe8oynjhpw0": "gaj0ga3wjpk8qx6e6jy6wmye",
+                        "h0tte0kh2jv554egg0rkwgho": "et5rxxsw31h9cktpq5fw382a",
+                        "hnxk78vaymvn8nf5m045gsj7": "bgt3523w8s5df25kefodb5m2",
+                        "jutxed9yjamf43hc5rgo8nth": "yfj308nl3x3w09b7mrnpjbca",
+                        "ou9s03ox36vurn2run398q9q": "ct4s76zqux1199vgav1o605x"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 20,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-wrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-wrap",
+            "align": "top-left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "jx6x97c9ys1sonn36f3y4kmu",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 0%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "pb9p67poiquabxklv6u6azj5",
+            "adv": {},
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t266tfn7v2c21xo7snw97gk6",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "visible": "type_button !== 'Submit'",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Create\"",
+                      "valueBuilt": "\"Create\";\n"
+                    },
+                    "width_button": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 6,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "visible": "type_button !== 'Submit' && action === 'navigate'",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "visible": "type_button !== 'Submit' && action === 'function'",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "child_ids": {
+                    "lhbebj5irgn10waaupkot8z5": "i98auhw6em4hn6vqms075fp5",
+                    "qj0c6h2yql08027tzgdytv72": "qs7nei8885bf0rljklm82bph",
+                    "yf6d8en9ugjyvcpevvyze7uh": "wrrv4f48kwr04ud0n645rocf"
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "j6qym6kwa0rdzc3dzeknjh69",
+            "adv": {},
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "child_ids": {
+                "a2ozuyi075d5t44bmkb5eyda": "c9sjl7p1tnyvi6fjcxqp98l4",
+                "cemoayq2lvhs15i64ftwck0f": "kz5gkxapo36we9om34w97o88",
+                "cmwbxam3i6e4639ubljkegpf": "xq26rrsu0t23z40tas5mwp1i",
+                "gth3p1gaah9qgvdxrx50mnmk": "cyzv6vtocj7gjcv74wm2k6ja",
+                "i7ms8yy14qqaedbmuv2skuks": "n0q8lfgnr54fclg4oejiefw0",
+                "jzf6upafegawlyqe71vmze08": "ar1r2v8tk5n5l3vr5tiju9kn",
+                "mudi4iqvspkf7b3tsl8flzqc": "oxzalv2fshofmpes10hd9i8x",
+                "nu07bqb550vr01hdkg90qitn": "eh8ernwfoddnl130xmzi8d2x",
+                "q285g9u15xl9emcj4f5v0we9": "bup6hdb0m21oiyvhcjmwi1gg",
+                "q4pn62at2n74jmw6gvzwvnjl": "kbwkaaefk7tfxv20l72cpul6",
+                "qpjzx7zcxza0e1l3su99l004": "ij7fphze45jph4fmq5gb0x6d",
+                "r45xce5s3civ4okakvbm29k6": "vwzewo1k3atd7kvoh27vc1sm",
+                "s0qcl7d6r7vd6a41y3u7xjpe": "cqwwg1g8mxlph57voh2zzf1m",
+                "vpy64gu1rsq18tgw5nyumi3s": "nc9bb8nhk993ayuby6hkrz89",
+                "wnsi50n8gu9o4y3txtg4zoq4": "pjbsbc3z0zm7s8g3sgihdjy4",
+                "wq5t08e45wznmwxc8iejge5x": "vqhymcc14l57frgoyncv4d6k",
+                "z5x1osuy5ie7ksn8jp0mribd": "qgoiwx81s2m2i8f0m5m3yv17"
+              },
+              "updated_at": 1692087006906
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T07:25:19.238Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-18T12:23:32.395Z",
+  "id_folder": "6caa02d7-56b3-4211-ac90-9d383c67d57e",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

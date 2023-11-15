@@ -1,0 +1,219 @@
+{
+  "id": "00582e8f-568c-497c-b612-02b631ff7a33",
+  "name": "Wrapped",
+  "content_tree": {
+    "id": "htxyu21c8kubzsew3sqp3btb",
+    "adv": {},
+    "name": "Wrapped",
+    "type": "item",
+    "childs": [
+      {
+        "id": "wxxk1bj5rg2vxhw5yehzmkwz",
+        "name": "label",
+        "type": "item",
+        "childs": [
+          {
+            "id": "clg05zvqtfu7rtblorvq77wz",
+            "adv": {
+              "js": "<div {...props}>{label}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Date",
+            "name": "label",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "y24phitfo311sj4c5ugzkc3u",
+        "adv": {
+          "js": "",
+          "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "input",
+        "type": "item",
+        "childs": [
+          {
+            "id": "b90zmy983bh5eagiedpav1o0",
+            "adv": {
+              "js": "<div {...props}>{value}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},value));\n"
+            },
+            "name": "value",
+            "type": "item",
+            "childs": [
+              {
+                "id": "h77ou1u5lc5cymfsxcbd1da3",
+                "adv": {
+                  "js": "<div {...props}>{value_date}</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},value_date));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Date Time",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              }
+            }
+          },
+          {
+            "id": "hz9dli200v9vzi2i0mewx3v3",
+            "adv": {
+              "css": "",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\" fill=\"none\">\r\n  <path\r\n    d=\"M17.9363 9.24051C17.9363 13.7893 14.1426 17.481 9.46817 17.481C4.79374 17.481 1 13.7893 1 9.24051C1 4.69175 4.79374 1 9.46817 1C14.1426 1 17.9363 4.69175 17.9363 9.24051Z\"\r\n    stroke=\"#002B5B\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\r\n  <path d=\"M12.6093 11.861L9.98418 10.3365C9.5269 10.0728 9.1543 9.43828 9.1543 8.91913V5.54053\" stroke=\"#002B5B\"\r\n    stroke-linecap=\"round\" stroke-linejoin=\"round\" />\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon-datetime",
+            "type": "item",
+            "childs": []
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 10,
+              "br": 10,
+              "tl": 10,
+              "tr": 10
+            }
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 10,
+            "l": 10,
+            "r": 10,
+            "t": 10
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full",
+        "hUnit": "px",
+        "wUnit": "px"
+      }
+    },
+    "component": {
+      "id": "00582e8f-568c-497c-b612-02b631ff7a33",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "label": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Date\"",
+          "valueBuilt": "\"Date\";\n"
+        },
+        "value": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"12 Agustus 2023\"",
+          "valueBuilt": "\"12 Agustus 2023\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-28T06:49:46.933Z",
+  "updated_at": "2023-08-29T07:56:18.353Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

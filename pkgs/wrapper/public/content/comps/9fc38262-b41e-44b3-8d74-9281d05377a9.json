@@ -1,0 +1,153 @@
+{
+  "id": "9fc38262-b41e-44b3-8d74-9281d05377a9",
+  "name": "academic-menu",
+  "content_tree": {
+    "id": "fuig6hi0ya58ezied7d4dupu",
+    "adv": {},
+    "name": "academic-menu",
+    "type": "item",
+    "childs": [
+      {
+        "id": "hvm6waaza20id9ij6rnd2occ",
+        "adv": {
+          "js": "<div\r\n  {...props}\r\n  onClick={() => {\r\n    navigate(navigate_link);\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+          "css": "",
+          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{navigate(navigate_link)}},children));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "menu",
+        "type": "item",
+        "childs": [
+          {
+            "id": "k3hjlksj4spslncnsjxibqvw",
+            "adv": {
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 47\" fill=\"none\">\r\n  <rect x=\"0.5\" width=\"47\" height=\"47\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\" />\r\n  <mask id=\"mask0_2499_4799\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"6\" y=\"5\" width=\"36\" height=\"37\">\r\n    <rect x=\"6\" y=\"5.5\" width=\"36\" height=\"36\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2499_4799)\">\r\n    <path\r\n      d=\"M24 37L13.5 31.3V22.3L7.5 19L24 10L40.5 19V31H37.5V20.65L34.5 22.3V31.3L24 37ZM24 24.55L34.275 19L24 13.45L13.725 19L24 24.55ZM24 33.5875L31.5 29.5375V23.875L24 28L16.5 23.875V29.5375L24 33.5875Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "padding": {
+                "b": 3,
+                "l": 0,
+                "r": 0,
+                "t": 3
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "yy27fgvcc4u3h438lkr7kwe9",
+            "adv": {
+              "js": "<div {...props}>{name}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Laporan Jaga",
+            "name": "text",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": 100,
+                "wUnit": "px"
+              },
+              "font": {
+                "size": 15,
+                "align": "center",
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": 130,
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 5,
+                "r": 5,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 7,
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "align": "center"
+      }
+    },
+    "component": {
+      "id": "9fc38262-b41e-44b3-8d74-9281d05377a9",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Akademik\"",
+          "valueBuilt": "\"Akademik\";\n"
+        },
+        "navigate_link": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"/default-url\"",
+          "valueBuilt": "\"/default-url\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-06T05:32:32.778Z",
+  "updated_at": "2023-09-11T02:37:13.654Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

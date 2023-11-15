@@ -1,0 +1,358 @@
+{
+  "id": "dfbc5506-70c9-4aee-b61b-d9384037a059",
+  "name": "data-activity",
+  "content_tree": {
+    "id": "grrlyh16m8h9l098eyume0c3",
+    "adv": {
+      "js": "<div {...props}>{activity_name}</div>",
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+      "jsBuilt": "render(React.createElement(\"div\",{...props},activity_name));\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "data-activity",
+    "type": "item",
+    "childs": [
+      {
+        "id": "ahna1jn4t5l7txz7cvmcprd3",
+        "adv": {
+          "js": "",
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "activity",
+        "type": "item",
+        "childs": [
+          {
+            "id": "hhl5xvcykuqlf10v4j24edeu",
+            "adv": {
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M14.2857 18C14.0963 18 13.9146 18.0658 13.7806 18.1831C13.6467 18.3003 13.5714 18.4592 13.5714 18.625C13.5714 18.7908 13.6467 18.9497 13.7806 19.0669C13.9146 19.1842 14.0963 19.25 14.2857 19.25H19.2857C19.4751 19.25 19.6568 19.1842 19.7908 19.0669C19.9247 18.9497 20 18.7908 20 18.625C20 18.4592 19.9247 18.3003 19.7908 18.1831C19.6568 18.0658 19.4751 18 19.2857 18H14.2857ZM13.5714 15.5C13.5714 15.3342 13.6467 15.1753 13.7806 15.0581C13.9146 14.9408 14.0963 14.875 14.2857 14.875H25.3571C25.5466 14.875 25.7282 14.9408 25.8622 15.0581C25.9962 15.1753 26.0714 15.3342 26.0714 15.5C26.0714 15.6658 25.9962 15.8247 25.8622 15.9419C25.7282 16.0592 25.5466 16.125 25.3571 16.125H14.2857C14.0963 16.125 13.9146 16.0592 13.7806 15.9419C13.6467 15.8247 13.5714 15.6658 13.5714 15.5Z\" fill=\"#002B5B\"/>\r\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.5714 23C13.5714 22.8342 13.6467 22.6753 13.7806 22.5581C13.9146 22.4408 14.0963 22.375 14.2857 22.375H17.1428C17.3323 22.375 17.514 22.4408 17.6479 22.5581C17.7819 22.6753 17.8571 22.8342 17.8571 23V25.5C17.8571 25.6658 17.7819 25.8247 17.6479 25.9419C17.514 26.0592 17.3323 26.125 17.1428 26.125H14.2857C14.0963 26.125 13.9146 26.0592 13.7806 25.9419C13.6467 25.8247 13.5714 25.6658 13.5714 25.5V23ZM15 24.875V23.625H16.4286V24.875H15ZM22.8571 24.875C23.4254 24.875 23.9705 24.6775 24.3724 24.3258C24.7742 23.9742 25 23.4973 25 23C25 22.5027 24.7742 22.0258 24.3724 21.6742C23.9705 21.3225 23.4254 21.125 22.8571 21.125C22.2888 21.125 21.7438 21.3225 21.3419 21.6742C20.94 22.0258 20.7143 22.5027 20.7143 23C20.7143 23.4973 20.94 23.9742 21.3419 24.3258C21.7438 24.6775 22.2888 24.875 22.8571 24.875ZM22.8571 23.625C22.9535 23.6289 23.0498 23.6156 23.1402 23.586C23.2305 23.5564 23.3131 23.5111 23.3829 23.4528C23.4527 23.3945 23.5083 23.3244 23.5463 23.2468C23.5843 23.1692 23.604 23.0857 23.6041 23.0013C23.6041 22.9169 23.5847 22.8333 23.5469 22.7556C23.509 22.6779 23.4536 22.6078 23.3839 22.5494C23.3143 22.491 23.2318 22.4455 23.1415 22.4158C23.0512 22.386 22.955 22.3726 22.8586 22.3763C22.6748 22.3833 22.5013 22.4521 22.374 22.5682C22.2468 22.6844 22.1757 22.8391 22.1755 23C22.1753 23.161 22.2461 23.3157 22.373 23.4322C22.5 23.5486 22.6734 23.6176 22.8571 23.625ZM18.5714 27.4887C18.5714 26.1662 21.4264 25.5 22.8571 25.5C24.2878 25.5 27.1428 26.1662 27.1428 27.4887V29.875H18.5714V27.4887ZM20.0393 27.5138C20.0256 27.5251 20.0125 27.537 20 27.5494V28.625H25.7143V27.55C25.7018 27.5372 25.6887 27.5249 25.675 27.5131C25.5578 27.4131 25.3321 27.2806 24.9778 27.1488C24.2636 26.8831 23.3821 26.75 22.8571 26.75C22.3321 26.75 21.4507 26.8831 20.7364 27.1488C20.3821 27.28 20.1564 27.4138 20.0393 27.5138Z\" fill=\"#002B5B\"/>\r\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15 9.875C15 9.37772 15.2258 8.90081 15.6276 8.54917C16.0295 8.19754 16.5745 8 17.1429 8H22.8571C23.4255 8 23.9705 8.19754 24.3724 8.54917C24.7742 8.90081 25 9.37772 25 9.875H27.8571C28.4255 9.875 28.9705 10.0725 29.3724 10.4242C29.7742 10.7758 30 11.2527 30 11.75V31.125C30 31.6223 29.7742 32.0992 29.3724 32.4508C28.9705 32.8025 28.4255 33 27.8571 33H12.1429C11.5745 33 11.0295 32.8025 10.6276 32.4508C10.2258 32.0992 10 31.6223 10 31.125V11.75C10 11.2527 10.2258 10.7758 10.6276 10.4242C11.0295 10.0725 11.5745 9.875 12.1429 9.875H15ZM22.8571 13C23.4255 13 23.9705 12.8025 24.3724 12.4508C24.7742 12.0992 25 11.6223 25 11.125H27.8571C28.0466 11.125 28.2283 11.1908 28.3622 11.3081C28.4962 11.4253 28.5714 11.5842 28.5714 11.75V31.125C28.5714 31.2908 28.4962 31.4497 28.3622 31.5669C28.2283 31.6842 28.0466 31.75 27.8571 31.75H12.1429C11.9534 31.75 11.7717 31.6842 11.6378 31.5669C11.5038 31.4497 11.4286 31.2908 11.4286 31.125V11.75C11.4286 11.5842 11.5038 11.4253 11.6378 11.3081C11.7717 11.1908 11.9534 11.125 12.1429 11.125H15C15 11.6223 15.2258 12.0992 15.6276 12.4508C16.0295 12.8025 16.5745 13 17.1429 13H22.8571ZM17.1429 9.25C16.9534 9.25 16.7717 9.31585 16.6378 9.43306C16.5038 9.55027 16.4286 9.70924 16.4286 9.875V11.125C16.4286 11.2908 16.5038 11.4497 16.6378 11.5669C16.7717 11.6842 16.9534 11.75 17.1429 11.75H22.8571C23.0466 11.75 23.2283 11.6842 23.3622 11.5669C23.4962 11.4497 23.5714 11.2908 23.5714 11.125V9.875C23.5714 9.70924 23.4962 9.55027 23.3622 9.43306C23.2283 9.31585 23.0466 9.25 22.8571 9.25H17.1429Z\" fill=\"#002B5B\"/>\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "e5rjgvdr6qtu22qxd8jn21qx",
+            "adv": {
+              "js": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "content",
+            "type": "item",
+            "childs": [
+              {
+                "id": "v91kqa4sk6307slwvyxe3t9y",
+                "adv": {
+                  "js": "",
+                  "css": "& {\r\n  display: flex;\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Jaga",
+                "name": "activity-name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 16,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 13,
+                    "r": 13,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "chftjz251yquec5h85h3rgcg",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "boolean",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "vnyl07n0p6fbjstwek8si1c0",
+                    "adv": {
+                      "js": "<div\r\n  {...props}\r\n  style={{\r\n    backgroundColor: assignments === \"true\" ? \"#9ADCD3\" : \"#F5F5F5\",\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                      "css": "& {\r\n  display: flex;\r\n  background: #d9d9d9;\r\n\r\n\r\n\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{backgroundColor:assignments===\"true\"?\"#9ADCD3\":\"#F5F5F5\"}},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Assignment",
+                    "name": "is_assignment",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#D9D9D9"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "font": {
+                        "size": 10,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 11,
+                        "r": 11,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "stprf5tiw4kahywalhq7qkgg",
+                    "adv": {
+                      "js": "<div\r\n  {...props}\r\n  style={{\r\n    backgroundColor: lm === \"true\" ? \"#9ADCD3\" : \"#F5F5F5\",\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                      "css": "& {\r\n  display: flex;\r\n  background: rgba(217, 217, 217, 0.3);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{backgroundColor:lm===\"true\"?\"#9ADCD3\":\"#F5F5F5\"}},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Learning Materials",
+                    "name": "is_learning_materials",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "font": {
+                        "size": 10,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 11,
+                        "r": 11,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 20,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 10,
+                    "r": 10,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 3,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": "#ffffff"
+      },
+      "dim": {
+        "h": "fit",
+        "w": "fit"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "wrap": "flex-wrap",
+        "align": "left"
+      },
+      "padding": {
+        "b": 14,
+        "l": 15,
+        "r": 15,
+        "t": 14
+      }
+    },
+    "component": {
+      "id": "dfbc5506-70c9-4aee-b61b-d9384037a059",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "lm": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"true\"",
+          "valueBuilt": "\"true\";\n"
+        },
+        "assignments": {
+          "idx": 1,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"true\",\n    value: \"true\",\n  },\n  {\n    label: \"false\",\n    value: \"false\",\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"true\"",
+          "valueBuilt": "\"true\";\n"
+        },
+        "activity_name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Jaga\"",
+          "valueBuilt": "\"Jaga\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-14T15:08:47.720Z",
+  "updated_at": "2023-08-21T08:34:10.754Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

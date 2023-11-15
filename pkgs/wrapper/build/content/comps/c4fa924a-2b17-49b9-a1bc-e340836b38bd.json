@@ -1,0 +1,263 @@
+{
+  "id": "c4fa924a-2b17-49b9-a1bc-e340836b38bd",
+  "name": "data-classes",
+  "content_tree": {
+    "id": "w5cipnuwyk6mv317bm1a4iru",
+    "adv": {
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "data-classes",
+    "type": "item",
+    "childs": [
+      {
+        "id": "o1qy3l3yivuerbb0yu4mg6r5",
+        "adv": {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"24\" viewBox=\"0 0 30 24\" fill=\"none\">\r\n  <path\r\n    d=\"M14.6667 24L5.33333 18.9333V10.9333L0 8L14.6667 0L29.3333 8V18.6667H26.6667V9.46667L24 10.9333V18.9333L14.6667 24ZM14.6667 12.9333L23.8 8L14.6667 3.06667L5.53333 8L14.6667 12.9333ZM14.6667 20.9667L21.3333 17.3667V12.3333L14.6667 16L8 12.3333V17.3667L14.6667 20.9667Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "m1p7x6vokr74ydf822zclk0x",
+        "adv": {},
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "list-text",
+        "type": "item",
+        "childs": [
+          {
+            "id": "ptubt5x0kjqaknrm9gffna29",
+            "adv": {},
+            "name": "text-normal",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+              "props": {
+                "label": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Mk 1081 - Bedah Dasar\"",
+                  "valueBuilt": "\"Mk 1081 - Bedah Dasar\";\n"
+                },
+                "weight": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "font_weight",
+                    "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"bold\"",
+                  "valueBuilt": "\"bold\";\n"
+                }
+              },
+              "updated_at": 1691746438931
+            }
+          },
+          {
+            "id": "q9nd850gh37ufo3usxl6q5y0",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "2023 / 2024",
+            "name": "academic-year",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "puknealmxsbidgph0pvf8l7p",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Monday 12:00 - 13:00",
+            "name": "date",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "de7wt7pggxw7sh7wwp6dxnu7",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text-senior-name",
+            "type": "item",
+            "childs": [
+              {
+                "id": "h9y3qq5tn9qm4den2txltoyi",
+                "adv": {},
+                "name": "text-normal",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                  "props": {
+                    "label": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Mellisa Siregar, Sp. OT.\"",
+                      "valueBuilt": "\"dr Mellisa Siregar, Sp. OT.\";\n"
+                    },
+                    "weight": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "font_weight",
+                        "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"bold\"",
+                      "valueBuilt": "\"bold\";\n"
+                    }
+                  },
+                  "updated_at": 1691746438931
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#B3D0E3"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "padding": {
+                "b": 2,
+                "l": 7,
+                "r": 7,
+                "t": 2
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": 375
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 10,
+        "align": "left"
+      },
+      "padding": {
+        "b": 12,
+        "l": 24,
+        "r": 24,
+        "t": 7
+      }
+    },
+    "component": {
+      "id": "c4fa924a-2b17-49b9-a1bc-e340836b38bd",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {}
+    }
+  },
+  "created_at": "2023-08-15T06:18:50.477Z",
+  "updated_at": "2023-08-15T06:19:02.369Z",
+  "type": "item",
+  "id_component_group": "947acf75-2762-49ab-878c-2e82fabf2577",
+  "props": []
+}

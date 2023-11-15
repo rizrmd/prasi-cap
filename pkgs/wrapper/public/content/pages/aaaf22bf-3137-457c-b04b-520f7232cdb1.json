@@ -1,0 +1,412 @@
+{
+  "id": "aaaf22bf-3137-457c-b04b-520f7232cdb1",
+  "name": "list-pending-verification",
+  "url": "/institution/explore-staff/detail-staff/list-pending-verification",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "r9o26ch4j9o978hpzg9mpwke",
+        "adv": {
+          "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={\r\n      {\r\n        //local object\r\n      }\r\n    }\r\n    effect={async (local) => {\r\n      //local effect\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{},effect:async l=>{}},children)));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "xdsdpu62z4k537t3qsgbelu8",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "header",
+            "type": "item",
+            "childs": [
+              {
+                "id": "oio86y0g6s422rj9elxieoo7",
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/institution/explore-staff/detail-staff\"",
+                      "valueBuilt": "\"/institution/explore-staff/detail-staff\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Pending Verification\"",
+                      "valueBuilt": "\"Pending Verification\";\n"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "j5cpasji62ei5ivbobzzzny4",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "r93ezqn94p5t2lvzg39r900e",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "filter",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 5,
+                        "wrap": "flex-nowrap",
+                        "align": "left"
+                      },
+                      "padding": {
+                        "b": 5,
+                        "l": 15,
+                        "r": 15,
+                        "t": 5
+                      }
+                    },
+                    "component": {
+                      "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                      "name": "",
+                      "props": {
+                        "popup": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "fzbhfrn1ze3gh298jxqn061l",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "popup",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "r93ezqn94p5t2lvzg39r900e"
+                          },
+                          "valueBuilt": "\"hello\""
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-right"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                }
+              },
+              {
+                "id": "otxszposxlaqm6cv4t6bx33k",
+                "name": "filter-sidebar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "02f33338-d088-4e9e-b6c0-8e9170649c08",
+                  "props": {
+                    "open_key": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "bind_form": {
+                      "idx": 0,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "any",
+                      "value": "local",
+                      "valueBuilt": " local;\n"
+                    },
+                    "filter_key": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          },
+          {
+            "id": "wsa73xubnebx0zxwp4lmtaf5",
+            "adv": {
+              "js": "",
+              "css": "& {\n  display: flex;\n  overflow: auto;\n  padding-bottom: 100px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "html": "",
+              "jsBuilt": ""
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "edxoxe508yokz0gjarp4ynfn",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"001\",\r\n          action_name: \"Kegiatan Poli\",\r\n          status: \"-\",\r\n          doctor: \"dr Modin, Sp. OT\",\r\n          date: \"17 Agustus 2023 15:00\",\r\n        },\r\n        {\r\n          id: \"002\",\r\n          action_name: \"Kegiatan Jaga\",\r\n          status: \"-\",\r\n          doctor: \"dr Modin, Sp. OT\",\r\n          date: \"16 Agustus 2023 15:00\",\r\n        },\r\n        {\r\n          id: \"003\",\r\n          action_name: \"Review Artikel\",\r\n          status: \"-\",\r\n          doctor: \"dr Modin, Sp. OT\",\r\n          date: \"15 Agustus 2023 09:00\",\r\n        },\r\n        {\r\n          id: \"004\",\r\n          action_name: \"Kegiatan Ilmiah\",\r\n          status: \"-\",\r\n          doctor: \"dr Modin, Sp. OT\",\r\n          date: \"14 Agustus 2023 15:00\",\r\n        },\r\n        {\r\n          id: \"005\",\r\n          action_name: \"Kegiatan Poli\",\r\n          status: \"-\",\r\n          doctor: \"dr Modin, Sp. OT\",\r\n          date: \"10 Agustus 2023 07:00\",\r\n        },\r\n      ],\r\n    }}\r\n    effect={async (local) => {\r\n      // local.data = [\"world!\"];\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "css": "",
+                  "html": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"001\",action_name:\"Kegiatan Poli\",status:\"-\",doctor:\"dr Modin, Sp. OT\",date:\"17 Agustus 2023 15:00\"},{id:\"002\",action_name:\"Kegiatan Jaga\",status:\"-\",doctor:\"dr Modin, Sp. OT\",date:\"16 Agustus 2023 15:00\"},{id:\"003\",action_name:\"Review Artikel\",status:\"-\",doctor:\"dr Modin, Sp. OT\",date:\"15 Agustus 2023 09:00\"},{id:\"004\",action_name:\"Kegiatan Ilmiah\",status:\"-\",doctor:\"dr Modin, Sp. OT\",date:\"14 Agustus 2023 15:00\"},{id:\"005\",action_name:\"Kegiatan Poli\",status:\"-\",doctor:\"dr Modin, Sp. OT\",date:\"10 Agustus 2023 07:00\"}]},effect:async a=>{a.render()}},children)));\n"
+                },
+                "name": "list-pending",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "a34bpf7hb37l050xipiq3vu1",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "item-pending",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "fh0ijg6ql1l6lgqsdk44f88k",
+                        "name": "pending-verification",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "b0aba7d8-dabc-4fed-8ec8-c0bbb43f19df",
+                          "props": {
+                            "url": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"hello\"",
+                              "valueBuilt": "\"hello\""
+                            },
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.date",
+                              "valueBuilt": " item.date;\n"
+                            },
+                            "doctor": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.doctor",
+                              "valueBuilt": " item.doctor;\n"
+                            },
+                            "status": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.status",
+                              "valueBuilt": " item.status;\n"
+                            },
+                            "action_name": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.action_name",
+                              "valueBuilt": " item.action_name;\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 15,
+                        "wrap": "flex-nowrap",
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 0,
+                        "r": 0,
+                        "t": 0
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 30,
+                "r": 30,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "kf2tmz2wyfbrxfyp1sq174bg",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "qpp0qva3jn04prqnml3w0vnm",
+                "name": "menu-staff",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-09-04T02:24:08.484Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-10-20T12:23:02.896Z",
+  "id_folder": "0e6cbb53-9a8c-4bfa-b1cd-a9350aa88ab0",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

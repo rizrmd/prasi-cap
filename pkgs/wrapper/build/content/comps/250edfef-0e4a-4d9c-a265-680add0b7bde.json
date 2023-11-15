@@ -1,0 +1,177 @@
+{
+  "id": "250edfef-0e4a-4d9c-a265-680add0b7bde",
+  "name": "checkbox_field",
+  "content_tree": {
+    "id": "idudyo9xy2u81vqo2n0mw0wq",
+    "adv": {
+      "js": "",
+      "css": "& {\r\n  display: flex;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+      "jsBuilt": "render();\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "checkbox_field",
+    "type": "item",
+    "childs": [
+      {
+        "id": "mb6sscgmk2i9wxbqvc2ktug4",
+        "adv": {
+          "js": "<div {...props} onClick={onClick}>\r\n  {children}\r\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick},children));\n"
+        },
+        "name": "Wrapped",
+        "type": "item",
+        "childs": [
+          {
+            "id": "roofb2rjfjuu5amqjlkpbmpj",
+            "adv": {
+              "js": "<div {...props}>\n  {checked === \"true\" ? (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n    >\n      <path\n        fill-rule=\"evenodd\"\n        clip-rule=\"evenodd\"\n        d=\"M7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7V17C2 18.3261 2.52678 19.5979 3.46447 20.5355C4.40215 21.4732 5.67392 22 7 22H17C18.3261 22 19.5979 21.4732 20.5355 20.5355C21.4732 19.5979 22 18.3261 22 17V7C22 5.67392 21.4732 4.40215 20.5355 3.46447C19.5979 2.52678 18.3261 2 17 2H7ZM15.73 10.684C15.8198 10.5881 15.8899 10.4755 15.9362 10.3526C15.9825 10.2296 16.0041 10.0988 15.9998 9.96747C15.9956 9.83617 15.9655 9.707 15.9113 9.58732C15.8571 9.46765 15.7799 9.35982 15.684 9.27C15.5881 9.18018 15.4755 9.11011 15.3526 9.06381C15.2296 9.01751 15.0988 8.99588 14.9675 9.00015C14.8362 9.00442 14.707 9.03451 14.5873 9.08871C14.4677 9.1429 14.3598 9.22014 14.27 9.316L11.187 12.606L9.664 11.253C9.46446 11.0871 9.20825 11.0053 8.9495 11.0248C8.69075 11.0443 8.44972 11.1637 8.27732 11.3576C8.10493 11.5516 8.01467 11.8049 8.02562 12.0642C8.03657 12.3234 8.14787 12.5683 8.336 12.747L10.586 14.747C10.7807 14.9199 11.0352 15.0101 11.2953 14.9983C11.5554 14.9866 11.8007 14.8738 11.979 14.684L15.73 10.684Z\"\n        fill=\"#002B5B\"\n      />\n    </svg>\n  ) : (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n    >\n      <path\n        d=\"M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z\"\n        stroke=\"#002B5B\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n        stroke-linejoin=\"round\"\n      />\n    </svg>\n  )}\n</div>",
+              "css": "",
+              "html": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},checked===\"true\"?React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"24\",height:\"24\",viewBox:\"0 0 24 24\",fill:\"none\"},React.createElement(\"path\",{\"fill-rule\":\"evenodd\",\"clip-rule\":\"evenodd\",d:\"M7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7V17C2 18.3261 2.52678 19.5979 3.46447 20.5355C4.40215 21.4732 5.67392 22 7 22H17C18.3261 22 19.5979 21.4732 20.5355 20.5355C21.4732 19.5979 22 18.3261 22 17V7C22 5.67392 21.4732 4.40215 20.5355 3.46447C19.5979 2.52678 18.3261 2 17 2H7ZM15.73 10.684C15.8198 10.5881 15.8899 10.4755 15.9362 10.3526C15.9825 10.2296 16.0041 10.0988 15.9998 9.96747C15.9956 9.83617 15.9655 9.707 15.9113 9.58732C15.8571 9.46765 15.7799 9.35982 15.684 9.27C15.5881 9.18018 15.4755 9.11011 15.3526 9.06381C15.2296 9.01751 15.0988 8.99588 14.9675 9.00015C14.8362 9.00442 14.707 9.03451 14.5873 9.08871C14.4677 9.1429 14.3598 9.22014 14.27 9.316L11.187 12.606L9.664 11.253C9.46446 11.0871 9.20825 11.0053 8.9495 11.0248C8.69075 11.0443 8.44972 11.1637 8.27732 11.3576C8.10493 11.5516 8.01467 11.8049 8.02562 12.0642C8.03657 12.3234 8.14787 12.5683 8.336 12.747L10.586 14.747C10.7807 14.9199 11.0352 15.0101 11.2953 14.9983C11.5554 14.9866 11.8007 14.8738 11.979 14.684L15.73 10.684Z\",fill:\"#002B5B\"})):React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"24\",height:\"24\",viewBox:\"0 0 24 24\",fill:\"none\"},React.createElement(\"path\",{d:\"M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z\",stroke:\"#002B5B\",\"stroke-width\":\"2\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\"}))));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon-checkbox",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "c0sa5yv6xsr8ve0nj5ypuf9u",
+            "adv": {
+              "js": "<div {...props}>{label}</div>",
+              "css": "& {\r\n  display: flex;\r\n  font-weight: 475;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Bp. Moeldoko Harahap",
+            "name": "name",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 7,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 10,
+            "l": 9,
+            "r": 9,
+            "t": 10
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 5,
+        "align": "center"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "250edfef-0e4a-4d9c-a265-680add0b7bde",
+      "name": "checkbox_field",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "label": {
+          "idx": 1,
+          "meta": {
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"hello\""
+        },
+        "checked": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "oldName": "new_prop",
+            "options": "[\n  { \n    label: \"true\", \n    value: \"true\" \n  },\n  { \n    label: \"false\", \n    value: \"false\" \n  },\n]"
+          },
+          "type": "string",
+          "value": "\"true\"",
+          "valueBuilt": "\"true\";\n"
+        },
+        "onClick": {
+          "idx": 3,
+          "meta": {
+            "oldName": "onChecked"
+          },
+          "type": "() => void",
+          "value": "() => {}",
+          "valueBuilt": "()=>{};\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-07-31T05:31:51.957Z",
+  "updated_at": "2023-08-24T04:51:41.444Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

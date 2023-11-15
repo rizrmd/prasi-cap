@@ -1,0 +1,390 @@
+{
+  "id": "ae9d63cb-721c-4153-a9df-f5b43344adc0",
+  "name": "list-operasi",
+  "url": "/staff-pengajar/all/activity/operasi/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "o4wbhjbfk3j9zaoe7k9w50ww",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "idwkaknl97kvjbikdetnfdcf",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ipeowi9160t0kurwih4oc5zw",
+                "name": "page-tittle",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "v1g5wpnjzeb6brpxzal0hqgl",
+                    "adv": {},
+                    "name": "title-back",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                      "props": {
+                        "url": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"/Main\"",
+                          "valueBuilt": "\"/Main\";\n"
+                        },
+                        "label": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Operasi\"",
+                          "valueBuilt": "\"Operasi\";\n"
+                        }
+                      },
+                      "updated_at": 1691568262168
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  }
+                }
+              },
+              {
+                "id": "ndyz12cruhr33ennpkgbikyo",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "qfgpimnjqnupk91xva3p43mf",
+                    "adv": {
+                      "js": "<PassProp text={\"filter\"}><div {...props}>{children}</div></PassProp>",
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(PassProp,{text:\"filter\"},React.createElement(\"div\",{...props},children)));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "filter",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 5,
+                        "wrap": "flex-nowrap",
+                        "align": "left"
+                      },
+                      "padding": {
+                        "b": 5,
+                        "l": 15,
+                        "r": 15,
+                        "t": 5
+                      }
+                    },
+                    "component": {
+                      "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                      "name": "",
+                      "props": {
+                        "popup": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "o21uxpvrbdud0w53ykhtopid",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "popup",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "l5che2ir5885bqo0qci7eqav"
+                          },
+                          "valueBuilt": "\"hello\""
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          },
+          {
+            "id": "rtazilrciti4vwf248x9l7g6",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ni8fcqq1k6g8naxvm1u5uno3",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          number: \"202308311\",\r\n          score: \"90\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          role: \"Observer\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          number: \"202308311\",\r\n          score: \"80\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          role: \"Asisten\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          number: \"202308311\",\r\n          score: \"95\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          role: \"Bimbingan\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          number: \"202308311\",\r\n          score: \"95\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          role: \"Mandiri\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",number:\"202308311\",score:\"90\",doctor:\"dr Modin Suherman, Sp. OT\",date:\"12 Agustus 2023 10:00\",role:\"Observer\"},{id:\"02\",number:\"202308311\",score:\"80\",doctor:\"dr Modin Suherman, Sp. OT\",date:\"12 Agustus 2023 10:00\",role:\"Asisten\"},{id:\"03\",number:\"202308311\",score:\"95\",doctor:\"dr Modin Suherman, Sp. OT\",date:\"12 Agustus 2023 10:00\",role:\"Bimbingan\"},{id:\"04\",number:\"202308311\",score:\"95\",doctor:\"dr Modin Suherman, Sp. OT\",date:\"12 Agustus 2023 10:00\",role:\"Mandiri\"}]}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-operasi",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "wsklibeezg4094nnkxewiou0",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "list-operasi",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "yv0jc77vaoivuiggfpaajnqu",
+                        "adv": {
+                          "css": ""
+                        },
+                        "name": "data-operasi-staffpengajar",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "5ae88968-4005-4038-a041-a16ee4fbb426",
+                          "props": {
+                            "date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.date",
+                              "valueBuilt": " item.date;\n"
+                            },
+                            "role": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.role",
+                              "valueBuilt": " item.role;\n"
+                            },
+                            "score": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.score",
+                              "valueBuilt": " item.score;\n"
+                            },
+                            "doctor": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.doctor",
+                              "valueBuilt": " item.doctor;\n"
+                            },
+                            "number": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.number",
+                              "valueBuilt": " item.number;\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 20,
+                        "wrap": "flex-wrap",
+                        "align": "top-left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 30,
+                    "r": 30,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "padding": {
+                "b": 12,
+                "l": 0,
+                "r": 0,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "lketktc0009x4g46mvo8bvs6",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "dxevi63n59osj5cf3aorriea",
+                "name": "menu-staff-pengajar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-18T03:48:25.743Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-12T03:39:33.830Z",
+  "id_folder": "dfea423f-7f64-4158-9f93-53f03bd3cc64",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

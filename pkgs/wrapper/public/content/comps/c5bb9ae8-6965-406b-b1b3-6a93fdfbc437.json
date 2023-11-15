@@ -1,0 +1,558 @@
+{
+  "id": "c5bb9ae8-6965-406b-b1b3-6a93fdfbc437",
+  "name": "seminar-hasil-staff",
+  "content_tree": {
+    "id": "wzf2hv8z40qubads2rcruve0",
+    "adv": {
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "seminar-hasil-staff",
+    "type": "item",
+    "childs": [
+      {
+        "id": "s7x64r99z1hy6jlnprtqmywl",
+        "name": "top",
+        "type": "item",
+        "childs": [
+          {
+            "id": "z0upzzq7lgtqu4y2ro7b3g0c",
+            "name": "date",
+            "type": "item",
+            "childs": [
+              {
+                "id": "w6tpvnze8pl9yfg5roly0x6h",
+                "adv": {
+                  "js": "<div {...props}>{date}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},date));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "12 Agustus 2023 10:00",
+                "name": "date",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "padding": {
+                "b": 2,
+                "l": 0,
+                "r": 0,
+                "t": 2
+              }
+            }
+          },
+          {
+            "id": "qykxm5wodacqou9naak4b7j5",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "score",
+            "type": "item",
+            "childs": [
+              {
+                "id": "xwf27qvnky5ehg6kwzzcr00t",
+                "adv": {
+                  "css": "",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\">\r\n<mask id=\"mask0_2256_6487\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"17\" height=\"17\">\r\n<rect width=\"17\" height=\"17\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2256_6487)\">\r\n<path d=\"M7.50833 11.3687L12.5021 6.37492L11.5104 5.38325L7.50833 9.38533L5.48958 7.36659L4.49792 8.35825L7.50833 11.3687ZM3.54167 14.8749C3.15208 14.8749 2.81858 14.7362 2.54115 14.4588C2.26372 14.1813 2.125 13.8478 2.125 13.4583V3.54159C2.125 3.152 2.26372 2.8185 2.54115 2.54106C2.81858 2.26363 3.15208 2.12492 3.54167 2.12492H6.51667C6.67014 1.69992 6.92691 1.35756 7.28698 1.09784C7.64705 0.838113 8.05139 0.708252 8.5 0.708252C8.94861 0.708252 9.35295 0.838113 9.71302 1.09784C10.0731 1.35756 10.3299 1.69992 10.4833 2.12492H13.4583C13.8479 2.12492 14.1814 2.26363 14.4589 2.54106C14.7363 2.8185 14.875 3.152 14.875 3.54159V13.4583C14.875 13.8478 14.7363 14.1813 14.4589 14.4588C14.1814 14.7362 13.8479 14.8749 13.4583 14.8749H3.54167ZM3.54167 13.4583H13.4583V3.54159H3.54167V13.4583ZM8.5 3.01034C8.65347 3.01034 8.78038 2.96016 8.88073 2.85981C8.98108 2.75947 9.03125 2.63256 9.03125 2.47909C9.03125 2.32561 8.98108 2.1987 8.88073 2.09836C8.78038 1.99801 8.65347 1.94784 8.5 1.94784C8.34653 1.94784 8.21962 1.99801 8.11927 2.09836C8.01892 2.1987 7.96875 2.32561 7.96875 2.47909C7.96875 2.63256 8.01892 2.75947 8.11927 2.85981C8.21962 2.96016 8.34653 3.01034 8.5 3.01034Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "icon",
+                "type": "item",
+                "childs": []
+              },
+              {
+                "id": "di4x31wdon3zro1v7i7fsbda",
+                "adv": {
+                  "js": "<div {...props}>{score}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},score));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "80",
+                "name": "score",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": 20,
+                    "wUnit": "px"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#E6EFF6"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#ffffff",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              },
+              "padding": {
+                "b": 2,
+                "l": 10,
+                "r": 10,
+                "t": 2
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      },
+      {
+        "id": "mhobq49oamh1ce5y07vx9ej1",
+        "name": "title",
+        "type": "item",
+        "childs": [
+          {
+            "id": "o98nakiqcf140j7mrsrc6j2r",
+            "adv": {
+              "js": "<div {...props}>{title}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},title));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Judul Tesis Judul Tesis Judul Tesis",
+            "name": "title",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "lzmuqs4pgc6aiz6lijkop0oj",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "detail",
+        "type": "item",
+        "childs": [
+          {
+            "id": "t5kud8r6ohg31ozh490hwk7b",
+            "adv": {
+              "js": "",
+              "css": "",
+              "jsBuilt": "render();\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "doctor",
+            "type": "item",
+            "childs": [
+              {
+                "id": "lm9vo7yoolcqmn5t0y2amcze",
+                "adv": {
+                  "css": "",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 13 13\" fill=\"none\">\r\n  <path\r\n    d=\"M6.49935 6.49984C5.62852 6.49984 4.88303 6.18977 4.26289 5.56963C3.64275 4.94949 3.33268 4.204 3.33268 3.33317C3.33268 2.46234 3.64275 1.71685 4.26289 1.09671C4.88303 0.476573 5.62852 0.166504 6.49935 0.166504C7.37018 0.166504 8.11567 0.476573 8.73581 1.09671C9.35595 1.71685 9.66602 2.46234 9.66602 3.33317C9.66602 4.204 9.35595 4.94949 8.73581 5.56963C8.11567 6.18977 7.37018 6.49984 6.49935 6.49984ZM0.166016 12.8332V10.6165C0.166016 10.1679 0.281467 9.75557 0.51237 9.37952C0.743273 9.00348 1.05004 8.7165 1.43268 8.51859C2.25074 8.10956 3.08199 7.80279 3.92643 7.59827C4.77088 7.39376 5.62852 7.2915 6.49935 7.2915C7.37018 7.2915 8.22782 7.39376 9.07227 7.59827C9.91671 7.80279 10.748 8.10956 11.566 8.51859C11.9487 8.7165 12.2554 9.00348 12.4863 9.37952C12.7172 9.75557 12.8327 10.1679 12.8327 10.6165V12.8332H0.166016ZM1.74935 11.2498H11.2493V10.6165C11.2493 10.4714 11.2131 10.3394 11.1405 10.2207C11.0679 10.1019 10.9723 10.0096 10.8535 9.94359C10.141 9.58734 9.42192 9.32015 8.69622 9.14203C7.97053 8.9639 7.23824 8.87484 6.49935 8.87484C5.76046 8.87484 5.02817 8.9639 4.30247 9.14203C3.57678 9.32015 2.85768 9.58734 2.14518 9.94359C2.02643 10.0096 1.93077 10.1019 1.8582 10.2207C1.78563 10.3394 1.74935 10.4714 1.74935 10.6165V11.2498ZM6.49935 4.9165C6.93477 4.9165 7.30751 4.76147 7.61758 4.4514C7.92765 4.14133 8.08268 3.76859 8.08268 3.33317C8.08268 2.89775 7.92765 2.52501 7.61758 2.21494C7.30751 1.90487 6.93477 1.74984 6.49935 1.74984C6.06393 1.74984 5.69119 1.90487 5.38112 2.21494C5.07105 2.52501 4.91602 2.89775 4.91602 3.33317C4.91602 3.76859 5.07105 4.14133 5.38112 4.4514C5.69119 4.76147 6.06393 4.9165 6.49935 4.9165Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "icon",
+                "type": "item",
+                "childs": []
+              },
+              {
+                "id": "v2q29dhib6oagjb7e2qbkw33",
+                "adv": {
+                  "js": "<div {...props}>{doctor}</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},doctor));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "dr Modin Suhendra, Sp. OT.&nbsp;",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": 220,
+                    "wUnit": "px"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit",
+                "wUnit": "px"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 5,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "qui71bdepnucjhgrigzibup1",
+            "adv": {
+              "js": "",
+              "css": "",
+              "jsBuilt": "render();\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "status",
+            "type": "item",
+            "childs": [
+              {
+                "id": "awnh8w2cfnj45k1jvin9bsqz",
+                "adv": {
+                  "js": "<>{status === \"Verified\" && <div {...props}>{children}</div>}</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,status===\"Verified\"&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "name": "Wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "xhc9q2tz3t0lkm587qtd7akz",
+                    "adv": {
+                      "css": "",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\">\r\n<mask id=\"mask0_2238_5542\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"20\" height=\"20\">\r\n<rect width=\"20\" height=\"20\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2238_5542)\">\r\n<path d=\"M7.16732 18.75L5.58398 16.0833L2.58398 15.4167L2.87565 12.3333L0.833984 10L2.87565 7.66667L2.58398 4.58333L5.58398 3.91667L7.16732 1.25L10.0007 2.45833L12.834 1.25L14.4173 3.91667L17.4173 4.58333L17.1257 7.66667L19.1673 10L17.1257 12.3333L17.4173 15.4167L14.4173 16.0833L12.834 18.75L10.0007 17.5417L7.16732 18.75ZM7.87565 16.625L10.0007 15.7083L12.1673 16.625L13.334 14.625L15.6257 14.0833L15.4173 11.75L16.959 10L15.4173 8.20833L15.6257 5.875L13.334 5.375L12.1257 3.375L10.0007 4.29167L7.83399 3.375L6.66732 5.375L4.37565 5.875L4.58398 8.20833L3.04232 10L4.58398 11.75L4.37565 14.125L6.66732 14.625L7.87565 16.625ZM9.12565 12.9583L13.834 8.25L12.6673 7.04167L9.12565 10.5833L7.33398 8.83333L6.16732 10L9.12565 12.9583Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": []
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": 0,
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  }
+                }
+              },
+              {
+                "id": "xq3du9ly6b31um5wsrndc3oa",
+                "adv": {
+                  "js": "<div {...props}>{status}</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},status));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Verified",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#0062A3",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-nowrap"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 5,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 5,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 10,
+        "l": 15,
+        "r": 15,
+        "t": 10
+      }
+    },
+    "component": {
+      "id": "c5bb9ae8-6965-406b-b1b3-6a93fdfbc437",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "date": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"12 Agustus 2023 15:00\"",
+          "valueBuilt": "\"12 Agustus 2023 15:00\";\n"
+        },
+        "score": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"80\"",
+          "valueBuilt": "\"80\";\n"
+        },
+        "title": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"JUdul Thesis JUdul Thesis\"",
+          "valueBuilt": "\"JUdul Thesis JUdul Thesis\";\n"
+        },
+        "doctor": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"dr Modin, Sp. OT\"",
+          "valueBuilt": "\"dr Modin, Sp. OT\";\n"
+        },
+        "status": {
+          "idx": 4,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Verified\"",
+          "valueBuilt": "\"Verified\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-12T07:48:50.059Z",
+  "updated_at": "2023-09-12T07:56:39.891Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

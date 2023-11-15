@@ -1,0 +1,439 @@
+{
+  "id": "11bd7d26-08da-414a-9635-ee118c66260a",
+  "name": "patient-treatment",
+  "url": "/ppds/schedule/activity/patients-treatment",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "w3v2w879nzacw1xzh9ad7wr4",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "fqjt5dpm2481undy10arlr9l",
+            "adv": {
+              "js": "<div {...props}>{children}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+            },
+            "name": "title-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ana3qtlgnmf12yqwsbn7iuur",
+                "adv": {},
+                "name": "ppds-senior-header",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "d0fc241e-0206-4e3b-ae93-9fa209adc9c0",
+                  "props": {},
+                  "updated_at": 1691471572311
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 15,
+                "r": 15,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "vib47gk0zkpc2w73i60esjos",
+            "adv": {},
+            "name": "activity-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t05ttebvxo8k2vevyig841va",
+                "adv": {},
+                "name": "detail-activity",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "fb1bf88f-bddb-4ae5-b93d-59bad993578d",
+                  "props": {},
+                  "updated_at": 1691123486419
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "ittrxukpgag0dv5do0vuoxb5",
+            "adv": {},
+            "name": "tab-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "l65vvlt9oc62x3jgs7uhwfeb",
+                "name": "tab_action_ppds",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a063b1f3-4631-4b3c-a9e4-c6df49464516",
+                  "props": {
+                    "list_tab": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "[]",
+                      "value": "[\"Detail\", \"Treatment\"]",
+                      "valueBuilt": "[\"Detail\",\"Treatment\"];\n"
+                    },
+                    "tab_active": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "tab",
+                        "options": "[\n  { \n    label: \"SENIOR PPDS\", \n    value: \"SENIOR PPDS\" \n  },\n  { \n    label: \"PPDS\", \n    value: \"PPDS\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Treatment\"",
+                      "valueBuilt": "\"Treatment\";\n"
+                    },
+                    "width_percentage": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "width_px"
+                      },
+                      "type": "string",
+                      "value": "\"50\"",
+                      "valueBuilt": "\"50\";\n"
+                    }
+                  },
+                  "updated_at": 1691560206005
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "trfjrn3wqi7rimiv0dh59pgi",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "treatment-section",
+            "type": "item",
+            "childs": [
+              {
+                "id": "zp7cdf117bmqcs8wwj5jjcry",
+                "adv": {},
+                "name": "sub-heading",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ng0exh76ru168ugjgk8pjk56",
+                    "adv": {},
+                    "name": "text-normal",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                      "props": {
+                        "label": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Treatment\"",
+                          "valueBuilt": "\"Treatment\";\n"
+                        },
+                        "weight": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "font_weight",
+                            "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"bold\"",
+                          "valueBuilt": "\"bold\";\n"
+                        }
+                      },
+                      "updated_at": 1691387444415
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "xiugtd53jtnfuobupe3pc7ne",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          complaints: \"Dada Sakit\",\r\n          medicine: \"Paracetamol, aspirin\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          complaints: \"Pusing\",\r\n          medicine: \"Paracetamol, aspirin\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          complaints: \"Batuk Berdahak\",\r\n          medicine: \"Paracetamol, aspirin\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          complaints: \"Kaki tidak bisa bergerak\",\r\n          medicine: \"Paracetamol, aspirin\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",complaints:\"Dada Sakit\",medicine:\"Paracetamol, aspirin\"},{id:\"02\",complaints:\"Pusing\",medicine:\"Paracetamol, aspirin\"},{id:\"03\",complaints:\"Batuk Berdahak\",medicine:\"Paracetamol, aspirin\"},{id:\"03\",complaints:\"Kaki tidak bisa bergerak\",medicine:\"Paracetamol, aspirin\"}]}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-item",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "yu1ya3oe1cp4pmg38wds365k",
+                    "adv": {
+                      "js": "<>\r\n  {local.list.map((e) => {\r\n    return (\r\n      <div {...props}>\r\n        <PassProp item={e}>{children}</PassProp>\r\n      </div>\r\n    );\r\n  })}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,local.list.map(r=>React.createElement(\"div\",{...props},React.createElement(PassProp,{item:r},children)))));\n"
+                    },
+                    "name": "item-wrapped",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "fydee8ti1yi1960wipwd4z20",
+                        "adv": {},
+                        "name": "two-row-data-with-icon",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "9af51c54-f813-440e-88af-0323cb88d7f5",
+                          "props": {
+                            "icon_props": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "option",
+                                "oldName": "new_prop",
+                                "options": "[\n  {\n    label: \"medical\",\n    value: \"medical\"\n  },\n  {\n    label: \"comment\",\n    value: \"comment\"\n  },\n]"
+                              },
+                              "type": "string",
+                              "value": "\"medical\"",
+                              "valueBuilt": "\"medical\";\n"
+                            },
+                            "row1_props": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.complaints",
+                              "valueBuilt": " item.complaints;\n"
+                            },
+                            "row2_props": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.medicine",
+                              "valueBuilt": " item.medicine;\n"
+                            }
+                          },
+                          "updated_at": 1691386808654
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 8,
+                    "align": "top-left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "qpreyyyvfqevk8ly8n0uuqe7",
+                "adv": {
+                  "js": "<div {...props}>{children}</div>",
+                  "css": "& {\r\n  display: flex;\r\n  position: relative;\r\n  top: 150px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                },
+                "name": "button-wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "cgehs7ojza944bpzh6wfq7v2",
+                    "name": "button",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                      "props": {
+                        "type_button": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"Submit\"",
+                          "valueBuilt": "\"Submit\";\n"
+                        },
+                        "label_button": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Create Treatment\"",
+                          "valueBuilt": "\"Create Treatment\";\n"
+                        }
+                      },
+                      "updated_at": 1691558732248
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "top-center"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 7,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 29,
+                "r": 29,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "k0l71a8c27vjjzvx2hyjiy35",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "r3y8lpmtfcnx9hr586xy18a3",
+            "name": "menu-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1691553202192
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-07T05:00:11.675Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-15T17:34:54.264Z",
+  "id_folder": "a752218a-955c-49ba-942e-8befbebcb23c",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

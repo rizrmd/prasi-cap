@@ -1,0 +1,165 @@
+{
+  "id": "7233d1df-6c61-478f-860b-6a3c99ce6b4f",
+  "name": "form",
+  "content_tree": {
+    "id": "tph2jbghvnopzqzj42xr92uu",
+    "adv": {
+      "js": "<div {...props}>{children}</div>"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "form",
+    "type": "item",
+    "childs": [
+      {
+        "id": "m29uuzchxho32afdpoksadz9",
+        "adv": {
+          "js": "<>{debug === \"y\" && <div {...props}>{JSON.stringify(form, null, 2)}</div>}</>",
+          "css": "& {\n  display: flex;\n  white-space: pre;\n  font-size: 13px;\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,debug===\"y\"&&React.createElement(\"div\",{...props},JSON.stringify(form,null,2))));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "debug",
+        "type": "item",
+        "childs": []
+      },
+      {
+        "id": "z38nph7sqngvmv6j7h25z7i0",
+        "adv": {
+          "js": "<form\n  {...props}\n  onSubmit={async (e) => {\n    e.preventDefault();\n    if (typeof on_submit === \"function\") {\n      form._saving = true;\n      form.render();\n\n      await on_submit(form._validate);\n      form._saving = false;\n      form.render();\n    }\n  }}\n>\n  {(() => {\n    form._validate = (validation) => {\n      for (const [k, v] of Object.entries(validation)) {\n        if (!form[k]) {\n          form._error[k] = v;\n        }\n      }\n      form._valid = Object.keys(form._error).length === 0;\n      form.render();\n      return form._valid;\n    };\n    form._submit = async () => {\n      form._saving = true;\n      form.render();\n      await on_submit(form._validate);\n      form._saving = false;\n      form.render();\n    };\n  })()}\n  {children}\n</form>",
+          "jsBuilt": "render(React.createElement(\"form\",{...props,onSubmit:async r=>{r.preventDefault(),typeof on_submit==\"function\"&&(form._saving=!0,form.render(),await on_submit(form._validate),form._saving=!1,form.render())}},(()=>{form._validate=r=>{for(let[e,o]of Object.entries(r))form[e]||(form._error[e]=o);return form._valid=Object.keys(form._error).length===0,form.render(),form._valid},form._submit=async()=>{form._saving=!0,form.render(),await on_submit(form._validate),form._saving=!1,form.render()}})(),children));\n"
+        },
+        "name": "Wrapped",
+        "type": "item",
+        "childs": [
+          {
+            "id": "dw1cl593iaihdm6hke2xshjk",
+            "adv": {
+              "js": "<div {...props}>{content}</div> ",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},content));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "form-jsx",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": ""
+          },
+          "dim": {
+            "h": "full",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "full",
+        "w": "full"
+      }
+    },
+    "component": {
+      "id": "7233d1df-6c61-478f-860b-6a3c99ce6b4f",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "debug": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"n\"",
+          "valueBuilt": "\"n\";\n"
+        },
+        "content": {
+          "idx": 2,
+          "meta": {
+            "type": "content-element",
+            "oldName": "children"
+          },
+          "type": "ReactElement",
+          "value": "<></>",
+          "content": {
+            "id": "f3y5prgy891wm6jg1qsawp01",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "full",
+              "w": "full"
+            },
+            "name": "content",
+            "type": "item",
+            "childs": [
+              {
+                "id": "xdg9lfqdacq2iopku4inhwcj",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "",
+                "name": "New Text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                }
+              }
+            ]
+          },
+          "valueBuilt": " React.createElement(React.Fragment,null);\n"
+        },
+        "on_submit": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "(validate: (arg: Record<string, string | (() => boolean)>) => boolean) => void | Promise<void>",
+          "value": "async (validate) => {}",
+          "visible": "true",
+          "valueBuilt": " async a=>{};\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-09T08:07:15.556Z",
+  "updated_at": "2023-10-17T09:47:28.887Z",
+  "type": "item",
+  "id_component_group": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc",
+  "props": []
+}

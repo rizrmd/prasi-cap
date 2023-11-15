@@ -1,0 +1,401 @@
+{
+  "id": "92fc21b6-152d-4239-aa3b-9ec3fd430033",
+  "name": "item",
+  "content_tree": {
+    "id": "stgc1jqp0kvap9546pzbf7zz",
+    "adv": {
+      "js": "<div\r\n  {...props}\r\n  onClick={(e) => {\r\n    navigate(url);\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px #E7E7E7;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+      "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:e=>{navigate(url)}},children));\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "item",
+    "type": "item",
+    "childs": [
+      {
+        "id": "xwsy0awc2g185aly79r8nv2l",
+        "adv": {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"45\" height=\"46\" viewBox=\"0 0 40 41\" fill=\"none\">\r\n  <circle cx=\"20\" cy=\"20.5\" r=\"20\" fill=\"#D2DAFF\" />\r\n  <path\r\n    d=\"M22.8413 9.66669H17.3253C16.1047 9.66669 15.1072 10.5767 15.1072 11.7034V12.7217C15.1072 13.8484 16.093 14.7584 17.3136 14.7584H22.8413C24.0618 14.7584 25.0477 13.8484 25.0477 12.7217V11.7034C25.0594 10.5767 24.0618 9.66669 22.8413 9.66669Z\"\r\n    fill=\"#002B5B\" />\r\n  <path\r\n    d=\"M26.233 12.7216C26.233 14.4441 24.7073 15.8525 22.8412 15.8525H17.3253C15.4592 15.8525 13.9335 14.4441 13.9335 12.7216C13.9335 12.115 13.2293 11.7358 12.6425 12.0175C11.8019 12.4307 11.099 13.0472 10.609 13.8011C10.119 14.5549 9.86049 15.4175 9.86109 16.2966V26.4908C9.86109 29.1558 12.22 31.3333 15.1071 31.3333H25.0593C27.9464 31.3333 30.3054 29.1558 30.3054 26.4908V16.2966C30.3054 14.4441 29.1787 12.83 27.5239 12.0175C26.9371 11.7358 26.233 12.115 26.233 12.7216ZM20.5292 25.8625H15.3888C14.9076 25.8625 14.5086 25.4941 14.5086 25.05C14.5086 24.6058 14.9076 24.2375 15.3888 24.2375H20.5292C21.0104 24.2375 21.4094 24.6058 21.4094 25.05C21.4094 25.4941 21.0104 25.8625 20.5292 25.8625ZM23.6041 21.5291H15.3888C14.9076 21.5291 14.5086 21.1608 14.5086 20.7166C14.5086 20.2725 14.9076 19.9041 15.3888 19.9041H23.6041C24.0853 19.9041 24.4843 20.2725 24.4843 20.7166C24.4843 21.1608 24.0853 21.5291 23.6041 21.5291Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "jsl9eez7pwleu9t2ssf2dux3",
+        "adv": {
+          "js": "<div {...props}>{children}</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+        },
+        "name": "Wrapped",
+        "type": "item",
+        "childs": [
+          {
+            "id": "y1932rap7obvy6h3672x5tba",
+            "adv": {
+              "js": "<div {...props}>{children}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "name",
+            "type": "item",
+            "childs": [
+              {
+                "id": "kacnt29zz6b7cq8vjmv3cv5w",
+                "adv": {
+                  "js": "<div {...props}>{title}</div>",
+                  "css": "& {\r\n  display: flex;\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},title));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Assignment Project&nbsp;",
+                "name": "item_name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "egn513ukfcqvhqrpuunobs96",
+                "adv": {
+                  "js": "<div\r\n  {...props}\r\n  style={{\r\n    border:\r\n      label === \"Turned In\"\r\n        ? \"1px solid #002B5B\"\r\n        : label === \"Returned\"\r\n        ? \"1px solid #870707\"\r\n        : \"1px solid #159895\",\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                  "css": "& {\r\n  display: flex;\r\n  min-width: fit-content;\r\n  box-shadow: 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props,style:{border:label===\"Turned In\"?\"1px solid #002B5B\":label===\"Returned\"?\"1px solid #870707\":\"1px solid #159895\"}},children));\n"
+                },
+                "name": "label-wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "n8wr7xv2v7f5eb8vlaovs41x",
+                    "adv": {
+                      "js": "<div\r\n  {...props}\r\n  style={{\r\n    color:\r\n      label === \"Turned In\"\r\n        ? \"#002B5B\"\r\n        : label === \"Returned\"\r\n        ? \"#870707\"\r\n        : \"#159895\",\r\n  }}\r\n>\r\n  {label}\r\n</div>",
+                      "css": "& {\r\n  display: flex;\r\n\r\nfont-weight: 400;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:label===\"Turned In\"?\"#002B5B\":label===\"Returned\"?\"#870707\":\"#159895\"}},label));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Turned In",
+                    "name": "label_status",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#ffffff"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 13,
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 6,
+                        "r": 6,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 20,
+                      "br": 20,
+                      "tl": 20,
+                      "tr": 20
+                    }
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "align": "left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "am5ygxkai1nmvhxu7es8kz6i",
+            "adv": {
+              "js": "<div {...props}>{pic}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},pic));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "dr Mellisa, Sp. OT.",
+            "name": "pic",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "zt11o9za5skmo2e4riaqj96u",
+            "adv": {
+              "js": "<div {...props}>{schedule}</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},schedule));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Visite 12/01/2023d",
+            "name": "schedule_name",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 1,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": "#ffffff"
+      },
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 20,
+          "br": 20,
+          "tl": 20,
+          "tr": 20
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 23,
+        "align": "left"
+      },
+      "padding": {
+        "b": 6,
+        "l": 20,
+        "r": 20,
+        "t": 6
+      }
+    },
+    "component": {
+      "id": "92fc21b6-152d-4239-aa3b-9ec3fd430033",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "pic": {
+          "idx": 2,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"dr Mellisa, Sp. OT.\"",
+          "valueBuilt": "\"dr Mellisa, Sp. OT.\";\n"
+        },
+        "url": {
+          "idx": 5,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"/url-default\"",
+          "valueBuilt": "\"/url-default\";\n"
+        },
+        "label": {
+          "idx": 5,
+          "meta": {
+            "type": "option",
+            "oldName": "new_prop",
+            "options": "[\n  {\n    label: \"Turned In\",\n    value: \"Turned In\"\n  },\n  {\n    label: \"Returned\",\n    value: \"Returned\"\n  },\n  {\n   label:\"Late\",\n   value:\"Late\"\n  }\n]"
+          },
+          "type": "string",
+          "value": "\"Turned In\"",
+          "valueBuilt": "\"Turned In\";\n"
+        },
+        "title": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "name"
+          },
+          "type": "text",
+          "value": "\"Assignment 1\"",
+          "valueBuilt": "\"Assignment 1\";\n"
+        },
+        "schedule": {
+          "idx": 3,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"Visite 12/01/2023\"",
+          "valueBuilt": "\"Visite 12/01/2023\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-01T03:22:00.736Z",
+  "updated_at": "2023-08-15T06:24:08.016Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

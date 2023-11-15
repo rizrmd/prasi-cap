@@ -1,5 +1,6 @@
 import * as path from "path";
 import { $, cd } from "zx";
+import { prepareSiteCache } from "./utils/cache";
 
 const ROOT = process.cwd();
 const dir = {
@@ -33,6 +34,8 @@ if (confile) {
   res = res.replace(/versionName.+\n/, `versionName "1.${config.version}"\n`);
   await Bun.write(buildfile, res);
 }
+
+await prepareSiteCache("pkgs/capacitor/www");
 
 $.verbose = false;
 await $`cp ${dir.root("res/google-services.json")} android/app`;

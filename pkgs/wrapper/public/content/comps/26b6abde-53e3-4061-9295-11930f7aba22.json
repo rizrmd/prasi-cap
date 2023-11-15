@@ -1,0 +1,222 @@
+{
+  "id": "26b6abde-53e3-4061-9295-11930f7aba22",
+  "name": "loader",
+  "content_tree": {
+    "id": "dgz240516odhpykeh78muc24",
+    "adv": {
+      "js": "<div {...props}>{children}</div>",
+      "css": ""
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "loader",
+    "type": "item",
+    "childs": [
+      {
+        "id": "k7fc58c8h54z5us37b810wj4",
+        "adv": {
+          "js": "<div {...props}>\n  <Local\n    name=\"data\"\n    value={{\n      _ready: false,\n    }}\n    cache={false}\n    effect={async (local) => {\n      if (isEditor) {\n        if (mode === \"sample\") {\n          const data = await sample();\n\n          for (const [k, v] of Object.entries(data)) {\n            local[k] = v;\n          }\n        } else {\n          const data = await load();\n          for (const [k, v] of Object.entries(data)) {\n            local[k] = v;\n          }\n        }\n        local.render();\n      } else {\n        try {\n          const data = await load();\n          const entries = Object.entries(data);\n\n          if (entries.length === 0) {\n            const data = await sample();\n            for (const [k, v] of Object.entries(data)) {\n              local[k] = v;\n            }\n          } else {\n            for (const [k, v] of entries) {\n              local[k] = v;\n            }\n          }\n        } catch (e) {}\n\n        local._ready = true;\n        local.render();\n      }\n      local.render();\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"data\",value:{_ready:!1},cache:!1,effect:async e=>{if(isEditor){if(mode===\"sample\"){let a=await sample();for(let[s,t]of Object.entries(a))e[s]=t}else{let a=await load();for(let[s,t]of Object.entries(a))e[s]=t}e.render()}else{try{let a=await load(),s=Object.entries(a);if(s.length===0){let t=await sample();for(let[r,n]of Object.entries(t))e[r]=n}else for(let[t,r]of s)e[t]=r}catch{}e._ready=!0,e.render()}e.render()}},children)));\n"
+        },
+        "name": "local",
+        "type": "item",
+        "childs": [
+          {
+            "id": "ifek5hf0g6kn4bnsdz006gqb",
+            "adv": {
+              "js": "<>\n  {debug === \"y\" && (\n    <div className=\"font-mono whitespace-pre text-[11px]\">\n      {JSON.stringify(data, null, 2)}\n    </div>\n  )}\n</>",
+              "css": "& {\n  display: flex;\n  font-size: 13px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,debug===\"y\"&&React.createElement(\"div\",{className:\"font-mono whitespace-pre text-[11px]\"},JSON.stringify(data,null,2))));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "debug",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": ""
+              }
+            }
+          },
+          {
+            "id": "x0mg0hms4xu3gkazsuafjp6l",
+            "adv": {
+              "js": "<>\n  {((isEditor && preview === \"ready\") || (!isEditor && data._ready)) && (\n    <div {...props}>{ready}</div>\n  )}\n</>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,(isEditor&&preview===\"ready\"||!isEditor&&data._ready)&&React.createElement(\"div\",{...props},ready)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "ready",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": ""
+              },
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "mi3yl9nnhww44hegjvwz04vo",
+            "adv": {
+              "js": "<>\n  {((isEditor && preview === \"loading\") || (!isEditor && !data._ready)) && (\n    <div {...props}>{loading}</div>\n  )}\n</>",
+              "css": "& {\n  display: flex;\n\n  .shine {\n    background: #f6f7f8;\n    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);\n    background-repeat: no-repeat;\n    background-size: 800px 104px;\n    display: inline-block;\n    position: relative;\n\n    animation-duration: 2s;\n    animation-fill-mode: forwards;\n    animation-iteration-count: infinite;\n    animation-name: placeholderShimmer;\n    animation-timing-function: linear;\n  }\n\n  @keyframes placeholderShimmer {\n    0% {\n      background-position: -468px 0;\n    }\n\n    100% {\n      background-position: 468px 0;\n    }\n  }\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,(isEditor&&preview===\"loading\"||!isEditor&&!data._ready)&&React.createElement(\"div\",{...props},loading)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "loading",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": ""
+          },
+          "dim": {
+            "h": "full",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": ""
+      },
+      "dim": {
+        "h": "full",
+        "w": "full"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "left"
+      }
+    },
+    "component": {
+      "id": "26b6abde-53e3-4061-9295-11930f7aba22",
+      "group": {
+        "id": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc"
+      },
+      "props": {
+        "load": {
+          "gen": "async () => {\n  return `\"\"`\n}",
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "() => Promise<any>",
+          "value": "async () => {\n  return {};\n}",
+          "valueBuilt": " async()=>({});\n"
+        },
+        "mode": {
+          "idx": 6,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"sample\"",
+          "valueBuilt": "\"sample\";\n"
+        },
+        "debug": {
+          "idx": 5,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"n\"",
+          "valueBuilt": "\"n\";\n"
+        },
+        "ready": {
+          "idx": 0,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "sample": {
+          "idx": 4,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "() => Promise<any>",
+          "value": "async () => {\n  const actions = await db.m_action.findMany({\n    where: {\n      id_client: user.id_client,\n      m_action_semester: {\n        some: {\n          id_semester: user.id_smt,\n        },\n      },\n    },\n  });\n\n  return { actions };\n}",
+          "valueBuilt": " async()=>({actions:await db.m_action.findMany({where:{id_client:user.id_client,m_action_semester:{some:{id_semester:user.id_smt}}}})});\n"
+        },
+        "loading": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "preview": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"ready\"",
+          "valueBuilt": "\"ready\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-09T09:13:40.595Z",
+  "updated_at": "2023-11-06T06:44:28.718Z",
+  "type": "item",
+  "id_component_group": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc",
+  "props": []
+}

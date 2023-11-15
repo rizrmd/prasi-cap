@@ -1,0 +1,320 @@
+{
+  "id": "67165c39-9a56-4361-a509-f2087dac89b2",
+  "name": "learning-materials",
+  "url": "/ppds/lm/learning-materials",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "qvbnmmwzrul5lgjj3un01y5o",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "rhojuhm9oddnx7fb74sennca",
+            "adv": {},
+            "name": "page_title_with_back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "9112f529-187c-49a1-a0ce-71176723f914",
+              "props": {
+                "label_props": {
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Learning Materials\"",
+                  "valueBuilt": "\"Learning Materials\";\n"
+                }
+              },
+              "updated_at": 1690939230974
+            }
+          },
+          {
+            "id": "ho028vvuv3md9jjz3r5cp2rl",
+            "adv": {
+              "js": "<div {...props}>\r\n  {\" \"}\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"1000001\",\r\n          name: \"Module 1: Orthopaedi\",\r\n          date: \"22 Desember 2023\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},\" \",React.createElement(Local,{name:\"local\",value:{list:[{id:\"1000001\",name:\"Module 1: Orthopaedi\",date:\"22 Desember 2023\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-data",
+            "type": "item",
+            "childs": [
+              {
+                "id": "oii73nal9cnt50dfbshj23sw",
+                "adv": {
+                  "js": "<>\r\n  {local.list.map((e) => {\r\n    return (\r\n      <div {...props}>\r\n        <PassProp item={e}>{children}</PassProp>\r\n      </div>\r\n    );\r\n  })}\r\n</>",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,local.list.map(r=>React.createElement(\"div\",{...props},React.createElement(PassProp,{item:r},children)))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-data",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "qdsvfoezg7wbb8iqaxysa7bz",
+                    "adv": {
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M24.3333 31.6458H15.6667C11.7125 31.6458 9.4375 29.3708 9.4375 25.4166V14.5833C9.4375 10.6291 11.7125 8.35413 15.6667 8.35413H24.3333C28.2875 8.35413 30.5625 10.6291 30.5625 14.5833V25.4166C30.5625 29.3708 28.2875 31.6458 24.3333 31.6458ZM15.6667 9.97913C12.5683 9.97913 11.0625 11.485 11.0625 14.5833V25.4166C11.0625 28.515 12.5683 30.0208 15.6667 30.0208H24.3333C27.4317 30.0208 28.9375 28.515 28.9375 25.4166V14.5833C28.9375 11.485 27.4317 9.97913 24.3333 9.97913H15.6667Z\" fill=\"#002B5B\"/>\r\n<path d=\"M16.7502 19.0358C16.573 19.0366 16.3974 19.0026 16.2334 18.9355C16.0695 18.8684 15.9203 18.7697 15.7945 18.6449C15.6688 18.5201 15.5688 18.3718 15.5004 18.2084C15.4321 18.0449 15.3966 17.8696 15.396 17.6925V9.16663C15.396 8.72246 15.7643 8.35413 16.2085 8.35413H23.7918C24.236 8.35413 24.6043 8.72246 24.6043 9.16663V17.6816C24.6043 18.2233 24.2902 18.7108 23.7918 18.9166C23.3043 19.1333 22.7302 19.0358 22.3293 18.6675L20.0002 16.5333L17.671 18.6783C17.411 18.9166 17.086 19.0358 16.7502 19.0358ZM20.0002 14.8108C20.3252 14.8108 20.661 14.93 20.921 15.1683L22.9793 17.0641V9.97913H17.021V17.0641L19.0793 15.1683C19.3393 14.93 19.6752 14.8108 20.0002 14.8108ZM25.9585 22.9791H21.3543C20.9102 22.9791 20.5418 22.6108 20.5418 22.1666C20.5418 21.7225 20.9102 21.3541 21.3543 21.3541H25.9585C26.4027 21.3541 26.771 21.7225 26.771 22.1666C26.771 22.6108 26.4027 22.9791 25.9585 22.9791ZM25.9585 27.3125H16.7502C16.306 27.3125 15.9377 26.9441 15.9377 26.5C15.9377 26.0558 16.306 25.6875 16.7502 25.6875H25.9585C26.4027 25.6875 26.771 26.0558 26.771 26.5C26.771 26.9441 26.4027 27.3125 25.9585 27.3125Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "mmudgf86zo9yk96y3cb97mt1",
+                    "adv": {
+                      "js": "<div {...props}>{children}</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "text",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "cwlayje5c03ttvhprilj97iy",
+                        "adv": {
+                          "js": "<div {...props}>{item.name}</div>",
+                          "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},item.name));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Module 1: Orthopaedic Trauma",
+                        "name": "data",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "ttp9t9dwd8udhjhyctlwdzun",
+                        "adv": {
+                          "js": "<div {...props}>{item.date}</div>",
+                          "css": "& {\r\n  display: flex;\r\n \r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},item.date));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "19 January 2023",
+                        "name": "label_status",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "color": "#0062A3",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 3,
+                        "l": 0,
+                        "r": 0,
+                        "t": 3
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 10,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 12,
+                    "r": 12,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 25,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 27,
+                "l": 0,
+                "r": 0,
+                "t": 27
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "padding": {
+            "b": 0,
+            "l": 35,
+            "r": 35,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "qa4fwf9phwgnauqhxyseb6ho",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "per091wl7qshnjvfby0hx8pd",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1691996458029
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "fit"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 67,
+            "align": "center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 25,
+            "r": 25,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-26T03:08:32.167Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-13T02:31:45.990Z",
+  "id_folder": "e3730f82-1356-4e16-925b-d3988b78598a",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

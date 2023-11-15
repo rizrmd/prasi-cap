@@ -1,0 +1,256 @@
+{
+  "id": "48834e90-e37b-402d-9003-f01f124b345f",
+  "name": "item-logbook",
+  "content_tree": {
+    "id": "c5wxxk3o0okdcach0g8rwwm7",
+    "adv": {
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "item-logbook",
+    "type": "item",
+    "childs": [
+      {
+        "id": "v16askhu7zqzymvci158v7l2",
+        "adv": {},
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "text",
+        "type": "item",
+        "childs": [
+          {
+            "id": "ub9ga29ssisyvktxxex3sxt6",
+            "adv": {
+              "js": "<div {...props}>{label}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Presentasi",
+            "name": "name",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 16,
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 10,
+                "r": 10,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "gvxifsznrcuyo1mt8torovka",
+            "adv": {
+              "js": "<div {...props}>{quantity}</div>",
+              "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "3",
+            "name": "quantity",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#E6EFF6"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "font": {
+                "size": 14,
+                "color": "#000000",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 6,
+                  "br": 6,
+                  "tl": 6,
+                  "tr": 6
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "padding": {
+                "b": 1,
+                "l": 8,
+                "r": 8,
+                "t": 1
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "ph80e5n11k9ip97228iyl5m3",
+            "adv": {
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\r\n<mask id=\"mask0_548_7185\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\r\n<rect width=\"24\" height=\"24\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_548_7185)\">\r\n<path d=\"M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon-chevron",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "right"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 5,
+            "align": "left"
+          },
+          "padding": {
+            "b": 7,
+            "l": 14,
+            "r": 14,
+            "t": 7
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 8,
+          "br": 8,
+          "tl": 8,
+          "tr": 8
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "align": "left"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "48834e90-e37b-402d-9003-f01f124b345f",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "label": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Laporan Jaga\"",
+          "valueBuilt": "\"Laporan Jaga\";\n"
+        },
+        "quantity": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"15\"",
+          "valueBuilt": "\"15\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-13T03:09:20.779Z",
+  "updated_at": "2023-09-13T03:10:48.653Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

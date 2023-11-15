@@ -1,0 +1,415 @@
+{
+  "id": "4b005e57-b957-4f72-8a68-2d79bd40de72",
+  "name": "list-proposal-thesis",
+  "url": "/staff-pengajar/all/academic/proposal-thesis/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "lhho4llwy1f5kuprtsqad1sn",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "it5ydr4hj2km6s3od0klpi26",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "c8wyxf0wtmbg3agd3vmavoe0",
+                "name": "page-tittle",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "draoq72czp36u8q091rqie1r",
+                    "adv": {},
+                    "name": "title-back",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                      "props": {
+                        "url": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"/staff-pengajar/home\"",
+                          "valueBuilt": "\"/staff-pengajar/home\";\n"
+                        },
+                        "label": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Proposal Thesis\"",
+                          "valueBuilt": "\"Proposal Thesis\";\n"
+                        }
+                      },
+                      "updated_at": 1691568262168
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  }
+                }
+              },
+              {
+                "id": "ickonptby322u8xmgxnurukr",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "hlvwg9j9crp0r53604c5fih7",
+                    "adv": {
+                      "js": "<PassProp text={\"filter\"}><div {...props}>{children}</div></PassProp>",
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(PassProp,{text:\"filter\"},React.createElement(\"div\",{...props},children)));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "filter",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 5,
+                        "wrap": "flex-nowrap",
+                        "align": "left"
+                      },
+                      "padding": {
+                        "b": 5,
+                        "l": 15,
+                        "r": 15,
+                        "t": 5
+                      }
+                    },
+                    "component": {
+                      "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                      "name": "",
+                      "props": {
+                        "modal": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"closed\",\n    value: \"closed\"\n  },\n  {\n    label: \"opened\",\n    value: \"opened\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"closed\"",
+                          "valueBuilt": "\"closed\";\n"
+                        },
+                        "popup": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "csj4ao0bv2u5v7vfstkbnhgz",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "popup",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "hlvwg9j9crp0r53604c5fih7"
+                          },
+                          "valueBuilt": "\"hello\""
+                        },
+                        "id_filter": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"filter-1\"",
+                          "valueBuilt": "\"filter-1\";\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 5,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              }
+            }
+          },
+          {
+            "id": "m6lixgb8a18oxz4uypl6qg73",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "sz31uj8x814qadgf0spkr805",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          title: \"Judul Tesis Judul Tesis Judul Tesis\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          status: \"Verified\",\r\n          score: \"80\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          title: \"Judul Tesis Judul Tesis Judul Tesis\",\r\n          doctor: \"dr Mellysa Siregar, Sp. OT\",\r\n          status: \"-\",\r\n          score: \"-\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          title: \"Judul Tesis Judul Tesis Judul Tesis\",\r\n          doctor: \"dr Vincent Rompies, Sp. OT\",\r\n          status: \"Verified\",\r\n          score: \"87\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          title: \"Judul Tesis Judul Tesis Judul Tesis\",\r\n          doctor: \"dr Amaliya Sahid, Sp. OT\",\r\n          status: \"-\",\r\n          score: \"-\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          date: \"12 Agustus 2023 10:00\",\r\n          title: \"Judul Tesis Judul Tesis Judul Tesis\",\r\n          doctor: \"dr Meliana, Sp. OT\",\r\n          status: \"Verified\",\r\n          score: \"75\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",date:\"12 Agustus 2023 10:00\",title:\"Judul Tesis Judul Tesis Judul Tesis\",doctor:\"dr Modin Suherman, Sp. OT\",status:\"Verified\",score:\"80\"},{id:\"02\",date:\"12 Agustus 2023 10:00\",title:\"Judul Tesis Judul Tesis Judul Tesis\",doctor:\"dr Mellysa Siregar, Sp. OT\",status:\"-\",score:\"-\"},{id:\"03\",date:\"12 Agustus 2023 10:00\",title:\"Judul Tesis Judul Tesis Judul Tesis\",doctor:\"dr Vincent Rompies, Sp. OT\",status:\"Verified\",score:\"87\"},{id:\"04\",date:\"12 Agustus 2023 10:00\",title:\"Judul Tesis Judul Tesis Judul Tesis\",doctor:\"dr Amaliya Sahid, Sp. OT\",status:\"-\",score:\"-\"},{id:\"05\",date:\"12 Agustus 2023 10:00\",title:\"Judul Tesis Judul Tesis Judul Tesis\",doctor:\"dr Meliana, Sp. OT\",status:\"Verified\",score:\"75\"}]}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-seminar-hasil",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "g3aasde5e9jgw1x2skq98rgd",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "css": "& {\n  display: flex;\n  padding-bottom: 150px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "item-seminar-hasil",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "hocw5stuvyv4ybnsrn1rlgvp",
+                        "name": "seminar-hasil-staff",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "c5bb9ae8-6965-406b-b1b3-6a93fdfbc437",
+                          "props": {
+                            "date": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.date",
+                              "valueBuilt": " item.date;\n"
+                            },
+                            "score": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.score",
+                              "valueBuilt": " item.score;\n"
+                            },
+                            "title": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.title",
+                              "valueBuilt": " item.title;\n"
+                            },
+                            "doctor": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.doctor",
+                              "valueBuilt": " item.doctor;\n"
+                            },
+                            "status": {
+                              "idx": 4,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.status",
+                              "valueBuilt": " item.status;\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 20,
+                        "wrap": "flex-wrap",
+                        "align": "top-left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "padding": {
+                "b": 12,
+                "l": 0,
+                "r": 0,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "mj3qbyjn0io2j71h6hev9163",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "jmf3tzu2xqu2flfi6waxd343",
+                "name": "menu-staff-pengajar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-28T04:16:52.857Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-12T07:58:41.542Z",
+  "id_folder": "08eb6947-3321-42e6-866f-17a11344c5ac",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

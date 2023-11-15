@@ -1,0 +1,296 @@
+{
+  "id": "c981b8cb-8f8f-49f0-8489-9f15e9cb4ad6",
+  "name": "ppds-action-list",
+  "url": "/ppds/list/:id_action/:id_semester",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "gzwi1wisudcquxhwwi5cru60",
+        "adv": {
+          "js": "isLogin(props, children)",
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(isLogin(props,children));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ddaon2gcbw8g7sxfwuiz4800",
+            "adv": {
+              "js": "<div {...props}>\n  <Local\n    name=\"local\"\n    value={{\n      page_title: \"...\",\n      identifier: \"\",\n    }}\n    cache={false}\n    effect={async (local) => {\n      if (!isEditor && params.id_semester !== \"action\") {\n        let action_name = await db.m_action.findFirst({\n          where: {\n            id: Number(params.id_action),\n          },\n          select: {\n            name: true,\n            identifier: true,\n          },\n        });\n        let semester_name = await db.m_semester.findFirst({\n          where: {\n            id: Number(params.id_semester),\n          },\n          select: {\n            name: true,\n          },\n        });\n        local.identifier = action_name.identifier;\n        local.page_title = `${action_name.name} - ${semester_name.name}`;\n        local.render();\n      }\n      if (!isEditor && params.id_semester === \"action\") {\n        let action_name = await db.m_action.findFirst({\n          where: {\n            id: Number(params.id_action),\n          },\n          select: {\n            name: true,\n            identifier: true,\n          },\n        });\n        local.identifier = action_name.identifier;\n        local.render();\n      }\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+              "css": "",
+              "html": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{page_title:\"...\",identifier:\"\"},cache:!1,effect:async e=>{if(!isEditor&&params.id_semester!==\"action\"){let i=await db.m_action.findFirst({where:{id:Number(params.id_action)},select:{name:!0,identifier:!0}}),t=await db.m_semester.findFirst({where:{id:Number(params.id_semester)},select:{name:!0}});e.identifier=i.identifier,e.page_title=`${i.name} - ${t.name}`,e.render()}if(!isEditor&&params.id_semester===\"action\"){let i=await db.m_action.findFirst({where:{id:Number(params.id_action)},select:{name:!0,identifier:!0}});e.identifier=i.identifier,e.render()}}},children)));\n"
+            },
+            "name": "local",
+            "type": "item",
+            "childs": [
+              {
+                "id": "phr7a9nc6anh716wjg7bsa9n",
+                "adv": {
+                  "html": ""
+                },
+                "name": "list",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "pt51e2kes61wvf0xhuea4trp",
+                    "adv": {
+                      "html": ""
+                    },
+                    "name": "list-logbook",
+                    "type": "item",
+                    "childs": [],
+                    "hidden": false,
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full",
+                        "hUnit": "px",
+                        "wUnit": "px"
+                      }
+                    },
+                    "component": {
+                      "id": "62fc0c95-2c0f-4430-b6b7-fd6633e526fa",
+                      "name": "",
+                      "props": {
+                        "url": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "(id) => `/ppds/action/${params.id_action}/${id}`",
+                          "valueBuilt": " a=>`/ppds/action/${params.id_action}/${a}`;\n"
+                        },
+                        "debug": {
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "value": "\"n\"",
+                          "valueBuilt": "\"n\";\n"
+                        },
+                        "id_user": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "user.id || 1",
+                          "valueBuilt": " user.id||1;\n"
+                        },
+                        "id_action": {
+                          "idx": 0,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "params.id_action || 1",
+                          "valueBuilt": " params.id_action||1;\n"
+                        },
+                        "list_title": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "params.id_semester !== \"action\" ? local.page_title : \"-\"",
+                          "valueBuilt": " params.id_semester!==\"action\"?local.page_title:\"-\";\n"
+                        },
+                        "back_button": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"y\"",
+                          "valueBuilt": "\"y\";\n"
+                        },
+                        "identifier_action": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop_7",
+                          "type": "string",
+                          "value": "local.identifier",
+                          "valueBuilt": " local.identifier;\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  }
+                }
+              },
+              {
+                "id": "qv540jl8h51h7dfmut4r42ek",
+                "adv": {
+                  "js": "<>\n  {params?.id_semester === \"action\" &&\n    local.identifier !== \"exam\" &&\n    local.identifier !== \"bimbingan-operasi\" && (\n      <div {...props}>{children}</div>\n    )}\n</>",
+                  "css": "",
+                  "html": "",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,params?.id_semester===\"action\"&&local.identifier!==\"exam\"&&local.identifier!==\"bimbingan-operasi\"&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "name": "button create",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "znohhu2pi82y90e0fb0923ic",
+                    "adv": {},
+                    "name": "button",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                      "props": {
+                        "action": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"navigate\"",
+                          "visible": "type_button !== 'Submit'",
+                          "valueBuilt": "\"navigate\";\n"
+                        },
+                        "type_button": {
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"Action\"",
+                          "valueBuilt": "\"Action\";\n"
+                        },
+                        "label_button": {
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Tambah\"",
+                          "valueBuilt": "\"Tambah\";\n"
+                        },
+                        "width_button": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"250px\"",
+                          "valueBuilt": "\"250px\";\n"
+                        },
+                        "navigate_link": {
+                          "idx": 6,
+                          "meta": {
+                            "oldName": "navigate"
+                          },
+                          "type": "string",
+                          "value": "`/ppds/action/${params.id_action}/new`",
+                          "visible": "type_button !== 'Submit' && action === 'navigate'",
+                          "valueBuilt": "`/ppds/action/${params.id_action}/new`;\n"
+                        },
+                        "action_function": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop_1"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "visible": "type_button !== 'Submit' && action === 'function'",
+                          "valueBuilt": "()=>{};\n"
+                        }
+                      },
+                      "updated_at": 1692005629672
+                    }
+                  }
+                ],
+                "hidden": false,
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-center"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          },
+          {
+            "id": "we2ll8thnpv3ghan7ulg3tbf",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "hidden": false,
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": ""
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-09-14T06:15:37.667Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-11-07T08:39:55.785Z",
+  "id_folder": "c1526373-5e96-4d5a-a72d-a7d255cf1ed3",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

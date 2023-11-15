@@ -1,0 +1,673 @@
+{
+  "id": "6879d13d-4a55-4afc-b779-a2b10317de72",
+  "name": "coba",
+  "url": "/coba",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ut81bstjjwx01dl79p7upfiq",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "New Section",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ombhk00ah71kqg5w4qirj7nk",
+            "name": "khs-staff-pengajar",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "f372de26-80d9-4b36-8d38-f7151b9e7411",
+              "props": {
+                "gpa": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"4.0\"",
+                  "valueBuilt": "\"4.0\";\n"
+                },
+                "credits": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"SKS\"",
+                  "valueBuilt": "\"SKS\";\n"
+                },
+                "subject": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"subjectnya\"",
+                  "valueBuilt": "\"subjectnya\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "i5kbbbl31f8fiqhiqvq9wxrt",
+            "adv": {
+              "js": "<div {...props}>{subjec}</div>",
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},subjec));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "transcript-staff-pengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 10,
+                "l": 15,
+                "r": 15,
+                "t": 10
+              }
+            },
+            "component": {
+              "id": "e5d20bbe-ebf8-4f7d-bc77-674664324363",
+              "name": "",
+              "props": {
+                "gpa": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"4.0\"",
+                  "valueBuilt": "\"4.0\";\n"
+                },
+                "code": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"180000\"",
+                  "valueBuilt": "\"180000\";\n"
+                },
+                "name": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"dr name\"",
+                  "valueBuilt": "\"dr name\";\n"
+                },
+                "subject": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"ungraded\"",
+                  "valueBuilt": "\"ungraded\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "i5p26obzqyyjg130uh3sd31a",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "detail-transcript-staffpengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 10,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              },
+              "padding": {
+                "b": 10,
+                "l": 15,
+                "r": 15,
+                "t": 10
+              }
+            },
+            "component": {
+              "id": "02ac1502-66a0-4f0e-903f-da22c5d5c163",
+              "name": "",
+              "props": {
+                "gpa": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"3.99\"",
+                  "valueBuilt": "\"3.99\";\n"
+                },
+                "year": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"2023\"",
+                  "valueBuilt": "\"2023\";\n"
+                },
+                "subject": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Ungraded\"",
+                  "valueBuilt": "\"Ungraded\";\n"
+                },
+                "semester": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"semester\"",
+                  "valueBuilt": "\"semester\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "ddjw3eq9o5a0nxiu18e8du4l",
+            "adv": {
+              "js": ""
+            },
+            "name": "input_field",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+              "props": {
+                "label": {
+                  "idx": 3,
+                  "meta": {
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"ini labelnya\"",
+                  "valueBuilt": "\"ini labelnya\";\n"
+                },
+                "value": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"ini value nya\"",
+                  "valueBuilt": "\"ini value nya\";\n"
+                },
+                "width": {
+                  "idx": 20,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"80%\"",
+                  "valueBuilt": "\"80%\";\n"
+                },
+                "toggle": {
+                  "idx": 9,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"off\"",
+                  "valueBuilt": "\"off\";\n"
+                },
+                "checked": {
+                  "idx": 8,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop_1",
+                    "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"true\"",
+                  "valueBuilt": "\"true\";\n"
+                },
+                "bind_key": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"\"",
+                  "valueBuilt": "\"\";\n"
+                },
+                "disabled": {
+                  "idx": 21,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"FALSE\"",
+                  "valueBuilt": "\"FALSE\";\n"
+                },
+                "bind_form": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "any",
+                  "value": "local",
+                  "valueBuilt": " local;\n"
+                },
+                "multiline": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"false\"",
+                  "valueBuilt": "\"false\";\n"
+                },
+                "type_input": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "type",
+                    "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"toggle\"",
+                  "valueBuilt": "\"toggle\";\n"
+                },
+                "value_date": {
+                  "idx": 11,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "\"string\"",
+                  "value": "\"2013-01-08\"",
+                  "valueBuilt": "\"2013-01-08\";\n"
+                },
+                "value_time": {
+                  "idx": 12,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"00:00\"",
+                  "valueBuilt": "\"00:00\";\n"
+                },
+                "multiline_row": {
+                  "idx": 5,
+                  "meta": {
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"3\"",
+                  "valueBuilt": "\"3\";\n"
+                },
+                "on_change_text": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                },
+                "value_dropdown": {
+                  "idx": 13,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "type": "[]",
+                  "value": "[{label: \"a\", value: \"a\"},{label: \"b\", value: \"b\"}, {label: \"c\", value: \"c\"}]",
+                  "valueBuilt": "[{label:\"a\",value:\"a\"},{label:\"b\",value:\"b\"},{label:\"c\",value:\"c\"}];\n"
+                },
+                "dropdown_expand": {
+                  "idx": 14,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"off\"",
+                  "valueBuilt": "\"off\";\n"
+                },
+                "label_checkboxs": {
+                  "idx": 6,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"hello\""
+                },
+                "on_click_toggle": {
+                  "idx": 10,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "onClickToggle"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                },
+                "dropdown_open_key": {
+                  "idx": 20,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"\"",
+                  "valueBuilt": "\"\";\n"
+                },
+                "on_click_checkbox": {
+                  "idx": 7,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "onClickCheckbox"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                },
+                "on_click_dropdown": {
+                  "idx": 15,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "onClickDropdown"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                },
+                "selected_dropdown": {
+                  "idx": 19,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"\"",
+                  "valueBuilt": "\"\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "oh22r9absvb03jw8c9d59xcj",
+            "adv": {
+              "js": "<div {...props}>{score}</div>",
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},score));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "data-ilmiah-staffpengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 15,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              },
+              "padding": {
+                "b": 5,
+                "l": 15,
+                "r": 15,
+                "t": 5
+              }
+            },
+            "component": {
+              "id": "4d475f0c-a1de-4e64-b9d5-1c2d700c9aeb",
+              "name": "",
+              "props": {
+                "date": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"12 Agustus 2023 12:00\"",
+                  "valueBuilt": "\"12 Agustus 2023 12:00\";\n"
+                },
+                "score": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"80\"",
+                  "valueBuilt": "\"80\";\n"
+                },
+                "doctor": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"dr Modin\"",
+                  "valueBuilt": "\"dr Modin\";\n"
+                },
+                "tittle": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "valueBuilt": "\"hello\""
+                }
+              }
+            }
+          },
+          {
+            "id": "mz0gjk107f21e4o1nfc8dlfp",
+            "adv": {
+              "js": "",
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "data-operasi-staffpengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 5,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 10,
+                "l": 15,
+                "r": 15,
+                "t": 10
+              }
+            },
+            "component": {
+              "id": "5ae88968-4005-4038-a041-a16ee4fbb426",
+              "name": "",
+              "props": {
+                "date": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"12 Agustus\"",
+                  "valueBuilt": "\"12 Agustus\";\n"
+                },
+                "role": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"observer\"",
+                  "valueBuilt": "\"observer\";\n"
+                },
+                "score": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"80\"",
+                  "valueBuilt": "\"80\";\n"
+                },
+                "doctor": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"dr Modin\"",
+                  "valueBuilt": "\"dr Modin\";\n"
+                },
+                "number": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"123456\"",
+                  "valueBuilt": "\"123456\";\n"
+                }
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 15,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-29T07:31:44.839Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-24T17:27:01.648Z",
+  "id_folder": "5a7f80cf-2a33-4798-ac38-852c002e9adf",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

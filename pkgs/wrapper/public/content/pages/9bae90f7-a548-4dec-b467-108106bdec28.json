@@ -1,0 +1,540 @@
+{
+  "id": "9bae90f7-a548-4dec-b467-108106bdec28",
+  "name": "schedule-show-qr",
+  "url": "/ppds-senior/schedule/show-qr",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "y8fgnmthwvmcjuk08c4b09zb",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "qvum7xancvmjmmumzzbmwhlv",
+            "adv": {},
+            "name": "page-title",
+            "type": "item",
+            "childs": [
+              {
+                "id": "rsh0ut97pgkkt65qfoo5bit7",
+                "adv": {},
+                "name": "page-title-with-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Visite\"",
+                      "valueBuilt": "\"Visite\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 21,
+                "r": 21,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "i89sqdzejqcm4dy5lqtt3hp8",
+            "adv": {
+              "css": ""
+            },
+            "name": "qr",
+            "type": "item",
+            "childs": [
+              {
+                "id": "w3qqxvt0ditr9auolrv3mbjq",
+                "adv": {
+                  "js": "",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"282\" height=\"278\" viewBox=\"0 0 282 278\" fill=\"none\">\r\n<rect y=\"-4\" width=\"282\" height=\"282\" fill=\"url(#pattern0)\"/>\r\n<defs>\r\n<pattern id=\"pattern0\" patternContentUnits=\"objectBoundingBox\" width=\"1\" height=\"1\">\r\n<use xlink:href=\"#image0_353_7188\" transform=\"scale(0.00125)\"/>\r\n</pattern>\r\n<image id=\"image0_353_7188\" width=\"800\" height=\"800\" xlink:href=\"data:image/png;base64,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\"/>\r\n</defs>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "qr-code",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "k6zxhx4cxvqj17jwh9z4urma",
+            "adv": {},
+            "name": "page-info",
+            "type": "item",
+            "childs": [
+              {
+                "id": "n7zao8tt6kym8hb4tbffsqqr",
+                "adv": {},
+                "name": "header",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "jqm1bidccmw6zkrx31vwa3dn",
+                    "name": "heading-3",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "08dbfd51-885b-4028-8eed-e4f73c643072",
+                      "props": {
+                        "val_props": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Visite 12/08/2023\"",
+                          "valueBuilt": "\"Visite 12/08/2023\";\n"
+                        }
+                      },
+                      "updated_at": 1692073461588
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "top-center"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "icnqq2squxlvw0lxrvgps1e8",
+                "adv": {},
+                "name": "room-info",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "mor3d7er2eujobb6sye2q4i7",
+                    "name": "one_data_icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "80781ba1-692b-45b9-bbb9-efeed83203ea",
+                      "props": {
+                        "coba": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"sabar\",\n    value: \"sabar\"\n  },\n  {\n    label: \"extra_sabar\",\n    value: \"extra_sabar\"\n  },\n  {\n    label: \"info\",\n    value: \"info\"\n  },\n  {\n    label: \"Discussion Group\",\n    value: \"Discussion Group\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"sabar\"",
+                          "valueBuilt": "\"sabar\";\n"
+                        },
+                        "label": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"R. A10.01.01\"",
+                          "valueBuilt": "\"R. A10.01.01\";\n"
+                        },
+                        "icon_props": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "icon",
+                            "options": "[\n  {\n    label: \"patient\",\n    value: \"patient\"\n  },\n  {\n   label: \"comment\",\n   value: \"comment\"\n  },\n {\n   label: \"person\",\n   value: \"person\"\n  },\n {\n   label: \"icon\",\n   value: \"icon\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"location\"",
+                          "valueBuilt": "\"location\";\n"
+                        }
+                      },
+                      "updated_at": 1692003589009
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "swpib4u83wqg13fxibvjtukr",
+                "adv": {},
+                "name": "pic",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "rwkerci1t5gu05qyjdmclagv",
+                    "name": "one_data_icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "80781ba1-692b-45b9-bbb9-efeed83203ea",
+                      "props": {
+                        "coba": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"sabar\",\n    value: \"sabar\"\n  },\n  {\n    label: \"extra_sabar\",\n    value: \"extra_sabar\"\n  },\n  {\n    label: \"info\",\n    value: \"info\"\n  },\n  {\n    label: \"Discussion Group\",\n    value: \"Discussion Group\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"sabar\"",
+                          "valueBuilt": "\"sabar\";\n"
+                        },
+                        "label": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"dr. Percy M, Sp.OT.\"",
+                          "valueBuilt": "\"dr. Percy M, Sp.OT.\";\n"
+                        },
+                        "icon_props": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "icon",
+                            "options": "[\n  {\n    label: \"patient\",\n    value: \"patient\"\n  },\n  {\n   label: \"comment\",\n   value: \"comment\"\n  },\n {\n   label: \"person\",\n   value: \"person\"\n  },\n {\n   label: \"icon\",\n   value: \"icon\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"person\"",
+                          "valueBuilt": "\"person\";\n"
+                        }
+                      },
+                      "updated_at": 1692003589009
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "triyx6bj3pimwxt7exg6rwbh",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "New Item",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 9,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 24,
+                "r": 24,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "jfdbesabuaa5fonzngwqm0mi",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "participants",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ftdhtnt4akwnp1y7vdkmffsy",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "heading",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "hv5ad036tgaikesqrmoj06t1",
+                    "name": "heading-3",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "08dbfd51-885b-4028-8eed-e4f73c643072",
+                      "props": {
+                        "val_props": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Participants\"",
+                          "valueBuilt": "\"Participants\";\n"
+                        }
+                      },
+                      "updated_at": 1692073461588
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 26,
+                    "r": 26,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "mr6wdlecu74yvgu3xia4jrc5",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"1000001\",\r\n          ppds: \"dr. ABCDFU\",\r\n          checkin: \"12 Agustus 2023 10:00\",\r\n          checkout: \"-\",\r\n        },\r\n        {\r\n          id: \"1000002\",\r\n          ppds: \"dr. Mellisa Amirrudin\",\r\n          checkin: \"12 Agustus 2023 08:00\",\r\n          checkout: \"12 Agustus 2023 15:00\",\r\n        },\r\n        {\r\n          id: \"1000003\",\r\n          ppds: \"dr. Meidina Amsyarana\",\r\n          checkin: \"12 Agustus 2023 09:00\",\r\n          checkout: \"-\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"1000001\",ppds:\"dr. ABCDFU\",checkin:\"12 Agustus 2023 10:00\",checkout:\"-\"},{id:\"1000002\",ppds:\"dr. Mellisa Amirrudin\",checkin:\"12 Agustus 2023 08:00\",checkout:\"12 Agustus 2023 15:00\"},{id:\"1000003\",ppds:\"dr. Meidina Amsyarana\",checkin:\"12 Agustus 2023 09:00\",checkout:\"-\"}]}},children)));\n"
+                },
+                "name": "list-participants",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "s4cnx5k6ovhk8gqr5d3k10ab",
+                    "adv": {
+                      "js": "<>\r\n  {local.list.map((e) => {\r\n    return (\r\n      <div {...props}>\r\n        <PassProp item={e}>{children}</PassProp>\r\n      </div>\r\n    );\r\n  })}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,local.list.map(r=>React.createElement(\"div\",{...props},React.createElement(PassProp,{item:r},children)))));\n"
+                    },
+                    "name": "item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "itn677sl470usz6f7xxdgydp",
+                        "adv": {},
+                        "name": "checkin-info",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e292cdcc-83bb-4d20-9ad7-7295cb1b165d",
+                          "props": {
+                            "ppds_name": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.ppds",
+                              "valueBuilt": " item.ppds;\n"
+                            },
+                            "checkin_date": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.checkin",
+                              "valueBuilt": " item.checkin;\n"
+                            },
+                            "checkout_date": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.checkout",
+                              "valueBuilt": " item.checkout;\n"
+                            }
+                          },
+                          "updated_at": 1691467869346
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 14,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 18,
+                    "r": 18,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 6,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "mro1uiziyrjp7scfgfpk49af",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "r48u6xvagwng2js8sfjpgqg2",
+            "adv": {},
+            "name": "menu-senior-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dea9302f-d473-48f1-9da8-a6897bb3e999",
+              "props": {},
+              "updated_at": 1691996254641
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-14T08:46:30.678Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-15T09:03:55.463Z",
+  "id_folder": "4412f44f-6fcd-40c8-8d4a-70318c4b6169",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

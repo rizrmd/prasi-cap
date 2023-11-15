@@ -1,0 +1,914 @@
+{
+  "id": "e6f22f0f-4faf-43cf-b715-f39b121fbc36",
+  "name": "learning-material-discussion",
+  "url": "/ppds/lm/learning-material-discussion",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "f85eya2vcwb83oq4qeow394x",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  top: 0%;\r\n  z-index: 50;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "yb01yudzc2piein7j9e83spe",
+            "name": "title-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/learning-material-details\"",
+                  "valueBuilt": "\"/learning-material-details\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Discussion Group\"",
+                  "valueBuilt": "\"Discussion Group\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          },
+          {
+            "id": "jtqduyiw5mps1z1xffgfbxh4",
+            "name": "one_data_icon",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "80781ba1-692b-45b9-bbb9-efeed83203ea",
+              "props": {
+                "coba": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"sabar\",\n    value: \"sabar\"\n  },\n  {\n    label: \"extra_sabar\",\n    value: \"extra_sabar\"\n  },\n  {\n    label: \"info\",\n    value: \"info\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Discussion Group\"",
+                  "valueBuilt": "\"Discussion Group\";\n"
+                },
+                "icon_props": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "icon",
+                    "options": "[\n  {\n    label: \"patient\",\n    value: \"patient\"\n  },\n  {\n    label: \"B\",\n    value: \"B\"\n  },\n  {\n   label: \"comment\",\n   value: \"comment\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"patient\"",
+                  "valueBuilt": "\"patient\";\n"
+                }
+              },
+              "updated_at": 1691466357889
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "sgg9xdetxip66cvfx5zl6rqv",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  padding-top: 15%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "qs7ljyec9zmpl8qpdzkmjgr7",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      data: [\r\n        {\r\n          nama: \"dr. Meikarta ignatius\",\r\n          text: \"Where to get other reference journals about this materials?\",\r\n          time: \"3 hours ago\",\r\n        },\r\n      ],\r\n    }}\r\n    effect={async (local) => {\r\n      // local.data = [\"world!\"];\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "css": "& {\r\n  display: flex;\r\n  padding-bottom: 175px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{data:[{nama:\"dr. Meikarta ignatius\",text:\"Where to get other reference journals about this materials?\",time:\"3 hours ago\"}]},effect:async e=>{e.render()}},children)));\n"
+            },
+            "name": "list-chat",
+            "type": "item",
+            "childs": [
+              {
+                "id": "xqgavphb2khzfzkuol35v4mg",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {(local.data || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},(local.data||[]).map((a,r)=>React.createElement(PassProp,{item:a,key:r},children))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-chat",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "pju8nqsnmy6uzrgx985i9ncc",
+                    "adv": {
+                      "js": "",
+                      "css": "& {\r\n  display: flex;\r\n    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "data-chat",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ojcbxx24gtrtshnbjerwonqd",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr. Meikarta ignatius\"",
+                              "valueBuilt": "\"dr. Meikarta ignatius\";\n"
+                            },
+                            "weight": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "option",
+                                "oldName": "font_weight",
+                                "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                              },
+                              "type": "string",
+                              "value": "\"bold\"",
+                              "valueBuilt": "\"bold\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "ccf8qga60z591am4ue8szjqm",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Where to get other reference journals about this materials?\"",
+                              "valueBuilt": "\"Where to get other reference journals about this materials?\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "pgi143aeotbxsrgg7zf3ubxe",
+                        "name": "timestamp-text",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+                          "props": {
+                            "timestamps_date": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.time",
+                              "valueBuilt": " item.time;\n"
+                            }
+                          },
+                          "updated_at": 1691468169611
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 5,
+                          "br": 5,
+                          "tl": 5,
+                          "tr": 5
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 7,
+                        "l": 32,
+                        "r": 32,
+                        "t": 7
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "mnkv0sevbo3izyf5p0i4cc7b",
+                    "adv": {
+                      "js": "",
+                      "css": "& {\r\n  display: flex;\r\n    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "data-chat",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ymjcxmt8qh8rub50z1z7w5h3",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr Meisy Siregar, Sp.OT\"",
+                              "valueBuilt": "\"dr Meisy Siregar, Sp.OT\";\n"
+                            },
+                            "weight": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "option",
+                                "oldName": "font_weight",
+                                "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                              },
+                              "type": "string",
+                              "value": "\"bold\"",
+                              "valueBuilt": "\"bold\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "kuln1q0uguwop53tpq7caqbv",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"You can reach the journal at Doktr.me or WhiteCoatHunter\"",
+                              "valueBuilt": "\"You can reach the journal at Doktr.me or WhiteCoatHunter\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "qzyi3xz77g9k5vp1qkso72f3",
+                        "name": "timestamp-text",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+                          "props": {
+                            "timestamps_date": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.time",
+                              "valueBuilt": " item.time;\n"
+                            }
+                          },
+                          "updated_at": 1691468169611
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 5,
+                          "br": 5,
+                          "tl": 5,
+                          "tr": 5
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 7,
+                        "l": 32,
+                        "r": 32,
+                        "t": 7
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "dnhvz57c79bmnh5mi0ivrkuq",
+                    "adv": {
+                      "js": "",
+                      "css": "& {\r\n  display: flex;\r\n    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "data-chat",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ixg7jw0sfqqf2b1kha75e7pg",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr. Meikarta ignatius\"",
+                              "valueBuilt": "\"dr. Meikarta ignatius\";\n"
+                            },
+                            "weight": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "option",
+                                "oldName": "font_weight",
+                                "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                              },
+                              "type": "string",
+                              "value": "\"bold\"",
+                              "valueBuilt": "\"bold\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "vgvhmneog61q70lg8zpptom6",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Where to get other reference journals about this materials?\"",
+                              "valueBuilt": "\"Where to get other reference journals about this materials?\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "tjzytxiyhwczqkg3ilzull0a",
+                        "name": "timestamp-text",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+                          "props": {
+                            "timestamps_date": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.time",
+                              "valueBuilt": " item.time;\n"
+                            }
+                          },
+                          "updated_at": 1691468169611
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 5,
+                          "br": 5,
+                          "tl": 5,
+                          "tr": 5
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 7,
+                        "l": 32,
+                        "r": 32,
+                        "t": 7
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "nscko6llfvlsxec6hsxg7n4b",
+                    "adv": {
+                      "js": "",
+                      "css": "& {\r\n  display: flex;\r\n    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "data-chat",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "raqi8pdhpue1dyaram54n3s6",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"dr. Meisy Siregar, Sp.OT\"",
+                              "valueBuilt": "\"dr. Meisy Siregar, Sp.OT\";\n"
+                            },
+                            "weight": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "option",
+                                "oldName": "font_weight",
+                                "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                              },
+                              "type": "string",
+                              "value": "\"bold\"",
+                              "valueBuilt": "\"bold\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "ruq3rtb9ky182zcclsj2o39j",
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {
+                            "label": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Where to get other reference journals about this materials?\"",
+                              "valueBuilt": "\"Where to get other reference journals about this materials?\";\n"
+                            }
+                          },
+                          "updated_at": 1691746438931
+                        }
+                      },
+                      {
+                        "id": "jxs1ito6qlhjk63ft1apyy7o",
+                        "name": "timestamp-text",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+                          "props": {
+                            "timestamps_date": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.time",
+                              "valueBuilt": " item.time;\n"
+                            }
+                          },
+                          "updated_at": 1691468169611
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 15,
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 5,
+                          "br": 5,
+                          "tl": 5,
+                          "tr": 5
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 7,
+                        "l": 32,
+                        "r": 32,
+                        "t": 7
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 20,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 14,
+                    "l": 33,
+                    "r": 33,
+                    "t": 14
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "vynr3iyjndztpm9yamwx91ut",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "rnolfi4puju5hrbpo5fmkork",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "Send",
+            "type": "item",
+            "childs": [
+              {
+                "id": "s138cin4oldtjf5ta9tvu03h",
+                "adv": {
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "Data",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "iumrohst2qnxtek4rkutv5b6",
+                    "name": "text-normal",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                      "props": {
+                        "label": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"type your comment...\"",
+                          "valueBuilt": "\"type your comment...\";\n"
+                        }
+                      },
+                      "updated_at": 1691746438931
+                    }
+                  },
+                  {
+                    "id": "fqeecr358pf97tppgs1ohg8m",
+                    "name": "text-normal",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                      "props": {
+                        "label": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Send\"",
+                          "valueBuilt": "\"Send\";\n"
+                        },
+                        "weight": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "font_weight",
+                            "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"bold\"",
+                          "valueBuilt": "\"bold\";\n"
+                        }
+                      },
+                      "updated_at": 1691746438931
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": 65,
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 20,
+                      "br": 20,
+                      "tl": 20,
+                      "tr": 20
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 95,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 30,
+                    "r": 30,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 150,
+                "w": "full"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 0,
+                  "br": 0,
+                  "tl": 0,
+                  "tr": 0
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 30,
+                "r": 30,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "s5v64crh5g9wzr0twq50620e",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1691996458029
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": "auto",
+            "align": "center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-26T03:12:42.982Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-13T02:31:36.217Z",
+  "id_folder": "e3730f82-1356-4e16-925b-d3988b78598a",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

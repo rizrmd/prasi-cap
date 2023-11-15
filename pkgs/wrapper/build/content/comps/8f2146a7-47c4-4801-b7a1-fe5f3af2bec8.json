@@ -1,0 +1,522 @@
+{
+  "id": "8f2146a7-47c4-4801-b7a1-fe5f3af2bec8",
+  "name": "exam-ppds",
+  "content_tree": {
+    "id": "kt0072crv5ret4kmdub3obk1",
+    "adv": {
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "exam-ppds",
+    "type": "item",
+    "childs": [
+      {
+        "id": "z4120olb0bw4vxgyjwewtxr9",
+        "adv": {},
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "detail",
+        "type": "item",
+        "childs": [
+          {
+            "id": "aftxuhqbqrgc4y368ct0gcxa",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text-top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "rxuqcgz7g5g2akes6cixqrd6",
+                "adv": {
+                  "js": "<div {...props}>{exam_name}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: 600;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},exam_name));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Ujian Chief",
+                "name": "name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "whb4ktuge6ad8dftte9hxdrx",
+                "name": "status-hasil",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "wgzne6cwg7xv90fzqgalbt1h",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "hasil",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "h6bfee7rsnvblc6xxckh48by",
+                        "adv": {
+                          "js": "<div {...props}>{hasil}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},hasil));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Lulus",
+                        "name": "hasil",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#1A5F7A"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": 110,
+                        "wUnit": "px"
+                      },
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#ffffff",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "top-center"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 10,
+                        "r": 10,
+                        "t": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "xhhirxlxz8jk5st9z50qj8jp",
+            "name": "detail-wrap",
+            "type": "item",
+            "childs": [
+              {
+                "id": "maawy9f0besv12yisksjitdj",
+                "adv": {
+                  "js": "",
+                  "css": "",
+                  "jsBuilt": "render();\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "date",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ml2kswv81yv40dxfkyxx6vnf",
+                    "adv": {
+                      "css": "",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 15 15\" fill=\"none\">\r\n<mask id=\"mask0_2275_6648\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"15\" height=\"15\">\r\n<rect width=\"15\" height=\"15\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2275_6648)\">\r\n<path d=\"M3.125 13.75C2.78125 13.75 2.48698 13.6276 2.24219 13.3828C1.9974 13.138 1.875 12.8438 1.875 12.5V3.75C1.875 3.40625 1.9974 3.11198 2.24219 2.86719C2.48698 2.6224 2.78125 2.5 3.125 2.5H3.75V1.25H5V2.5H10V1.25H11.25V2.5H11.875C12.2188 2.5 12.513 2.6224 12.7578 2.86719C13.0026 3.11198 13.125 3.40625 13.125 3.75V12.5C13.125 12.8438 13.0026 13.138 12.7578 13.3828C12.513 13.6276 12.2188 13.75 11.875 13.75H3.125ZM3.125 12.5H11.875V6.25H3.125V12.5ZM3.125 5H11.875V3.75H3.125V5Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "padding": {
+                        "b": 5,
+                        "l": 0,
+                        "r": 0,
+                        "t": 5
+                      }
+                    }
+                  },
+                  {
+                    "id": "r2fh9tz6ley5oi32j7wuxkmo",
+                    "adv": {
+                      "js": "<div {...props}>{date}</div>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},date));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "12 Agustus 2023 12:00",
+                    "name": "New Text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 5,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                }
+              },
+              {
+                "id": "sji4o6npxi8lsg0moaigm50l",
+                "name": "location",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ndp5x8jjthupzt0ymwbjnpkx",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "location",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "adw8gihqwszh85ehlr8putru",
+                        "adv": {
+                          "css": "",
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\">\r\n<mask id=\"mask0_2461_4201\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"19\" height=\"19\">\r\n<rect width=\"19\" height=\"19\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2461_4201)\">\r\n<path d=\"M9.5013 9.49967C9.93672 9.49967 10.3095 9.34464 10.6195 9.03457C10.9296 8.7245 11.0846 8.35176 11.0846 7.91634C11.0846 7.48092 10.9296 7.10818 10.6195 6.79811C10.3095 6.48804 9.93672 6.33301 9.5013 6.33301C9.06589 6.33301 8.69314 6.48804 8.38307 6.79811C8.073 7.10818 7.91797 7.48092 7.91797 7.91634C7.91797 8.35176 8.073 8.7245 8.38307 9.03457C8.69314 9.34464 9.06589 9.49967 9.5013 9.49967ZM9.5013 15.3184C11.111 13.8406 12.3051 12.4981 13.0836 11.2908C13.8621 10.0835 14.2513 9.01148 14.2513 8.07467C14.2513 6.63648 13.7928 5.45888 12.8758 4.54186C11.9588 3.62485 10.8339 3.16634 9.5013 3.16634C8.16866 3.16634 7.04384 3.62485 6.12682 4.54186C5.20981 5.45888 4.7513 6.63648 4.7513 8.07467C4.7513 9.01148 5.14054 10.0835 5.91901 11.2908C6.69748 12.4981 7.89158 13.8406 9.5013 15.3184ZM9.5013 17.4163C7.377 15.6087 5.79036 13.9297 4.74141 12.3794C3.69245 10.829 3.16797 9.39412 3.16797 8.07467C3.16797 6.09551 3.8046 4.51877 5.07786 3.34447C6.35113 2.17016 7.82561 1.58301 9.5013 1.58301C11.177 1.58301 12.6515 2.17016 13.9247 3.34447C15.198 4.51877 15.8346 6.09551 15.8346 8.07467C15.8346 9.39412 15.3102 10.829 14.2612 12.3794C13.2122 13.9297 11.6256 15.6087 9.5013 17.4163Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "New Item",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "padding": {
+                            "b": 2,
+                            "l": 0,
+                            "r": 0,
+                            "t": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "tx7104vfppcb8hue51vjgbg6",
+                        "adv": {
+                          "js": "<div {...props}>{location}</div>",
+                          "css": "",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},location));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "G.10.20",
+                        "name": "New Text",
+                        "text": "",
+                        "type": "text",
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 15,
+                            "align": "left",
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto",
+                            "wordBreak": "break-normal",
+                            "whitespace": "whitespace-normal"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 3,
+                        "wrap": "flex-nowrap",
+                        "align": "top-left"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 10,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 10,
+        "l": 15,
+        "r": 15,
+        "t": 10
+      }
+    },
+    "component": {
+      "id": "8f2146a7-47c4-4801-b7a1-fe5f3af2bec8",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "date": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"17 Agustus 2023\"",
+          "valueBuilt": "\"17 Agustus 2023\";\n"
+        },
+        "hasil": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Tidak Lulus\"",
+          "valueBuilt": "\"Tidak Lulus\";\n"
+        },
+        "location": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"R.21.11.01\"",
+          "valueBuilt": "\"R.21.11.01\";\n"
+        },
+        "exam_name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Ujian nihh\"",
+          "valueBuilt": "\"Ujian nihh\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-05T08:22:29.612Z",
+  "updated_at": "2023-09-05T08:26:08.290Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

@@ -1,0 +1,561 @@
+{
+  "id": "ed04509f-b325-4025-a71a-1dd7b974c2d8",
+  "name": "change-password new user",
+  "url": "/auth/change-password/:username",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "yzktbv8xxrg79mrzoad3228i",
+        "adv": {
+          "js": "<div {...props}>\n  <Local\n    name=\"form\"\n    value={{\n      _saving: false,\n      new: \"\",\n      confirm: \"\",\n      existing: \"\",\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"form\",value:{_saving:!1,new:\"\",confirm:\"\",existing:\"\"}},children)));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "Page",
+        "type": "section",
+        "childs": [
+          {
+            "id": "h6wn7a2cb48ax7w8fpy1j8rg",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "page-title",
+            "type": "item",
+            "childs": [
+              {
+                "id": "laz2d5rjcuh5dgygszivbzji",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/auth/login\"",
+                      "valueBuilt": "\"/auth/login\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Ubah Password\"",
+                      "valueBuilt": "\"Ubah Password\";\n"
+                    },
+                    "name_page": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  },
+                  "updated_at": 1691558945101
+                }
+              }
+            ],
+            "mobile": {
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "mffrjufkz8qvfdrl6to3q6n0",
+            "adv": {
+              "js": "<form\n  {...props}\n  onSubmit={async (e) => {\n    e.preventDefault();\n    e.stopPropagation();\n\n    if (!form.existing) {\n      alert(\"Password sekarang harus terisi\");\n      return;\n    }\n    if (!form.new) {\n      alert(\"Password baru harus terisi\");\n      return;\n    }\n\n    if (form.new !== form.confirm) {\n      alert(\"Konfirmasi password baru tidak cocok\");\n      return;\n    }\n\n    form._saving = true;\n    form.render();\n\n    // if (form.existing) {\n    //   let pass = null;\n    //   if (user.id !== 0) {\n    //     pass = await db.m_user.findFirst({\n    //       where: {\n    //         id: user.id,\n    //       },\n    //       select: {\n    //         password: true,\n    //       },\n    //     });\n    //   } else {\n    //     pass = await db.m_user.findFirst({\n    //       where: {\n    //         username: params.username,\n    //       },\n    //       select: {\n    //         password: true,\n    //       },\n    //     });\n    //   }\n\n    //   if (pass !== \" \") {\n    //     if (!bcrypt.compareSync(form.existing, pass.password)) {\n    //       alert(\"Password lama salah\");\n    //       form._saving = false;\n    //       form.render();\n    //       return;\n    //     }\n    //   }\n    // }\n\n    const salt = bcrypt.genSaltSync(10);\n    const hashedPassword = bcrypt.hashSync(form.confirm, salt);\n\n    let id_usernya = await db.m_user.findFirst({\n      where: {\n        username: params.username,\n      },\n      select: {\n        id: true,\n      },\n    });\n\n    await db.m_user.update({\n      where: {\n        id: Number(id_usernya.id),\n      },\n      data: {\n        password: hashedPassword,\n      },\n    });\n\n    form._saving = false;\n    form.render();\n    alert(\"password berhasil diubah\");\n    navigate(\"/auth/login\");\n  }}\n>\n  {children}\n</form>",
+              "css": "",
+              "html": "",
+              "jsBuilt": "render(React.createElement(\"form\",{...props,onSubmit:async r=>{if(r.preventDefault(),r.stopPropagation(),!form.existing){alert(\"Password sekarang harus terisi\");return}if(!form.new){alert(\"Password baru harus terisi\");return}if(form.new!==form.confirm){alert(\"Konfirmasi password baru tidak cocok\");return}form._saving=!0,form.render();let a=bcrypt.genSaltSync(10),e=bcrypt.hashSync(form.confirm,a),s=await db.m_user.findFirst({where:{username:params.username},select:{id:!0}});await db.m_user.update({where:{id:Number(s.id)},data:{password:e}}),form._saving=!1,form.render(),alert(\"password berhasil diubah\"),navigate(\"/auth/login\")}},children));\n"
+            },
+            "name": "form",
+            "type": "item",
+            "childs": [
+              {
+                "id": "l9s41zgbjgnnu87fmf76zphw",
+                "adv": {},
+                "name": "body",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "yh3nc61fxu1vha567n70d9sy",
+                    "name": "field",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                      "props": {
+                        "name": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"existing\"",
+                          "valueBuilt": "\"existing\";\n"
+                        },
+                        "type": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  {\n    label: \"textarea\",\n    value: \"textarea\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"password\"",
+                          "valueBuilt": "\"password\";\n"
+                        },
+                        "items": {
+                          "idx": 30,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => any[] | Promise<any[]>",
+                          "value": "async () => {\n return [\n  {label: \"item-1\", value: \"item-1\"},\n  {label: \"item-2\", value: \"item-2\"},\n ]\n}",
+                          "visible": "type === \"dropdown\"",
+                          "valueBuilt": " async()=>[{label:\"item-1\",value:\"item-1\"},{label:\"item-2\",value:\"item-2\"}];\n"
+                        },
+                        "label": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"Password Lama\"",
+                          "valueBuilt": "\"Password Lama\";\n"
+                        },
+                        "change": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => void | Promise<void>",
+                          "value": "async (val) => {}",
+                          "valueBuilt": " async a=>{};\n"
+                        },
+                        "readonly": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"n\"",
+                          "option": "[\n  {\n    label: \"yes\",\n    value: \"y\"\n  },\n  {\n    label: \"no\",\n    value: \"n\"\n  },\n]",
+                          "valueBuilt": "\"n\";\n"
+                        },
+                        "required": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"y\"",
+                          "valueBuilt": "\"y\";\n"
+                        },
+                        "placeholder": {
+                          "idx": 20,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"-\"",
+                          "visible": "type === 'text' || type === \"textarea\"",
+                          "valueBuilt": "\"-\";\n"
+                        },
+                        "autocomplete": {
+                          "idx": 21,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"off\"",
+                          "visible": "type === 'password' || type === 'text'",
+                          "valueBuilt": "\"off\";\n"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": "odfbq3v7woh3t9197qo0smb9",
+                    "name": "field",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                      "props": {
+                        "name": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"new\"",
+                          "valueBuilt": "\"new\";\n"
+                        },
+                        "type": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  {\n    label: \"textarea\",\n    value: \"textarea\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"password\"",
+                          "valueBuilt": "\"password\";\n"
+                        },
+                        "items": {
+                          "idx": 30,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => any[] | Promise<any[]>",
+                          "value": "async () => {\n return [\n  {label: \"item-1\", value: \"item-1\"},\n  {label: \"item-2\", value: \"item-2\"},\n ]\n}",
+                          "visible": "type === \"dropdown\"",
+                          "valueBuilt": " async()=>[{label:\"item-1\",value:\"item-1\"},{label:\"item-2\",value:\"item-2\"}];\n"
+                        },
+                        "label": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"Password Baru\"",
+                          "valueBuilt": "\"Password Baru\";\n"
+                        },
+                        "change": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => void | Promise<void>",
+                          "value": "async (val) => {}",
+                          "valueBuilt": " async a=>{};\n"
+                        },
+                        "readonly": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"n\"",
+                          "option": "[\n  {\n    label: \"yes\",\n    value: \"y\"\n  },\n  {\n    label: \"no\",\n    value: \"n\"\n  },\n]",
+                          "valueBuilt": "\"n\";\n"
+                        },
+                        "required": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"y\"",
+                          "valueBuilt": "\"y\";\n"
+                        },
+                        "placeholder": {
+                          "idx": 20,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"-\"",
+                          "visible": "type === 'text' || type === \"textarea\"",
+                          "valueBuilt": "\"-\";\n"
+                        },
+                        "autocomplete": {
+                          "idx": 21,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"off\"",
+                          "visible": "type === 'password' || type === 'text'",
+                          "valueBuilt": "\"off\";\n"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": "t0ouuse0ptd4jq2rsax6xaio",
+                    "name": "field",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                      "props": {
+                        "name": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"confirm\"",
+                          "valueBuilt": "\"confirm\";\n"
+                        },
+                        "type": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  {\n    label: \"textarea\",\n    value: \"textarea\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"password\"",
+                          "valueBuilt": "\"password\";\n"
+                        },
+                        "items": {
+                          "idx": 30,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => any[] | Promise<any[]>",
+                          "value": "async () => {\n return [\n  {label: \"item-1\", value: \"item-1\"},\n  {label: \"item-2\", value: \"item-2\"},\n ]\n}",
+                          "visible": "type === \"dropdown\"",
+                          "valueBuilt": " async()=>[{label:\"item-1\",value:\"item-1\"},{label:\"item-2\",value:\"item-2\"}];\n"
+                        },
+                        "label": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"Ulangi Password Baru\"",
+                          "valueBuilt": "\"Ulangi Password Baru\";\n"
+                        },
+                        "change": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => void | Promise<void>",
+                          "value": "async (val) => {}",
+                          "valueBuilt": " async a=>{};\n"
+                        },
+                        "required": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"y\"",
+                          "valueBuilt": "\"y\";\n"
+                        },
+                        "placeholder": {
+                          "idx": 20,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"-\"",
+                          "visible": "type === 'text' || type === \"textarea\"",
+                          "valueBuilt": "\"-\";\n"
+                        },
+                        "autocomplete": {
+                          "idx": 21,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"off\"",
+                          "visible": "type === 'password' || type === 'text'",
+                          "valueBuilt": "\"off\";\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 3,
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 35,
+                    "l": 0,
+                    "r": 0,
+                    "t": 12
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "aviqahatamlyxwcxtgwttkvc",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "visible": "type_button !== 'Submit'",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Update Password\"",
+                      "valueBuilt": "\"Update Password\";\n"
+                    },
+                    "width_button": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 6,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "visible": "true",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "visible": "type_button !== 'Submit' && action === 'function'",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "updated_at": 1691558731176
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "center"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "stretch"
+          },
+          "padding": {
+            "b": 21,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-24T06:42:17.300Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-11-10T08:39:13.545Z",
+  "id_folder": "3aad61d1-bc0c-4d9c-b8cf-f7daf70c83d3",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

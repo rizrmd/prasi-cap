@@ -1,0 +1,968 @@
+{
+  "id": "987c8d1d-e32e-4086-87cc-c0c4782c6ed9",
+  "name": "list-kegiatan-poli",
+  "url": "/staff-pengajar/all/activity/poli/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "dtmmihpjibkfdfx4jrau460e",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "lptxazx1i9wkre69psb5t7gb",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "pgoj2b29tycdem73684xrcvh",
+                "name": "page-tittle",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "e774fj086f1q7ys1hl5nsm3v",
+                    "adv": {},
+                    "name": "title-back",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                      "props": {
+                        "url": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"/ppds/home\"",
+                          "valueBuilt": "\"/ppds/home\";\n"
+                        },
+                        "label": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Kegiatan Poli\"",
+                          "valueBuilt": "\"Kegiatan Poli\";\n"
+                        }
+                      },
+                      "updated_at": 1691568262168
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  }
+                }
+              },
+              {
+                "id": "imlifm0s26kp3i97abq4poep",
+                "adv": {
+                  "js": "<PassProp text={\"filter\"}><div {...props}>{children}</div></PassProp>",
+                  "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(PassProp,{text:\"filter\"},React.createElement(\"div\",{...props},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "fit"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 5,
+                    "wrap": "flex-nowrap",
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 15,
+                    "r": 15,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                  "name": "",
+                  "props": {
+                    "form": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "ppk06jdcqwprysdjsumhlrr8",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "form",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "x9lmd0t4qmtn5xhu3ayzb7kv"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "prop": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "xmerh974v0o01e6fn7b6t956",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "prop",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "x9lmd0t4qmtn5xhu3ayzb7kv"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "modal": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"closed\",\n    value: \"closed\"\n  },\n  {\n    label: \"opened\",\n    value: \"opened\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"closed\"",
+                      "valueBuilt": "\"closed\";\n"
+                    },
+                    "popup": {
+                      "idx": 6,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "ado8n6h0mqic5fz22r8xza35",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "popup",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "x9lmd0t4qmtn5xhu3ayzb7kv"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "id_filter": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"filter-1\"",
+                      "valueBuilt": "\"filter-1\";\n"
+                    },
+                    "form_filter": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "y1curobokw1zrfsfs7kywdw6",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "form_filter",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "x9lmd0t4qmtn5xhu3ayzb7kv"
+                      },
+                      "valueBuilt": "\"hello\""
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "m36ybc8aixaosswrb7l6w1yi",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          tittle: \"12 Agustus 2023 10:00\",\r\n          doctor: \"dr Modin Suherman, Sp. OT\",\r\n          status: \"Verified\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          tittle: \"11 Agustus 2023 10:00\",\r\n          doctor: \"dr Mellysa Siregar, Sp. OT\",\r\n          status: \"-\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          tittle: \"09 Agustus 2023 10:00\",\r\n          doctor: \"dr Vincent Rompies, Sp. OT\",\r\n          status: \"Verified\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          tittle: \"06 Agustus 2023 10:00\",\r\n          doctor: \"dr Amaliya Sahid, Sp. OT\",\r\n          status: \"-\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          tittle: \"02 Agustus 2023 10:00\",\r\n          doctor: \"dr Meliana, Sp. OT\",\r\n          status: \"Verified\",\r\n        },\r\n        {\r\n          id: \"06\",\r\n          tittle: \"29 July 2023 10:00\",\r\n          doctor: \"dr Amaliya Sahid, Sp. OT\",\r\n          status: \"-\",\r\n        },\r\n        {\r\n          id: \"07\",\r\n          tittle: \"24 July 2023 10:00\",\r\n          doctor: \"dr Meliana, Sp. OT\",\r\n          status: \"Verified\",\r\n        },\r\n      ],\r\n      showSidebar: false,\r\n    }}\r\n    effect={async (local) => {\r\n      //local effect\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",tittle:\"12 Agustus 2023 10:00\",doctor:\"dr Modin Suherman, Sp. OT\",status:\"Verified\"},{id:\"02\",tittle:\"11 Agustus 2023 10:00\",doctor:\"dr Mellysa Siregar, Sp. OT\",status:\"-\"},{id:\"03\",tittle:\"09 Agustus 2023 10:00\",doctor:\"dr Vincent Rompies, Sp. OT\",status:\"Verified\"},{id:\"04\",tittle:\"06 Agustus 2023 10:00\",doctor:\"dr Amaliya Sahid, Sp. OT\",status:\"-\"},{id:\"05\",tittle:\"02 Agustus 2023 10:00\",doctor:\"dr Meliana, Sp. OT\",status:\"Verified\"},{id:\"06\",tittle:\"29 July 2023 10:00\",doctor:\"dr Amaliya Sahid, Sp. OT\",status:\"-\"},{id:\"07\",tittle:\"24 July 2023 10:00\",doctor:\"dr Meliana, Sp. OT\",status:\"Verified\"}],showSidebar:!1},effect:async t=>{}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "scymij4pkuxqh2huel9dntvp",
+                "name": "list",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "6b17438d-778a-4f32-a72d-554692783af7",
+                  "props": {
+                    "load": {
+                      "idx": 11,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "() => Promise<any[]>",
+                      "value": "async () => {\n  const data = await db.t_logbook.findMany({\n    where: {\n      id_action: 3,\n      id_user: user.id,\n    },\n    select: {\n      id: true,\n      date: true,\n      verified: true,\n      t_logbook_participants: {\n        where: {\n          id_logbook_role: 2,\n        },\n        select: {\n          m_user: {\n            select: {\n              display_name: true,\n            },\n          },\n        },\n      },\n    },\n  });\n  return data.map((item) => {\n    const parti = item.t_logbook_participants;\n    return {\n      id: item.id,\n      title: moment(item.date).format(\"DD MM YYYY - hh:mm\"),\n      status: item.verified ? \"Verified\" : \"-\",\n      doctor: parti.length > 0 ? parti[0].m_user.display_name :\"...\"\n    }\n  });\n}",
+                      "valueBuilt": " async()=>(await db.t_logbook.findMany({where:{id_action:3,id_user:user.id},select:{id:!0,date:!0,verified:!0,t_logbook_participants:{where:{id_logbook_role:2},select:{m_user:{select:{display_name:!0}}}}}})).map(e=>{let t=e.t_logbook_participants;return{id:e.id,title:moment(e.date).format(\"DD MM YYYY - hh:mm\"),status:e.verified?\"Verified\":\"-\",doctor:t.length>0?t[0].m_user.display_name:\"...\"}});\n"
+                    },
+                    "mode": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"sample\"",
+                      "valueBuilt": "\"sample\";\n"
+                    },
+                    "debug": {
+                      "idx": 13,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"n\"",
+                      "valueBuilt": "\"n\";\n"
+                    },
+                    "sample": {
+                      "idx": 12,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "() => Promise<any[]>",
+                      "value": "async () => {\n  return [\n    {\n    id: \"1\",\n    title: \"12 Agustus 2023 10:00\",\n    doctor: \"dr Modin, Sp. OT.\",\n    status: \"Verified\",\n    },\n     {\n    id: \"1\",\n    title: \"12 Agustus 2023 10:00\",\n    doctor: \"dr Merina, Sp. OT.\",\n    status: \"-\",\n    },\n  ];\n}",
+                      "valueBuilt": " async()=>[{id:\"1\",title:\"12 Agustus 2023 10:00\",doctor:\"dr Modin, Sp. OT.\",status:\"Verified\"},{id:\"1\",title:\"12 Agustus 2023 10:00\",doctor:\"dr Merina, Sp. OT.\",status:\"-\"}];\n"
+                    },
+                    "loading": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "si5l2j2pc7g9qqglsa7ir2y8",
+                        "adv": {},
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "loading",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "vb1qpcrun0eq5nijy3gdhte5",
+                            "adv": {},
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "snl6yc5vlkqohnyh9eonuww5",
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "gojksuglapq0g0lk9cmrvx52",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 177
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "ywh03uvosydtbhwgxmsdhrim",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 199
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "l38znyjpfdimkee2e84zmgvd",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 184
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full",
+                                    "hUnit": "px",
+                                    "wUnit": "px"
+                                  },
+                                  "border": {
+                                    "color": "#e2e2e2",
+                                    "style": "solid",
+                                    "stroke": {
+                                      "b": 1,
+                                      "l": 1,
+                                      "r": 1,
+                                      "t": 1
+                                    },
+                                    "rounded": {
+                                      "bl": 11,
+                                      "br": 11,
+                                      "tl": 11,
+                                      "tr": 11
+                                    }
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 8,
+                                    "wrap": "flex-nowrap",
+                                    "align": "top-left"
+                                  },
+                                  "padding": {
+                                    "b": 11,
+                                    "l": 16,
+                                    "r": 16,
+                                    "t": 11
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              },
+                              "padding": {
+                                "b": 5,
+                                "l": 8,
+                                "r": 8,
+                                "t": 5
+                              }
+                            }
+                          },
+                          {
+                            "id": "j1jz5ztfww8my3jpu98dh0l3",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "zvxecqlu4r23imv15k73ylws",
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "i9p1vwc1xme4aid6p8nndl63",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 177
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "jywjh5svph14el3egdf3avhw",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 199
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "ap2lliollq4bvbkpe87z8dx4",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 12,
+                                        "w": 184
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 8,
+                                          "br": 8,
+                                          "tl": 8,
+                                          "tr": 8
+                                        }
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full",
+                                    "hUnit": "px",
+                                    "wUnit": "px"
+                                  },
+                                  "border": {
+                                    "color": "#e2e2e2",
+                                    "style": "solid",
+                                    "stroke": {
+                                      "b": 1,
+                                      "l": 1,
+                                      "r": 1,
+                                      "t": 1
+                                    },
+                                    "rounded": {
+                                      "bl": 11,
+                                      "br": 11,
+                                      "tl": 11,
+                                      "tr": 11
+                                    }
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 8,
+                                    "wrap": "flex-nowrap",
+                                    "align": "top-left"
+                                  },
+                                  "padding": {
+                                    "b": 11,
+                                    "l": 16,
+                                    "r": 16,
+                                    "t": 11
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              },
+                              "padding": {
+                                "b": 5,
+                                "l": 8,
+                                "r": 8,
+                                "t": 5
+                              }
+                            }
+                          }
+                        ],
+                        "parentInstanceId": "scymij4pkuxqh2huel9dntvp"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "preview": {
+                      "idx": 10,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"ready\"",
+                      "valueBuilt": "\"ready\";\n"
+                    },
+                    "dbg_mode": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"load\"",
+                      "valueBuilt": "\"load\";\n"
+                    },
+                    "id_filter": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"filter-1\"",
+                      "valueBuilt": "\"filter-1\";\n"
+                    },
+                    "ready_item": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "ju1fyidm3w9a3w9vdfy54kgf",
+                        "adv": {},
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "ready_item",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "enpi10ktktp1oa9tz1eueuv6",
+                            "adv": {
+                              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "item-jaga",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "font": {
+                                "size": 15,
+                                "align": "left",
+                                "family": "Poppins",
+                                "height": "auto",
+                                "wordBreak": "break-normal",
+                                "whitespace": "whitespace-normal"
+                              },
+                              "border": {
+                                "style": "solid",
+                                "rounded": {
+                                  "bl": 10,
+                                  "br": 10,
+                                  "tl": 10,
+                                  "tr": 10
+                                }
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 5,
+                                "wrap": "flex-nowrap",
+                                "align": "top-left"
+                              },
+                              "padding": {
+                                "b": 10,
+                                "l": 15,
+                                "r": 15,
+                                "t": 10
+                              }
+                            },
+                            "component": {
+                              "id": "99ac628d-ddeb-4b95-ac9c-f924244d19d5",
+                              "name": "",
+                              "props": {
+                                "prop": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"hello\"",
+                                  "valueBuilt": "\"hello\""
+                                },
+                                "title": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.title",
+                                  "valueBuilt": " item.title;\n"
+                                },
+                                "doctor": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.doctor",
+                                  "valueBuilt": " item.doctor;\n"
+                                },
+                                "status": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.status",
+                                  "valueBuilt": " item.status;\n"
+                                },
+                                "tittle": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.tittle",
+                                  "valueBuilt": " item.tittle;\n"
+                                },
+                                "status_color": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"Verified\",\n    value: \"#0062A3\"\n  },\n  {\n    label: \"Unverified\",\n    value: \"#0062A3\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"#0062A3\"",
+                                  "valueBuilt": "\"#0062A3\";\n"
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "padding": {
+                            "b": 5,
+                            "l": 13,
+                            "r": 13,
+                            "t": 5
+                          }
+                        },
+                        "parentInstanceId": "scymij4pkuxqh2huel9dntvp"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "ready_header": {
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "content": {
+                        "id": "op0dm0gftvpmy2ns28sjp92i",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ready_header",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-wrap",
+                            "align": "top-left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 30,
+                            "r": 30,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": "xr9egz0pgomboa4u4ua465pa",
+                "name": "filter-sidebar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "02f33338-d088-4e9e-b6c0-8e9170649c08",
+                  "props": {
+                    "open_key": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "bind_form": {
+                      "idx": 0,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "any",
+                      "value": "local",
+                      "valueBuilt": " local;\n"
+                    },
+                    "filter_key": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "padding": {
+                "b": 12,
+                "l": 0,
+                "r": 0,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "nbwd24d7ykkh2jo2ymf3htvc",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "wlg2mkl9wd9apn7zdtqang7e",
+                "name": "menu-staff-pengajar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-28T04:16:52.857Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-12T04:38:34.376Z",
+  "id_folder": "05a29b42-a453-4df8-8262-bdb94d35a7aa",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

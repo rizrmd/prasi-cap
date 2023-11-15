@@ -1,0 +1,315 @@
+{
+  "id": "e5d20bbe-ebf8-4f7d-bc77-674664324363",
+  "name": "transcript-staff-pengajar",
+  "content_tree": {
+    "id": "i5kbbbl31f8fiqhiqvq9wxrt",
+    "adv": {
+      "js": "",
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "transcript-staff-pengajar",
+    "type": "item",
+    "childs": [
+      {
+        "id": "m5esjq2frne6507eusvdsf3v",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "detail",
+        "type": "item",
+        "childs": [
+          {
+            "id": "et2xxse0hgzhrputy6bsynga",
+            "adv": {
+              "js": "<div {...props}>{name}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "dr Meisaroh Mulyana",
+            "name": "name",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "yfunh4qj1abtxs8taqm3s20j",
+            "adv": {
+              "js": "<div {...props}>{code}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},code));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "180911281931",
+            "name": "code",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "nb696rbgl628pjqsn5i08log",
+            "adv": {
+              "js": "<div {...props}>{subject}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},subject));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "3 Ungraded Subject",
+            "name": "notes-score",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#0062A3",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 3,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      },
+      {
+        "id": "r7d170n9m0yxkt6uowykxnmj",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "gpa",
+        "type": "item",
+        "childs": [
+          {
+            "id": "oj7th1jv897qi0yi02xd5k8j",
+            "adv": {
+              "js": "<div {...props}>{gpa}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},gpa));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "4.0",
+            "name": "gpa",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": 30,
+                "wUnit": "px"
+              },
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#E6EFF6"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#ffffff",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 10,
+              "br": 10,
+              "tl": 10,
+              "tr": 10
+            }
+          },
+          "padding": {
+            "b": 0,
+            "l": 15,
+            "r": 15,
+            "t": 0
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 10,
+        "l": 15,
+        "r": 15,
+        "t": 10
+      }
+    },
+    "component": {
+      "id": "e5d20bbe-ebf8-4f7d-bc77-674664324363",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "gpa": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"4.0\"",
+          "valueBuilt": "\"4.0\";\n"
+        },
+        "code": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"180000\"",
+          "valueBuilt": "\"180000\";\n"
+        },
+        "name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"dr name\"",
+          "valueBuilt": "\"dr name\";\n"
+        },
+        "subject": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"ungraded\"",
+          "valueBuilt": "\"ungraded\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-30T04:21:09.413Z",
+  "updated_at": "2023-08-30T04:23:38.037Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

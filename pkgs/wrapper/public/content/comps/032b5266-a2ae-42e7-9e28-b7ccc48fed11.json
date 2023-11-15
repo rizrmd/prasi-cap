@@ -1,0 +1,750 @@
+{
+  "id": "032b5266-a2ae-42e7-9e28-b7ccc48fed11",
+  "name": "item-list-bimbingan-ops",
+  "content_tree": {
+    "id": "v5xad4dj1k7dr55w0f8yghbu",
+    "name": "item-list-bimbingan-ops",
+    "type": "item",
+    "childs": [
+      {
+        "id": "exrslrrvoaxhgnr9ykfkm381",
+        "adv": {
+          "js": "<>\n  {type === \"no-upload\" && (\n    <div\n      {...props}\n      onClick={() => {\n        if (url !== undefined) {\n          navigate(url);\n        }\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+          "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,type===\"no-upload\"&&React.createElement(\"div\",{...props,onClick:()=>{url!==void 0&&navigate(url)}},children)));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "item-no-upload",
+        "type": "item",
+        "childs": [
+          {
+            "id": "q05g102yq4iqgv03po3he8qe",
+            "adv": {
+              "js": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text",
+            "type": "item",
+            "childs": [
+              {
+                "id": "yvuw55pw7utrvsak9pdiz44g",
+                "adv": {
+                  "js": "<div {...props}>{name}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "PPDS Senior",
+                "name": "name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 16,
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 10,
+                    "r": 10,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "qzmq5evw3ovhj9pi3emn20nd",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {quantity}\r\n</div>",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "10",
+                "name": "quantity",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#E6EFF6"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 14,
+                    "color": "#000000",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 8,
+                    "r": 8,
+                    "t": 1
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "u4cs62j8i4uzqkf694y8463n",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  opacity: 0;\n  width: 35px;\n\n  &:hover {\n    display: flex;\n  }\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "status-verified",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#CCCCCC"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 5,
+                    "r": 5,
+                    "t": 1
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 15,
+                "align": "left"
+              },
+              "padding": {
+                "b": 7,
+                "l": 14,
+                "r": 14,
+                "t": 7
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 8,
+              "br": 8,
+              "tl": 8,
+              "tr": 8
+            }
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "align": "left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        }
+      },
+      {
+        "id": "c12sdk4v5ydevua8yobschgt",
+        "adv": {
+          "js": "<>{type === \"waiting\" && (<div\n  {...props}\n  onClick={() => {\n    if (url !== undefined) {\n      navigate(url);\n    }\n  }}\n>\n  {children}\n</div>)}</>",
+          "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,type===\"waiting\"&&React.createElement(\"div\",{...props,onClick:()=>{url!==void 0&&navigate(url)}},children)));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "item-waiting",
+        "type": "item",
+        "childs": [
+          {
+            "id": "nn2fyx0hgks03swqmhh9if0e",
+            "adv": {
+              "js": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text",
+            "type": "item",
+            "childs": [
+              {
+                "id": "webuoe9gbjma1at6nwjmmr9h",
+                "adv": {
+                  "js": "<div {...props}>{name}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "PPDS Senior",
+                "name": "name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 16,
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 10,
+                    "r": 10,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "p4k7k9ts9ridunpu7vtexp5p",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {quantity}\r\n</div>",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "10",
+                "name": "quantity",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#E6EFF6"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 14,
+                    "color": "#000000",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 8,
+                    "r": 8,
+                    "t": 1
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "ulwwdhzewirxijqrup1b169d",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n  font-weight: 500;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\">\r\n<mask id=\"mask0_2499_4695\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"19\" height=\"19\">\r\n<rect width=\"19\" height=\"19\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4695)\">\r\n<path d=\"M8.70898 12.6665H10.2923V9.38109L11.559 10.628L12.6871 9.49984L9.50065 6.33317L6.33398 9.49984L7.46211 10.6082L8.70898 9.3613V12.6665ZM3.16732 15.8332C2.7319 15.8332 2.35916 15.6781 2.04909 15.3681C1.73902 15.058 1.58398 14.6853 1.58398 14.2498V4.74984C1.58398 4.31442 1.73902 3.94168 2.04909 3.63161C2.35916 3.32154 2.7319 3.1665 3.16732 3.1665H15.834C16.2694 3.1665 16.6421 3.32154 16.9522 3.63161C17.2623 3.94168 17.4173 4.31442 17.4173 4.74984V14.2498C17.4173 14.6853 17.2623 15.058 16.9522 15.3681C16.6421 15.6781 16.2694 15.8332 15.834 15.8332H3.16732ZM3.16732 14.2498H15.834V4.74984H3.16732V14.2498Z\" fill=\"#2E2E41\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "status-verified",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#CCCCCC"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 5,
+                    "r": 5,
+                    "t": 1
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 15,
+                "align": "left"
+              },
+              "padding": {
+                "b": 7,
+                "l": 14,
+                "r": 14,
+                "t": 7
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 8,
+              "br": 8,
+              "tl": 8,
+              "tr": 8
+            }
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "align": "left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        }
+      },
+      {
+        "id": "zrr9gnelu9evyuyl60f5q5s9",
+        "adv": {
+          "js": "<>\n  {type === \"verified\" && (\n    <div\n      {...props}\n      onClick={() => {\n        if (url !== undefined) {\n          navigate(url);\n        }\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+          "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+          "jsBuilt": "render(React.createElement(React.Fragment,null,type===\"verified\"&&React.createElement(\"div\",{...props,onClick:()=>{url!==void 0&&navigate(url)}},children)));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "item-verified",
+        "type": "item",
+        "childs": [
+          {
+            "id": "wi45c1y75csiq0ojf7yukwv9",
+            "adv": {
+              "js": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text",
+            "type": "item",
+            "childs": [
+              {
+                "id": "mjmr3uqgqa8kxktg09vsiogb",
+                "adv": {
+                  "js": "<div {...props}>{name}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "PPDS Senior",
+                "name": "name",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 16,
+                    "height": "auto"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 10,
+                    "r": 10,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "l37mn2ug7o0wlmwtwn4dw94m",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {quantity}\r\n</div>",
+                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "10",
+                "name": "quantity",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#E6EFF6"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 14,
+                    "color": "#000000",
+                    "family": "Poppins",
+                    "height": "auto"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 8,
+                    "r": 8,
+                    "t": 1
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "ypr4l4cre9yq696jf7st4pja",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n  font-weight: 500;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\">\r\n<mask id=\"mask0_2499_4691\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"19\" height=\"19\">\r\n<rect width=\"19\" height=\"19\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4691)\">\r\n<path d=\"M8.70898 12.6665H10.2923V9.38109L11.559 10.628L12.6871 9.49984L9.50065 6.33317L6.33398 9.49984L7.46211 10.6082L8.70898 9.3613V12.6665ZM3.16732 15.8332C2.7319 15.8332 2.35916 15.6781 2.04909 15.3681C1.73902 15.058 1.58398 14.6853 1.58398 14.2498V4.74984C1.58398 4.31442 1.73902 3.94168 2.04909 3.63161C2.35916 3.32154 2.7319 3.1665 3.16732 3.1665H15.834C16.2694 3.1665 16.6421 3.32154 16.9522 3.63161C17.2623 3.94168 17.4173 4.31442 17.4173 4.74984V14.2498C17.4173 14.6853 17.2623 15.058 16.9522 15.3681C16.6421 15.6781 16.2694 15.8332 15.834 15.8332H3.16732ZM3.16732 14.2498H15.834V4.74984H3.16732V14.2498Z\" fill=\"#06610F\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "status-verified",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#E6EFF6"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "padding": {
+                    "b": 1,
+                    "l": 5,
+                    "r": 5,
+                    "t": 1
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 15,
+                "align": "left"
+              },
+              "padding": {
+                "b": 7,
+                "l": 14,
+                "r": 14,
+                "t": 7
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 8,
+              "br": 8,
+              "tl": 8,
+              "tr": 8
+            }
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "align": "left"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full",
+        "hUnit": "px",
+        "wUnit": "px"
+      }
+    },
+    "component": {
+      "id": "032b5266-a2ae-42e7-9e28-b7ccc48fed11",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "url": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"/\"",
+          "valueBuilt": "\"/\";\n"
+        },
+        "name": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "type": {
+          "idx": 0,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"no-upload\",\n    value: \"no-upload\"\n  },\n  {\n    label: \"waiting\",\n    value: \"waiting\"\n  },\n  {\n    label: \"verified\",\n    value: \"verified\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"verified\"",
+          "valueBuilt": "\"verified\";\n"
+        },
+        "quantity": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"0\"",
+          "valueBuilt": "\"0\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-13T15:39:18.067Z",
+  "updated_at": "2023-11-06T15:26:26.365Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

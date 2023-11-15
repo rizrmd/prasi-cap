@@ -1,0 +1,482 @@
+{
+  "id": "1140596d-cb5e-4235-8f49-2ad59d0065b1",
+  "name": "stage",
+  "url": "/institution/data/stage",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "dn2kz388yvr4ub2hzwo1x437",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  top: 0%;\r\n  z-index: 50;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "neyieicz4omket5vl9yb615k",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/institution/data-management\"",
+                  "valueBuilt": "\"/institution/data-management\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"PPDS Stage\"",
+                  "valueBuilt": "\"PPDS Stage\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#fefefe"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": "auto",
+            "wrap": "flex-nowrap",
+            "align": "center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "pu5myyen8ymor3f94i48v80p",
+        "adv": {
+          "js": "",
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  padding-top: 10%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "r24agbkmfg13bg7far1cigk0",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      data_dummy: [\r\n        {\r\n          id: \"01\",\r\n          category: \"Pra Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"02\",\r\n          category: \"Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"03\",\r\n          category: \"Orthopedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"04\",\r\n          category: \"Pra Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"05\",\r\n          category: \"Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"06\",\r\n          category: \"Orthopedi Lanjut\",\r\n        },\r\n        {\r\n          id: \"07\",\r\n          category: \"Pra Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"08\",\r\n          category: \"Orthopedi Dasar\",\r\n        },\r\n        {\r\n          id: \"09\",\r\n          category: \"Orthopedi Lanjut\",\r\n        },\r\n      ],\r\n      data: [],\r\n    }}\r\n    effect={async (local) => {\r\n      let data = await db.m_stage.findMany({});\r\n      let arr_data = [];\r\n      data.map((item) => {\r\n        arr_data.push({\r\n          id: item.id,\r\n          category: item.name,\r\n          color: item.label_color\r\n        });\r\n      });\r\n      local.data = arr_data;\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "css": "& {\r\n  display: flex;\r\n  padding-bottom: 150px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{data_dummy:[{id:\"01\",category:\"Pra Orthopedi Dasar\"},{id:\"02\",category:\"Orthopedi Dasar\"},{id:\"03\",category:\"Orthopedi Lanjut\"},{id:\"04\",category:\"Pra Orthopedi Dasar\"},{id:\"05\",category:\"Orthopedi Dasar\"},{id:\"06\",category:\"Orthopedi Lanjut\"},{id:\"07\",category:\"Pra Orthopedi Dasar\"},{id:\"08\",category:\"Orthopedi Dasar\"},{id:\"09\",category:\"Orthopedi Lanjut\"}],data:[]},effect:async r=>{let e=await db.m_stage.findMany({}),d=[];e.map(a=>{d.push({id:a.id,category:a.name,color:a.label_color})}),r.data=d,r.render()}},children)));\n"
+            },
+            "name": "list-subject-category",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ygvfpcnlwggklrtyci2hmyl6",
+                "adv": {
+                  "js": "<div {...props}>\r\n  {local.data.length !== 0 && (local.data || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},local.data.length!==0&&(local.data||[]).map((a,d)=>React.createElement(PassProp,{item:a,key:d},children))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-category",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "mjk3hfrqn17yp4kr25boafad",
+                    "adv": {
+                      "js": "<div {...props} onClick={() => {\n  navigate(`/institution/data/stage/update?id=${item.id}`)\n}}>{children}</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{navigate(`/institution/data/stage/update?id=${item.id}`)}},children));\n"
+                    },
+                    "name": "data-category",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "wa9oodonev7fzwhqteyzilbj",
+                        "name": "one-row-data",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "2cf26f9f-a176-4d43-9538-c254a0a49f5f",
+                          "props": {
+                            "bg_color": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.color !== null ? item.color : \"#ffffff\"",
+                              "valueBuilt": " item.color!==null?item.color:\"#ffffff\";\n"
+                            },
+                            "year_props": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "item.category",
+                              "valueBuilt": " item.category;\n"
+                            }
+                          },
+                          "updated_at": 1692075116771
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 20,
+                    "align": "top-center"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "fgvo4g1uujr13p332frlo8ab",
+                "adv": {
+                  "js": "<>{visible === \"TRUE\" && <div {...props}>{children}</div>}</>",
+                  "css": "& {\n  display: flex;\n  padding: 0 !important;\n  margin: 0 !important;\n  flex: 1;\n  align-self: center;\n  align-items: center;\n  justify-content: center;\n  margin-bottom: 30% !important;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,visible===\"TRUE\"&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "name": "not-found",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "w56jintqw36nwli0b5ds1fgt",
+                    "adv": {
+                      "js": "<div {...props}>\n  <svg\n    width=\"100\"\n    height=\"100\"\n    viewBox=\"0 0 48 48\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      fill=\"none\"\n      stroke=\"#000000\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      d=\"M9.06 25.13v13.06l12.17 3.41V19.89l15.6-3.41l-11.5-3.54l-16.38 3.54l-2.2 7.83l2.2.78l9.97 3.53l2.31-8.73m0 21.71l15.78-3.43V24.74\"\n    />\n    <path\n      fill=\"none\"\n      stroke=\"#000000\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      d=\"m8.95 16.48l12.28 3.41l6.7 7.15L43.5 23.1l-6.67-6.62l5.95-5.52l-11.53-3.38l-5.92 5.36l-4.26-6.54L4.5 9.91l4.45 6.57zM23.8 36.5l10.41-1.97m-17.53-4.95L15 36.87m-.64-7.84l-1.74 7.18m-1.46-2.98L17.64 35m-5.66-4.44l6.22 1.83\"\n    />\n  </svg>\n</div>",
+                      "css": "",
+                      "html": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n    d=\"M9.06 25.13v13.06l12.17 3.41V19.89l15.6-3.41l-11.5-3.54l-16.38 3.54l-2.2 7.83l2.2.78l9.97 3.53l2.31-8.73m0 21.71l15.78-3.43V24.74\" />\n  <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n    d=\"m8.95 16.48l12.28 3.41l6.7 7.15L43.5 23.1l-6.67-6.62l5.95-5.52l-11.53-3.38l-5.92 5.36l-4.26-6.54L4.5 9.91l4.45 6.57zM23.8 36.5l10.41-1.97m-17.53-4.95L15 36.87m-.64-7.84l-1.74 7.18m-1.46-2.98L17.64 35m-5.66-4.44l6.22 1.83\" />\n</svg>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(\"svg\",{width:\"100\",height:\"100\",viewBox:\"0 0 48 48\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"none\",stroke:\"#000000\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\",d:\"M9.06 25.13v13.06l12.17 3.41V19.89l15.6-3.41l-11.5-3.54l-16.38 3.54l-2.2 7.83l2.2.78l9.97 3.53l2.31-8.73m0 21.71l15.78-3.43V24.74\"}),React.createElement(\"path\",{fill:\"none\",stroke:\"#000000\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\",d:\"m8.95 16.48l12.28 3.41l6.7 7.15L43.5 23.1l-6.67-6.62l5.95-5.52l-11.53-3.38l-5.92 5.36l-4.26-6.54L4.5 9.91l4.45 6.57zM23.8 36.5l10.41-1.97m-17.53-4.95L15 36.87m-.64-7.84l-1.74 7.18m-1.46-2.98L17.64 35m-5.66-4.44l6.22 1.83\"}))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-wrap",
+                        "align": "top-center"
+                      }
+                    }
+                  },
+                  {
+                    "id": "i5x9km3w3ucm2sm480bwxo3p",
+                    "adv": {
+                      "js": "<div {...props}>{text}</div>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},text));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Data Not Found",
+                    "name": "text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-center"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 100,
+                    "l": 0,
+                    "r": 0,
+                    "t": 100
+                  }
+                },
+                "component": {
+                  "id": "99a947fd-010b-4075-8073-2cbad37ecd4e",
+                  "group": {
+                    "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                    "name": "All"
+                  },
+                  "props": {
+                    "text": {
+                      "idx": 0,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"Data Not Found\"",
+                      "valueBuilt": "\"Data Not Found\";\n"
+                    },
+                    "visible": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "local.data.length === 0 ? \"TRUE\" : \"FALSE\"",
+                      "valueBuilt": " local.data.length===0?\"TRUE\":\"FALSE\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "zw406c10rzujzdumu4i3tpcx",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "tq2cbu33aa731i2mfz8352sh",
+            "adv": {},
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "lzn7gk9vaw0a233qsydiqz3c",
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Create\"",
+                      "valueBuilt": "\"Create\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/institution/data/stage/create\"",
+                      "valueBuilt": "\"/institution/data/stage/create\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "y5alqe3q3i8125co146o6s6p",
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1691986276634
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-11T08:57:37.048Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-28T07:46:12.162Z",
+  "id_folder": "1b6faee5-5478-4767-9fb1-1cd62aea435b",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

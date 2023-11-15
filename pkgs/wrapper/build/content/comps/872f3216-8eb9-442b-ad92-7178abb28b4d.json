@@ -1,0 +1,354 @@
+{
+  "id": "872f3216-8eb9-442b-ad92-7178abb28b4d",
+  "name": "bimbingan-operasi",
+  "content_tree": {
+    "id": "ts7akx34s7siainq9cdx2rky",
+    "adv": {
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "bimbingan-operasi",
+    "type": "item",
+    "childs": [
+      {
+        "id": "emg9vzdbbbbnjh7zvia5opsm",
+        "adv": {},
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "text",
+        "type": "item",
+        "childs": [
+          {
+            "id": "muxmbl3yzu2lw2anfkr298hc",
+            "adv": {
+              "js": "<div {...props}>{name}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "PPDS Senior",
+            "name": "name",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "font": {
+                "size": 16,
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 5,
+                "r": 5,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "xty49risc2ot39bmgedibzyj",
+            "adv": {
+              "js": "<div {...props}>{quantity}</div>",
+              "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},quantity));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "10",
+            "name": "quantity",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#E6EFF6"
+              },
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "font": {
+                "size": 14,
+                "color": "#000000",
+                "family": "Poppins",
+                "height": "auto"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 6,
+                  "br": 6,
+                  "tl": 6,
+                  "tr": 6
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "padding": {
+                "b": 1,
+                "l": 8,
+                "r": 8,
+                "t": 1
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "ititd4bjdprf87efb2drgmqm",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n  font-weight: 500;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "name": "attachment-status",
+            "type": "item",
+            "childs": [
+              {
+                "id": "xmmh9dle5y567i1pnt1pcwjv",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  \n\n  &:hover {\n    display: flex;\n  }\n}",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\">\r\n<mask id=\"mask0_2499_4691\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"19\" height=\"19\">\r\n<rect width=\"19\" height=\"19\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4691)\">\r\n<path d=\"M8.70898 12.6665H10.2923V9.38109L11.559 10.628L12.6871 9.49984L9.50065 6.33317L6.33398 9.49984L7.46211 10.6082L8.70898 9.3613V12.6665ZM3.16732 15.8332C2.7319 15.8332 2.35916 15.6781 2.04909 15.3681C1.73902 15.058 1.58398 14.6853 1.58398 14.2498V4.74984C1.58398 4.31442 1.73902 3.94168 2.04909 3.63161C2.35916 3.32154 2.7319 3.1665 3.16732 3.1665H15.834C16.2694 3.1665 16.6421 3.32154 16.9522 3.63161C17.2623 3.94168 17.4173 4.31442 17.4173 4.74984V14.2498C17.4173 14.6853 17.2623 15.058 16.9522 15.3681C16.6421 15.6781 16.2694 15.8332 15.834 15.8332H3.16732ZM3.16732 14.2498H15.834V4.74984H3.16732V14.2498Z\" fill=\"#06610F\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "status-verified",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 6,
+                      "br": 6,
+                      "tl": 6,
+                      "tr": 6
+                    }
+                  },
+                  "padding": {
+                    "b": 2,
+                    "l": 5,
+                    "r": 5,
+                    "t": 2
+                  }
+                }
+              },
+              {
+                "id": "m76nm6e13im6l9c2lfrlvmn8",
+                "adv": {
+                  "js": "<div {...props}>{label_attachment}</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},label_attachment));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "1/2",
+                "name": "label",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": 26
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#06610F",
+                    "family": "ABeeZee",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 3,
+                    "l": 0,
+                    "r": 0,
+                    "t": 3
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#D3EECE"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 6,
+                  "br": 6,
+                  "tl": 6,
+                  "tr": 6
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 6,
+                "t": 0
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 5,
+            "align": "left"
+          },
+          "padding": {
+            "b": 10,
+            "l": 10,
+            "r": 10,
+            "t": 10
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 8,
+          "br": 8,
+          "tl": 8,
+          "tr": 8
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "align": "left"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "872f3216-8eb9-442b-ad92-7178abb28b4d",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "name": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Fraktur Fremur\"",
+          "valueBuilt": "\"Fraktur Fremur\";\n"
+        },
+        "quantity": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"3\"",
+          "valueBuilt": "\"3\";\n"
+        },
+        "label_attachment": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"2/5\"",
+          "valueBuilt": "\"2/5\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-11T14:45:02.710Z",
+  "updated_at": "2023-09-11T14:49:27.743Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

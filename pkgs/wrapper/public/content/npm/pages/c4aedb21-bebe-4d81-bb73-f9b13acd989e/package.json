@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "lodash.snakecase": "4.1.1",
+    "lodash.camelcase": "4.3.0",
+    "react-calendar": "4.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

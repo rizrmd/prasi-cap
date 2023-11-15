@@ -1,0 +1,1483 @@
+{
+  "id": "91e6e35a-3dc8-4d39-a0fa-09b0a0bffd2b",
+  "name": "profile",
+  "url": "/profile",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "vnlro1rnsljnnyt2phc8tdb9",
+        "adv": {
+          "js": "isLogin(props, children)",
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(isLogin(props,children));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "m1g1xgguqdkj2w4pwg2wpp6b",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "t19dfw96j88x0mn37wkhg36w",
+                "name": "institution",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "dew3wjq0z8417fhou4aqg8bt",
+                    "name": "loader",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "26b6abde-53e3-4061-9295-11930f7aba22",
+                      "props": {
+                        "load": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => Promise<any>",
+                          "value": "async () => {\n  const client = await db.m_client.findFirst({\n    where: {\n      id: user.id_client,\n    },\n    include: {\n      m_client_logo: true,\n    },\n  });\n  return { client };\n}",
+                          "valueBuilt": " async()=>({client:await db.m_client.findFirst({where:{id:user.id_client},include:{m_client_logo:!0}})});\n"
+                        },
+                        "mode": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"load\"",
+                          "valueBuilt": "\"load\";\n"
+                        },
+                        "debug": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"n\"",
+                          "valueBuilt": "\"n\";\n"
+                        },
+                        "ready": {
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "content": {
+                            "id": "o8cajj7hx99wmxtft1w1i7x2",
+                            "adv": {
+                              "css": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "ready",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "a4b1mw022n5h41gnd5uotb9q",
+                                "adv": {
+                                  "js": "<div {...props}>\n  {(data.client.m_client_logo || []).map((item, idx) => (\n    <PassProp item={item} key={idx}>\n      {children}\n    </PassProp>\n  ))}\n</div>",
+                                  "css": "& {\n  display: flex;\n  justify-content: space-evenly;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props},(data.client.m_client_logo||[]).map((e,i)=>React.createElement(PassProp,{item:e,key:i},children))));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "images",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "jepiokqqj5xrlwe1a1vxz3cw",
+                                    "adv": {
+                                      "js": "<div {...props}><img src={item.file} width={120} height={120}/></div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(\"img\",{src:item.file,width:120,height:120})));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "New Item",
+                                    "type": "item",
+                                    "childs": []
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full",
+                                    "hUnit": "px"
+                                  },
+                                  "layout": {
+                                    "dir": "row",
+                                    "gap": 0,
+                                    "wrap": "flex-nowrap",
+                                    "align": "center"
+                                  }
+                                }
+                              },
+                              {
+                                "id": "kh9lyog0j4i9iso9l2ed0n80",
+                                "adv": {
+                                  "js": "<div {...props}>{data.client.name}</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props},data.client.name));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "name",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "font": {
+                                    "size": 20,
+                                    "align": "left",
+                                    "height": "auto",
+                                    "wordBreak": "break-normal",
+                                    "whitespace": "whitespace-normal"
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 0,
+                                    "wrap": "flex-nowrap",
+                                    "align": "top-center"
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 13,
+                                "wrap": "flex-nowrap",
+                                "align": "top-center"
+                              }
+                            }
+                          }
+                        },
+                        "sample": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "text"
+                          },
+                          "name": "prop",
+                          "type": "() => Promise<any>",
+                          "value": "async () => {\n  return {};\n}",
+                          "valueBuilt": " async()=>({});\n"
+                        },
+                        "loading": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "fuww5gwmiyj686gxff400u2p",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "loading",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "vf9xna536ue4rfu2jiuvtcap",
+                                "adv": {},
+                                "name": "Wrapped",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "ta90ixvpjroq95janotzfj6a",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 90,
+                                        "w": 90
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 57,
+                                          "br": 57,
+                                          "tl": 57,
+                                          "tr": 57
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "smxuu1ztwdn0hc4q0gefcwg3",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 90,
+                                        "w": 90
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 57,
+                                          "br": 57,
+                                          "tl": 57,
+                                          "tr": 57
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "id": "ts2udqajucd16e3ubm96axty",
+                                    "adv": {
+                                      "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "bar",
+                                    "type": "item",
+                                    "childs": [],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": 90,
+                                        "w": 90
+                                      },
+                                      "border": {
+                                        "style": "solid",
+                                        "rounded": {
+                                          "bl": 57,
+                                          "br": 57,
+                                          "tl": 57,
+                                          "tr": 57
+                                        }
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full",
+                                    "hUnit": "px",
+                                    "wUnit": "px"
+                                  },
+                                  "layout": {
+                                    "dir": "row",
+                                    "gap": 12,
+                                    "wrap": "flex-nowrap",
+                                    "align": "center"
+                                  },
+                                  "padding": {
+                                    "b": 5,
+                                    "l": 8,
+                                    "r": 8,
+                                    "t": 5
+                                  }
+                                }
+                              },
+                              {
+                                "id": "p39hl0k18zyg4sa7d2vlmebd",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 223
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "id": "kjwdg0i7i65b52wzp9vpk3pf",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 212
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "center"
+                              }
+                            },
+                            "parentInstanceId": "s58wt3fht2c0hlhvq7j34qo6"
+                          },
+                          "valueBuilt": "\"hello\""
+                        },
+                        "preview": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"ready\"",
+                          "valueBuilt": "\"ready\";\n"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": 400,
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "border": {
+                    "color": "#dcdcdc",
+                    "style": "solid",
+                    "stroke": {
+                      "b": 0,
+                      "l": 0,
+                      "r": 0,
+                      "t": 0
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 17,
+                    "l": 0,
+                    "r": 0,
+                    "t": 48
+                  }
+                }
+              },
+              {
+                "id": "m25b8jzc9414ozuniagjiu58",
+                "name": "info",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "la488rjp9ewts80jqdw2xdmg",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "detail-header",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "o9l3pblj8krjq8xcabnyk381",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ready",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "cvr5jbnu149pttlu9icgd48l",
+                            "adv": {
+                              "js": "<div {...props}>{user.name}</div>",
+                              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},user.name));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "dr Nillasanti Puspita",
+                            "name": "name",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 8,
+                                "r": 8,
+                                "t": 0
+                              }
+                            }
+                          },
+                          {
+                            "id": "swt91qyvvjef9xznvjl8llr3",
+                            "adv": {
+                              "js": "<div {...props}>{typeof user.code === \"string\" ? user.code : \"-\"} </div>",
+                              "css": "",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},typeof user.code==\"string\"?user.code:\"-\",\" \"));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "30081196521",
+                            "name": "code",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 6,
+                                "l": 8,
+                                "r": 0,
+                                "t": 0
+                              }
+                            }
+                          },
+                          {
+                            "id": "iquwd731eqjb8knd8gs7jzva",
+                            "adv": {
+                              "js": "<>{user.role === \"ppds\" && <div {...props}>{children}</div>}</>",
+                              "css": "",
+                              "html": "",
+                              "jsBuilt": "render(React.createElement(React.Fragment,null,user.role===\"ppds\"&&React.createElement(\"div\",{...props},children)));\n"
+                            },
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "bgmd1qbv4675225fp4xp4xjq",
+                                "name": "semester-tag",
+                                "type": "item",
+                                "childs": [],
+                                "component": {
+                                  "id": "52ff1b2d-c338-4202-8879-7baf8429cc6d",
+                                  "props": {
+                                    "id_smt": {
+                                      "idx": 0,
+                                      "meta": {
+                                        "type": "text"
+                                      },
+                                      "name": "prop",
+                                      "type": "string",
+                                      "value": "user.id_smt",
+                                      "valueBuilt": " user.id_smt;\n"
+                                    },
+                                    "semester": {
+                                      "idx": 0,
+                                      "meta": {
+                                        "type": "text"
+                                      },
+                                      "name": "prop",
+                                      "type": "string",
+                                      "value": "8",
+                                      "valueBuilt": " 8;\n"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "hidden": false,
+                        "mobile": {
+                          "bg": {
+                            "pos": "center",
+                            "size": "cover",
+                            "color": ""
+                          },
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          },
+                          "border": {
+                            "style": "solid",
+                            "rounded": {
+                              "bl": 7,
+                              "br": 7,
+                              "tl": 7,
+                              "tr": 7
+                            }
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 2,
+                            "r": 2,
+                            "t": 0
+                          }
+                        }
+                      },
+                      {
+                        "id": "z1eswc2nwtagnags77fkhbc2",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "image",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "o2yfxks7bldnt9h74h6bzihj",
+                            "adv": {
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"112\" height=\"97\" viewBox=\"0 0 112 97\" fill=\"none\">\n  <g clip-path=\"url(#clip0_104_720)\">\n    <path\n      d=\"M0 96.0176C0 96.1592 0.113145 96.2729 0.254039 96.2729H111.746C111.887 96.2729 112 96.1592 112 96.0176C112 95.876 111.887 95.7623 111.746 95.7623H0.254039C0.113143 95.7623 0 95.876 0 96.0176Z\"\n      fill=\"#3F3C57\" />\n    <path d=\"M36.3765 10.3087L37.589 15.8687L35.0101 23.6077L30.8552 15.2928L31.4317 10.4689L36.3765 10.3087Z\"\n      fill=\"#FDB4B4\" />\n    <path d=\"M37.8141 15.5807H30.6401V24.2917H37.8141V15.5807Z\" fill=\"#6C63FF\" />\n    <path\n      d=\"M34.8641 13.1094C37.5699 13.1094 39.7634 10.905 39.7634 8.18578C39.7634 5.46657 37.5699 3.26221 34.8641 3.26221C32.1583 3.26221 29.9648 5.46657 29.9648 8.18578C29.9648 10.905 32.1583 13.1094 34.8641 13.1094Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M30.5995 11.8469C30.5995 11.8469 26.9476 5.06898 30.2402 1.80725C33.5329 -1.45447 36.1761 0.694801 36.1761 0.694801L37.6854 0.633499C37.6854 0.633499 38.0002 1.82723 38.5078 1.18101C39.0154 0.534796 39.9326 2.88823 39.9326 2.88823C41.6351 5.96943 35.7334 6.65967 35.7334 6.65967C35.7334 6.65967 36.1595 8.02393 35.7264 8.30963C35.2932 8.59534 34.1359 9.67012 34.1359 9.67012L33.1 10.4564L32.4844 9.51377C32.4844 9.51377 31.8414 9.00365 31.5165 9.21793C31.1916 9.43221 31.6385 12.2516 31.6385 12.2516L30.5995 11.8469Z\"\n      fill=\"#2E2E41\" />\n    <path d=\"M24.7222 61.7112L22.8491 89.7905L27.4539 89.9474L33.5415 61.9465L24.7222 61.7112Z\" fill=\"#2E2E41\" />\n    <path d=\"M35.8829 61.5544L34.0098 89.6337L38.6145 89.7905L44.7022 61.7897L35.8829 61.5544Z\" fill=\"#2E2E41\" />\n    <path\n      d=\"M23.5942 68.1266L26.0455 37.5443L22.2863 21.6194C21.9622 19.2521 23.4464 17.0122 25.737 16.4014L29.4155 15.4207L31.0436 13.7844L34.7469 22.003L37.0597 13.7907L38.8635 15.109L44.2133 17.481L44.2108 17.5365L43.3527 36.7737L45.2682 67.8543L45.1833 67.8554L23.5942 68.1266Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M38.3188 89.4715L39.6521 93.4716C39.6521 93.4716 44.8684 94.1843 44.9496 95.8072C45.0307 97.4301 37.8604 96.4907 33.6617 96.7027C29.4631 96.9148 32.9581 92.3454 32.9581 92.3454L33.4056 89.7197L38.3188 89.4715Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M27.4302 89.1835L28.7635 93.1836C28.7635 93.1836 33.9797 93.8964 34.0609 95.5192C34.1421 97.1421 26.9717 96.2027 22.7731 96.4148C18.5744 96.6268 22.0695 92.0575 22.0695 92.0575L22.5169 89.4317L27.4302 89.1835Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M20.925 51.8846C20.8685 51.0959 21.0008 50.3051 21.3108 49.5783L20.3157 41.3747L24.2138 41.0131L24.8034 49.3736C25.1951 50.0591 25.4178 50.8288 25.4528 51.6185C25.5675 53.5939 24.6468 55.2539 23.3963 55.3273C22.1459 55.4006 21.0394 53.8593 20.925 51.8846Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M45.6144 53.0888C45.5665 52.2995 45.7073 51.5102 46.0252 50.7869L45.1191 42.5729L49.0209 42.2539L49.5198 50.6204C49.9041 51.3101 50.1184 52.0823 50.1449 52.8723C50.2381 54.8488 49.2995 56.4987 48.0483 56.5583C46.7971 56.6179 45.7074 55.0646 45.6144 53.0888Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M20.2996 48.5947L20.2864 48.5239L18.2549 37.5695L20.6554 19.7315C20.8696 18.139 22.2846 16.9918 23.8803 17.12C24.7136 17.187 25.4612 17.5842 25.9857 18.2386C26.5101 18.8929 26.737 19.7117 26.6246 20.5442L24.8179 33.9225L25.9554 48.2318L20.2996 48.5947Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M44.4107 48.3377L40.3262 20.938C40.1139 20.1346 40.2382 19.2938 40.6779 18.5793C41.1177 17.8648 41.8107 17.3777 42.6294 17.2075C44.1957 16.882 45.7424 17.8441 46.1512 19.3977L50.0751 47.9936L44.4107 48.3377Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M34.8667 24.5076C35.1436 24.5076 35.3681 24.282 35.3681 24.0037C35.3681 23.7254 35.1436 23.4998 34.8667 23.4998C34.5897 23.4998 34.3652 23.7254 34.3652 24.0037C34.3652 24.282 34.5897 24.5076 34.8667 24.5076Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 28.3231C35.1436 28.3231 35.3681 28.0975 35.3681 27.8192C35.3681 27.5409 35.1436 27.3152 34.8667 27.3152C34.5897 27.3152 34.3652 27.5409 34.3652 27.8192C34.3652 28.0975 34.5897 28.3231 34.8667 28.3231Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 32.1387C35.1436 32.1387 35.3681 31.9131 35.3681 31.6347C35.3681 31.3564 35.1436 31.1308 34.8667 31.1308C34.5897 31.1308 34.3652 31.3564 34.3652 31.6347C34.3652 31.9131 34.5897 32.1387 34.8667 32.1387Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 35.9542C35.1436 35.9542 35.3681 35.7285 35.3681 35.4502C35.3681 35.1719 35.1436 34.9463 34.8667 34.9463C34.5897 34.9463 34.3652 35.1719 34.3652 35.4502C34.3652 35.7285 34.5897 35.9542 34.8667 35.9542Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 39.7697C35.1436 39.7697 35.3681 39.5441 35.3681 39.2658C35.3681 38.9875 35.1436 38.7618 34.8667 38.7618C34.5897 38.7618 34.3652 38.9875 34.3652 39.2658C34.3652 39.5441 34.5897 39.7697 34.8667 39.7697Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 43.5852C35.1436 43.5852 35.3681 43.3596 35.3681 43.0813C35.3681 42.803 35.1436 42.5773 34.8667 42.5773C34.5897 42.5773 34.3652 42.803 34.3652 43.0813C34.3652 43.3596 34.5897 43.5852 34.8667 43.5852Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 47.4008C35.1436 47.4008 35.3681 47.1751 35.3681 46.8968C35.3681 46.6185 35.1436 46.3929 34.8667 46.3929C34.5897 46.3929 34.3652 46.6185 34.3652 46.8968C34.3652 47.1751 34.5897 47.4008 34.8667 47.4008Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 51.2162C35.1436 51.2162 35.3681 50.9906 35.3681 50.7123C35.3681 50.434 35.1436 50.2084 34.8667 50.2084C34.5897 50.2084 34.3652 50.434 34.3652 50.7123C34.3652 50.9906 34.5897 51.2162 34.8667 51.2162Z\"\n      fill=\"#D6D7D8\" />\n    <path d=\"M34.8673 54.1678L25.3793 52.8971L25.1966 52.8727L20.3475 41.6363L17.4597 34.9465H24.9816L34.8673 54.1678Z\"\n      fill=\"#6C63FF\" />\n    <path d=\"M72.9093 11.5311L78.9415 8.21008V17.6987H71.9651L72.9093 11.5311Z\" fill=\"#2E2E41\" />\n    <path d=\"M80.2348 13.6466L80.7915 18.3049L76.7792 26.3345L74.2888 18.8611L75.4597 13.4918L80.2348 13.6466Z\"\n      fill=\"#FDB4B4\" />\n    <path d=\"M80.9991 18.583H74.0713V26.995H80.9991V18.583Z\" fill=\"#6C63FF\" />\n    <path d=\"M86.7142 63.1306L88.523 90.2464L84.0763 90.3979L78.1975 63.3578L86.7142 63.1306Z\" fill=\"#2E2E41\" />\n    <path d=\"M75.9363 62.9791L77.7452 90.0949L73.2984 90.2464L67.4197 63.2064L75.9363 62.9791Z\" fill=\"#2E2E41\" />\n    <path\n      d=\"M91.4122 68.8817L91.3062 68.8814L62.9783 68.7884L63.0037 68.6876L70.2867 39.689L68.4623 25.0544C68.1167 22.2814 69.5939 19.6602 72.1381 18.5322L73.0566 18.125L74.8016 16.8498L77.0338 24.7767L80.6086 16.8436L82.1833 18.4259L85.7347 19.3728C87.9483 19.963 89.3823 22.1273 89.0705 24.4073L89.0667 24.4232L83.6433 39.9753L91.4122 68.8817Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M73.5841 89.9383L78.3287 90.1779L78.7608 92.7136C78.7608 92.7136 82.1359 97.1262 78.0814 96.9214C74.0268 96.7166 67.1025 97.6238 67.1808 96.0566C67.2592 94.4894 72.2965 93.8011 72.2965 93.8011L73.5841 89.9383Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M84.099 89.6602L88.8436 89.8999L89.2757 92.4355C89.2757 92.4355 92.6508 96.8481 88.5962 96.6433C84.5417 96.4385 77.6173 97.3457 77.6957 95.7785C77.7741 94.2113 82.8114 93.5231 82.8114 93.5231L84.099 89.6602Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M88.444 53.3631C88.3336 55.27 87.2651 56.7585 86.0575 56.6876C84.8499 56.6168 83.9609 55.0137 84.0716 53.1062C84.1054 52.3436 84.3205 51.6002 84.6988 50.9383L85.2681 42.8646L89.0325 43.2139L88.0715 51.136C88.3709 51.8378 88.4986 52.6015 88.444 53.3631Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M69.0994 52.638C68.9486 54.5421 67.8488 56.0074 66.643 55.9108C65.4372 55.8141 64.5823 54.1924 64.7334 52.2876C64.7833 51.5259 65.0141 50.7873 65.4063 50.1336L66.1466 42.074L69.9027 42.5037L68.7741 50.4034C69.0586 51.1115 69.1701 51.8778 69.0994 52.638Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M89.0502 50.189L83.5832 49.8383L83.5898 49.756L84.6819 36.0174L82.9374 23.0985C82.8286 22.2939 83.0479 21.5023 83.5548 20.8699C84.0617 20.2374 84.7844 19.8535 85.59 19.7886C87.1324 19.6664 88.4999 20.7737 88.7071 22.313L91.0253 39.5393L91.0229 39.5522L89.0502 50.189Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M70.0096 49.6627L64.5339 49.3301L64.5459 49.2432L68.3218 21.7218C68.7189 20.2102 70.2146 19.2805 71.7279 19.595C72.5193 19.7595 73.1891 20.2304 73.6142 20.9211C74.0393 21.6117 74.1594 22.4244 73.9524 23.2094L70.0096 49.6627Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M76.9176 27.2036C77.185 27.2036 77.4018 26.9857 77.4018 26.7169C77.4018 26.4482 77.185 26.2303 76.9176 26.2303C76.6502 26.2303 76.4333 26.4482 76.4333 26.7169C76.4333 26.9857 76.6502 27.2036 76.9176 27.2036Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 30.8881C77.185 30.8881 77.4018 30.6703 77.4018 30.4015C77.4018 30.1327 77.185 29.9149 76.9176 29.9149C76.6502 29.9149 76.4333 30.1327 76.4333 30.4015C76.4333 30.6703 76.6502 30.8881 76.9176 30.8881Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 34.5728C77.185 34.5728 77.4018 34.3549 77.4018 34.0861C77.4018 33.8174 77.185 33.5995 76.9176 33.5995C76.6502 33.5995 76.4333 33.8174 76.4333 34.0861C76.4333 34.3549 76.6502 34.5728 76.9176 34.5728Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 38.2573C77.185 38.2573 77.4018 38.0395 77.4018 37.7707C77.4018 37.5019 77.185 37.2841 76.9176 37.2841C76.6502 37.2841 76.4333 37.5019 76.4333 37.7707C76.4333 38.0395 76.6502 38.2573 76.9176 38.2573Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 41.9419C77.185 41.9419 77.4018 41.724 77.4018 41.4553C77.4018 41.1865 77.185 40.9686 76.9176 40.9686C76.6502 40.9686 76.4333 41.1865 76.4333 41.4553C76.4333 41.724 76.6502 41.9419 76.9176 41.9419Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 45.6265C77.185 45.6265 77.4018 45.4087 77.4018 45.1399C77.4018 44.8711 77.185 44.6533 76.9176 44.6533C76.6502 44.6533 76.4333 44.8711 76.4333 45.1399C76.4333 45.4087 76.6502 45.6265 76.9176 45.6265Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 49.3112C77.185 49.3112 77.4018 49.0933 77.4018 48.8245C77.4018 48.5558 77.185 48.3379 76.9176 48.3379C76.6502 48.3379 76.4333 48.5558 76.4333 48.8245C76.4333 49.0933 76.6502 49.3112 76.9176 49.3112Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 52.9957C77.185 52.9957 77.4018 52.7779 77.4018 52.5091C77.4018 52.2403 77.185 52.0225 76.9176 52.0225C76.6502 52.0225 76.4333 52.2403 76.4333 52.5091C76.4333 52.7779 76.6502 52.9957 76.9176 52.9957Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M77.6527 16.024C80.1542 16.024 82.182 13.986 82.182 11.4721C82.182 8.95821 80.1542 6.92029 77.6527 6.92029C75.1512 6.92029 73.1233 8.95821 73.1233 11.4721C73.1233 13.986 75.1512 16.024 77.6527 16.024Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M80.0263 6.15845C80.2434 6.60206 79.8992 7.15618 79.4436 7.34269C78.9881 7.5292 78.4735 7.45363 77.9877 7.37599C77.5019 7.29836 76.9866 7.22475 76.5324 7.41455C75.9447 7.66014 75.6134 8.2762 75.328 8.84789C74.7951 9.91513 74.2622 10.9824 73.7293 12.0496C73.4689 12.5711 73.2027 13.1159 73.1977 13.6993C73.1885 14.7701 74.0337 15.6259 74.4885 16.5944C75.0423 17.7735 74.9966 19.2185 74.3696 20.36C73.7425 21.5014 72.55 22.3101 71.2621 22.4675C70.9232 22.5089 70.5646 22.5044 70.2599 22.3496C69.9552 22.1949 69.7227 21.8571 69.7791 21.5187C69.8895 20.857 70.8956 20.7024 71.0804 20.0576C71.1769 19.721 71.006 19.3616 70.7757 19.0987C70.5454 18.8358 70.2542 18.6307 70.0345 18.3588C69.5279 17.7318 69.4942 16.7638 69.9558 16.1027C70.2271 15.7142 70.6467 15.4255 70.8221 14.9848C70.9715 14.6091 70.9173 14.1868 70.8607 13.7863C70.7879 13.2716 70.7152 12.7569 70.6425 12.2422C70.5576 11.6416 70.474 11.0196 70.6417 10.4369C71.0261 9.10173 72.5263 8.47464 73.406 7.40214C73.8149 6.90376 74.0899 6.30437 74.5093 5.81496C75.2131 4.99366 76.3212 4.54059 77.3957 4.63477C78.4702 4.72895 79.4835 5.36798 80.0352 6.29933\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M79.3112 6.24261C79.09 6.32214 79.0079 6.61179 79.0715 6.83913C79.1352 7.06646 79.302 7.24709 79.4547 7.42665C81.1814 9.45741 81.5827 12.5291 80.4362 14.939C80.1313 15.58 79.7251 16.1833 79.5606 16.8743C79.4409 17.3771 79.4473 17.9286 79.1698 18.3639C78.8872 18.8071 78.3272 19.104 78.2719 19.6274C78.2363 19.9632 78.44 20.2895 78.7131 20.4864C78.9862 20.6833 79.3198 20.7734 79.6478 20.8469C80.5005 21.0378 81.3723 21.1421 82.2458 21.1575C82.5305 21.1625 82.8243 21.1563 83.0856 21.0423C83.3468 20.9283 83.5698 20.681 83.5727 20.3948C83.5751 20.1699 83.446 19.9624 83.4295 19.738C83.3802 19.0658 84.2802 18.7082 84.4556 18.0576C84.5709 17.6299 84.3437 17.1898 84.1018 16.8193C83.8598 16.4489 83.5837 16.0599 83.5896 15.6168C83.5953 15.1926 83.8602 14.819 83.9632 14.4076C84.1056 13.8385 83.9306 13.2433 83.7571 12.683C83.6096 12.2066 83.4621 11.7303 83.3146 11.254C83.1578 10.7476 83.001 10.2412 82.8441 9.73486C82.5704 8.85085 82.283 7.94122 81.6906 7.2322C81.0981 6.52318 80.1165 6.05847 79.2414 6.34795\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M82.3977 23.8811L82.0873 23.7901C82.7341 21.5615 81.3395 17.4025 81.3254 17.3608L81.6315 17.2559C81.6907 17.4304 83.0729 21.5548 82.3977 23.8811Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M82.2426 26.4409C82.9886 26.4409 83.5934 25.8331 83.5934 25.0834C83.5934 24.3337 82.9886 23.726 82.2426 23.726C81.4966 23.726 80.8918 24.3337 80.8918 25.0834C80.8918 25.8331 81.4966 26.4409 82.2426 26.4409Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M73.3672 29.8893H72.548C72.4586 29.8893 72.3863 29.8166 72.3863 29.7268C72.3863 29.6371 72.4586 29.5643 72.548 29.5643H73.3672C73.593 29.5643 73.805 29.4759 73.9645 29.3154C74.1238 29.1549 74.2115 28.9415 74.211 28.7147L74.2011 23.6439C74.2011 22.5423 73.3095 21.6464 72.2137 21.6464C71.1179 21.6464 70.2262 22.5423 70.2262 23.6436L70.2362 28.3899C70.2371 28.853 70.6128 29.2325 71.0735 29.2361L71.6358 29.2404C71.725 29.2411 71.7969 29.3143 71.7962 29.4041C71.7956 29.4934 71.7233 29.5654 71.6345 29.5654H71.6333L71.071 29.5611C70.4337 29.5562 69.914 29.031 69.9128 28.3906L69.9028 23.6439C69.9028 22.3632 70.9395 21.3214 72.2137 21.3214C73.4878 21.3214 74.5244 22.3632 74.5244 23.6436L74.5344 28.7141C74.535 29.0278 74.4139 29.3229 74.1933 29.5449C73.9729 29.767 73.6794 29.8893 73.3672 29.8893Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M71.6346 29.9788C71.9511 29.9788 72.2077 29.721 72.2077 29.4029C72.2077 29.0848 71.9511 28.827 71.6346 28.827C71.3181 28.827 71.0615 29.0848 71.0615 29.4029C71.0615 29.721 71.3181 29.9788 71.6346 29.9788Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M72.5479 30.3027C72.8644 30.3027 73.121 30.0449 73.121 29.7268C73.121 29.4087 72.8644 29.1509 72.5479 29.1509C72.2314 29.1509 71.9749 29.4087 71.9749 29.7268C71.9749 30.0449 72.2314 30.3027 72.5479 30.3027Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M39.4641 21.4454L39.1537 21.3545C39.8004 19.1258 38.4215 14.9025 38.4075 14.8607L38.7955 15.1547C38.8547 15.3292 40.1393 19.1192 39.4641 21.4454Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M28.5515 21.8414L28.8619 21.7504C28.2152 19.5218 29.6098 15.3628 29.6238 15.3211L29.2917 15.5447C29.2325 15.7191 27.8763 19.5151 28.5515 21.8414Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M39.3088 24.0052C40.0548 24.0052 40.6596 23.3975 40.6596 22.6478C40.6596 21.898 40.0548 21.2903 39.3088 21.2903C38.5628 21.2903 37.958 21.898 37.958 22.6478C37.958 23.3975 38.5628 24.0052 39.3088 24.0052Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M29.9917 30.1893H29.1725C29.0831 30.1893 29.0108 30.1166 29.0108 30.0268C29.0108 29.9371 29.0831 29.8643 29.1725 29.8643H29.9917C30.2175 29.8643 30.4296 29.7759 30.589 29.6153C30.7484 29.4548 30.836 29.2415 30.8355 29.0147L30.8256 23.9439C30.8256 22.8423 29.9341 21.9464 28.8382 21.9464C27.7424 21.9464 26.8507 22.8423 26.8507 23.9436L26.8607 28.6899C26.8616 29.1529 27.2373 29.5325 27.698 29.5361L28.2603 29.5404C28.3495 29.5411 28.4214 29.6143 28.4207 29.7041C28.4201 29.7934 28.3478 29.8654 28.259 29.8654H28.2578L27.6955 29.8611C27.0582 29.8562 26.5386 29.331 26.5373 28.6905L26.5273 23.9439C26.5273 22.6632 27.564 21.6214 28.8382 21.6214C30.1123 21.6214 31.149 22.6632 31.149 23.9436L31.1589 29.0141C31.1595 29.3278 31.0384 29.6229 30.8178 29.8449C30.5974 30.067 30.3039 30.1893 29.9917 30.1893Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M28.2591 30.2788C28.5756 30.2788 28.8322 30.021 28.8322 29.7029C28.8322 29.3848 28.5756 29.127 28.2591 29.127C27.9426 29.127 27.686 29.3848 27.686 29.7029C27.686 30.021 27.9426 30.2788 28.2591 30.2788Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M29.1725 30.6028C29.489 30.6028 29.7455 30.3449 29.7455 30.0269C29.7455 29.7088 29.489 29.4509 29.1725 29.4509C28.8559 29.4509 28.5994 29.7088 28.5994 30.0269C28.5994 30.3449 28.8559 30.6028 29.1725 30.6028Z\"\n      fill=\"#3F3C57\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_104_720\">\n      <rect width=\"112\" height=\"97\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "img_dash",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#f7f7f7"
+                      },
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "border": {
+                        "color": "#e8e8e8",
+                        "style": "solid",
+                        "stroke": {
+                          "b": 0,
+                          "l": 0,
+                          "r": 0,
+                          "t": 0
+                        },
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "stretch"
+                      },
+                      "padding": {
+                        "b": 15,
+                        "l": 6,
+                        "r": 10,
+                        "t": 10
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "padding": {
+                    "b": 19,
+                    "l": 12,
+                    "r": 12,
+                    "t": 8
+                  }
+                }
+              },
+              {
+                "id": "zcxku0hvykqohpqpppjsh9ia",
+                "name": "box",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "bah7ttq89j6nr4iu4ucl5v61",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "task",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "sw0uvyl66cde2mnunm8sbgnl",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "edit-profile",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "hcu2zy8shu7dasmd9tzvjg9s",
+                            "adv": {
+                              "css": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "Edit Profile",
+                            "name": "New Text",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              }
+                            }
+                          },
+                          {
+                            "id": "joftwfym24ry05wwvnwfge3h",
+                            "adv": {
+                              "css": "",
+                              "html": "<svg width=\"15\" height=\"15\" viewBox=\"0 0 15 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path\n    d=\"M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z\"\n    fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"></path>\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "New Item",
+                            "type": "item",
+                            "childs": []
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "border": {
+                            "color": "#dbdbdb",
+                            "style": "solid",
+                            "stroke": {
+                              "b": 1
+                            },
+                            "rounded": {
+                              "bl": 0,
+                              "br": 0,
+                              "tl": 5,
+                              "tr": 5
+                            }
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": "auto",
+                            "wrap": "flex-nowrap",
+                            "align": "center"
+                          },
+                          "linktag": {
+                            "link": "/profile/edit"
+                          },
+                          "padding": {
+                            "b": 13,
+                            "l": 9,
+                            "r": 9,
+                            "t": 13
+                          }
+                        }
+                      },
+                      {
+                        "id": "gdemxfxvapczi7oj3sllgt63",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ubah-pass",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "ls3dc7mazfeo2lmeibjycfdr",
+                            "adv": {
+                              "css": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "Ubah Password",
+                            "name": "New Text",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              }
+                            }
+                          },
+                          {
+                            "id": "n1eq0mzmswuuwdtcf0mrnf6y",
+                            "adv": {
+                              "css": "",
+                              "html": "<svg width=\"15\" height=\"15\" viewBox=\"0 0 15 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path\n    d=\"M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z\"\n    fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"></path>\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "New Item",
+                            "type": "item",
+                            "childs": []
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "border": {
+                            "color": "#dbdbdb",
+                            "style": "solid",
+                            "stroke": {
+                              "b": 0,
+                              "l": 0,
+                              "r": 0,
+                              "t": 0
+                            },
+                            "rounded": {
+                              "bl": 5,
+                              "br": 5
+                            }
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": "auto",
+                            "wrap": "flex-nowrap",
+                            "align": "center"
+                          },
+                          "linktag": {
+                            "link": "/auth/change-password"
+                          },
+                          "padding": {
+                            "b": 13,
+                            "l": 9,
+                            "r": 9,
+                            "t": 13
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "border": {
+                        "color": "#cecece",
+                        "style": "solid",
+                        "stroke": {
+                          "b": 1,
+                          "l": 1,
+                          "r": 1,
+                          "t": 1
+                        },
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 0,
+                        "r": 0,
+                        "t": 0
+                      }
+                    }
+                  },
+                  {
+                    "id": "l73yxj3vxglxhefcwgw68qhx",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "task",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "whed8jzcnnpfycoftaco7i87",
+                        "adv": {
+                          "js": "<div\n  {...props}\n  onClick={async () => {\n    if (isEditor) return;\n    if (confirm(\"Yakin logout ?\")) {\n      localStorage.removeItem(\"mlsid\");\n      navigate(\"/auth/login\");\n      auditTrail({ type: \"action\", activity: \"Logout\" });\n    }\n  }}\n>\n  {children}\n</div>",
+                          "css": "",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:async()=>{isEditor||confirm(\"Yakin logout ?\")&&(localStorage.removeItem(\"mlsid\"),navigate(\"/auth/login\"),auditTrail({type:\"action\",activity:\"Logout\"}))}},children));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "logout",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "rxa7bz2hycpqx866gk2ifh1v",
+                            "adv": {
+                              "css": ""
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "<b>Logout</b>",
+                            "name": "New Text",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "align": "left",
+                                "color": "#ed7272",
+                                "height": "auto",
+                                "wordBreak": "break-normal",
+                                "whitespace": "whitespace-normal"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "center"
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "border": {
+                            "color": "#dbdbdb",
+                            "style": "solid",
+                            "stroke": {
+                              "b": 0,
+                              "l": 0,
+                              "r": 0,
+                              "t": 0
+                            },
+                            "rounded": {
+                              "bl": 5,
+                              "br": 5
+                            }
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "center"
+                          },
+                          "padding": {
+                            "b": 13,
+                            "l": 9,
+                            "r": 9,
+                            "t": 13
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "border": {
+                        "color": "#cecece",
+                        "style": "solid",
+                        "stroke": {
+                          "b": 1,
+                          "l": 1,
+                          "r": 1,
+                          "t": 1
+                        },
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 0,
+                        "r": 0,
+                        "t": 0
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 39,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 14,
+                    "l": 12,
+                    "r": 12,
+                    "t": 14
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "j2048v3glqgjpr64zlzuaa4n",
+            "adv": {
+              "js": "<>{user.role === \"ppds\" && <div {...props}>{children}</div>}</>",
+              "css": "",
+              "html": "",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,user.role===\"ppds\"&&React.createElement(\"div\",{...props},children)));\n"
+            },
+            "name": "Wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "toajfvp507pltb812qfmpexb",
+                "name": "menu-ppds-new",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+                  "props": {},
+                  "updated_at": 1691996458029
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          },
+          {
+            "id": "mbzois36gnd24b0nj7ln5ev3",
+            "adv": {
+              "js": "<>\n  {(user.role === \"staff\" || user.role === \"institution\") && (\n    <div {...props}>{children}</div>\n  )}\n</>",
+              "css": "",
+              "html": "",
+              "jsBuilt": "render(React.createElement(React.Fragment,null,(user.role===\"staff\"||user.role===\"institution\")&&React.createElement(\"div\",{...props},children)));\n"
+            },
+            "name": "Wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "z1yhlqbx9zer9caz20m0ywhl",
+                "adv": {
+                  "css": "& {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  min-height: 65px;\r\n  height: 65px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "menu-staff",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "nfazyoxnyn3g6498fqsamd47",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/home\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/home\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/home\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/home\")}},children)));\n"
+                    },
+                    "name": "home",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "f04dkp2gays5bqmn00os62ak",
+                        "adv": {
+                          "js": "",
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n  <mask id=\"mask0_219_6248\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"40\" height=\"40\">\r\n    <rect width=\"40\" height=\"40\" fill=\"#002B5B\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_219_6248)\">\r\n    <path\r\n      d=\"M10.0003 31.6667H15.0003V21.6667H25.0003V31.6667H30.0003V16.6667L20.0003 9.16667L10.0003 16.6667V31.6667ZM6.66699 35V15L20.0003 5L33.3337 15V35H21.667V25H18.3337V35H6.66699Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "home",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "cm6mcp11p73vks9y38aig9az",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/home\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/home\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/home\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/home\")}},children)));\n"
+                    },
+                    "name": "home-active",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "pe7xexnfiy5orgrk7hpmqx4f",
+                        "adv": {
+                          "js": "",
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n  <mask id=\"mask0_946_6953\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"40\" height=\"40\">\r\n    <rect width=\"40\" height=\"40\" fill=\"#002B5B\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_946_6953)\">\r\n    <path\r\n      d=\"M10.0003 31.6667H15.0003V21.6667H25.0003V31.6667H30.0003V16.6667L20.0003 9.16667L10.0003 16.6667V31.6667ZM6.66699 35V15L20.0003 5L33.3337 15V35H21.667V25H18.3337V35H6.66699Z\"\r\n      fill=\"#0062A3\" />\r\n  </g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "home",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "zkpvc324bxw50smatgq7z146",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/explore\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/explore\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/explore\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/explore\")}},children)));\n"
+                    },
+                    "name": "search-ppds",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "fn3njqhbtzdsogjb7rm7yhnp",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\">\r\n  <mask id=\"mask0_2471_6453\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"38\" height=\"38\">\r\n    <rect width=\"38\" height=\"38\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2471_6453)\">\r\n    <path\r\n      d=\"M17.4167 15.8334C18.2875 15.8334 19.033 15.5233 19.6531 14.9032C20.2733 14.2831 20.5833 13.5376 20.5833 12.6667C20.5833 11.7959 20.2733 11.0504 19.6531 10.4303C19.033 9.81015 18.2875 9.50008 17.4167 9.50008C16.5458 9.50008 15.8003 9.81015 15.1802 10.4303C14.5601 11.0504 14.25 11.7959 14.25 12.6667C14.25 13.5376 14.5601 14.2831 15.1802 14.9032C15.8003 15.5233 16.5458 15.8334 17.4167 15.8334ZM17.4167 22.1667C18.6042 22.1667 19.7191 21.9161 20.7615 21.4147C21.8038 20.9133 22.7076 20.2008 23.4729 19.2772C22.5493 18.6702 21.5795 18.2084 20.5635 17.8917C19.5476 17.5751 18.4986 17.4167 17.4167 17.4167C16.3347 17.4167 15.2858 17.5751 14.2698 17.8917C13.2538 18.2084 12.284 18.6702 11.3604 19.2772C12.1257 20.2008 13.0295 20.9133 14.0719 21.4147C15.1142 21.9161 16.2292 22.1667 17.4167 22.1667ZM32.6167 33.2501L25.175 25.8084C24.0931 26.6529 22.899 27.3126 21.5927 27.7876C20.2865 28.2626 18.8944 28.5001 17.4167 28.5001C13.8806 28.5001 10.8854 27.273 8.43125 24.8188C5.97708 22.3647 4.75 19.3695 4.75 15.8334C4.75 12.2973 5.97708 9.30216 8.43125 6.848C10.8854 4.39383 13.8806 3.16675 17.4167 3.16675C20.9528 3.16675 23.9479 4.39383 26.4021 6.848C28.8562 9.30216 30.0833 12.2973 30.0833 15.8334C30.0833 17.3112 29.8458 18.7032 29.3708 20.0095C28.8958 21.3157 28.2361 22.5098 27.3917 23.5917L34.8333 31.0334L32.6167 33.2501ZM17.4167 25.3334C20.0556 25.3334 22.2986 24.4098 24.1458 22.5626C25.9931 20.7154 26.9167 18.4723 26.9167 15.8334C26.9167 13.1945 25.9931 10.9515 24.1458 9.10425C22.2986 7.25703 20.0556 6.33341 17.4167 6.33341C14.7778 6.33341 12.5347 7.25703 10.6875 9.10425C8.84028 10.9515 7.91667 13.1945 7.91667 15.8334C7.91667 18.4723 8.84028 20.7154 10.6875 22.5626C12.5347 24.4098 14.7778 25.3334 17.4167 25.3334Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "assignment",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "eu4rmypi0hoglh7i1f4rtf53",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/explore\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/explore\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/explore\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/explore\")}},children)));\n"
+                    },
+                    "name": "search-ppds-active",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "rxqo643dbx1ed3uh3g0t9r51",
+                        "adv": {
+                          "js": "",
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" fill=\"none\">\r\n<mask id=\"mask0_2499_4946\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"38\" height=\"38\">\r\n<rect width=\"38\" height=\"38\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4946)\">\r\n<path d=\"M17.4167 15.8334C18.2875 15.8334 19.033 15.5233 19.6531 14.9032C20.2733 14.2831 20.5833 13.5376 20.5833 12.6667C20.5833 11.7959 20.2733 11.0504 19.6531 10.4303C19.033 9.81015 18.2875 9.50008 17.4167 9.50008C16.5458 9.50008 15.8003 9.81015 15.1802 10.4303C14.5601 11.0504 14.25 11.7959 14.25 12.6667C14.25 13.5376 14.5601 14.2831 15.1802 14.9032C15.8003 15.5233 16.5458 15.8334 17.4167 15.8334ZM17.4167 22.1667C18.6042 22.1667 19.7191 21.9161 20.7615 21.4147C21.8038 20.9133 22.7076 20.2008 23.4729 19.2772C22.5493 18.6702 21.5795 18.2084 20.5635 17.8917C19.5476 17.5751 18.4986 17.4167 17.4167 17.4167C16.3347 17.4167 15.2858 17.5751 14.2698 17.8917C13.2538 18.2084 12.284 18.6702 11.3604 19.2772C12.1257 20.2008 13.0295 20.9133 14.0719 21.4147C15.1142 21.9161 16.2292 22.1667 17.4167 22.1667ZM32.6167 33.2501L25.175 25.8084C24.0931 26.6529 22.899 27.3126 21.5927 27.7876C20.2865 28.2626 18.8944 28.5001 17.4167 28.5001C13.8806 28.5001 10.8854 27.273 8.43125 24.8188C5.97708 22.3647 4.75 19.3695 4.75 15.8334C4.75 12.2973 5.97708 9.30216 8.43125 6.848C10.8854 4.39383 13.8806 3.16675 17.4167 3.16675C20.9528 3.16675 23.9479 4.39383 26.4021 6.848C28.8562 9.30216 30.0833 12.2973 30.0833 15.8334C30.0833 17.3112 29.8458 18.7032 29.3708 20.0095C28.8958 21.3157 28.2361 22.5098 27.3917 23.5917L34.8333 31.0334L32.6167 33.2501ZM17.4167 25.3334C20.0556 25.3334 22.2986 24.4098 24.1458 22.5626C25.9931 20.7154 26.9167 18.4723 26.9167 15.8334C26.9167 13.1945 25.9931 10.9515 24.1458 9.10425C22.2986 7.25703 20.0556 6.33341 17.4167 6.33341C14.7778 6.33341 12.5347 7.25703 10.6875 9.10425C8.84028 10.9515 7.91667 13.1945 7.91667 15.8334C7.91667 18.4723 8.84028 20.7154 10.6875 22.5626C12.5347 24.4098 14.7778 25.3334 17.4167 25.3334Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "assignment",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "b6djurmeqzwd7enk29kuqtlp",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/milestone\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/milestone\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/milestone\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/milestone\")}},children)));\n"
+                    },
+                    "name": "milestone",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "t2dgcwax1t2vj8873mi2ys0q",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"29\" viewBox=\"0 0 32 29\" fill=\"none\">\r\n<path d=\"M8.79102 28.0833L6.74935 26.0417L16.8119 15.9427L21.916 21.0469L29.4629 13.5L31.541 15.5781L21.916 25.1667L16.8119 20.0625L8.79102 28.0833ZM3.83268 26.625C3.0306 26.625 2.34397 26.3394 1.77279 25.7682C1.20161 25.197 0.916016 24.5104 0.916016 23.7083V3.29167C0.916016 2.48958 1.20161 1.80295 1.77279 1.23177C2.34397 0.66059 3.0306 0.375 3.83268 0.375H24.2493C25.0514 0.375 25.7381 0.66059 26.3092 1.23177C26.8804 1.80295 27.166 2.48958 27.166 3.29167V9.41667H3.83268V26.625ZM3.83268 6.5H24.2493V3.29167H3.83268V6.5Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "milestone",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "wrf7rcis2t6b5qeww2n1co2t",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/staff-pengajar/milestone\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/staff-pengajar/milestone\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "html": "",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/staff-pengajar/milestone\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/staff-pengajar/milestone\")}},children)));\n"
+                    },
+                    "name": "milestone-active",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "zzzt5vttvf8misxrs0cu3bkz",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"35\" viewBox=\"0 0 35 35\" fill=\"none\">\r\n<mask id=\"mask0_2570_6190\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"35\" height=\"35\">\r\n<rect x=\"0.5\" y=\"0.5\" width=\"34\" height=\"34\" fill=\"#D9D9D9\" stroke=\"black\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2570_6190)\">\r\n<path d=\"M9.45582 30.041L18.8125 20.6505L23.5625 25.4004L23.916 25.754L24.2696 25.4004L31.4629 18.2071L32.8332 19.5775L23.9167 28.4602L19.1654 23.7089L18.8119 23.3554L18.4583 23.7089L10.791 31.3762L9.45582 30.041ZM5.33268 30.0776C4.87859 29.9876 4.48013 29.7685 4.12634 29.4147C3.64818 28.9365 3.41602 28.3768 3.41602 27.7083V7.29167C3.41602 6.62325 3.64818 6.06348 4.12634 5.58532C4.6045 5.10716 5.16426 4.875 5.83268 4.875H26.2493C26.9178 4.875 27.4775 5.10716 27.9557 5.58532C28.4339 6.06348 28.666 6.62325 28.666 7.29167V12.9167H5.83268H5.33268V13.4167V30.0776ZM5.33268 10.5V11H5.83268H26.2493H26.7493V10.5V7.29167V6.79167H26.2493H5.83268H5.33268V7.29167V10.5Z\" fill=\"#0062A3\" stroke=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "milestone",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "uzwhrt1zwvddlm7be0vlqjsi",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/profile\") !== true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        navigate(\"/profile\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/profile\")!==!0&&React.createElement(\"div\",{...props,onClick:e=>{navigate(\"/profile\")}},children)));\n"
+                    },
+                    "name": "profile",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "jkx7rloz7bjvs4ixu5l8u4zj",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"37\" height=\"37\" viewBox=\"0 0 37 37\" fill=\"none\">\r\n<mask id=\"mask0_219_6257\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"37\" height=\"37\">\r\n<rect width=\"37\" height=\"37\" fill=\"#002B5B\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_219_6257)\">\r\n<path d=\"M18.5003 18.5C16.8045 18.5 15.3528 17.8961 14.1451 16.6885C12.9375 15.4809 12.3337 14.0291 12.3337 12.3333C12.3337 10.6375 12.9375 9.18572 14.1451 7.97808C15.3528 6.77045 16.8045 6.16663 18.5003 6.16663C20.1962 6.16663 21.6479 6.77045 22.8555 7.97808C24.0632 9.18572 24.667 10.6375 24.667 12.3333C24.667 14.0291 24.0632 15.4809 22.8555 16.6885C21.6479 17.8961 20.1962 18.5 18.5003 18.5ZM6.16699 30.8333V26.5166C6.16699 25.643 6.39182 24.8401 6.84147 24.1078C7.29112 23.3755 7.88852 22.8166 8.63366 22.4312C10.2267 21.6347 11.8455 21.0373 13.4899 20.639C15.1344 20.2408 16.8045 20.0416 18.5003 20.0416C20.1962 20.0416 21.8663 20.2408 23.5107 20.639C25.1552 21.0373 26.7739 21.6347 28.367 22.4312C29.1121 22.8166 29.7095 23.3755 30.1592 24.1078C30.6088 24.8401 30.8337 25.643 30.8337 26.5166V30.8333H6.16699ZM9.25033 27.75H27.7503V26.5166C27.7503 26.234 27.6797 25.977 27.5383 25.7458C27.397 25.5145 27.2107 25.3347 26.9795 25.2062C25.592 24.5125 24.1916 23.9921 22.7785 23.6453C21.3653 23.2984 19.9392 23.125 18.5003 23.125C17.0614 23.125 15.6354 23.2984 14.2222 23.6453C12.809 23.9921 11.4087 24.5125 10.0212 25.2062C9.78991 25.3347 9.60362 25.5145 9.4623 25.7458C9.32099 25.977 9.25033 26.234 9.25033 26.5166V27.75ZM18.5003 15.4166C19.3482 15.4166 20.0741 15.1147 20.6779 14.5109C21.2818 13.9071 21.5837 13.1812 21.5837 12.3333C21.5837 11.4854 21.2818 10.7595 20.6779 10.1557C20.0741 9.55187 19.3482 9.24996 18.5003 9.24996C17.6524 9.24996 16.9265 9.55187 16.3227 10.1557C15.7189 10.7595 15.417 11.4854 15.417 12.3333C15.417 13.1812 15.7189 13.9071 16.3227 14.5109C16.9265 15.1147 17.6524 15.4166 18.5003 15.4166Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "profile",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "oitimp9irtb9wlniboq4jfju",
+                    "adv": {
+                      "js": "<>\r\n  {location.pathname.includes(\"/profile\") === true && (\r\n    <div\r\n      {...props}\r\n      onClick={(e) => {\r\n        e.preventDefault();\r\n        navigate(\"/profile\");\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  )}\r\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,location.pathname.includes(\"/profile\")===!0&&React.createElement(\"div\",{...props,onClick:e=>{e.preventDefault(),navigate(\"/profile\")}},children)));\n"
+                    },
+                    "name": "profile-active",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ngzn8jal34inp3h328j1etwx",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"37\" height=\"37\" viewBox=\"0 0 37 37\" fill=\"none\">\r\n<mask id=\"mask0_946_6962\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"37\" height=\"37\">\r\n<rect width=\"37\" height=\"37\" fill=\"#002B5B\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_946_6962)\">\r\n<path d=\"M18.5003 18.5C16.8045 18.5 15.3528 17.8961 14.1451 16.6885C12.9375 15.4809 12.3337 14.0291 12.3337 12.3333C12.3337 10.6375 12.9375 9.18572 14.1451 7.97808C15.3528 6.77045 16.8045 6.16663 18.5003 6.16663C20.1962 6.16663 21.6479 6.77045 22.8555 7.97808C24.0632 9.18572 24.667 10.6375 24.667 12.3333C24.667 14.0291 24.0632 15.4809 22.8555 16.6885C21.6479 17.8961 20.1962 18.5 18.5003 18.5ZM6.16699 30.8333V26.5166C6.16699 25.643 6.39182 24.8401 6.84147 24.1078C7.29112 23.3755 7.88852 22.8166 8.63366 22.4312C10.2267 21.6347 11.8455 21.0373 13.4899 20.639C15.1344 20.2408 16.8045 20.0416 18.5003 20.0416C20.1962 20.0416 21.8663 20.2408 23.5107 20.639C25.1552 21.0373 26.7739 21.6347 28.367 22.4312C29.1121 22.8166 29.7095 23.3755 30.1592 24.1078C30.6088 24.8401 30.8337 25.643 30.8337 26.5166V30.8333H6.16699ZM9.25033 27.75H27.7503V26.5166C27.7503 26.234 27.6797 25.977 27.5383 25.7458C27.397 25.5145 27.2107 25.3347 26.9795 25.2062C25.592 24.5125 24.1916 23.9921 22.7785 23.6453C21.3653 23.2984 19.9392 23.125 18.5003 23.125C17.0614 23.125 15.6354 23.2984 14.2222 23.6453C12.809 23.9921 11.4087 24.5125 10.0212 25.2062C9.78991 25.3347 9.60362 25.5145 9.4623 25.7458C9.32099 25.977 9.25033 26.234 9.25033 26.5166V27.75ZM18.5003 15.4166C19.3482 15.4166 20.0741 15.1147 20.6779 14.5109C21.2818 13.9071 21.5837 13.1812 21.5837 12.3333C21.5837 11.4854 21.2818 10.7595 20.6779 10.1557C20.0741 9.55187 19.3482 9.24996 18.5003 9.24996C17.6524 9.24996 16.9265 9.55187 16.3227 10.1557C15.7189 10.7595 15.417 11.4854 15.417 12.3333C15.417 13.1812 15.7189 13.9071 16.3227 14.5109C16.9265 15.1147 17.6524 15.4166 18.5003 15.4166Z\" fill=\"#0062A3\"/>\r\n</g>\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "profile",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": "auto",
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 10,
+                    "l": 10,
+                    "r": 10,
+                    "t": 10
+                  }
+                },
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "name": "menu-staff",
+                  "group": {
+                    "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                    "name": "All"
+                  },
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 2,
+            "align": "top-center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-25T07:46:29.267Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-10-31T03:52:55.977Z",
+  "id_folder": "10f37dbf-d019-4379-a525-be6e15fc3370",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

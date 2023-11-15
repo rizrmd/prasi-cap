@@ -1,0 +1,108 @@
+{
+  "id": "3b8b07b8-c564-4cd1-9a8d-854225974b69",
+  "name": "footer",
+  "content_tree": {
+    "id": "vdhbxir14qtcqo9pmq3l82v9",
+    "adv": {
+      "css": ""
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "footer",
+    "type": "item",
+    "childs": [
+      {
+        "id": "af3kul50dp9sg8bbxv3beve2",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  left: 0px;\n  right: 0px;\n  z-index: 50;\n\n  &:hover {\n    display: flex;\n  }\n}",
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"81\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\n    d=\"M428 42.7132L416.092 46.9673C403.824 51.2214 380.009 59.7296 355.833 51.2214C331.657 42.7132 307.842 17.1887 283.667 15.0617C259.491 12.9346 235.676 34.2051 211.5 34.2051C187.324 34.2051 163.509 12.9346 139.333 4.42645C115.158 -4.08172 91.3425 0.172369 67.1667 12.9346C42.9908 25.6969 19.1758 46.9673 6.90747 57.6025L-5.00003 68.2377V81H6.90747C19.1758 81 42.9908 81 67.1667 81C91.3425 81 115.158 81 139.333 81C163.509 81 187.324 81 211.5 81C235.676 81 259.491 81 283.667 81C307.842 81 331.657 81 355.833 81C380.009 81 403.824 81 416.092 81H428V42.7132Z\"\n    fill=\"#0062A3\" fill-opacity=\"0.8\" />\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "image_footer_1",
+        "type": "item",
+        "childs": [],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": ""
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "bottom-center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "rze66kd3dlwfy2s8gt76u01o",
+        "adv": {
+          "css": "& {\n  display: flex;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"105\" fill=\"none\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M428 55.369L416.092 60.8836C403.824 66.3981 380.009 77.4272 355.833 66.3981C331.657 55.369 307.842 22.2817 283.667 19.5244C259.491 16.7671 235.676 44.3399 211.5 44.3399C187.324 44.3399 163.509 16.7671 139.333 5.738C115.158 -5.29111 91.3425 0.223441 67.1667 16.7671C42.9908 33.3108 19.1758 60.8836 6.90747 74.6699L-5.00003 88.4563V105H6.90747C19.1758 105 42.9908 105 67.1667 105C91.3425 105 115.158 105 139.333 105C163.509 105 187.324 105 211.5 105C235.676 105 259.491 105 283.667 105C307.842 105 331.657 105 355.833 105C380.009 105 403.824 105 416.092 105H428V55.369Z\" fill=\"#57C5B6\" fill-opacity=\"0.6\"/>\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "image_footer_2",
+        "type": "item",
+        "childs": [],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": ""
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "bottom-center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "align": "bottom-center"
+      }
+    },
+    "component": {
+      "id": "3b8b07b8-c564-4cd1-9a8d-854225974b69",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {}
+    }
+  },
+  "created_at": "2023-07-24T07:52:23.139Z",
+  "updated_at": "2023-10-08T05:54:19.531Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

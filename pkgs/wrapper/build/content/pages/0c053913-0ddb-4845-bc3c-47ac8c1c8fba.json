@@ -1,0 +1,1374 @@
+{
+  "id": "0c053913-0ddb-4845-bc3c-47ac8c1c8fba",
+  "name": "list-laporan-jaga",
+  "url": "/ppds/all/activity/jaga/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "w9ww70xcaiuuqe1fp3iv4a8c",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "gys19nbq0ksnob2plur82jzv",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-filter",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              }
+            },
+            "component": {
+              "id": "71475383-3706-4047-8b58-24cc62dd2a7e",
+              "name": "",
+              "props": {
+                "id": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "id_filter",
+                  "type": "string",
+                  "value": "\"list-1\"",
+                  "valueBuilt": "\"list-1\";\n"
+                },
+                "item": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_item",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "vpoppdaqw3vgrc4ha5vp3ibt",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "item",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "load": {
+                  "idx": 11,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "load",
+                  "type": "(filter:any) => Promise<any[]>",
+                  "value": "async (f) => {\n  const filter = {};\n\n  if (f.id_pengajar) {\n    filter[\"t_logbook_participants\"] = {\n      some: { id_user: parseInt(f.id_pengajar), id_logbook_role: 2 },\n    };\n  }\n  if (f.date) {\n    filter[\"date\"] = {\n      gt: new Date(moment(f.date).startOf(\"day\").toString()),\n      lt: new Date(moment(f.date).add(1, \"day\").startOf(\"day\").toString()),\n    };\n  }\n  if (f.id_hospital) filter[\"id_hospital\"] = parseInt(f.id_hospital);\n  if (f.notes) {\n    filter[\"notes\"] = {\n      contains: f.notes,\n      mode: \"insensitive\",\n    };\n  }\n\n  const data = await db.t_logbook.findMany({\n    orderBy: { date: \"asc\" },\n    where: {\n      id_action: 1,\n      id_user: user.id,\n      ...filter,\n    },\n    select: {\n      id: true,\n      date: true,\n      verified: true,\n      t_logbook_participants: {\n        where: {\n          id_logbook_role: 2,\n        },\n        select: {\n          m_user: {\n            select: {\n              display_name: true,\n            },\n          },\n        },\n      },\n    },\n  });\n  return data.map((item) => {\n    const parti = item.t_logbook_participants;\n    return {\n      id: item.id,\n      title: moment(item.date).format(\"DD MMMM YYYY - hh:mm\"),\n      status: item.verified ? \"Verified\" : \"-\",\n      doctor: parti.length > 0 ? parti[0].m_user.display_name : \"...\",\n      // kskslalalallxxxx\n    };\n  });\n}",
+                  "valueBuilt": " async t=>{let e={};return t.id_pengajar&&(e.t_logbook_participants={some:{id_user:parseInt(t.id_pengajar),id_logbook_role:2}}),t.date&&(e.date={gt:new Date(moment(t.date).startOf(\"day\").toString()),lt:new Date(moment(t.date).add(1,\"day\").startOf(\"day\").toString())}),t.id_hospital&&(e.id_hospital=parseInt(t.id_hospital)),t.notes&&(e.notes={contains:t.notes,mode:\"insensitive\"}),(await db.t_logbook.findMany({orderBy:{date:\"asc\"},where:{id_action:1,id_user:user.id,...e},select:{id:!0,date:!0,verified:!0,t_logbook_participants:{where:{id_logbook_role:2},select:{m_user:{select:{display_name:!0}}}}}})).map(a=>{let i=a.t_logbook_participants;return{id:a.id,title:moment(a.date).format(\"DD MMMM YYYY - hh:mm\"),status:a.verified?\"Verified\":\"-\",doctor:i.length>0?i[0].m_user.display_name:\"...\"}})};\n"
+                },
+                "mode": {
+                  "idx": 14,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                  },
+                  "name": "mode",
+                  "type": "string",
+                  "value": "\"load\"",
+                  "valueBuilt": "\"load\";\n"
+                },
+                "debug": {
+                  "idx": 13,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "debug",
+                  "type": "string",
+                  "value": "\"n\"",
+                  "valueBuilt": "\"n\";\n"
+                },
+                "title": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "",
+                  "content": {
+                    "id": "j7bn6806ka1cqfwmpptkk662",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "title",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "sz7nfgs79ecl4b81gjvijbra",
+                        "adv": {},
+                        "name": "title-back",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                          "props": {
+                            "url": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"/ppds/home\"",
+                              "valueBuilt": "\"/ppds/home\";\n"
+                            },
+                            "label": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text",
+                                "oldName": "new_prop"
+                              },
+                              "type": "string",
+                              "value": "\"Laporan Jaga\"",
+                              "valueBuilt": "\"Laporan Jaga\";\n"
+                            },
+                            "name_page": {}
+                          },
+                          "updated_at": 1691568262168
+                        }
+                      }
+                    ],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": ";\n"
+                },
+                "filter": {
+                  "idx": 12,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"closed\",\n    value: \"closed\"\n  },\n  {\n    label: \"opened\",\n    value: \"opened\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"closed\"",
+                  "valueBuilt": "\"closed\";\n"
+                },
+                "footer": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_footer",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "e4c0p51cf196mk3ee10zc4vj",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "footer",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "header": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_header",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "yxml5oe52cam8ukwyax0y51v",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "header",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "sample": {
+                  "idx": 12,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "sample",
+                  "type": "(filter:any) => Promise<any[]>",
+                  "value": "async (filter) => {\n  return [];   \n}",
+                  "valueBuilt": " async r=>[];\n"
+                },
+                "loading": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "loading",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "kdgamuc6skm1ulxdd0xd5pyw",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "loading",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "preview": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                  },
+                  "name": "preview",
+                  "type": "string",
+                  "value": "\"ready\"",
+                  "valueBuilt": "\"ready\";\n"
+                },
+                "list_item": {
+                  "idx": 6,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_item",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "xqmq1iqq8ztp08uiweuue1np",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "list_item",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "f37scaxj0tfxyge60erwzaay",
+                        "adv": {
+                          "js": "<div\n  {...props}\n  onClick={() => {\n    navigate(`/ppds/all/activity/jaga/item/${item.id}`);\n  }}      \n>\n  {children}\n</div>",
+                          "css": "",
+                          "html": "",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{navigate(`/ppds/all/activity/jaga/item/${item.id}`)}},children));\n"
+                        },
+                        "name": "Wrapped",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "wg1f10g6041blxte2kyik4sg",
+                            "name": "item-jaga",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "id": "99ac628d-ddeb-4b95-ac9c-f924244d19d5",
+                              "props": {
+                                "title": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.title",
+                                  "valueBuilt": " item.title;\n"
+                                },
+                                "doctor": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.doctor",
+                                  "valueBuilt": " item.doctor;\n"
+                                },
+                                "status": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "item.status",
+                                  "valueBuilt": " item.status;\n"
+                                },
+                                "tittle": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"12 Agustus 2023 10:00\"",
+                                  "valueBuilt": "\"12 Agustus 2023 10:00\";\n"
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full",
+                            "hUnit": "px",
+                            "wUnit": "px"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "padding": {
+                        "b": 6,
+                        "l": 6,
+                        "r": 6,
+                        "t": 6
+                      }
+                    },
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "ready_item": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_item",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "u12ybh9vevayd07wcige792l",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "ready_item",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "filter_form": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"closed\"",
+                  "content": {
+                    "id": "mbuu1muzjv1lt13su0g8ek9i",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "filter_form",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "wsrdkkjdvavmar7acypkukmi",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "<b>Filter&nbsp;</b>",
+                        "name": "title",
+                        "text": "",
+                        "type": "text",
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "font": {
+                            "size": 24,
+                            "align": "left",
+                            "color": "#0362a3",
+                            "height": "auto",
+                            "wordBreak": "break-normal",
+                            "whitespace": "whitespace-normal"
+                          },
+                          "border": {
+                            "color": "#e9e4e4",
+                            "style": "solid",
+                            "stroke": {
+                              "b": 1
+                            }
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 7,
+                            "l": 19,
+                            "r": 19,
+                            "t": 12
+                          }
+                        }
+                      },
+                      {
+                        "id": "fpbcfwyoxmyy4xptyrkwzaxh",
+                        "name": "field",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                          "props": {
+                            "name": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"id_pengajar\"",
+                              "valueBuilt": "\"id_pengajar\";\n"
+                            },
+                            "type": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"dropdown\"",
+                              "valueBuilt": "\"dropdown\";\n"
+                            },
+                            "items": {
+                              "idx": 30,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => any[] | Promise<any[]>",
+                              "value": "async () => {\n  let data = await db.m_user.findMany({\n    where: {\n      id_role: 2,\n    },\n    select: {\n      id: true,\n      display_name: true,\n    },\n  });\n  let datanya = data.map((item) => {\n    return {\n      label: item.display_name,\n      value: item.id,\n    };\n  });\n  datanya.unshift({\n    label: \"Pilih staff\",\n    value: \"null\",\n  });\n  return datanya;\n}",
+                              "visible": "type === \"dropdown\"",
+                              "valueBuilt": " async()=>{let a=(await db.m_user.findMany({where:{id_role:2},select:{id:!0,display_name:!0}})).map(e=>({label:e.display_name,value:e.id}));return a.unshift({label:\"Pilih staff\",value:\"null\"}),a};\n"
+                            },
+                            "label": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"Staff Pengajar\"",
+                              "valueBuilt": "\"Staff Pengajar\";\n"
+                            },
+                            "change": {
+                              "idx": 7,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => void | Promise<void>",
+                              "value": "async (val) => {}",
+                              "valueBuilt": " async a=>{};\n"
+                            },
+                            "required": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"n\"",
+                              "valueBuilt": "\"n\";\n"
+                            },
+                            "placeholder": {
+                              "idx": 20,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"-\"",
+                              "visible": "type === 'text'",
+                              "valueBuilt": "\"-\";\n"
+                            },
+                            "autocomplete": {
+                              "idx": 21,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"on\"",
+                              "visible": "type === 'password' || type === 'text'",
+                              "valueBuilt": "\"on\";\n"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "id": "x2fd0gady819tf6mgvrc7ef1",
+                        "name": "field",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                          "props": {
+                            "name": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"date\"",
+                              "valueBuilt": "\"date\";\n"
+                            },
+                            "type": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"date\"",
+                              "valueBuilt": "\"date\";\n"
+                            },
+                            "items": {
+                              "idx": 30,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => any[] | Promise<any[]>",
+                              "value": "async () => {\n return [\n  {label: \"item-1\", value: \"item-1\"},\n  {label: \"item-2\", value: \"item-2\"},\n ]\n}",
+                              "visible": "type === \"dropdown\"",
+                              "valueBuilt": " async()=>[{label:\"item-1\",value:\"item-1\"},{label:\"item-2\",value:\"item-2\"}];\n"
+                            },
+                            "label": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"Tanggal\"",
+                              "valueBuilt": "\"Tanggal\";\n"
+                            },
+                            "change": {
+                              "idx": 7,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => void | Promise<void>",
+                              "value": "async (val) => {}",
+                              "valueBuilt": " async a=>{};\n"
+                            },
+                            "required": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"n\"",
+                              "valueBuilt": "\"n\";\n"
+                            },
+                            "placeholder": {
+                              "idx": 20,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"-\"",
+                              "visible": "type === 'text'",
+                              "valueBuilt": "\"-\";\n"
+                            },
+                            "autocomplete": {
+                              "idx": 21,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"on\"",
+                              "visible": "type === 'password' || type === 'text'",
+                              "valueBuilt": "\"on\";\n"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "id": "phnqfao177kqv31n64winzm7",
+                        "name": "field",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                          "props": {
+                            "name": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"notes\"",
+                              "valueBuilt": "\"notes\";\n"
+                            },
+                            "type": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"textarea\"",
+                              "valueBuilt": "\"textarea\";\n"
+                            },
+                            "items": {
+                              "idx": 30,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => any[] | Promise<any[]>",
+                              "value": "async () => {\n return [\n  {label: \"item-1\", value: \"item-1\"},\n  {label: \"item-2\", value: \"item-2\"},\n ]\n}",
+                              "visible": "type === \"dropdown\"",
+                              "valueBuilt": " async()=>[{label:\"item-1\",value:\"item-1\"},{label:\"item-2\",value:\"item-2\"}];\n"
+                            },
+                            "label": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"Catatan\"",
+                              "valueBuilt": "\"Catatan\";\n"
+                            },
+                            "change": {
+                              "idx": 7,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => void | Promise<void>",
+                              "value": "async (val) => {}",
+                              "valueBuilt": " async a=>{};\n"
+                            },
+                            "required": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"n\"",
+                              "valueBuilt": "\"n\";\n"
+                            },
+                            "placeholder": {
+                              "idx": 20,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"Isi Catatan...\"",
+                              "visible": "type === 'text'",
+                              "valueBuilt": "\"Isi Catatan...\";\n"
+                            },
+                            "autocomplete": {
+                              "idx": 21,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"on\"",
+                              "visible": "type === 'password' || type === 'text'",
+                              "valueBuilt": "\"on\";\n"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "id": "ll8268wqasftwqh214nqgzn4",
+                        "name": "field",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "96886ca6-81a5-4c04-8d7e-7089e362b473",
+                          "props": {
+                            "name": {
+                              "idx": 3,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"id_hospital\"",
+                              "valueBuilt": "\"id_hospital\";\n"
+                            },
+                            "type": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"text\",\n    value: \"text\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"date\",\n    value: \"date\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"dropdown\"",
+                              "valueBuilt": "\"dropdown\";\n"
+                            },
+                            "items": {
+                              "idx": 30,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => any[] | Promise<any[]>",
+                              "value": "async () => {\n  let data = await db.m_hospital.findMany({});\n  let datanya = data.map((item) => {\n    return {\n      label: item.name,\n      value: item.id,\n    };\n  });\n  datanya.unshift({\n    label: 'Select hospital',\n    value: \"null\"\n  })\n  return datanya;\n}",
+                              "visible": "type === \"dropdown\"",
+                              "valueBuilt": " async()=>{let a=(await db.m_hospital.findMany({})).map(l=>({label:l.name,value:l.id}));return a.unshift({label:\"Select hospital\",value:\"null\"}),a};\n"
+                            },
+                            "label": {
+                              "idx": 5,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"Rumah Sakit\"",
+                              "valueBuilt": "\"Rumah Sakit\";\n"
+                            },
+                            "change": {
+                              "idx": 7,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "() => void | Promise<void>",
+                              "value": "async (val) => {}",
+                              "valueBuilt": " async a=>{};\n"
+                            },
+                            "required": {
+                              "idx": 6,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"n\"",
+                              "valueBuilt": "\"n\";\n"
+                            },
+                            "placeholder": {
+                              "idx": 20,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"-\"",
+                              "visible": "type === 'text'",
+                              "valueBuilt": "\"-\";\n"
+                            },
+                            "autocomplete": {
+                              "idx": 21,
+                              "meta": {
+                                "type": "option",
+                                "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "\"on\"",
+                              "visible": "type === 'password' || type === 'text'",
+                              "valueBuilt": "\"on\";\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"closed\";\n"
+                },
+                "list_filter": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "yu38rz5cqvg17oh3sics8hjd",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "list_filter",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\";\n"
+                },
+                "list_footer": {
+                  "idx": 7,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_footer",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "gqvhoip42mc81uo1vtm7a709",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "list_footer",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "eskov7z9dpvpv24x2uqlqd18",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "New Item",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "padding": {
+                            "b": 45,
+                            "l": 0,
+                            "r": 0,
+                            "t": 45
+                          }
+                        }
+                      },
+                      {
+                        "id": "d4ub9vgzb61sqric93zprbzg",
+                        "childs": []
+                      },
+                      {
+                        "id": "dii9j6fcdbnjvjdlj59s072l",
+                        "childs": []
+                      },
+                      {
+                        "id": "lo5u1fbz0zvbdlgchp346j79",
+                        "childs": []
+                      },
+                      {
+                        "id": "d6rtwqlslkg9ltrycc1wp7fe",
+                        "childs": []
+                      },
+                      {
+                        "id": "hhchjxtvc4htpri9ie77e682",
+                        "childs": []
+                      }
+                    ],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "list_header": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_header",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "rhirlf5gace2y5e7ozttpj9p",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "list_header",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "filter_modal": {
+                  "idx": 12,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"closed\",\n    value: \"closed\"\n  },\n  {\n    label: \"opened\",\n    value: \"opened\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"closed\"",
+                  "valueBuilt": "\"closed\";\n"
+                },
+                "list_loading": {
+                  "idx": 8,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "loading",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "exdrpetzsdvdyyo2no559qad",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "list_loading",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "gxz7qmhf7194wxlxd8bmo7k1",
+                        "name": "Wrapped",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "ym4ky0ojvg3kl1fp5m52fjnm",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "hnulhct0sxr0lya0fdmfh7pn",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 177
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "id": "jctsksav10swwhv87uaaadie",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 199
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "id": "vqxd795ihsfc2mtmyjuaerie",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 184
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              },
+                              "border": {
+                                "color": "#e2e2e2",
+                                "style": "solid",
+                                "stroke": {
+                                  "b": 1,
+                                  "l": 1,
+                                  "r": 1,
+                                  "t": 1
+                                },
+                                "rounded": {
+                                  "bl": 11,
+                                  "br": 11,
+                                  "tl": 11,
+                                  "tr": 11
+                                }
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "top-left"
+                              },
+                              "padding": {
+                                "b": 11,
+                                "l": 16,
+                                "r": 16,
+                                "t": 11
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full",
+                            "hUnit": "px",
+                            "wUnit": "px"
+                          },
+                          "padding": {
+                            "b": 5,
+                            "l": 8,
+                            "r": 8,
+                            "t": 5
+                          }
+                        }
+                      },
+                      {
+                        "id": "ms05stxpidyin01ytmf8q47l",
+                        "adv": {},
+                        "name": "Wrapped",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "sgjh9zyicxfod5t4kvucui8k",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "dx9prqm3mejkthlc7mhz5feo",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 177
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "id": "vgv3442al5xle8qat14e7hm9",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 199
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "id": "chsslkt51wrjrwngc2f2217a",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": 12,
+                                    "w": 184
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              },
+                              "border": {
+                                "color": "#e2e2e2",
+                                "style": "solid",
+                                "stroke": {
+                                  "b": 1,
+                                  "l": 1,
+                                  "r": 1,
+                                  "t": 1
+                                },
+                                "rounded": {
+                                  "bl": 11,
+                                  "br": 11,
+                                  "tl": 11,
+                                  "tr": 11
+                                }
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "top-left"
+                              },
+                              "padding": {
+                                "b": 11,
+                                "l": 16,
+                                "r": 16,
+                                "t": 11
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full",
+                            "hUnit": "px",
+                            "wUnit": "px"
+                          },
+                          "padding": {
+                            "b": 5,
+                            "l": 8,
+                            "r": 8,
+                            "t": 5
+                          }
+                        }
+                      }
+                    ],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "ready_footer": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_footer",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "r3h21afx53w697tky8fhcmgb",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "ready_footer",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                },
+                "ready_header": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "content-element"
+                  },
+                  "name": "ready_header",
+                  "type": "string",
+                  "value": "\"hello\"",
+                  "content": {
+                    "id": "r7zeubnhl2go0a8xkej6f491",
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "name": "ready_header",
+                    "type": "item",
+                    "childs": [],
+                    "parentInstanceId": "gys19nbq0ksnob2plur82jzv"
+                  },
+                  "valueBuilt": "\"hello\""
+                }
+              }
+            }
+          },
+          {
+            "id": "f8i97k2i5oxkngmqqhc3lgod",
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-28T04:16:52.857Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-22T02:32:07.051Z",
+  "id_folder": "313c4205-80c1-404c-9edf-62c7d52d7578",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

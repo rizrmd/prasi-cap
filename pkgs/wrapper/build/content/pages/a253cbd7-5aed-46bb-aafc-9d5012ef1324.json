@@ -1,0 +1,1569 @@
+{
+  "id": "a253cbd7-5aed-46bb-aafc-9d5012ef1324",
+  "name": "home-ppds",
+  "url": "/ppds/home",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ort8icvvsacwy6io83crcaml",
+        "adv": {
+          "js": "isLogin(props, children, \"ppds\")",
+          "jsBuilt": "render(isLogin(props,children,\"ppds\"));\n"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ub7s5mi6ydnzqawueqmpz97z",
+            "adv": {
+              "js": "",
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 99;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "html": "",
+              "jsBuilt": ""
+            },
+            "name": "popup",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#FBFBFB"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 20,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 20,
+                "l": 20,
+                "r": 20,
+                "t": 20
+              }
+            },
+            "component": {
+              "id": "2eb57430-b477-4bf9-b917-428358124a40",
+              "name": "",
+              "props": {
+                "title": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Judul ini\"",
+                  "valueBuilt": "\"Judul ini\";\n"
+                },
+                "caption": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"capt ini\"",
+                  "valueBuilt": "\"capt ini\";\n"
+                },
+                "visible": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "option",
+                    "options": "[\n  {\n    label: \"show\",\n    value: \"show\"\n  },\n  {\n    label: \"hide\",\n    value: \"hide\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"hide\"",
+                  "valueBuilt": "\"hide\";\n"
+                },
+                "on_confirm": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                },
+                "cancel_button": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Batal\"",
+                  "valueBuilt": "\"Batal\";\n"
+                },
+                "confirm_button": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"Simpan\"",
+                  "valueBuilt": "\"Simpan\";\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "xtowg3ecl6o08dko9gcfamij",
+            "adv": {
+              "js": "<div {...props}>\n  <Local\n    name=\"notif\"\n    value={{\n      count_notif: 0,\n    }}\n    effect={async (local) => {\n      local.count_notif = await db.t_notif.count({\n        where: {\n          id_user: Number(user.id),\n          read: false,\n        },\n      });\n      local.render()\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"notif\",value:{count_notif:0},effect:async e=>{e.count_notif=await db.t_notif.count({where:{id_user:Number(user.id),read:!1}}),e.render()}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "n58kh8sa8v61l3l50tx5l5rv",
+                "name": "logo",
+                "type": "item",
+                "childs": [],
+                "mobile": {
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "id": "f0483fe4-9427-49f9-b17a-a9aaa55b8a28",
+                  "props": {},
+                  "updated_at": 1691570773763
+                }
+              },
+              {
+                "id": "clbxioffbotbz7kljjrjh5kr",
+                "adv": {
+                  "js": "",
+                  "css": "& {\n  display: flex;\n  position: relative;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "html": "",
+                  "jsBuilt": ""
+                },
+                "name": "notification",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "pybax223hyqb2dsbhwu7u30z",
+                    "adv": {
+                      "js": "<div {...props}>\n  // {children}\n  <Icon icon=\"mdi-light:home\" />\n</div>",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"none\">\n  <mask id=\"mask0_55_490\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\n    <rect width=\"24\" height=\"24\" fill=\"#D9D9D9\" />\n  </mask>\n  <g mask=\"url(#mask0_55_490)\">\n    <path\n      d=\"M4 19V17H6V10C6 8.61667 6.41667 7.3875 7.25 6.3125C8.08333 5.2375 9.16667 4.53333 10.5 4.2V3.5C10.5 3.08333 10.6458 2.72917 10.9375 2.4375C11.2292 2.14583 11.5833 2 12 2C12.4167 2 12.7708 2.14583 13.0625 2.4375C13.3542 2.72917 13.5 3.08333 13.5 3.5V4.2C14.8333 4.53333 15.9167 5.2375 16.75 6.3125C17.5833 7.3875 18 8.61667 18 10V17H20V19H4ZM12 22C11.45 22 10.9792 21.8042 10.5875 21.4125C10.1958 21.0208 10 20.55 10 20H14C14 20.55 13.8042 21.0208 13.4125 21.4125C13.0208 21.8042 12.55 22 12 22ZM8 17H16V10C16 8.9 15.6083 7.95833 14.825 7.175C14.0417 6.39167 13.1 6 12 6C10.9 6 9.95833 6.39167 9.175 7.175C8.39167 7.95833 8 8.9 8 10V17Z\"\n      fill=\"#1C1B1F\" />\n  </g>\n</svg>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},\"// \",children,React.createElement(Icon,{icon:\"mdi-light:home\"})));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "notif_button",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "padding": {
+                        "b": 0,
+                        "l": 17,
+                        "r": 17,
+                        "t": 0
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "cmi9ysponzqsbaljp8tgxpc6",
+                    "adv": {
+                      "js": "<>{notif.count_notif !== 0 && <div {...props}>{notif.count_notif}</div>}</>",
+                      "css": "& {\n  display: flex;\n  position: absolute;\n  left: 13%;\n  top: 3%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,notif.count_notif!==0&&React.createElement(\"div\",{...props},notif.count_notif)));\n"
+                    },
+                    "dim": {
+                      "h": "full",
+                      "w": "full"
+                    },
+                    "html": "5",
+                    "name": "count_notif",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#ff5959"
+                      },
+                      "dim": {
+                        "h": 20,
+                        "w": 20,
+                        "hUnit": "px",
+                        "wUnit": "px"
+                      },
+                      "font": {
+                        "size": 12,
+                        "align": "left",
+                        "color": "#FFFFFF",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 100,
+                          "br": 100,
+                          "tl": 100,
+                          "tr": 100
+                        }
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 0,
+                        "r": 0,
+                        "t": 0
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "full",
+                    "w": "fit",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "linktag": {
+                    "link": "/ppds/home/notif"
+                  },
+                  "padding": {
+                    "b": 10,
+                    "l": 0,
+                    "r": 0,
+                    "t": 10
+                  }
+                }
+              }
+            ],
+            "hidden": false,
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "d7soi5vgam2ecugidi8xcryb",
+            "adv": {
+              "js": "<div {...props}>\n  <Local\n    name=\"local\"\n    value={{\n      color: \"white\",\n      smt: {\n        name: \"\",\n        m_stage: {\n          label_color: \"\",\n        },\n      },\n    }}\n    effect={async (local) => {\n      sessionStorage.setItem(\"previousPage\", window.location.href);\n      sessionStorage.setItem(\"root\", \"/ppds/home\");\n      auditTrail({\n        type: \"visit\",\n        activity: `Membuka Halaman Home`,\n        meta: {\n          url: window.location.href,\n        },\n      });\n\n      // if ((!local.smt || !local.smt.name) && user) {\n      const smt = await db.m_semester.findFirst({\n        where: {\n          id: Number(user.id_smt),\n        },\n        select: {\n          name: true,\n          m_stage: {\n            select: {\n              label_color: true,\n            },\n          },\n        },\n      });\n      local.smt = smt;\n      if (local.smt) {\n        var c = local.smt.m_stage.label_color.substring(1); // strip #\n        var rgb = parseInt(c, 16); // convert rrggbb to decimal\n        var r = (rgb >> 16) & 0xff; // extract red\n        var g = (rgb >> 8) & 0xff; // extract green\n        var b = (rgb >> 0) & 0xff; // extract blue\n\n        var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709\n\n        if (luma < 150) {\n          local.color = \"white\";\n        } else {\n          local.color = \"black\";\n        }\n      }\n      // local.render();\n      // }\n      local.render();\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{color:\"white\",smt:{name:\"\",m_stage:{label_color:\"\"}}},effect:async e=>{sessionStorage.setItem(\"previousPage\",window.location.href),sessionStorage.setItem(\"root\",\"/ppds/home\"),auditTrail({type:\"visit\",activity:\"Membuka Halaman Home\",meta:{url:window.location.href}});let r=await db.m_semester.findFirst({where:{id:Number(user.id_smt)},select:{name:!0,m_stage:{select:{label_color:!0}}}});if(e.smt=r,e.smt){var s=e.smt.m_stage.label_color.substring(1),t=parseInt(s,16),a=t>>16&255,o=t>>8&255,i=t>>0&255,m=.2126*a+.7152*o+.0722*i;m<150?e.color=\"white\":e.color=\"black\"}e.render()}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "euymm9s4w49jiitxtx0ibr8j",
+                "adv": {
+                  "css": ""
+                },
+                "name": "header",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "onwh3pt7kc6pvk2ornqylneu",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "detail-header",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "wz4b5ax1pnruas6v3i1kmpd2",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ready",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "dnxxgmwasmqmmn96hqo0zhuy",
+                            "adv": {
+                              "js": "<div {...props}>{user.name}</div>",
+                              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},user.name));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "dr Nillasanti Puspita",
+                            "name": "name",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 8,
+                                "r": 8,
+                                "t": 0
+                              }
+                            },
+                            "originalId": "ymr7hsvkogad49hmmjnhogtm"
+                          },
+                          {
+                            "id": "d6lexkg3w2dnvxhj2nwfnhq9",
+                            "adv": {
+                              "js": "<div {...props}>{typeof user.code === \"string\" ? user.code : \"-\"} </div>",
+                              "css": "",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},typeof user.code==\"string\"?user.code:\"-\",\" \"));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "30081196521",
+                            "name": "code",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 6,
+                                "l": 8,
+                                "r": 0,
+                                "t": 0
+                              }
+                            },
+                            "originalId": "l7x8mdz59t2lyl0rtx5dxn5m"
+                          },
+                          {
+                            "id": "kiv3ga61fevuyutuk8a9611y",
+                            "name": "semester-tag",
+                            "type": "item",
+                            "childs": [],
+                            "hidden": "all",
+                            "component": {
+                              "id": "52ff1b2d-c338-4202-8879-7baf8429cc6d",
+                              "props": {
+                                "id_smt": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "user.id_smt",
+                                  "valueBuilt": " user.id_smt;\n"
+                                },
+                                "semester": {
+                                  "idx": 0,
+                                  "meta": {
+                                    "type": "text"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "8",
+                                  "valueBuilt": " 8;\n"
+                                }
+                              }
+                            },
+                            "originalId": "fbrr9y2438u6woczv60jgzhc"
+                          },
+                          {
+                            "id": "svgyc69lixiirym13t1r099d",
+                            "adv": {},
+                            "name": "tag-semester",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "yo8dh5xg2e8ivphuabr3irs7",
+                                "adv": {
+                                  "js": "<div\r\n  {...props}\r\n  className={cx(\r\n    props.className,\r\n    local.smt\r\n      ? css`\r\n/** Custom CSS **/\r\nbackground: ${local.smt?.m_stage?.label_color} !important;\r\ncolor: ${local.color} !important;\r\n\r\n`\r\n      : undefined\r\n  )}\r\n>\r\n  {local.smt?.name || \"Semester ·\"}\r\n</div>",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,local.smt?css`\n/** Custom CSS **/\nbackground: ${local.smt?.m_stage?.label_color} !important;\ncolor: ${local.color} !important;\n\n`:void 0)},local.smt?.name||\"Semester \\xB7\"));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "full"
+                                },
+                                "html": "Semester 3",
+                                "name": "label",
+                                "text": "",
+                                "type": "text",
+                                "layout": {
+                                  "dir": "col",
+                                  "gap": 0,
+                                  "align": "center"
+                                },
+                                "mobile": {
+                                  "bg": {
+                                    "pos": "center",
+                                    "size": "cover",
+                                    "color": "#b2b2b2"
+                                  },
+                                  "font": {
+                                    "size": 15,
+                                    "align": "left",
+                                    "color": "#ffffff",
+                                    "height": "auto",
+                                    "wordBreak": "break-normal",
+                                    "whitespace": "whitespace-normal"
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 6,
+                                      "br": 6,
+                                      "tl": 6,
+                                      "tr": 6
+                                    }
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 0,
+                                    "align": "left"
+                                  },
+                                  "padding": {
+                                    "b": 0,
+                                    "l": 18,
+                                    "r": 18,
+                                    "t": 0
+                                  }
+                                },
+                                "originalId": "zlgqn8l7102y9d3peg8t7a73"
+                              }
+                            ],
+                            "originalId": "m323zzoxzr4urqptdhcatio4"
+                          }
+                        ],
+                        "hidden": false,
+                        "mobile": {
+                          "bg": {
+                            "pos": "center",
+                            "size": "cover",
+                            "color": ""
+                          },
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "border": {
+                            "style": "solid",
+                            "rounded": {
+                              "bl": 7,
+                              "br": 7,
+                              "tl": 7,
+                              "tr": 7
+                            }
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 2,
+                            "r": 2,
+                            "t": 0
+                          }
+                        },
+                        "originalId": "us20oi5li3z1sp3j7m5ntq4z"
+                      },
+                      {
+                        "id": "wfslzcrfzx38iqg11991vsod",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "image",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "o8ckrft3x0b30x98m5jcl5ll",
+                            "adv": {
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"112\" height=\"97\" viewBox=\"0 0 112 97\" fill=\"none\">\n  <g clip-path=\"url(#clip0_104_720)\">\n    <path\n      d=\"M0 96.0176C0 96.1592 0.113145 96.2729 0.254039 96.2729H111.746C111.887 96.2729 112 96.1592 112 96.0176C112 95.876 111.887 95.7623 111.746 95.7623H0.254039C0.113143 95.7623 0 95.876 0 96.0176Z\"\n      fill=\"#3F3C57\" />\n    <path d=\"M36.3765 10.3087L37.589 15.8687L35.0101 23.6077L30.8552 15.2928L31.4317 10.4689L36.3765 10.3087Z\"\n      fill=\"#FDB4B4\" />\n    <path d=\"M37.8141 15.5807H30.6401V24.2917H37.8141V15.5807Z\" fill=\"#6C63FF\" />\n    <path\n      d=\"M34.8641 13.1094C37.5699 13.1094 39.7634 10.905 39.7634 8.18578C39.7634 5.46657 37.5699 3.26221 34.8641 3.26221C32.1583 3.26221 29.9648 5.46657 29.9648 8.18578C29.9648 10.905 32.1583 13.1094 34.8641 13.1094Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M30.5995 11.8469C30.5995 11.8469 26.9476 5.06898 30.2402 1.80725C33.5329 -1.45447 36.1761 0.694801 36.1761 0.694801L37.6854 0.633499C37.6854 0.633499 38.0002 1.82723 38.5078 1.18101C39.0154 0.534796 39.9326 2.88823 39.9326 2.88823C41.6351 5.96943 35.7334 6.65967 35.7334 6.65967C35.7334 6.65967 36.1595 8.02393 35.7264 8.30963C35.2932 8.59534 34.1359 9.67012 34.1359 9.67012L33.1 10.4564L32.4844 9.51377C32.4844 9.51377 31.8414 9.00365 31.5165 9.21793C31.1916 9.43221 31.6385 12.2516 31.6385 12.2516L30.5995 11.8469Z\"\n      fill=\"#2E2E41\" />\n    <path d=\"M24.7222 61.7112L22.8491 89.7905L27.4539 89.9474L33.5415 61.9465L24.7222 61.7112Z\" fill=\"#2E2E41\" />\n    <path d=\"M35.8829 61.5544L34.0098 89.6337L38.6145 89.7905L44.7022 61.7897L35.8829 61.5544Z\" fill=\"#2E2E41\" />\n    <path\n      d=\"M23.5942 68.1266L26.0455 37.5443L22.2863 21.6194C21.9622 19.2521 23.4464 17.0122 25.737 16.4014L29.4155 15.4207L31.0436 13.7844L34.7469 22.003L37.0597 13.7907L38.8635 15.109L44.2133 17.481L44.2108 17.5365L43.3527 36.7737L45.2682 67.8543L45.1833 67.8554L23.5942 68.1266Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M38.3188 89.4715L39.6521 93.4716C39.6521 93.4716 44.8684 94.1843 44.9496 95.8072C45.0307 97.4301 37.8604 96.4907 33.6617 96.7027C29.4631 96.9148 32.9581 92.3454 32.9581 92.3454L33.4056 89.7197L38.3188 89.4715Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M27.4302 89.1835L28.7635 93.1836C28.7635 93.1836 33.9797 93.8964 34.0609 95.5192C34.1421 97.1421 26.9717 96.2027 22.7731 96.4148C18.5744 96.6268 22.0695 92.0575 22.0695 92.0575L22.5169 89.4317L27.4302 89.1835Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M20.925 51.8846C20.8685 51.0959 21.0008 50.3051 21.3108 49.5783L20.3157 41.3747L24.2138 41.0131L24.8034 49.3736C25.1951 50.0591 25.4178 50.8288 25.4528 51.6185C25.5675 53.5939 24.6468 55.2539 23.3963 55.3273C22.1459 55.4006 21.0394 53.8593 20.925 51.8846Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M45.6144 53.0888C45.5665 52.2995 45.7073 51.5102 46.0252 50.7869L45.1191 42.5729L49.0209 42.2539L49.5198 50.6204C49.9041 51.3101 50.1184 52.0823 50.1449 52.8723C50.2381 54.8488 49.2995 56.4987 48.0483 56.5583C46.7971 56.6179 45.7074 55.0646 45.6144 53.0888Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M20.2996 48.5947L20.2864 48.5239L18.2549 37.5695L20.6554 19.7315C20.8696 18.139 22.2846 16.9918 23.8803 17.12C24.7136 17.187 25.4612 17.5842 25.9857 18.2386C26.5101 18.8929 26.737 19.7117 26.6246 20.5442L24.8179 33.9225L25.9554 48.2318L20.2996 48.5947Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M44.4107 48.3377L40.3262 20.938C40.1139 20.1346 40.2382 19.2938 40.6779 18.5793C41.1177 17.8648 41.8107 17.3777 42.6294 17.2075C44.1957 16.882 45.7424 17.8441 46.1512 19.3977L50.0751 47.9936L44.4107 48.3377Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M34.8667 24.5076C35.1436 24.5076 35.3681 24.282 35.3681 24.0037C35.3681 23.7254 35.1436 23.4998 34.8667 23.4998C34.5897 23.4998 34.3652 23.7254 34.3652 24.0037C34.3652 24.282 34.5897 24.5076 34.8667 24.5076Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 28.3231C35.1436 28.3231 35.3681 28.0975 35.3681 27.8192C35.3681 27.5409 35.1436 27.3152 34.8667 27.3152C34.5897 27.3152 34.3652 27.5409 34.3652 27.8192C34.3652 28.0975 34.5897 28.3231 34.8667 28.3231Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 32.1387C35.1436 32.1387 35.3681 31.9131 35.3681 31.6347C35.3681 31.3564 35.1436 31.1308 34.8667 31.1308C34.5897 31.1308 34.3652 31.3564 34.3652 31.6347C34.3652 31.9131 34.5897 32.1387 34.8667 32.1387Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 35.9542C35.1436 35.9542 35.3681 35.7285 35.3681 35.4502C35.3681 35.1719 35.1436 34.9463 34.8667 34.9463C34.5897 34.9463 34.3652 35.1719 34.3652 35.4502C34.3652 35.7285 34.5897 35.9542 34.8667 35.9542Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 39.7697C35.1436 39.7697 35.3681 39.5441 35.3681 39.2658C35.3681 38.9875 35.1436 38.7618 34.8667 38.7618C34.5897 38.7618 34.3652 38.9875 34.3652 39.2658C34.3652 39.5441 34.5897 39.7697 34.8667 39.7697Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 43.5852C35.1436 43.5852 35.3681 43.3596 35.3681 43.0813C35.3681 42.803 35.1436 42.5773 34.8667 42.5773C34.5897 42.5773 34.3652 42.803 34.3652 43.0813C34.3652 43.3596 34.5897 43.5852 34.8667 43.5852Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 47.4008C35.1436 47.4008 35.3681 47.1751 35.3681 46.8968C35.3681 46.6185 35.1436 46.3929 34.8667 46.3929C34.5897 46.3929 34.3652 46.6185 34.3652 46.8968C34.3652 47.1751 34.5897 47.4008 34.8667 47.4008Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M34.8667 51.2162C35.1436 51.2162 35.3681 50.9906 35.3681 50.7123C35.3681 50.434 35.1436 50.2084 34.8667 50.2084C34.5897 50.2084 34.3652 50.434 34.3652 50.7123C34.3652 50.9906 34.5897 51.2162 34.8667 51.2162Z\"\n      fill=\"#D6D7D8\" />\n    <path d=\"M34.8673 54.1678L25.3793 52.8971L25.1966 52.8727L20.3475 41.6363L17.4597 34.9465H24.9816L34.8673 54.1678Z\"\n      fill=\"#6C63FF\" />\n    <path d=\"M72.9093 11.5311L78.9415 8.21008V17.6987H71.9651L72.9093 11.5311Z\" fill=\"#2E2E41\" />\n    <path d=\"M80.2348 13.6466L80.7915 18.3049L76.7792 26.3345L74.2888 18.8611L75.4597 13.4918L80.2348 13.6466Z\"\n      fill=\"#FDB4B4\" />\n    <path d=\"M80.9991 18.583H74.0713V26.995H80.9991V18.583Z\" fill=\"#6C63FF\" />\n    <path d=\"M86.7142 63.1306L88.523 90.2464L84.0763 90.3979L78.1975 63.3578L86.7142 63.1306Z\" fill=\"#2E2E41\" />\n    <path d=\"M75.9363 62.9791L77.7452 90.0949L73.2984 90.2464L67.4197 63.2064L75.9363 62.9791Z\" fill=\"#2E2E41\" />\n    <path\n      d=\"M91.4122 68.8817L91.3062 68.8814L62.9783 68.7884L63.0037 68.6876L70.2867 39.689L68.4623 25.0544C68.1167 22.2814 69.5939 19.6602 72.1381 18.5322L73.0566 18.125L74.8016 16.8498L77.0338 24.7767L80.6086 16.8436L82.1833 18.4259L85.7347 19.3728C87.9483 19.963 89.3823 22.1273 89.0705 24.4073L89.0667 24.4232L83.6433 39.9753L91.4122 68.8817Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M73.5841 89.9383L78.3287 90.1779L78.7608 92.7136C78.7608 92.7136 82.1359 97.1262 78.0814 96.9214C74.0268 96.7166 67.1025 97.6238 67.1808 96.0566C67.2592 94.4894 72.2965 93.8011 72.2965 93.8011L73.5841 89.9383Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M84.099 89.6602L88.8436 89.8999L89.2757 92.4355C89.2757 92.4355 92.6508 96.8481 88.5962 96.6433C84.5417 96.4385 77.6173 97.3457 77.6957 95.7785C77.7741 94.2113 82.8114 93.5231 82.8114 93.5231L84.099 89.6602Z\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M88.444 53.3631C88.3336 55.27 87.2651 56.7585 86.0575 56.6876C84.8499 56.6168 83.9609 55.0137 84.0716 53.1062C84.1054 52.3436 84.3205 51.6002 84.6988 50.9383L85.2681 42.8646L89.0325 43.2139L88.0715 51.136C88.3709 51.8378 88.4986 52.6015 88.444 53.3631Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M69.0994 52.638C68.9486 54.5421 67.8488 56.0074 66.643 55.9108C65.4372 55.8141 64.5823 54.1924 64.7334 52.2876C64.7833 51.5259 65.0141 50.7873 65.4063 50.1336L66.1466 42.074L69.9027 42.5037L68.7741 50.4034C69.0586 51.1115 69.1701 51.8778 69.0994 52.638Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M89.0502 50.189L83.5832 49.8383L83.5898 49.756L84.6819 36.0174L82.9374 23.0985C82.8286 22.2939 83.0479 21.5023 83.5548 20.8699C84.0617 20.2374 84.7844 19.8535 85.59 19.7886C87.1324 19.6664 88.4999 20.7737 88.7071 22.313L91.0253 39.5393L91.0229 39.5522L89.0502 50.189Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M70.0096 49.6627L64.5339 49.3301L64.5459 49.2432L68.3218 21.7218C68.7189 20.2102 70.2146 19.2805 71.7279 19.595C72.5193 19.7595 73.1891 20.2304 73.6142 20.9211C74.0393 21.6117 74.1594 22.4244 73.9524 23.2094L70.0096 49.6627Z\"\n      fill=\"#E8E9EA\" />\n    <path\n      d=\"M76.9176 27.2036C77.185 27.2036 77.4018 26.9857 77.4018 26.7169C77.4018 26.4482 77.185 26.2303 76.9176 26.2303C76.6502 26.2303 76.4333 26.4482 76.4333 26.7169C76.4333 26.9857 76.6502 27.2036 76.9176 27.2036Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 30.8881C77.185 30.8881 77.4018 30.6703 77.4018 30.4015C77.4018 30.1327 77.185 29.9149 76.9176 29.9149C76.6502 29.9149 76.4333 30.1327 76.4333 30.4015C76.4333 30.6703 76.6502 30.8881 76.9176 30.8881Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 34.5728C77.185 34.5728 77.4018 34.3549 77.4018 34.0861C77.4018 33.8174 77.185 33.5995 76.9176 33.5995C76.6502 33.5995 76.4333 33.8174 76.4333 34.0861C76.4333 34.3549 76.6502 34.5728 76.9176 34.5728Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 38.2573C77.185 38.2573 77.4018 38.0395 77.4018 37.7707C77.4018 37.5019 77.185 37.2841 76.9176 37.2841C76.6502 37.2841 76.4333 37.5019 76.4333 37.7707C76.4333 38.0395 76.6502 38.2573 76.9176 38.2573Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 41.9419C77.185 41.9419 77.4018 41.724 77.4018 41.4553C77.4018 41.1865 77.185 40.9686 76.9176 40.9686C76.6502 40.9686 76.4333 41.1865 76.4333 41.4553C76.4333 41.724 76.6502 41.9419 76.9176 41.9419Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 45.6265C77.185 45.6265 77.4018 45.4087 77.4018 45.1399C77.4018 44.8711 77.185 44.6533 76.9176 44.6533C76.6502 44.6533 76.4333 44.8711 76.4333 45.1399C76.4333 45.4087 76.6502 45.6265 76.9176 45.6265Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 49.3112C77.185 49.3112 77.4018 49.0933 77.4018 48.8245C77.4018 48.5558 77.185 48.3379 76.9176 48.3379C76.6502 48.3379 76.4333 48.5558 76.4333 48.8245C76.4333 49.0933 76.6502 49.3112 76.9176 49.3112Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M76.9176 52.9957C77.185 52.9957 77.4018 52.7779 77.4018 52.5091C77.4018 52.2403 77.185 52.0225 76.9176 52.0225C76.6502 52.0225 76.4333 52.2403 76.4333 52.5091C76.4333 52.7779 76.6502 52.9957 76.9176 52.9957Z\"\n      fill=\"#D6D7D8\" />\n    <path\n      d=\"M77.6527 16.024C80.1542 16.024 82.182 13.986 82.182 11.4721C82.182 8.95821 80.1542 6.92029 77.6527 6.92029C75.1512 6.92029 73.1233 8.95821 73.1233 11.4721C73.1233 13.986 75.1512 16.024 77.6527 16.024Z\"\n      fill=\"#FDB4B4\" />\n    <path\n      d=\"M80.0263 6.15845C80.2434 6.60206 79.8992 7.15618 79.4436 7.34269C78.9881 7.5292 78.4735 7.45363 77.9877 7.37599C77.5019 7.29836 76.9866 7.22475 76.5324 7.41455C75.9447 7.66014 75.6134 8.2762 75.328 8.84789C74.7951 9.91513 74.2622 10.9824 73.7293 12.0496C73.4689 12.5711 73.2027 13.1159 73.1977 13.6993C73.1885 14.7701 74.0337 15.6259 74.4885 16.5944C75.0423 17.7735 74.9966 19.2185 74.3696 20.36C73.7425 21.5014 72.55 22.3101 71.2621 22.4675C70.9232 22.5089 70.5646 22.5044 70.2599 22.3496C69.9552 22.1949 69.7227 21.8571 69.7791 21.5187C69.8895 20.857 70.8956 20.7024 71.0804 20.0576C71.1769 19.721 71.006 19.3616 70.7757 19.0987C70.5454 18.8358 70.2542 18.6307 70.0345 18.3588C69.5279 17.7318 69.4942 16.7638 69.9558 16.1027C70.2271 15.7142 70.6467 15.4255 70.8221 14.9848C70.9715 14.6091 70.9173 14.1868 70.8607 13.7863C70.7879 13.2716 70.7152 12.7569 70.6425 12.2422C70.5576 11.6416 70.474 11.0196 70.6417 10.4369C71.0261 9.10173 72.5263 8.47464 73.406 7.40214C73.8149 6.90376 74.0899 6.30437 74.5093 5.81496C75.2131 4.99366 76.3212 4.54059 77.3957 4.63477C78.4702 4.72895 79.4835 5.36798 80.0352 6.29933\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M79.3112 6.24261C79.09 6.32214 79.0079 6.61179 79.0715 6.83913C79.1352 7.06646 79.302 7.24709 79.4547 7.42665C81.1814 9.45741 81.5827 12.5291 80.4362 14.939C80.1313 15.58 79.7251 16.1833 79.5606 16.8743C79.4409 17.3771 79.4473 17.9286 79.1698 18.3639C78.8872 18.8071 78.3272 19.104 78.2719 19.6274C78.2363 19.9632 78.44 20.2895 78.7131 20.4864C78.9862 20.6833 79.3198 20.7734 79.6478 20.8469C80.5005 21.0378 81.3723 21.1421 82.2458 21.1575C82.5305 21.1625 82.8243 21.1563 83.0856 21.0423C83.3468 20.9283 83.5698 20.681 83.5727 20.3948C83.5751 20.1699 83.446 19.9624 83.4295 19.738C83.3802 19.0658 84.2802 18.7082 84.4556 18.0576C84.5709 17.6299 84.3437 17.1898 84.1018 16.8193C83.8598 16.4489 83.5837 16.0599 83.5896 15.6168C83.5953 15.1926 83.8602 14.819 83.9632 14.4076C84.1056 13.8385 83.9306 13.2433 83.7571 12.683C83.6096 12.2066 83.4621 11.7303 83.3146 11.254C83.1578 10.7476 83.001 10.2412 82.8441 9.73486C82.5704 8.85085 82.283 7.94122 81.6906 7.2322C81.0981 6.52318 80.1165 6.05847 79.2414 6.34795\"\n      fill=\"#2E2E41\" />\n    <path\n      d=\"M82.3977 23.8811L82.0873 23.7901C82.7341 21.5615 81.3395 17.4025 81.3254 17.3608L81.6315 17.2559C81.6907 17.4304 83.0729 21.5548 82.3977 23.8811Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M82.2426 26.4409C82.9886 26.4409 83.5934 25.8331 83.5934 25.0834C83.5934 24.3337 82.9886 23.726 82.2426 23.726C81.4966 23.726 80.8918 24.3337 80.8918 25.0834C80.8918 25.8331 81.4966 26.4409 82.2426 26.4409Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M73.3672 29.8893H72.548C72.4586 29.8893 72.3863 29.8166 72.3863 29.7268C72.3863 29.6371 72.4586 29.5643 72.548 29.5643H73.3672C73.593 29.5643 73.805 29.4759 73.9645 29.3154C74.1238 29.1549 74.2115 28.9415 74.211 28.7147L74.2011 23.6439C74.2011 22.5423 73.3095 21.6464 72.2137 21.6464C71.1179 21.6464 70.2262 22.5423 70.2262 23.6436L70.2362 28.3899C70.2371 28.853 70.6128 29.2325 71.0735 29.2361L71.6358 29.2404C71.725 29.2411 71.7969 29.3143 71.7962 29.4041C71.7956 29.4934 71.7233 29.5654 71.6345 29.5654H71.6333L71.071 29.5611C70.4337 29.5562 69.914 29.031 69.9128 28.3906L69.9028 23.6439C69.9028 22.3632 70.9395 21.3214 72.2137 21.3214C73.4878 21.3214 74.5244 22.3632 74.5244 23.6436L74.5344 28.7141C74.535 29.0278 74.4139 29.3229 74.1933 29.5449C73.9729 29.767 73.6794 29.8893 73.3672 29.8893Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M71.6346 29.9788C71.9511 29.9788 72.2077 29.721 72.2077 29.4029C72.2077 29.0848 71.9511 28.827 71.6346 28.827C71.3181 28.827 71.0615 29.0848 71.0615 29.4029C71.0615 29.721 71.3181 29.9788 71.6346 29.9788Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M72.5479 30.3027C72.8644 30.3027 73.121 30.0449 73.121 29.7268C73.121 29.4087 72.8644 29.1509 72.5479 29.1509C72.2314 29.1509 71.9749 29.4087 71.9749 29.7268C71.9749 30.0449 72.2314 30.3027 72.5479 30.3027Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M39.4641 21.4454L39.1537 21.3545C39.8004 19.1258 38.4215 14.9025 38.4075 14.8607L38.7955 15.1547C38.8547 15.3292 40.1393 19.1192 39.4641 21.4454Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M28.5515 21.8414L28.8619 21.7504C28.2152 19.5218 29.6098 15.3628 29.6238 15.3211L29.2917 15.5447C29.2325 15.7191 27.8763 19.5151 28.5515 21.8414Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M39.3088 24.0052C40.0548 24.0052 40.6596 23.3975 40.6596 22.6478C40.6596 21.898 40.0548 21.2903 39.3088 21.2903C38.5628 21.2903 37.958 21.898 37.958 22.6478C37.958 23.3975 38.5628 24.0052 39.3088 24.0052Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M29.9917 30.1893H29.1725C29.0831 30.1893 29.0108 30.1166 29.0108 30.0268C29.0108 29.9371 29.0831 29.8643 29.1725 29.8643H29.9917C30.2175 29.8643 30.4296 29.7759 30.589 29.6153C30.7484 29.4548 30.836 29.2415 30.8355 29.0147L30.8256 23.9439C30.8256 22.8423 29.9341 21.9464 28.8382 21.9464C27.7424 21.9464 26.8507 22.8423 26.8507 23.9436L26.8607 28.6899C26.8616 29.1529 27.2373 29.5325 27.698 29.5361L28.2603 29.5404C28.3495 29.5411 28.4214 29.6143 28.4207 29.7041C28.4201 29.7934 28.3478 29.8654 28.259 29.8654H28.2578L27.6955 29.8611C27.0582 29.8562 26.5386 29.331 26.5373 28.6905L26.5273 23.9439C26.5273 22.6632 27.564 21.6214 28.8382 21.6214C30.1123 21.6214 31.149 22.6632 31.149 23.9436L31.1589 29.0141C31.1595 29.3278 31.0384 29.6229 30.8178 29.8449C30.5974 30.067 30.3039 30.1893 29.9917 30.1893Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M28.2591 30.2788C28.5756 30.2788 28.8322 30.021 28.8322 29.7029C28.8322 29.3848 28.5756 29.127 28.2591 29.127C27.9426 29.127 27.686 29.3848 27.686 29.7029C27.686 30.021 27.9426 30.2788 28.2591 30.2788Z\"\n      fill=\"#3F3C57\" />\n    <path\n      d=\"M29.1725 30.6028C29.489 30.6028 29.7455 30.3449 29.7455 30.0269C29.7455 29.7088 29.489 29.4509 29.1725 29.4509C28.8559 29.4509 28.5994 29.7088 28.5994 30.0269C28.5994 30.3449 28.8559 30.6028 29.1725 30.6028Z\"\n      fill=\"#3F3C57\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_104_720\">\n      <rect width=\"112\" height=\"97\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "img_dash",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#f7f7f7"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "border": {
+                        "color": "#e8e8e8",
+                        "style": "solid",
+                        "stroke": {
+                          "b": 0,
+                          "l": 0,
+                          "r": 0,
+                          "t": 0
+                        },
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "center"
+                      },
+                      "padding": {
+                        "b": 15,
+                        "l": 6,
+                        "r": 10,
+                        "t": 16
+                      }
+                    }
+                  }
+                ],
+                "hidden": false,
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 0,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 10,
+                    "r": 10,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "sfaup2552ogld83sy2z2x00f",
+                "adv": {
+                  "css": "",
+                  "html": ""
+                },
+                "name": "menu-header",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "gdte0kt4dxvp54ewnu48di6k",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Menu",
+                    "name": "New Text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#002B5B",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      },
+                      "padding": {
+                        "l": 20,
+                        "r": 20
+                      }
+                    }
+                  },
+                  {
+                    "id": "os8bcmlngyt00z0nn43dnxn6",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Atur",
+                    "name": "New Text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#002B5B",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "right"
+                      },
+                      "linktag": {
+                        "link": "/ppds/home/kelola"
+                      },
+                      "padding": {
+                        "l": 20,
+                        "r": 20
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              },
+              {
+                "id": "nb62z1rb8xg872rbuzam0irq",
+                "name": "loader",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "26b6abde-53e3-4061-9295-11930f7aba22",
+                  "props": {
+                    "load": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "() => Promise<any>",
+                      "value": "async () => {\n  return {};\n}",
+                      "valueBuilt": " async()=>({});\n"
+                    },
+                    "mode": {
+                      "idx": 6,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"sample\"",
+                      "valueBuilt": "\"sample\";\n"
+                    },
+                    "debug": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"n\"",
+                      "valueBuilt": "\"n\";\n"
+                    },
+                    "ready": {
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "content": {
+                        "id": "u9y66d5b2ond9ftd4qbps2b3",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ready",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "wtg16f4suiq88ylnqsbie2qd",
+                            "adv": {
+                              "js": "<div {...props}>\n  {(data.actions || []).map((item, idx) => (\n    <PassProp item={item} key={idx}>\n      {children}\n    </PassProp>\n  ))}\n</div>",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},(data.actions||[]).map((a,r)=>React.createElement(PassProp,{item:a,key:r},children))));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "items",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "r5eb2mbd94oygkxvawkdfe4a",
+                                "adv": {
+                                  "js": "<PassProp name={item.name} navigate_link={`/ppds/list/${item.id}/action`}>\n  <div {...props}>{children}</div>\n</PassProp>",
+                                  "jsBuilt": "render(React.createElement(PassProp,{name:item.name,navigate_link:`/ppds/list/${item.id}/action`},React.createElement(\"div\",{...props},children)));\n"
+                                },
+                                "name": "item",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "h0ss8kp2al6595lsa25onp0z",
+                                    "adv": {
+                                      "js": "<div\r\n  {...props}\r\n  onClick={() => {\r\n    auditTrail({\r\n      type: \"visit\",\r\n      activity: `Membuka Halaman ${name}`,\r\n      meta: {\r\n        url: window.location.href,\r\n      },\r\n    });\r\n    navigate(navigate_link);\r\n  }}\r\n>\r\n  {children}\r\n</div>",
+                                      "css": "",
+                                      "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{auditTrail({type:\"visit\",activity:`Membuka Halaman ${name}`,meta:{url:window.location.href}}),navigate(navigate_link)}},children));\n"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "menu",
+                                    "type": "item",
+                                    "childs": [
+                                      {
+                                        "id": "cs9wu24qsywu8awgguxxzg6m",
+                                        "adv": {
+                                          "js": "<>{item.m_action_type.id === 1 && <div {...props}>{children}</div>}</>",
+                                          "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===1&&React.createElement(\"div\",{...props},children)));\n"
+                                        },
+                                        "name": "activity",
+                                        "type": "item",
+                                        "childs": [
+                                          {
+                                            "id": "xjy29pwwaykl44qeynf6t09f",
+                                            "adv": {
+                                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 32 33\" fill=\"none\">\r\n  <rect width=\"31.1379\" height=\"33\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\" />\r\n  <mask id=\"mask0_2312_1748\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"3\" y=\"3\" width=\"26\" height=\"27\">\r\n    <rect x=\"3\" y=\"3\" width=\"25.1379\" height=\"27\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2312_1748)\">\r\n    <path\r\n      d=\"M17.141 27.75C15.2556 27.75 13.6496 27.0375 12.3229 25.6125C10.9961 24.1875 10.3328 22.4625 10.3328 20.4375V19.7906C8.83148 19.5281 7.58331 18.7734 6.58827 17.5266C5.59322 16.2797 5.0957 14.8125 5.0957 13.125V6.375H8.23794V5.25H10.3328V9.75H8.23794V8.625H7.19053V13.125C7.19053 14.3625 7.60077 15.4219 8.42124 16.3031C9.24172 17.1844 10.228 17.625 11.3802 17.625C12.5323 17.625 13.5187 17.1844 14.3391 16.3031C15.1596 15.4219 15.5698 14.3625 15.5698 13.125V8.625H14.5224V9.75H12.4276V5.25H14.5224V6.375H17.6647V13.125C17.6647 14.8125 17.1671 16.2797 16.1721 17.5266C15.1771 18.7734 13.9289 19.5281 12.4276 19.7906V20.4375C12.4276 21.8438 12.8858 23.0391 13.8023 24.0234C14.7188 25.0078 15.8317 25.5 17.141 25.5C18.4502 25.5 19.5631 25.0078 20.4796 24.0234C21.3961 23.0391 21.8543 21.8438 21.8543 20.4375V18.5531C21.2433 18.3281 20.7414 17.925 20.3487 17.3438C19.9559 16.7625 19.7595 16.1063 19.7595 15.375C19.7595 14.4375 20.065 13.6406 20.676 12.9844C21.287 12.3281 22.0289 12 22.9017 12C23.7746 12 24.5165 12.3281 25.1275 12.9844C25.7385 13.6406 26.044 14.4375 26.044 15.375C26.044 16.1063 25.8476 16.7625 25.4548 17.3438C25.062 17.925 24.5601 18.3281 23.9492 18.5531V20.4375C23.9492 22.4625 23.2858 24.1875 21.9591 25.6125C20.6323 27.0375 19.0263 27.75 17.141 27.75ZM22.9017 16.5C23.1985 16.5 23.4473 16.3922 23.648 16.1766C23.8488 15.9609 23.9492 15.6937 23.9492 15.375C23.9492 15.0563 23.8488 14.7891 23.648 14.5734C23.4473 14.3578 23.1985 14.25 22.9017 14.25C22.605 14.25 22.3562 14.3578 22.1555 14.5734C21.9547 14.7891 21.8543 15.0563 21.8543 15.375C21.8543 15.6937 21.9547 15.9609 22.1555 16.1766C22.3562 16.3922 22.605 16.5 22.9017 16.5Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                                            },
+                                            "dim": {
+                                              "h": "fit",
+                                              "w": "fit"
+                                            },
+                                            "name": "icon",
+                                            "type": "item",
+                                            "childs": [],
+                                            "mobile": {
+                                              "padding": {
+                                                "b": 3,
+                                                "l": 0,
+                                                "r": 0,
+                                                "t": 3
+                                              }
+                                            },
+                                            "component": {
+                                              "props": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "bu9bg2uc1zv7sffqcn6odf8x",
+                                        "adv": {
+                                          "js": "<>{item.m_action_type.id === 2 && <div {...props}>{children}</div>}</>",
+                                          "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===2&&React.createElement(\"div\",{...props},children)));\n"
+                                        },
+                                        "name": "academic",
+                                        "type": "item",
+                                        "childs": [
+                                          {
+                                            "id": "v75qnyffz327gvsuj2biiw8g",
+                                            "adv": {
+                                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 47\" fill=\"none\">\r\n  <rect x=\"0.5\" width=\"47\" height=\"47\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\" />\r\n  <mask id=\"mask0_2499_4799\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"6\" y=\"5\" width=\"36\" height=\"37\">\r\n    <rect x=\"6\" y=\"5.5\" width=\"36\" height=\"36\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_2499_4799)\">\r\n    <path\r\n      d=\"M24 37L13.5 31.3V22.3L7.5 19L24 10L40.5 19V31H37.5V20.65L34.5 22.3V31.3L24 37ZM24 24.55L34.275 19L24 13.45L13.725 19L24 24.55ZM24 33.5875L31.5 29.5375V23.875L24 28L16.5 23.875V29.5375L24 33.5875Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                                            },
+                                            "dim": {
+                                              "h": "fit",
+                                              "w": "fit"
+                                            },
+                                            "name": "icon",
+                                            "type": "item",
+                                            "childs": [],
+                                            "mobile": {
+                                              "dim": {
+                                                "h": "full",
+                                                "w": "full"
+                                              },
+                                              "padding": {
+                                                "b": 3,
+                                                "l": 0,
+                                                "r": 0,
+                                                "t": 3
+                                              }
+                                            },
+                                            "component": {
+                                              "props": {}
+                                            },
+                                            "originalId": "cj7de65nhxq009zmefrb8n3l"
+                                          }
+                                        ],
+                                        "originalId": "zkg2v3w7wxadouas9pheq84e"
+                                      },
+                                      {
+                                        "id": "mxnmbmbtirx7ip75pb64lpb1",
+                                        "adv": {
+                                          "js": "<>{item.m_action_type.id === 3 && <div {...props}>{children}</div>}</>",
+                                          "jsBuilt": "render(React.createElement(React.Fragment,null,item.m_action_type.id===3&&React.createElement(\"div\",{...props},children)));\n"
+                                        },
+                                        "name": "others",
+                                        "type": "item",
+                                        "childs": [
+                                          {
+                                            "id": "rkiq3iuru9yeut6z9q6nzsgf",
+                                            "adv": {
+                                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"47\" viewBox=\"0 0 48 47\" fill=\"none\">\r\n<rect x=\"0.5\" width=\"47\" height=\"47\" rx=\"10\" fill=\"#0062A3\" fill-opacity=\"0.1\"/>\r\n<mask id=\"mask0_2499_4847\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"7\" y=\"7\" width=\"34\" height=\"33\">\r\n<rect x=\"7.625\" y=\"7.125\" width=\"32.75\" height=\"32.75\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4847)\">\r\n<path d=\"M11.7188 22.1354V11.2188H22.6354V22.1354H11.7188ZM11.7188 35.7812V24.8646H22.6354V35.7812H11.7188ZM25.3646 22.1354V11.2188H36.2812V22.1354H25.3646ZM25.3646 35.7812V24.8646H36.2812V35.7812H25.3646ZM14.4479 19.4062H19.9062V13.9479H14.4479V19.4062ZM28.0938 19.4062H33.5521V13.9479H28.0938V19.4062ZM28.0938 33.0521H33.5521V27.5938H28.0938V33.0521ZM14.4479 33.0521H19.9062V27.5938H14.4479V33.0521Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                                            },
+                                            "dim": {
+                                              "h": "fit",
+                                              "w": "fit"
+                                            },
+                                            "name": "icon",
+                                            "type": "item",
+                                            "childs": [],
+                                            "mobile": {
+                                              "dim": {
+                                                "h": "full",
+                                                "w": "full"
+                                              },
+                                              "padding": {
+                                                "b": 3,
+                                                "l": 0,
+                                                "r": 0,
+                                                "t": 3
+                                              }
+                                            },
+                                            "component": {
+                                              "props": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "z88qmhy96750wgutmlqwjga0",
+                                        "adv": {
+                                          "js": "<div {...props}>{name}</div>",
+                                          "jsBuilt": "render(React.createElement(\"div\",{...props},name));\n"
+                                        },
+                                        "dim": {
+                                          "h": "fit",
+                                          "w": "full"
+                                        },
+                                        "html": "Laporan Jaga",
+                                        "name": "text",
+                                        "text": "",
+                                        "type": "text",
+                                        "childs": [],
+                                        "layout": {
+                                          "dir": "col",
+                                          "gap": 0,
+                                          "align": "center"
+                                        },
+                                        "mobile": {
+                                          "dim": {
+                                            "h": "fit",
+                                            "w": 100,
+                                            "wUnit": "px"
+                                          },
+                                          "font": {
+                                            "size": 14,
+                                            "align": "center",
+                                            "color": "#002B5B",
+                                            "family": "Poppins",
+                                            "height": 130,
+                                            "wordBreak": "break-normal",
+                                            "whitespace": "whitespace-normal"
+                                          },
+                                          "layout": {
+                                            "dir": "col",
+                                            "gap": 0,
+                                            "align": "center"
+                                          },
+                                          "padding": {
+                                            "b": 0,
+                                            "l": 5,
+                                            "r": 5,
+                                            "t": 0
+                                          }
+                                        },
+                                        "component": {
+                                          "props": {}
+                                        }
+                                      }
+                                    ],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": "fit",
+                                        "w": "fit"
+                                      },
+                                      "layout": {
+                                        "dir": "col",
+                                        "gap": 9,
+                                        "wrap": "flex-nowrap",
+                                        "align": "center"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "fit",
+                                    "hUnit": "px",
+                                    "wUnit": "px"
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 0,
+                                    "align": "top-center"
+                                  },
+                                  "padding": {
+                                    "b": 25,
+                                    "l": 0,
+                                    "r": 0,
+                                    "t": 0
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "wrap": "flex-wrap",
+                                "align": "top-center"
+                              }
+                            }
+                          },
+                          {
+                            "id": "vi95mv6rpqmyrfgtnmkm9dgt",
+                            "adv": {
+                              "js": "<>{_.isEmpty(data.actions) === true && <div {...props}>{children}</div>}</>",
+                              "css": "",
+                              "jsBuilt": "render(React.createElement(React.Fragment,null,_.isEmpty(data.actions)===!0&&React.createElement(\"div\",{...props},children)));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "empty",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "syu2wo9op4vpaupklmvbzybw",
+                                "adv": {
+                                  "css": "",
+                                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" data-imageid=\"full-inbox-0\" imageName=\"Empty Inbox\"\n  class=\"illustrations_image\" style=\"width: 232px;\">\n  <g id=\"_296_empty_inbox_outline\" data-name=\"#296_empty_inbox_outline\">\n    <path\n      d=\"M287.57,149.09l-32.58-44a7.2,7.2,0,0,0-5.8-2.92H150.81a7.2,7.2,0,0,0-5.8,2.92l-32.58,44v53.62a11,11,0,0,0,11,11H276.59a11,11,0,0,0,11-11Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M276.59,214.69H123.41a12,12,0,0,1-12-12V149.09a1,1,0,0,1,.19-.6l32.58-44a8.26,8.26,0,0,1,6.61-3.33h98.38a8.26,8.26,0,0,1,6.61,3.33l32.58,44a1,1,0,0,1,.19.6v53.62A12,12,0,0,1,276.59,214.69ZM113.43,149.42v53.29a10,10,0,0,0,10,10H276.59a10,10,0,0,0,10-10V149.42l-32.38-43.75a6.25,6.25,0,0,0-5-2.52H150.81a6.25,6.25,0,0,0-5,2.52Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M287.57,149.09v53.62a11,11,0,0,1-11,11H123.41a11,11,0,0,1-11-11V149.09h47.41l4.46,22a8.75,8.75,0,0,0,8.58,7h54.84a8.78,8.78,0,0,0,8.62-7.15l4.12-21.91Z\"\n      fill=\"#68e1fd\" class=\"target-color\" />\n    <path\n      d=\"M276.58,214.69H123.41a12,12,0,0,1-12-12V149.09a1,1,0,0,1,1-1h47.41a1,1,0,0,1,1,.8l4.46,22a7.77,7.77,0,0,0,7.6,6.23h54.84a7.77,7.77,0,0,0,7.63-6.34l4.12-21.91a1,1,0,0,1,1-.81h47.11a1,1,0,0,1,1,1v53.62A12,12,0,0,1,276.58,214.69Zm-163.15-64.6v52.62a10,10,0,0,0,10,10H276.58a10,10,0,0,0,10-10V150.09H241.29l-4,21.09a9.78,9.78,0,0,1-9.6,8H172.88a9.77,9.77,0,0,1-9.56-7.83L159,150.09Z\"\n      fill=\"#093f68\" />\n    <path d=\"M150.9,191.86H131.26a1,1,0,0,1,0-2H150.9a1,1,0,0,1,0,2Z\" fill=\"#093f68\" />\n    <path d=\"M164.5,89a2,2,0,0,1-1.59-.8l-13.61-18a2,2,0,0,1,3.2-2.41l13.6,18a2,2,0,0,1-.39,2.8A2,2,0,0,1,164.5,89Z\"\n      fill=\"#dfeaef\" />\n    <path\n      d=\"M228.94,89a2.05,2.05,0,0,1-1.21-.41,2,2,0,0,1-.39-2.8l13.61-18a2,2,0,0,1,3.19,2.41l-13.6,18A2,2,0,0,1,228.94,89Z\"\n      fill=\"#dfeaef\" />\n    <path d=\"M198.29,83a2,2,0,0,1-2-2V56.15a2,2,0,0,1,4,0V81A2,2,0,0,1,198.29,83Z\" fill=\"#dfeaef\" />\n    <rect x=\"231.96\" y=\"184.22\" width=\"65.37\" height=\"34.09\" rx=\"3.89\" fill=\"#ffbc0e\" />\n    <path\n      d=\"M293.44,219.32H235.85a4.9,4.9,0,0,1-4.89-4.89V188.11a4.9,4.9,0,0,1,4.89-4.89h57.59a4.9,4.9,0,0,1,4.89,4.89v26.32A4.9,4.9,0,0,1,293.44,219.32Zm-57.59-34.1a2.89,2.89,0,0,0-2.89,2.89v26.32a2.89,2.89,0,0,0,2.89,2.89h57.59a2.9,2.9,0,0,0,2.89-2.89V188.11a2.9,2.9,0,0,0-2.89-2.89Z\"\n      fill=\"#093f68\" />\n    <path d=\"M241.81,194.5h7.66v2.3h-5.18v2.1h4.89v2.29h-4.89v2.3h5.46v2.29h-7.94Z\" fill=\"#093f68\" />\n    <path\n      d=\"M251.44,198h2.3v1.05h0a1.59,1.59,0,0,1,.32-.44,2,2,0,0,1,.49-.4,3,3,0,0,1,.65-.29,2.92,2.92,0,0,1,.8-.11,3.06,3.06,0,0,1,1.44.33,2.15,2.15,0,0,1,.95,1.06,2.55,2.55,0,0,1,1-1.07,3.46,3.46,0,0,1,2.77-.06,2.27,2.27,0,0,1,.84.72,3,3,0,0,1,.45,1.07,6,6,0,0,1,.13,1.31v4.57h-2.39v-4.51a1.83,1.83,0,0,0-.23-.93.87.87,0,0,0-.82-.39,1.54,1.54,0,0,0-.69.14,1.1,1.1,0,0,0-.45.37,1.67,1.67,0,0,0-.24.56,2.87,2.87,0,0,0-.07.67v4.09h-2.39v-4.09c0-.14,0-.31,0-.51a1.94,1.94,0,0,0-.12-.58,1,1,0,0,0-.31-.46,1,1,0,0,0-.63-.19,1.47,1.47,0,0,0-.74.17,1.1,1.1,0,0,0-.44.44,1.86,1.86,0,0,0-.2.63,5.87,5.87,0,0,0,0,.74v3.85h-2.39Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M265.52,198h2.2v1h0a2.4,2.4,0,0,1,.38-.42,2.2,2.2,0,0,1,.54-.39,3.66,3.66,0,0,1,.67-.29,2.9,2.9,0,0,1,.79-.11,4.13,4.13,0,0,1,1.56.29,3.74,3.74,0,0,1,1.2.83,3.79,3.79,0,0,1,.77,1.27,4.61,4.61,0,0,1,.27,1.61,5,5,0,0,1-.24,1.55,4.25,4.25,0,0,1-.71,1.31,3.36,3.36,0,0,1-1.1.92,3.13,3.13,0,0,1-1.48.34,4,4,0,0,1-1.4-.23,2.18,2.18,0,0,1-1.06-.79h0v4.46h-2.39Zm2.2,3.87a2,2,0,0,0,.5,1.42,1.85,1.85,0,0,0,1.41.54,1.82,1.82,0,0,0,1.41-.54,2.27,2.27,0,0,0,0-2.84,1.82,1.82,0,0,0-1.41-.54,1.85,1.85,0,0,0-1.41.54A2,2,0,0,0,267.72,201.91Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M280.61,200H278.5v2.58a3.45,3.45,0,0,0,0,.58,1.08,1.08,0,0,0,.14.46.76.76,0,0,0,.34.29,1.48,1.48,0,0,0,.61.11c.13,0,.3,0,.51,0a.88.88,0,0,0,.47-.19v2a3.44,3.44,0,0,1-.83.19,6.15,6.15,0,0,1-.85.05,4.33,4.33,0,0,1-1.11-.13,2.5,2.5,0,0,1-.89-.4,1.86,1.86,0,0,1-.6-.73,2.47,2.47,0,0,1-.22-1.08V200h-1.53V198h1.53v-2.29h2.39V198h2.11Z\"\n      fill=\"#093f68\" />\n    <path\n      d=\"M286.28,207c-.16.41-.32.78-.47,1.1a2.35,2.35,0,0,1-.56.8,2.19,2.19,0,0,1-.87.5,4.75,4.75,0,0,1-1.38.16,5.63,5.63,0,0,1-1.79-.28l.32-2a2.71,2.71,0,0,0,1.11.24,2,2,0,0,0,.66-.09,1,1,0,0,0,.42-.26,1.5,1.5,0,0,0,.28-.4l.24-.56.17-.45L281,198h2.58l2,5.11h0l1.71-5.11h2.45Z\"\n      fill=\"#093f68\" />\n  </g>\n</svg>"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "icon",
+                                "type": "item",
+                                "childs": [],
+                                "originalId": "ek2dewhvy5qlcx7srtdpisld"
+                              },
+                              {
+                                "id": "lrtfjrqkib7guxezlb99liol",
+                                "adv": {
+                                  "css": ""
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "full"
+                                },
+                                "html": "Tidak ada data",
+                                "name": "New Text",
+                                "text": "",
+                                "type": "text",
+                                "layout": {
+                                  "dir": "col",
+                                  "gap": 0,
+                                  "align": "center"
+                                },
+                                "originalId": "k2lqbks9m9boldkjdsv8gvu8"
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "full",
+                                "w": "full"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "wrap": "flex-nowrap",
+                                "align": "center"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 0,
+                                "r": 0,
+                                "t": 0
+                              }
+                            },
+                            "originalId": "ggqolcleiofnqtfex9bk8b4f"
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "top-left"
+                          }
+                        }
+                      }
+                    },
+                    "sample": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "() => Promise<any>",
+                      "value": "async () => {\n  const w = window as any as {\n    idClient: number;\n    idSemester: number;\n    homeActions: any[];\n    hideActions: any[];\n  };\n\n  if (w.idClient !== user.id_client) {\n    w.idClient = user.id_client;\n    w.homeActions = undefined;\n    w.hideActions = undefined;\n  }\n\n  if (w.idSemester !== user.id_smt) {\n    w.idSemester = user.id_smt;\n    w.homeActions = undefined;\n    w.hideActions = undefined;\n  }\n\n  if (!w.hideActions) {\n    w.hideActions = await db.m_user_action.findMany({\n      where: {\n        id_user: Number(user.id),\n        id_client: Number(user.id_client),\n      },\n    });\n  }\n\n  if (!w.homeActions) {\n    w.homeActions = await db.m_action.findMany({\n      select: { id: true, name: true, m_action_type: true },\n      orderBy: { m_action_type: { id: \"asc\" } },\n      where: {\n        id_client: Number(user.id_client),\n        m_action_semester: {\n          some: {\n            id_semester: user.id_smt,\n          },\n        },\n      },\n    });\n  }\n\n  let actions = (w.homeActions || []).filter((item) => {\n    let found = w.hideActions?.find((o) => o.id_action_hidden === item.id);\n    if (found) {\n      return false;\n    }\n    return true;\n  });\n\n  return { actions };\n}",
+                      "valueBuilt": " async()=>{let e=window;return e.idClient!==user.id_client&&(e.idClient=user.id_client,e.homeActions=void 0,e.hideActions=void 0),e.idSemester!==user.id_smt&&(e.idSemester=user.id_smt,e.homeActions=void 0,e.hideActions=void 0),e.hideActions||(e.hideActions=await db.m_user_action.findMany({where:{id_user:Number(user.id),id_client:Number(user.id_client)}})),e.homeActions||(e.homeActions=await db.m_action.findMany({select:{id:!0,name:!0,m_action_type:!0},orderBy:{m_action_type:{id:\"asc\"}},where:{id_client:Number(user.id_client),m_action_semester:{some:{id_semester:user.id_smt}}}})),{actions:(e.homeActions||[]).filter(i=>!e.hideActions?.find(n=>n.id_action_hidden===i.id))}};\n"
+                    },
+                    "loading": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "ris2bcpsrx8kvdzslsd5fl3n",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "loading",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "y030w1t54qj7jjupyxwxwi7m",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "fwye7h42e74tdrb7a7cg4qyi",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 49,
+                                      "br": 49,
+                                      "tl": 49,
+                                      "tr": 49
+                                    }
+                                  },
+                                  "padding": {
+                                    "b": 29,
+                                    "l": 27,
+                                    "r": 27,
+                                    "t": 29
+                                  }
+                                }
+                              },
+                              {
+                                "id": "mqoe9oecp7furvo03g37ap1a",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              },
+                              {
+                                "id": "xqntyt7i0gxcnxpcenfupvx4",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "center"
+                              },
+                              "padding": {
+                                "b": 8,
+                                "l": 13,
+                                "r": 13,
+                                "t": 8
+                              }
+                            }
+                          },
+                          {
+                            "id": "lliexwhzk5e469dsehs6i0ev",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "i6juh38zx8an1u2ugh3u8pjz",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 49,
+                                      "br": 49,
+                                      "tl": 49,
+                                      "tr": 49
+                                    }
+                                  },
+                                  "padding": {
+                                    "b": 29,
+                                    "l": 27,
+                                    "r": 27,
+                                    "t": 29
+                                  }
+                                }
+                              },
+                              {
+                                "id": "n9ib6lf6rsp208n0ztv1pi12",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              },
+                              {
+                                "id": "efupyn7e927eb2uaodt0eys7",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "center"
+                              },
+                              "padding": {
+                                "b": 8,
+                                "l": 13,
+                                "r": 13,
+                                "t": 8
+                              }
+                            }
+                          },
+                          {
+                            "id": "tpb4n39ffkdh8j8lromoreky",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "ydz5n9b1swgva3m1304obc8d",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 49,
+                                      "br": 49,
+                                      "tl": 49,
+                                      "tr": 49
+                                    }
+                                  },
+                                  "padding": {
+                                    "b": 29,
+                                    "l": 27,
+                                    "r": 27,
+                                    "t": 29
+                                  }
+                                }
+                              },
+                              {
+                                "id": "g0nfudy82yemgyin5ps6kvyh",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              },
+                              {
+                                "id": "r3e54oypqqjtdpuc3ia5qnnz",
+                                "adv": {
+                                  "js": "<div {...props} className={cx(props.className, \"shine\")}>\n  {children}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,\"shine\")},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "bar",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "padding": {
+                                    "b": 6,
+                                    "l": 42,
+                                    "r": 42,
+                                    "t": 6
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "layout": {
+                                "dir": "col",
+                                "gap": 8,
+                                "wrap": "flex-nowrap",
+                                "align": "center"
+                              },
+                              "padding": {
+                                "b": 8,
+                                "l": 13,
+                                "r": 13,
+                                "t": 8
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "top-center"
+                          }
+                        },
+                        "parentInstanceId": "vm81u5esw0gsqsjtnnnde9jd"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "preview": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"ready\"",
+                      "valueBuilt": "\"ready\";\n"
+                    },
+                    "id_cache": {
+                      "idx": 0,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"home-ppds\"",
+                      "valueBuilt": "\"home-ppds\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "hidden": false,
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 17,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "ugvb4t0kj3cj014vkwi1n8g2",
+            "adv": {},
+            "name": "menu-ppds-new",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1692086434694
+            }
+          }
+        ],
+        "mobile": {
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-06-26T02:46:54.291Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-11-09T02:32:54.070Z",
+  "id_folder": "f52c66fb-f24a-4e54-beac-e3b072525e35",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

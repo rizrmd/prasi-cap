@@ -1,0 +1,291 @@
+{
+  "id": "73c17a86-f996-4e09-b811-b82603b242fa",
+  "name": "list-bimbingan-operasi",
+  "url": "/staff-pengajar/all/activity/bimbingan-operasi/list",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ylavdqmu5faocnslwvg18bdm",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "y8i6y83s2eic6nnrh56irreu",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "z3jm2nwevkwzyk3wai92dotj",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/ppds/home\"",
+                      "valueBuilt": "\"/ppds/home\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Bimbingan Operasi\"",
+                      "valueBuilt": "\"Bimbingan Operasi\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "r6f1qwybhdadfo1bphsbx5lb",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "v295x5d9m8f5dvfsjbql545i",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"001\",\r\n          name: \"Fraktur Fremur\",\r\n          quantity: \"3\",\r\n          label_attachment: \"3/5\",\r\n          url: \"\",\r\n        },\r\n        {\r\n          id: \"002\",\r\n          name: \"Fraktur Radiosona\",\r\n          quantity: \"9\",\r\n          label_attachment: \"4/5\",\r\n          url: \"\",\r\n        },\r\n        {\r\n          id: \"003\",\r\n          name: \"Fraktur Humerus\",\r\n          quantity: \"5\",\r\n          label_attachment: \"1/3\",\r\n          url: \"\",\r\n        },\r\n        {\r\n          id: \"004\",\r\n          name: \"Fraktur Ankle\",\r\n          quantity: \"15\",\r\n          label_attachment: \"3/4\",\r\n          url: \"\",\r\n        },\r\n        {\r\n          id: \"005\",\r\n          name: \"Fraktur Fremur\",\r\n          quantity: \"5\",\r\n          label_attachment: \"1/3\",\r\n          url: \"\",\r\n        },\r\n      ],\r\n    }}\r\n    effect={async (local) => {\r\n      // local.data = [\"world!\"];\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "css": "& {\r\n  display: flex;\r\n  padding-bottom: 150px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"001\",name:\"Fraktur Fremur\",quantity:\"3\",label_attachment:\"3/5\",url:\"\"},{id:\"002\",name:\"Fraktur Radiosona\",quantity:\"9\",label_attachment:\"4/5\",url:\"\"},{id:\"003\",name:\"Fraktur Humerus\",quantity:\"5\",label_attachment:\"1/3\",url:\"\"},{id:\"004\",name:\"Fraktur Ankle\",quantity:\"15\",label_attachment:\"3/4\",url:\"\"},{id:\"005\",name:\"Fraktur Fremur\",quantity:\"5\",label_attachment:\"1/3\",url:\"\"}]},effect:async a=>{a.render()}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-data",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "xxegg0g5rot8004qpes9ld86",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "name": "item-data",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ts7akx34s7siainq9cdx2rky",
+                        "adv": {
+                          "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "bimbingan-operasi",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "border": {
+                            "style": "solid",
+                            "rounded": {
+                              "bl": 8,
+                              "br": 8,
+                              "tl": 8,
+                              "tr": 8
+                            }
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 0,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "id": "872f3216-8eb9-442b-ad92-7178abb28b4d",
+                          "name": "",
+                          "props": {
+                            "name": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.name",
+                              "valueBuilt": " item.name;\n"
+                            },
+                            "quantity": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.quantity",
+                              "valueBuilt": " item.quantity;\n"
+                            },
+                            "label_attachment": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.label_attachment",
+                              "valueBuilt": " item.label_attachment;\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 20,
+                        "align": "top-left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 5,
+                    "l": 30,
+                    "r": 30,
+                    "t": 5
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 12,
+                "l": 0,
+                "r": 0,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "aqe8r3acz5odhaidkn92d7z3",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "njyu768b31mv1rp0qyfq5o6b",
+                "name": "menu-staff-pengajar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-18T03:48:25.743Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-13T03:14:03.075Z",
+  "id_folder": "6f780e07-0400-47c0-b2b0-7bb9d4e63f8d",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

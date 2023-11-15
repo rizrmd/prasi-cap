@@ -1,0 +1,1852 @@
+{
+  "id": "02f33338-d088-4e9e-b6c0-8e9170649c08",
+  "name": "filter-sidebar",
+  "content_tree": {
+    "id": "xr9egz0pgomboa4u4ua465pa",
+    "adv": {
+      "js": "<>{local.showSidebar === true && <div {...props}>{children}</div>}</>",
+      "css": "& {\n  display: flex;\n  position: absolute;\n  width: 50% !important;\n  left: 0%;\n  top: 0%;\n  z-index: 59;\n  border-radius: 0px 10px 10px 0px;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  border: none;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+      "jsBuilt": "render(React.createElement(React.Fragment,null,local.showSidebar===!0&&React.createElement(\"div\",{...props},children)));\n"
+    },
+    "name": "filter-sidebar",
+    "type": "item",
+    "childs": [
+      {
+        "id": "zxcur2ddu9v4uvhv7lvg7q9z",
+        "adv": {
+          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Filter",
+        "name": "title",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 0,
+            "align": "left",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "padding": {
+            "b": 5,
+            "l": 0,
+            "r": 0,
+            "t": 5
+          }
+        }
+      },
+      {
+        "id": "rlfynry2kn5cejgvcw7lvnzw",
+        "adv": {
+          "js": "<div {...props}>\n  {(bind_form[filter_key] || []).map((item, idx) => (\n    <PassProp item={item} key={idx}>\n      {children}\n    </PassProp>\n  ))}\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},(bind_form[filter_key]||[]).map((r,e)=>React.createElement(PassProp,{item:r,key:e},children))));\n"
+        },
+        "name": "list_filter",
+        "type": "item",
+        "childs": [
+          {
+            "id": "pk1bjqgjerzss05uqu8t6djy",
+            "adv": {
+              "js": ""
+            },
+            "name": "item_filter",
+            "type": "item",
+            "childs": [
+              {
+                "id": "s6ukp3g68b6s7wm1p4k3cb4e",
+                "adv": {
+                  "js": "",
+                  "css": "& {\n  display: flex;\n  position: relative;\n\n  &:hover {\n    display: flex;\n  }\n}"
+                },
+                "name": "input_field",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "a12yokglyyfefgxsdk8k4g6x",
+                    "adv": {
+                      "js": "<>\n  {type_input !== \"checkbox\" &&\n    type_input !== \"toggle\" &&\n    type_input !== \"datetime\" &&\n    type_input !== \"dropdown\" &&\n    type_input !== \"multiselect\" && (\n      <div\n        {...props}\n        style={{\n          width: width,\n        }}\n      >\n        {children}\n      </div>\n    )}\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input!==\"checkbox\"&&type_input!==\"toggle\"&&type_input!==\"datetime\"&&type_input!==\"dropdown\"&&type_input!==\"multiselect\"&&React.createElement(\"div\",{...props,style:{width}},children)));\n"
+                    },
+                    "name": "input",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "htsa30b248n3xuo2f7bkfjrx",
+                        "adv": {
+                          "js": "<div {...props}>{label}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 2,
+                            "l": 0,
+                            "r": 0,
+                            "t": 2
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "a4o5a0szooj8f215wbta5rnb",
+                        "adv": {
+                          "js": "<>\n  {multiline === \"false\" ? (\n    <input\n      {...props}\n      type={type_input}\n      placeholder={label}\n      spellCheck={false}\n      value={\n        bind_form && bind_key && type_input !== \"date\"\n          ? bind_form[bind_key]\n          : type_input === \"date\"\n          ? value_date\n          : value\n      }\n      style={{\n        backgroundColor: disabled === \"TRUE\" ? \"#f0f0f0\" : \"white\",\n        alignItems: 'center',\n        justifyContent: 'center',\n        minHeight: \"46px\",\n      }}\n      disabled={disabled === \"TRUE\" ? true : false}\n      onChange={(e) => {\n        const val = e.currentTarget.value;\n        const b: any = bind_form;\n        if (b && bind_key && type_input !== \"date\") {\n          b[bind_key] = type_input === \"number\" ? Number(val) : val;\n          b.render();\n        }\n        if (b && bind_key && type_input === \"date\") {\n          b[bind_key] = new Date(val);\n          b.render();\n        }\n      }}\n    />\n  ) : (\n    <textarea\n      {...props}\n      spellCheck={false}\n      placeholder={label}\n      rows={Number(multiline_row)}\n      value={bind_form && bind_key ? bind_form[bind_key] : value}\n      style={{\n        minHeight: \"46px\",\n      }}\n      onChange={(e) => {\n        const val = e.currentTarget.value;\n        const b: any = bind_form;\n        if (b && bind_key) {\n          b[bind_key] = val;\n          b.render();\n        }\n      }}\n    />\n  )}\n</>",
+                          "css": "& {\n  display: flex;\n  background: #FFF;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  padding: 6px 10px;\n  align-items: flex-start;\n  gap: 10px;\n\n  &::-webkit-calendar-picker-indicator {\n  background-image: url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23002b5b' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0'/%3E%3Cpath d='M12 7v5l3 3'/%3E%3C/g%3E%3C/svg%3E\") !important;\n  font-size: 22.5px;\n}\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(React.Fragment,null,multiline===\"false\"?React.createElement(\"input\",{...props,type:type_input,placeholder:label,spellCheck:!1,value:bind_form&&bind_key&&type_input!==\"date\"?bind_form[bind_key]:type_input===\"date\"?value_date:value,style:{backgroundColor:disabled===\"TRUE\"?\"#f0f0f0\":\"white\",alignItems:\"center\",justifyContent:\"center\",minHeight:\"46px\"},disabled:disabled===\"TRUE\",onChange:t=>{let n=t.currentTarget.value,e=bind_form;e&&bind_key&&type_input!==\"date\"&&(e[bind_key]=type_input===\"number\"?Number(n):n,e.render()),e&&bind_key&&type_input===\"date\"&&(e[bind_key]=new Date(n),e.render())}}):React.createElement(\"textarea\",{...props,spellCheck:!1,placeholder:label,rows:Number(multiline_row),value:bind_form&&bind_key?bind_form[bind_key]:value,style:{minHeight:\"46px\"},onChange:t=>{let n=t.currentTarget.value,e=bind_form;e&&bind_key&&(e[bind_key]=n,e.render())}})));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "input",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "border": {
+                            "color": "#ebebeb",
+                            "style": "solid",
+                            "stroke": {
+                              "b": 1,
+                              "l": 1,
+                              "r": 1,
+                              "t": 1
+                            },
+                            "rounded": {
+                              "bl": 10,
+                              "br": 10,
+                              "tl": 10,
+                              "tr": 10
+                            }
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "top-left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 8,
+                            "r": 8,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "re8unsv7km0vzxh2wbcx55ha",
+                    "adv": {
+                      "js": "<>\n  {type_input === \"dropdown\" && (\n    <div\n      {...props}\n      onClick={disabled === \"FALSE\" && on_click_dropdown}\n      style={{\n        width: width,\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+                      "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input===\"dropdown\"&&React.createElement(\"div\",{...props,onClick:disabled===\"FALSE\"&&on_click_dropdown,style:{width}},children)));\n"
+                    },
+                    "name": "dropdown",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "shh13zkksp5ldhg7pf1w0ge3",
+                        "adv": {
+                          "js": "<div {...props}>\n  {label}\n</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 0,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "z6aejix4px8ddy5h8jucocg5",
+                        "adv": {
+                          "js": "<div\n  {...props}\n  style={{\n    backgroundColor: disabled === \"TRUE\" ? \"#f0f0f0\" : \"white\",\n  }}\n>\n  {children}\n</div>",
+                          "css": "& {\n  display: flex;\n  border-radius: 10px;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  height: 35px;\n  padding: 6px 10px;\n  align-items: flex-start;\n  gap: 10px;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props,style:{backgroundColor:disabled===\"TRUE\"?\"#f0f0f0\":\"white\"}},children));\n"
+                        },
+                        "name": "button",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "m8se9kqi11191bono9a8qs9a",
+                            "adv": {
+                              "js": "<div {...props}>{selected_dropdown ? selected_dropdown : label}</div>",
+                              "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},selected_dropdown||label));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "label",
+                            "name": "label",
+                            "text": "",
+                            "type": "text",
+                            "childs": [],
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "fit"
+                              },
+                              "font": {
+                                "size": 15,
+                                "color": "#002B5B",
+                                "family": "Poppins",
+                                "height": "auto"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 0,
+                                "r": 0,
+                                "t": 0
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "j9xgzd4mip26kgctim8bqi3v",
+                            "adv": {
+                              "js": "<div {...props}>{children}</div>;\n",
+                              "css": "& {\n  display: flex;\n  align-self: flex-end;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <mask id=\"mask0_536_7197\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\n    <rect width=\"24\" height=\"24\" fill=\"#D9D9D9\" />\n  </mask>\n  <g mask=\"url(#mask0_536_7197)\">\n    <path\n      d=\"M12 15.5L16.5 11L15.075 9.6L12 12.675L8.925 9.6L7.5 11L12 15.5ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z\"\n      fill=\"#002B5B\" />\n  </g>\n</svg>",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "select button",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "family": "Poppins",
+                                "height": "auto"
+                              },
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "align": "center"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": "auto",
+                            "align": "center"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "top-center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "mb6r48yerxzr6b1b9p2f30fb",
+                    "adv": {
+                      "js": "<>\n  {dropdown_expand === \"on\" && (\n    <div {...props} style={{\n      width: width\n    }}>\n      {(value_dropdown || []).map((item, idx) => (\n        <PassProp item={item} key={idx}>\n          <div\n            style={{\n              flex: 1,\n              width: width,\n            }}\n            onClick={(e) => {\n              const val = item;\n              const b: any = bind_form;\n              if (b && bind_key) {\n                b[bind_key] = val;\n                b[dropdown_open_key] = false;\n                b.render();\n              }\n            }}\n          >\n            {children}\n          </div>\n        </PassProp>\n      ))}\n    </div>\n  )}\n</>",
+                      "css": "& {\n  display: flex;\n  position: absolute;\n  top: 80px;\n  z-index: 50;\n  border-radius: 5px;\n  background: #fafafa;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,dropdown_expand===\"on\"&&React.createElement(\"div\",{...props,style:{width}},(value_dropdown||[]).map((e,n)=>React.createElement(PassProp,{item:e,key:n},React.createElement(\"div\",{style:{flex:1,width},onClick:i=>{let o=e,d=bind_form;d&&bind_key&&(d[bind_key]=o,d[dropdown_open_key]=!1,d.render())}},children))))));\n"
+                    },
+                    "name": "dropdown_selector",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "azo97izujfeen8udq5u1p7gd",
+                        "adv": {
+                          "js": "<div {...props}>{item.label}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n    background-color: lightcyan;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},item.label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 10,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#ebe6e6"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 5,
+                        "align": "top-left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "csrk5sufvrj4yr1p9ad1zdz6",
+                    "adv": {
+                      "js": "<>\n  {type_input === \"datetime\" && (\n    <div\n      {...props}\n      style={{\n        width: width,\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input===\"datetime\"&&React.createElement(\"div\",{...props,style:{width}},children)));\n"
+                    },
+                    "name": "datetime",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "naknsljyoyi9laz2vut7hc7j",
+                        "adv": {
+                          "js": "<div {...props}>{label}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n  width: 100%;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 10,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "m7oz90ufgyzrk5vlwjxfb5qp",
+                        "adv": {
+                          "css": "& {\n  display: flex;\n  width: 80%;\n\n  &:hover {\n    display: flex;\n  }\n}"
+                        },
+                        "name": "datetime_input",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "tc143djikdln5ozvvhqduet6",
+                            "adv": {
+                              "js": "<>\n  <input\n    type=\"date\"\n    placeholder={label}\n    value={value_date}\n    onChange={(e) => {\n      console.log(bind_form[bind_key], \"coba date\");\n      const val = e.target.value;\n      const b: any = bind_form;\n      if (b && bind_key) {\n        b[bind_key] = new Date(val);\n        b.render();\n      }\n    }}\n    {...props}\n  />\n</>",
+                              "css": "& {\n  display: flex;\n  border-radius: 10px;\n  background: #FFF;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  width: 60%;\n  padding: 6px 10px;\n  align-items: flex-start;\n  gap: 10px;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(React.Fragment,null,React.createElement(\"input\",{type:\"date\",placeholder:label,value:value_date,onChange:n=>{console.log(bind_form[bind_key],\"coba date\");let a=n.target.value,e=bind_form;e&&bind_key&&(e[bind_key]=new Date(a),e.render())},...props})));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "input",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "family": "Poppins",
+                                "height": "auto"
+                              },
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "align": "top-left"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "lsoio3qlipuh1vzp4dp086m8",
+                            "adv": {
+                              "js": "<>\n  <input\n    type=\"time\"\n    value={value_time}\n    onChange={(e) => {\n      const val = e.target.value;\n      const b: any = bind_form;\n      const old_date = new Date(b[bind_key]);\n      if (b && bind_key) {\n        b[bind_key] = new Date(\n          old_date.getFullYear(),\n          old_date.getMonth(),\n          old_date.getDate(),\n          val.substring(0, 2),\n          val.slice(-2)\n        );\n        b.render();\n      }\n    }}\n    {...props}\n  />\n</>",
+                              "css": "& {\n  display: flex;\n  border-radius: 10px;\n  background: #FFF;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  width: 35%;\n  padding: 6px 10px;\n  align-items: flex-start;\n  gap: 10px;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(React.Fragment,null,React.createElement(\"input\",{type:\"time\",value:value_time,onChange:a=>{let n=a.target.value,e=bind_form,t=new Date(e[bind_key]);e&&bind_key&&(e[bind_key]=new Date(t.getFullYear(),t.getMonth(),t.getDate(),n.substring(0,2),n.slice(-2)),e.render())},...props})));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "input",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "family": "Poppins",
+                                "height": "auto"
+                              },
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "align": "top-left"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": "auto",
+                            "align": "center"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "iwedvk52au5xt9f24bh1jwwc",
+                    "adv": {
+                      "js": "<>\n  {type_input === \"toggle\" && (\n    <div\n      {...props}\n      onClick={on_click_toggle}\n      style={{\n        width: width,\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+                      "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input===\"toggle\"&&React.createElement(\"div\",{...props,onClick:on_click_toggle,style:{width}},children)));\n"
+                    },
+                    "name": "toggle",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "d7qe2uyeylmfac0ahm79foo5",
+                        "adv": {
+                          "js": "<div {...props}>{label}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": "auto",
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 0,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "bckvoohwqxswid2ncqj4213e",
+                        "adv": {
+                          "js": "<div {...props}>\n  {toggle === \"on\" ? (\n    <svg\n      width=\"30\"\n      height=\"30\"\n      viewBox=\"0 0 24 24\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        fill=\"#000000\"\n        d=\"M17 7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h10c2.76 0 5-2.24 5-5s-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3s3 1.34 3 3s-1.34 3-3 3z\"\n      />\n    </svg>\n  ) : (\n    <svg\n      width=\"30\"\n      height=\"30\"\n      viewBox=\"0 0 24 24\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        fill=\"#000000\"\n        d=\"M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3z\"\n      />\n    </svg>\n  )}\n</div>",
+                          "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},toggle===\"on\"?React.createElement(\"svg\",{width:\"30\",height:\"30\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#000000\",d:\"M17 7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h10c2.76 0 5-2.24 5-5s-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3s3 1.34 3 3s-1.34 3-3 3z\"})):React.createElement(\"svg\",{width:\"30\",height:\"30\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#000000\",d:\"M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3z\"}))));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "input",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "font": {
+                            "size": 15,
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "oe2szrsabh9uad7uvmz6tnzn",
+                    "adv": {
+                      "js": "<>\n  {type_input === \"checkbox\" && (\n    <div\n      {...props}\n      style={{\n        width: width,\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+                      "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input===\"checkbox\"&&React.createElement(\"div\",{...props,style:{width}},children)));\n"
+                    },
+                    "name": "checkbox",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "ty73ejtsd9ahuf5g1pdri9jy",
+                        "adv": {
+                          "js": "<div {...props} onClick={onClickCheckbox}>\n  {children}\n</div>",
+                          "css": "& {\n  display: flex;\n  border-radius: 10px;\n  background: #FFF;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  width: 100%;\n  padding: 6px 10px;\n  align-items: flex-start;\n  gap: 10px;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:onClickCheckbox},children));\n"
+                        },
+                        "name": "Wrapped",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "uyntr7q0ljhlfbxrefojc618",
+                            "adv": {
+                              "js": "<div {...props}>\n  {checked === \"true\" ? (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n    >\n      <path\n        fill-rule=\"evenodd\"\n        clip-rule=\"evenodd\"\n        d=\"M7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7V17C2 18.3261 2.52678 19.5979 3.46447 20.5355C4.40215 21.4732 5.67392 22 7 22H17C18.3261 22 19.5979 21.4732 20.5355 20.5355C21.4732 19.5979 22 18.3261 22 17V7C22 5.67392 21.4732 4.40215 20.5355 3.46447C19.5979 2.52678 18.3261 2 17 2H7ZM15.73 10.684C15.8198 10.5881 15.8899 10.4755 15.9362 10.3526C15.9825 10.2296 16.0041 10.0988 15.9998 9.96747C15.9956 9.83617 15.9655 9.707 15.9113 9.58732C15.8571 9.46765 15.7799 9.35982 15.684 9.27C15.5881 9.18018 15.4755 9.11011 15.3526 9.06381C15.2296 9.01751 15.0988 8.99588 14.9675 9.00015C14.8362 9.00442 14.707 9.03451 14.5873 9.08871C14.4677 9.1429 14.3598 9.22014 14.27 9.316L11.187 12.606L9.664 11.253C9.46446 11.0871 9.20825 11.0053 8.9495 11.0248C8.69075 11.0443 8.44972 11.1637 8.27732 11.3576C8.10493 11.5516 8.01467 11.8049 8.02562 12.0642C8.03657 12.3234 8.14787 12.5683 8.336 12.747L10.586 14.747C10.7807 14.9199 11.0352 15.0101 11.2953 14.9983C11.5554 14.9866 11.8007 14.8738 11.979 14.684L15.73 10.684Z\"\n        fill=\"#002B5B\"\n      />\n    </svg>\n  ) : (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n    >\n      <path\n        d=\"M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z\"\n        stroke=\"#002B5B\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n        stroke-linejoin=\"round\"\n      />\n    </svg>\n  )}\n</div>",
+                              "css": "& {\n  display: flex;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},checked===\"true\"?React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"24\",height:\"24\",viewBox:\"0 0 24 24\",fill:\"none\"},React.createElement(\"path\",{\"fill-rule\":\"evenodd\",\"clip-rule\":\"evenodd\",d:\"M7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7V17C2 18.3261 2.52678 19.5979 3.46447 20.5355C4.40215 21.4732 5.67392 22 7 22H17C18.3261 22 19.5979 21.4732 20.5355 20.5355C21.4732 19.5979 22 18.3261 22 17V7C22 5.67392 21.4732 4.40215 20.5355 3.46447C19.5979 2.52678 18.3261 2 17 2H7ZM15.73 10.684C15.8198 10.5881 15.8899 10.4755 15.9362 10.3526C15.9825 10.2296 16.0041 10.0988 15.9998 9.96747C15.9956 9.83617 15.9655 9.707 15.9113 9.58732C15.8571 9.46765 15.7799 9.35982 15.684 9.27C15.5881 9.18018 15.4755 9.11011 15.3526 9.06381C15.2296 9.01751 15.0988 8.99588 14.9675 9.00015C14.8362 9.00442 14.707 9.03451 14.5873 9.08871C14.4677 9.1429 14.3598 9.22014 14.27 9.316L11.187 12.606L9.664 11.253C9.46446 11.0871 9.20825 11.0053 8.9495 11.0248C8.69075 11.0443 8.44972 11.1637 8.27732 11.3576C8.10493 11.5516 8.01467 11.8049 8.02562 12.0642C8.03657 12.3234 8.14787 12.5683 8.336 12.747L10.586 14.747C10.7807 14.9199 11.0352 15.0101 11.2953 14.9983C11.5554 14.9866 11.8007 14.8738 11.979 14.684L15.73 10.684Z\",fill:\"#002B5B\"})):React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"24\",height:\"24\",viewBox:\"0 0 24 24\",fill:\"none\"},React.createElement(\"path\",{d:\"M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z\",stroke:\"#002B5B\",\"stroke-width\":\"2\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\"}))));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "input",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "font": {
+                                "size": 15,
+                                "family": "Poppins",
+                                "height": "auto"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "lebou4q9kxypdx5w2xrzasn3",
+                            "adv": {
+                              "js": "<div {...props}>{label_checkbox}</div>",
+                              "css": "& {\n  display: flex;\n  font-weight: bold;\n  width: 80%;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},label_checkbox));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "label",
+                            "name": "label",
+                            "text": "",
+                            "type": "text",
+                            "childs": [],
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "center"
+                            },
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "fit"
+                              },
+                              "font": {
+                                "size": 15,
+                                "color": "#002B5B",
+                                "family": "Poppins",
+                                "height": "auto"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "align": "left"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 10,
+                                "r": 0,
+                                "t": 0
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "top-left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  },
+                  {
+                    "id": "t5lg7i0vzusgwwahjxztpd0f",
+                    "adv": {
+                      "js": "<>\n  {type_input === \"multiselect\" && (\n    <div\n      {...props}\n      style={{\n        width: width,\n      }}\n    >\n      {children}\n    </div>\n  )}\n</>",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,type_input===\"multiselect\"&&React.createElement(\"div\",{...props,style:{width}},children)));\n"
+                    },
+                    "name": "multiselect",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "vdm9ds8k019ycxt9gt94tlmv",
+                        "adv": {
+                          "js": "<div {...props}>{label}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n  width: 80%;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "label",
+                        "name": "label",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 15,
+                            "color": "#002B5B",
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 2,
+                            "l": 3,
+                            "r": 3,
+                            "t": 2
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "jv9xx260mfhi9mpn7zc15rub",
+                        "adv": {
+                          "css": "& {\n  display: flex;\n  background: #FFF;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  width: 80%;\n  padding: 6px 10px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                        },
+                        "name": "Wrapped",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "lnl1ij0f133m93b9vpf0mpx2",
+                            "adv": {
+                              "js": "<Multiselect\n  // options={[\n  //   { name: \"Option 1️⃣\", id: 1 },\n  //   { name: \"Option 2️⃣\", id: 2 },\n  // ]}\n  options={value_dropdown}\n  style={{\n    multiselectContainer: {\n      minWidth: \"250px\",\n    },\n    searchBox: {\n      border: \"none\",\n      minHeight: \"40px\",\n    },\n  }}\n  placeholder={label}\n  selectedValues={selected_dropdown}\n  onSelect={(selectedList, selectedItem) => {\n    const b: any = bind_form;\n    if (b && bind_key) {\n      b[bind_key] = selectedList;\n      b.render();\n    }\n  }}\n  onRemove={(selectedList, removedItem) => {\n    const b: any = bind_form;\n    if (b && bind_key) {\n      b[bind_key] = selectedList;\n      b.render();\n    }\n  }}\n  displayValue=\"label\"\n/>",
+                              "css": "& {\n  display: flex;\n\n  .searchWrapper {\n    border: none !important;\n    outline: none !important;\n  }\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                              "jsBuilt": "render(React.createElement(Multiselect,{options:value_dropdown,style:{multiselectContainer:{minWidth:\"250px\"},searchBox:{border:\"none\",minHeight:\"40px\"}},placeholder:label,selectedValues:selected_dropdown,onSelect:(n,d)=>{let e=bind_form;e&&bind_key&&(e[bind_key]=n,e.render())},onRemove:(n,d)=>{let e=bind_form;e&&bind_key&&(e[bind_key]=n,e.render())},displayValue:\"label\"}));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "New Item",
+                            "type": "item",
+                            "childs": [],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "border": {
+                                "style": "solid",
+                                "rounded": {
+                                  "bl": 10,
+                                  "br": 10,
+                                  "tl": 10,
+                                  "tr": 10
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "border": {
+                            "style": "solid",
+                            "rounded": {
+                              "bl": 10,
+                              "br": 10,
+                              "tl": 10,
+                              "tr": 10
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full",
+                        "hUnit": "px",
+                        "wUnit": "px"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "top-center"
+                      }
+                    }
+                  }
+                ],
+                "hidden": false,
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 10,
+                    "align": "center"
+                  }
+                },
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "name": "input_field",
+                  "group": {
+                    "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                    "name": "All"
+                  },
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "item.label || \"label\"",
+                      "valueBuilt": " item.label||\"label\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "item.value",
+                      "valueBuilt": " item.value;\n"
+                    },
+                    "width": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"100%\"",
+                      "valueBuilt": "\"100%\";\n"
+                    },
+                    "toggle": {
+                      "idx": 9,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "item.value === true ? \"on\" : \"off\"",
+                      "valueBuilt": " item.value===!0?\"on\":\"off\";\n"
+                    },
+                    "checked": {
+                      "idx": 8,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop_1",
+                        "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"true\"",
+                      "valueBuilt": "\"true\";\n"
+                    },
+                    "bind_key": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"value\"",
+                      "valueBuilt": "\"value\";\n"
+                    },
+                    "disabled": {
+                      "idx": 21,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"FALSE\"",
+                      "valueBuilt": "\"FALSE\";\n"
+                    },
+                    "bind_form": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "any",
+                      "value": "item",
+                      "valueBuilt": " item;\n"
+                    },
+                    "multiline": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"false\"",
+                      "valueBuilt": "\"false\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "item.type_filter === \"dropdown\"\n  ? \"dropdown\"\n  : item.type_filter === \"datetime\"\n  ? \"datetime\"\n  : item.type_filter === \"date\"\n  ? \"date\"\n  : item.type_filter === \"toggle\"\n  ? \"toggle\"\n  : \"text\"",
+                      "valueBuilt": " item.type_filter===\"dropdown\"?\"dropdown\":item.type_filter===\"datetime\"?\"datetime\":item.type_filter===\"date\"?\"date\":item.type_filter===\"toggle\"?\"toggle\":\"text\";\n"
+                    },
+                    "value_date": {
+                      "idx": 11,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "\"string\"",
+                      "value": "moment(new Date(item.value)).format(\"YYYY-MM-DD\")",
+                      "valueBuilt": " moment(new Date(item.value)).format(\"YYYY-MM-DD\");\n"
+                    },
+                    "value_time": {
+                      "idx": 12,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"00:00\"",
+                      "valueBuilt": "\"00:00\";\n"
+                    },
+                    "multiline_row": {
+                      "idx": 5,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"3\"",
+                      "valueBuilt": "\"3\";\n"
+                    },
+                    "on_change_text": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "value_dropdown": {
+                      "idx": 13,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "[]",
+                      "value": "item.option !== null ? item.option : []",
+                      "valueBuilt": " item.option!==null?item.option:[];\n"
+                    },
+                    "dropdown_expand": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "item.expand === true ? \"on\" : \"off\"",
+                      "valueBuilt": " item.expand===!0?\"on\":\"off\";\n"
+                    },
+                    "label_checkboxs": {
+                      "idx": 6,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"hello\""
+                    },
+                    "on_click_toggle": {
+                      "idx": 10,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickToggle"
+                      },
+                      "type": "() => void",
+                      "value": "() => {\n  item.value = !item.value\n  local.render()\n}",
+                      "valueBuilt": "()=>{item.value=!item.value,local.render()};\n"
+                    },
+                    "dropdown_open_key": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"expand\"",
+                      "valueBuilt": "\"expand\";\n"
+                    },
+                    "on_click_checkbox": {
+                      "idx": 7,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickCheckbox"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "on_click_dropdown": {
+                      "idx": 15,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickDropdown"
+                      },
+                      "type": "() => void",
+                      "value": "() => {\n  item.expand = !item.expand;\n  local.render()\n}",
+                      "valueBuilt": "()=>{item.expand=!item.expand,local.render()};\n"
+                    },
+                    "selected_dropdown": {
+                      "idx": 19,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "item.value.label || \"\"",
+                      "valueBuilt": " item.value.label||\"\";\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 20,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          },
+          "padding": {
+            "b": 0,
+            "l": 10,
+            "r": 10,
+            "t": 0
+          }
+        }
+      },
+      {
+        "id": "bb1qkr0uxabmpia1y0od50z4",
+        "adv": {
+          "js": "<div\n  {...props}\n  onClick={() => {\n    local.showSidebar = false\n    local.render()\n  }}\n>\n  {children}\n</div>",
+          "css": "& {\n  display: flex;\n  position: absolute;\n  top: 1%;\n  right: 3%;\n  z-index: 99;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{local.showSidebar=!1,local.render()}},children));\n"
+        },
+        "name": "button_close",
+        "type": "item",
+        "childs": [
+          {
+            "id": "n81oe6ibp5lma2gn36fpsfnl",
+            "adv": {
+              "js": "<div\n  {...props}\n  onClick={() => {\n    local.showSidebar = false;\n    local.render();\n  }}\n>\n  {children}\n</div>",
+              "html": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g fill=\"#ef4444\">\n    <path\n      d=\"M16.34 9.322a1 1 0 1 0-1.364-1.463l-2.926 2.728L9.322 7.66A1 1 0 0 0 7.86 9.024l2.728 2.926l-2.927 2.728a1 1 0 1 0 1.364 1.462l2.926-2.727l2.728 2.926a1 1 0 1 0 1.462-1.363l-2.727-2.926l2.926-2.728Z\" />\n    <path fill-rule=\"evenodd\"\n      d=\"M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18a9 9 0 0 1 0 18Z\"\n      clip-rule=\"evenodd\" />\n  </g>\n</svg>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{local.showSidebar=!1,local.render()}},children));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "New Item",
+            "type": "item",
+            "childs": []
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "fit",
+            "hUnit": "px",
+            "wUnit": "px"
+          }
+        }
+      },
+      {
+        "id": "actuxiamixp20rxpgbu8tjd5",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 5% !important;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "name": "button",
+        "type": "item",
+        "childs": [
+          {
+            "id": "usvklqiuqjrnume1023vlymw",
+            "adv": {
+              "js": "",
+              "css": "",
+              "jsBuilt": "render();\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": 0,
+              "wUnit": "px"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "sybi38fnieg5nd25yklaxe4q",
+                "adv": {
+                  "js": "<button\n  {...props}\n  style={{\n    backgroundColor:\n      type_button === \"Success\"\n        ? \"green\"\n        : type_button === \"Edit\"\n        ? \"#FFFFFF\"\n        : type_button === \"Danger\"\n        ? \"#ffffff\"\n        : type_button === \"Checkout\"\n        ? \"#159895\"\n        : type_button === \"Disabled\"\n        ? \"gray\"\n        : \"#0062A3\",\n    border:\n      type_button === \"Edit\"\n        ? \"2px solid #002B5B\"\n        : type_button === \"Danger\"\n        ? \"2px solid #870707\"\n        : \"0px\",\n    borderRadius: type_button === \"Checkout\" ? \"20px\" : \"10px\",\n    width: type_button === \"Checkout\" ? \"100px\" : \"250px\",\n  }}\n  type={type_button === \"Submit\" ? \"submit\" : \"button\"}\n  onClick={(e) => {\n    if (type_button !== \"Disabled\") {\n      if (action === \"navigate\") {\n        navigate(navigate_link);\n      } else {\n        action_function();\n      }\n    }\n  }}\n>\n  {children}\n</button>",
+                  "css": "& {\n  display: flex;\n  width: 39px;\n  min-height: 39px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"button\",{...props,style:{backgroundColor:type_button===\"Success\"?\"green\":type_button===\"Edit\"?\"#FFFFFF\":type_button===\"Danger\"?\"#ffffff\":type_button===\"Checkout\"?\"#159895\":type_button===\"Disabled\"?\"gray\":\"#0062A3\",border:type_button===\"Edit\"?\"2px solid #002B5B\":type_button===\"Danger\"?\"2px solid #870707\":\"0px\",borderRadius:type_button===\"Checkout\"?\"20px\":\"10px\",width:type_button===\"Checkout\"?\"100px\":\"250px\"},type:type_button===\"Submit\"?\"submit\":\"button\",onClick:t=>{type_button!==\"Disabled\"&&(action===\"navigate\"?navigate(navigate_link):action_function())}},children));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "inside",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "b182mycrwffz7gzuhtbf2ywn",
+                    "adv": {
+                      "js": "<div\n  {...props}\n  style={{\n    color:\n      type_button === \"Edit\"\n        ? \"#002B5B\"\n        : type_button === \"Danger\"\n        ? \"#870707\"\n        : \"white\",\n  }}\n>\n  {label_button}\n</div>",
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:type_button===\"Edit\"?\"#002B5B\":type_button===\"Danger\"?\"#870707\":\"white\"}},label_button));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "html": "Login",
+                    "name": "text_button",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 16,
+                        "color": "",
+                        "family": "Poppins",
+                        "height": "auto"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#0062A3"
+                  },
+                  "dim": {
+                    "h": 39,
+                    "w": 250
+                  },
+                  "font": {
+                    "size": 15,
+                    "height": "auto"
+                  },
+                  "border": {
+                    "color": "",
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 0,
+                      "br": 0,
+                      "tl": 0,
+                      "tr": 0
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "linktag": {
+                    "link": ""
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "left"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 0,
+                  "br": 0,
+                  "tl": 0,
+                  "tr": 0
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "linktag": {
+                "link": ""
+              }
+            },
+            "component": {
+              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+              "name": "button",
+              "group": {
+                "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                "name": "All"
+              },
+              "props": {
+                "width": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"250px\"",
+                  "valueBuilt": "\"250px\";\n"
+                },
+                "action": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"navigate\"",
+                  "valueBuilt": "\"navigate\";\n"
+                },
+                "type_button": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Submit\"",
+                  "valueBuilt": "\"Submit\";\n"
+                },
+                "label_button": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Gunakan Filter\"",
+                  "valueBuilt": "\"Gunakan Filter\";\n"
+                },
+                "width_button": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"150px\"",
+                  "valueBuilt": "\"150px\";\n"
+                },
+                "navigate_link": {
+                  "idx": 3,
+                  "meta": {
+                    "oldName": "navigate"
+                  },
+                  "type": "string",
+                  "value": "\"/login\"",
+                  "valueBuilt": "\"/login\";\n"
+                },
+                "action_function": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop_1"
+                  },
+                  "type": "() => void",
+                  "value": "() => {}",
+                  "valueBuilt": "()=>{};\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "lqjsu0t2ao7ygs61bfkyg66w",
+            "adv": {
+              "js": "",
+              "css": "",
+              "jsBuilt": "render();\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": 0,
+              "wUnit": "px"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "refgqm3f5jclk6hsvon3y5sy",
+                "adv": {
+                  "js": "<button\n  {...props}\n  style={{\n    backgroundColor:\n      type_button === \"Success\"\n        ? \"green\"\n        : type_button === \"Edit\"\n        ? \"#FFFFFF\"\n        : type_button === \"Danger\"\n        ? \"#ffffff\"\n        : type_button === \"Checkout\"\n        ? \"#159895\"\n        : type_button === \"Disabled\"\n        ? \"gray\"\n        : \"#0062A3\",\n    border:\n      type_button === \"Edit\"\n        ? \"2px solid #002B5B\"\n        : type_button === \"Danger\"\n        ? \"2px solid #870707\"\n        : \"0px\",\n    borderRadius: type_button === \"Checkout\" ? \"20px\" : \"10px\",\n    width: type_button === \"Checkout\" ? \"100px\" : \"250px\",\n  }}\n  type={type_button === \"Submit\" ? \"submit\" : \"button\"}\n  onClick={(e) => {\n    if (type_button !== \"Disabled\") {\n      if (action === \"navigate\") {\n        navigate(navigate_link);\n      } else {\n        action_function();\n      }\n    }\n  }}\n>\n  {children}\n</button>",
+                  "css": "& {\n  display: flex;\n  width: 39px;\n  min-height: 39px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"button\",{...props,style:{backgroundColor:type_button===\"Success\"?\"green\":type_button===\"Edit\"?\"#FFFFFF\":type_button===\"Danger\"?\"#ffffff\":type_button===\"Checkout\"?\"#159895\":type_button===\"Disabled\"?\"gray\":\"#0062A3\",border:type_button===\"Edit\"?\"2px solid #002B5B\":type_button===\"Danger\"?\"2px solid #870707\":\"0px\",borderRadius:type_button===\"Checkout\"?\"20px\":\"10px\",width:type_button===\"Checkout\"?\"100px\":\"250px\"},type:type_button===\"Submit\"?\"submit\":\"button\",onClick:t=>{type_button!==\"Disabled\"&&(action===\"navigate\"?navigate(navigate_link):action_function())}},children));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "inside",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "yjjznchzsgvcwa3g46eyzhy0",
+                    "adv": {
+                      "js": "<div\n  {...props}\n  style={{\n    color:\n      type_button === \"Edit\"\n        ? \"#002B5B\"\n        : type_button === \"Danger\"\n        ? \"#870707\"\n        : \"white\",\n  }}\n>\n  {label_button}\n</div>",
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:type_button===\"Edit\"?\"#002B5B\":type_button===\"Danger\"?\"#870707\":\"white\"}},label_button));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "html": "Login",
+                    "name": "text_button",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 16,
+                        "color": "",
+                        "family": "Poppins",
+                        "height": "auto"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#0062A3"
+                  },
+                  "dim": {
+                    "h": 39,
+                    "w": 250
+                  },
+                  "font": {
+                    "size": 15,
+                    "height": "auto"
+                  },
+                  "border": {
+                    "color": "",
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 0,
+                      "br": 0,
+                      "tl": 0,
+                      "tr": 0
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "linktag": {
+                    "link": ""
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "left"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 0,
+                  "br": 0,
+                  "tl": 0,
+                  "tr": 0
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "linktag": {
+                "link": ""
+              }
+            },
+            "component": {
+              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+              "name": "button",
+              "group": {
+                "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                "name": "All"
+              },
+              "props": {
+                "width": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"250px\"",
+                  "valueBuilt": "\"250px\";\n"
+                },
+                "action": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"function\"",
+                  "valueBuilt": "\"function\";\n"
+                },
+                "type_button": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Edit\"",
+                  "valueBuilt": "\"Edit\";\n"
+                },
+                "label_button": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Hapus Filter\"",
+                  "valueBuilt": "\"Hapus Filter\";\n"
+                },
+                "width_button": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"150px\"",
+                  "valueBuilt": "\"150px\";\n"
+                },
+                "navigate_link": {
+                  "idx": 3,
+                  "meta": {
+                    "oldName": "navigate"
+                  },
+                  "type": "string",
+                  "value": "\"/login\"",
+                  "valueBuilt": "\"/login\";\n"
+                },
+                "action_function": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop_1"
+                  },
+                  "type": "() => void",
+                  "value": "() => {\n  local.filter.map((item) => {\n    item.value = null\n    local.showSidebar = false\n    local.render()\n  })\n}",
+                  "valueBuilt": "()=>{local.filter.map(l=>{l.value=null,local.showSidebar=!1,local.render()})};\n"
+                }
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 10,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ],
+    "hidden": false,
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": "#FFFFFF"
+      },
+      "dim": {
+        "h": "full",
+        "w": "fit",
+        "hUnit": "px",
+        "wUnit": "%"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "tr": 0
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 10,
+        "wrap": "flex-nowrap",
+        "align": "top-center"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "02f33338-d088-4e9e-b6c0-8e9170649c08",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "open_key": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"\"",
+          "valueBuilt": "\"\";\n"
+        },
+        "bind_form": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "any",
+          "value": "local",
+          "valueBuilt": " local;\n"
+        },
+        "filter_key": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"\"",
+          "valueBuilt": "\"\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-05T04:28:01.187Z",
+  "updated_at": "2023-09-05T08:36:28.970Z",
+  "type": "item",
+  "id_component_group": "947acf75-2762-49ab-878c-2e82fabf2577",
+  "props": []
+}

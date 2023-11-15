@@ -1,0 +1,222 @@
+{
+  "id": "80f823d6-2b1b-4fbb-99df-2626c8abeffd",
+  "name": "Assignment Item",
+  "content_tree": {
+    "id": "a3hfsdynzrro479w0zi8lb9w",
+    "adv": {
+      "js": "",
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px 2px #E7E7E7;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "Assignment Item",
+    "type": "item",
+    "childs": [
+      {
+        "id": "mcmg5gpk7y9ijkpmkcz5wcjq",
+        "adv": {
+          "js": "<div {...props}>{children}</div>",
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n<circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\"/>\r\n<path d=\"M22.8415 9.16669H17.3255C16.105 9.16669 15.1074 10.0767 15.1074 11.2034V12.2217C15.1074 13.3484 16.0933 14.2584 17.3138 14.2584H22.8415C24.0621 14.2584 25.0479 13.3484 25.0479 12.2217V11.2034C25.0596 10.0767 24.0621 9.16669 22.8415 9.16669Z\" fill=\"#002B5B\"/>\r\n<path d=\"M26.2332 12.2216C26.2332 13.9441 24.7075 15.3525 22.8415 15.3525H17.3255C15.4595 15.3525 13.9338 13.9441 13.9338 12.2216C13.9338 11.615 13.2296 11.2358 12.6428 11.5175C11.8022 11.9307 11.0992 12.5472 10.6093 13.3011C10.1193 14.0549 9.86073 14.9175 9.86133 15.7966V25.9908C9.86133 28.6558 12.2203 30.8333 15.1074 30.8333H25.0596C27.9467 30.8333 30.3056 28.6558 30.3056 25.9908V15.7966C30.3056 13.9441 29.179 12.33 27.5242 11.5175C26.9374 11.2358 26.2332 11.615 26.2332 12.2216ZM20.5295 25.3625H15.389C14.9079 25.3625 14.5088 24.9941 14.5088 24.55C14.5088 24.1058 14.9079 23.7375 15.389 23.7375H20.5295C21.0106 23.7375 21.4097 24.1058 21.4097 24.55C21.4097 24.9941 21.0106 25.3625 20.5295 25.3625ZM23.6043 21.0291H15.389C14.9079 21.0291 14.5088 20.6608 14.5088 20.2166C14.5088 19.7725 14.9079 19.4041 15.389 19.4041H23.6043C24.0855 19.4041 24.4845 19.7725 24.4845 20.2166C24.4845 20.6608 24.0855 21.0291 23.6043 21.0291Z\" fill=\"#002B5B\"/>\r\n</svg>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "zh181zip1zyg1nr7ksf8216f",
+        "adv": {
+          "js": "<div {...props}>{children}</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "New Item",
+        "type": "item",
+        "childs": [
+          {
+            "id": "evscz33fiufhrje6y2vpxp4m",
+            "adv": {
+              "js": "<div {...props}>{title}</div>",
+              "css": "& {\r\n  display: flex;\r\n  font-weight: 600;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},title));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Assignment Project 2",
+            "name": "data",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "color": "#002B5B",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "w5dx7lyq8r00nvlb15z1m4b2",
+            "adv": {
+              "js": "<div {...props}>\r\n  <div className={cx(css`color: ${status_color};`)}>{status}</div>\r\n</div>",
+              "css": "& {\r\n  display: flex;\r\n  font-weight: bold;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(\"div\",{className:cx(css`color: ${status_color};`)},status)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Returned",
+            "name": "label_status",
+            "text": "",
+            "type": "text",
+            "childs": [],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "color": "",
+                "height": "auto"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 3,
+            "l": 0,
+            "r": 0,
+            "t": 3
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": "#ffffff"
+      },
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 10,
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 5,
+        "l": 12,
+        "r": 12,
+        "t": 5
+      }
+    },
+    "component": {
+      "id": "80f823d6-2b1b-4fbb-99df-2626c8abeffd",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "title": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"Assignment 1\"",
+          "valueBuilt": "\"Assignment 1\";\n"
+        },
+        "status": {
+          "idx": 3,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"Submitted\"",
+          "valueBuilt": "\"Submitted\";\n"
+        },
+        "status_color": {
+          "idx": 2,
+          "meta": {
+            "type": "option",
+            "oldName": "status-color",
+            "options": "[\n  {\n    label: \"GREEN\",\n    value: \"#159895\"\n  },\n  {\n    label: \"BLUE\",\n    value: \"#0062A3\"\n  },\n]"
+          },
+          "type": "option",
+          "value": "\"#159895\"",
+          "valueBuilt": "\"#159895\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-01T02:40:30.741Z",
+  "updated_at": "2023-08-28T05:48:36.486Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

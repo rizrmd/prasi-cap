@@ -1,0 +1,331 @@
+{
+  "id": "6d570290-b20e-45ec-b250-830a6ba056d3",
+  "name": "update-add-field",
+  "content_tree": {
+    "id": "c0ytzecz1fc9mwayc0zi01w1",
+    "adv": {
+      "css": ""
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "update-add-field",
+    "type": "item",
+    "childs": [
+      {
+        "id": "cp76fqqfm6rfgj5nmhs1ep6i",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "top",
+        "type": "item",
+        "childs": [
+          {
+            "id": "q378trvxnzf2ih6uiq3a27l1",
+            "adv": {
+              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Attachment",
+            "name": "label",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "family": "Poppins",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "bvwjar3e38odxnvogonhsn7q",
+            "adv": {
+              "css": "",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\r\n  <mask id=\"mask0_219_4616\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\r\n    <rect width=\"24\" height=\"24\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_219_4616)\">\r\n    <path\r\n      d=\"M11 17H13V13H17V11H13V7H11V11H7V13H11V17ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon-add",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "right"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#002B5B",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "left"
+          }
+        }
+      },
+      {
+        "id": "l0gkzwyc7b1rrxyg9f9g28uw",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "files",
+        "type": "item",
+        "childs": [
+          {
+            "id": "sisexzz24jduc4gyzwvgasjc",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "file-attachment",
+            "type": "item",
+            "childs": [
+              {
+                "id": "tuqiwqqbiqocg2o1mo80dwsz",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "pdf 01",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  }
+                }
+              },
+              {
+                "id": "xkkwy658zl0w68eadniwvr6k",
+                "adv": {
+                  "css": "",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\r\n<mask id=\"mask0_2275_6832\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\r\n<rect width=\"24\" height=\"24\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2275_6832)\">\r\n<path d=\"M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "icon",
+                "type": "item",
+                "childs": []
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#F5FCFB"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 20,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 5,
+                "l": 10,
+                "r": 10,
+                "t": 5
+              }
+            }
+          },
+          {
+            "id": "fl7uy5ttg0vrirl5g0utp687",
+            "adv": {
+              "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "file-attachment",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ghw6wduxya2wmvhovpqbw3b3",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "pdf 01",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  }
+                }
+              },
+              {
+                "id": "d7kxm0wqrkp24k9913cmp0lx",
+                "adv": {
+                  "css": "",
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\r\n<mask id=\"mask0_2275_6832\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"24\" height=\"24\">\r\n<rect width=\"24\" height=\"24\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2275_6832)\">\r\n<path d=\"M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z\" fill=\"#002B5B\"/>\r\n</g>\r\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "icon",
+                "type": "item",
+                "childs": []
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#F5FCFB"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 10,
+                  "br": 10,
+                  "tl": 10,
+                  "tr": 10
+                }
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 20,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 5,
+                "l": 10,
+                "r": 10,
+                "t": 5
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "row",
+            "gap": 20,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 5,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      }
+    },
+    "component": {
+      "id": "6d570290-b20e-45ec-b250-830a6ba056d3",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {}
+    }
+  },
+  "created_at": "2023-08-29T03:27:52.612Z",
+  "updated_at": "2023-09-05T03:58:28.008Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

@@ -1,0 +1,615 @@
+{
+  "id": "dfb40fa0-5c89-4eb6-9cfe-2d303d24c3f9",
+  "name": "ppds-work-list",
+  "url": "/ppds-senior/schedule/assignment/ppds-work",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "u5fb2whklwbjkryypmaz2xb1",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "gn4lwwbqdzi1ic8e2bsulzzg",
+            "adv": {},
+            "name": "page-title-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "icxl4rgr7u0ul6bpanrogm3u",
+                "adv": {},
+                "name": "page-title-with-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Detail Assignment\"",
+                      "valueBuilt": "\"Detail Assignment\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              },
+              {
+                "id": "ok9vj67jlwgq3fqzrylkgi02",
+                "adv": {},
+                "name": "schedule-wrapped",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "z3v3t4jh2blo60trlcvie8f9",
+                    "adv": {},
+                    "name": "text-normal",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                      "props": {
+                        "label": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Visite 12/08/2023\"",
+                          "valueBuilt": "\"Visite 12/08/2023\";\n"
+                        }
+                      },
+                      "updated_at": 1691746438931
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 19,
+                    "r": 19,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 14,
+                "r": 14,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "ffe4ogtmc8gpgu3d5079pdcd",
+            "adv": {},
+            "name": "tab-wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ltz6h8shyys5vhxpqi70sk80",
+                "adv": {},
+                "name": "tab_action_ppds",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a063b1f3-4631-4b3c-a9e4-c6df49464516",
+                  "props": {
+                    "list_tab": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "[]",
+                      "value": "[\"Detail\", \"PPDS Work\"]",
+                      "valueBuilt": "[\"Detail\",\"PPDS Work\"];\n"
+                    },
+                    "tab_active": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "tab",
+                        "options": "[\n  { \n    label: \"SENIOR PPDS\", \n    value: \"SENIOR PPDS\" \n  },\n  { \n    label: \"PPDS\", \n    value: \"PPDS\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"PPDS Work\"",
+                      "valueBuilt": "\"PPDS Work\";\n"
+                    }
+                  },
+                  "updated_at": 1691560206005
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 15,
+                "r": 15,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "yigfjbodmit65esariv6vbax",
+            "adv": {
+              "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"1000001\",\r\n          score: \"90\",\r\n          ppds: \"dr. ABCDFU\",\r\n          url: \"/ppds/assignment/assignment-details\",\r\n          status: \"Returned\",\r\n        },\r\n        {\r\n          id: \"1000002\",\r\n          score: \"-\",\r\n          ppds: \"dr. Mellisa Amirrudin\",\r\n          url: \"/ppds/assignment/assignment-details\",\r\n          status: \"Late\",\r\n        },\r\n        {\r\n          id: \"1000003\",\r\n          score: \"85\",\r\n          ppds: \"dr. Meidina Amsyarana\",\r\n          url: \"/ppds/assignment/assignment-details\",\r\n          status: \"Turned In\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"1000001\",score:\"90\",ppds:\"dr. ABCDFU\",url:\"/ppds/assignment/assignment-details\",status:\"Returned\"},{id:\"1000002\",score:\"-\",ppds:\"dr. Mellisa Amirrudin\",url:\"/ppds/assignment/assignment-details\",status:\"Late\"},{id:\"1000003\",score:\"85\",ppds:\"dr. Meidina Amsyarana\",url:\"/ppds/assignment/assignment-details\",status:\"Turned In\"}]}},children)));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-ppds-work",
+            "type": "item",
+            "childs": [
+              {
+                "id": "xcut4s6zxcf04utp8yrip0wq",
+                "adv": {
+                  "js": "<>\r\n  {local.list.map((e) => {\r\n    return (\r\n      <div {...props}>\r\n        <PassProp item={e}>{children}</PassProp>\r\n      </div>\r\n    );\r\n  })}\r\n</>",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,local.list.map(r=>React.createElement(\"div\",{...props},React.createElement(PassProp,{item:r},children)))));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "item-ppds-work",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "n403kno13rpdollvftwyigxp",
+                    "adv": {
+                      "css": "& {\r\n  display: flex;\r\n  box-shadow: 2px 2px #D9D9D9;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "ppds-work",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "sc75ov32181hihugbdj8l1ec",
+                        "adv": {
+                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n  <circle cx=\"20\" cy=\"20\" r=\"20\" fill=\"#D2DAFF\" />\r\n  <path\r\n    d=\"M22.8413 9.16663H17.3254C16.1048 9.16663 15.1072 10.0766 15.1072 11.2033V12.2216C15.1072 13.3483 16.0931 14.2583 17.3136 14.2583H22.8413C24.0619 14.2583 25.0477 13.3483 25.0477 12.2216V11.2033C25.0595 10.0766 24.0619 9.16663 22.8413 9.16663Z\"\r\n    fill=\"#002B5B\" />\r\n  <path\r\n    d=\"M26.2331 12.2216C26.2331 13.9441 24.7074 15.3525 22.8413 15.3525H17.3254C15.4593 15.3525 13.9336 13.9441 13.9336 12.2216C13.9336 11.615 13.2295 11.2358 12.6427 11.5175C11.8021 11.9307 11.0991 12.5472 10.6091 13.3011C10.1192 14.0549 9.86061 14.9175 9.86121 15.7966V25.9908C9.86121 28.6558 12.2202 30.8333 15.1072 30.8333H25.0595C27.9466 30.8333 30.3055 28.6558 30.3055 25.9908V15.7966C30.3055 13.9441 29.1788 12.33 27.5241 11.5175C26.9372 11.2358 26.2331 11.615 26.2331 12.2216ZM20.5293 25.3625H15.3889C14.9077 25.3625 14.5087 24.9941 14.5087 24.55C14.5087 24.1058 14.9077 23.7375 15.3889 23.7375H20.5293C21.0105 23.7375 21.4095 24.1058 21.4095 24.55C21.4095 24.9941 21.0105 25.3625 20.5293 25.3625ZM23.6042 21.0291H15.3889C14.9077 21.0291 14.5087 20.6608 14.5087 20.2166C14.5087 19.7725 14.9077 19.4041 15.3889 19.4041H23.6042C24.0854 19.4041 24.4844 19.7725 24.4844 20.2166C24.4844 20.6608 24.0854 21.0291 23.6042 21.0291Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "icon",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "layout": {
+                            "dir": "row",
+                            "gap": 0,
+                            "align": "top-left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      },
+                      {
+                        "id": "e7dqu6f1zqv1djziny70s7sm",
+                        "adv": {},
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "data",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "ist9uoiymzehrsuldrab578f",
+                            "adv": {},
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "name-score",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "zw7hkkyjntwf3ygmsqgovbfs",
+                                "adv": {},
+                                "name": "ppds-name",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "ib05bzfrodpdxra4y2hsivrk",
+                                    "adv": {},
+                                    "name": "text-normal",
+                                    "type": "item",
+                                    "childs": [],
+                                    "component": {
+                                      "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                                      "props": {
+                                        "label": {
+                                          "idx": 2,
+                                          "meta": {
+                                            "type": "text",
+                                            "oldName": "new_prop"
+                                          },
+                                          "type": "string",
+                                          "value": "item.ppds",
+                                          "valueBuilt": " item.ppds;\n"
+                                        },
+                                        "weight": {
+                                          "idx": 1,
+                                          "meta": {
+                                            "type": "option",
+                                            "oldName": "font_weight",
+                                            "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                                          },
+                                          "type": "string",
+                                          "value": "\"semi\"",
+                                          "valueBuilt": "\"semi\";\n"
+                                        }
+                                      },
+                                      "updated_at": 1691746438931
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full"
+                                  }
+                                },
+                                "component": {
+                                  "props": {}
+                                }
+                              },
+                              {
+                                "id": "xyfo79r53n4yqd8m98af13er",
+                                "adv": {},
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "score",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "d8knxsbofcb2z253xt0bd4ql",
+                                    "adv": {
+                                      "css": "",
+                                      "html": "<svg width=\"21\" height=\"23\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\r\n    <path fill=\"#002B5B\"\r\n        d=\"M10.6 16.05L17.65 9l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM3 21V3h6.2q.325-.9 1.088-1.45T12 1q.95 0 1.713.55T14.8 3H21v18H3Zm2-2h14V5H5v14Zm7-14.75q.325 0 .537-.213t.213-.537q0-.325-.213-.537T12 2.75q-.325 0-.537.213t-.213.537q0 .325.213.537T12 4.25ZM5 19V5v14Z\" />\r\n</svg>"
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "icon",
+                                    "type": "item",
+                                    "childs": [],
+                                    "component": {
+                                      "props": {}
+                                    }
+                                  },
+                                  {
+                                    "id": "syss5f4zeronkpnfcrmgureg",
+                                    "adv": {},
+                                    "name": "score",
+                                    "type": "item",
+                                    "childs": [
+                                      {
+                                        "id": "rcpjtj2ufhk8hn18q4rod36d",
+                                        "adv": {},
+                                        "name": "text-normal",
+                                        "type": "item",
+                                        "childs": [],
+                                        "component": {
+                                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                                          "props": {
+                                            "label": {
+                                              "idx": 2,
+                                              "meta": {
+                                                "type": "text",
+                                                "oldName": "new_prop"
+                                              },
+                                              "type": "string",
+                                              "value": "item.score",
+                                              "valueBuilt": " item.score;\n"
+                                            }
+                                          },
+                                          "updated_at": 1691746438931
+                                        }
+                                      }
+                                    ],
+                                    "mobile": {
+                                      "layout": {
+                                        "dir": "col",
+                                        "gap": 0,
+                                        "align": "top-right"
+                                      }
+                                    },
+                                    "component": {
+                                      "props": {}
+                                    }
+                                  },
+                                  {
+                                    "id": "kve3pwhfg95uyaou5a9suwua",
+                                    "adv": {},
+                                    "name": "max-score",
+                                    "type": "item",
+                                    "childs": [
+                                      {
+                                        "id": "rsq1k19iey655a2f6s7nbgji",
+                                        "adv": {},
+                                        "name": "text-normal",
+                                        "type": "item",
+                                        "childs": [],
+                                        "component": {
+                                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                                          "props": {
+                                            "label": {
+                                              "idx": 2,
+                                              "meta": {
+                                                "type": "text",
+                                                "oldName": "new_prop"
+                                              },
+                                              "type": "string",
+                                              "value": "\"/100\"",
+                                              "valueBuilt": "\"/100\";\n"
+                                            }
+                                          },
+                                          "updated_at": 1691746438931
+                                        }
+                                      }
+                                    ],
+                                    "component": {
+                                      "props": {}
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full"
+                                  },
+                                  "layout": {
+                                    "dir": "row",
+                                    "gap": 0,
+                                    "align": "top-right"
+                                  }
+                                },
+                                "component": {
+                                  "props": {}
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full"
+                              },
+                              "layout": {
+                                "dir": "row",
+                                "gap": 0,
+                                "align": "left"
+                              }
+                            },
+                            "component": {
+                              "props": {}
+                            }
+                          },
+                          {
+                            "id": "em3u1jrejbz79oyend18ulbs",
+                            "adv": {},
+                            "name": "status-wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "ja96sr4z9kqcxk9gez77fwq9",
+                                "adv": {},
+                                "name": "text-normal",
+                                "type": "item",
+                                "childs": [],
+                                "component": {
+                                  "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                                  "props": {
+                                    "label": {
+                                      "idx": 2,
+                                      "meta": {
+                                        "type": "text",
+                                        "oldName": "new_prop"
+                                      },
+                                      "type": "string",
+                                      "value": "item.status",
+                                      "valueBuilt": " item.status;\n"
+                                    }
+                                  },
+                                  "updated_at": 1691746438931
+                                }
+                              }
+                            ],
+                            "component": {}
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 4,
+                            "align": "top-left"
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 20,
+                          "br": 20,
+                          "tl": 20,
+                          "tr": 20
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 11,
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 13,
+                        "l": 9,
+                        "r": 9,
+                        "t": 13
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 8,
+                    "r": 8,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 9,
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 0,
+                "l": 4,
+                "r": 4,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 5,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 8,
+            "l": 0,
+            "r": 0,
+            "t": 8
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "ogp6qzi83mbghuugwxvojvro",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "o87rs3xd0sbui6wsa0yjkuoh",
+            "name": "menu-senior-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dea9302f-d473-48f1-9da8-a6897bb3e999",
+              "props": {},
+              "updated_at": 1691996254641
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-14T06:13:25.109Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-14T09:04:42.568Z",
+  "id_folder": "82c80820-4fea-40ed-bc05-e79d820106b7",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

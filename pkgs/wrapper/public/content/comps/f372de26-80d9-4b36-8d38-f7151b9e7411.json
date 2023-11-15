@@ -1,0 +1,253 @@
+{
+  "id": "f372de26-80d9-4b36-8d38-f7151b9e7411",
+  "name": "khs-staff-pengajar",
+  "content_tree": {
+    "id": "ombhk00ah71kqg5w4qirj7nk",
+    "adv": {
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "khs-staff-pengajar",
+    "type": "item",
+    "childs": [
+      {
+        "id": "q6ls7t0r910b79np477ylqdb",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "detail",
+        "type": "item",
+        "childs": [
+          {
+            "id": "qxd0q4t2gg6z9zse1xdpa1by",
+            "adv": {
+              "js": "<div {...props}>{subject}</div>",
+              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},subject));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "Perioperatif",
+            "name": "subject",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "feupez5of8j0t2qi257jnu4o",
+            "adv": {
+              "js": "<div {...props}>{credits}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},credits));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "3 SKS",
+            "name": "credits",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#002B5B",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 3,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      },
+      {
+        "id": "imb1g2uebbctljky5czjkfn0",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "gpa",
+        "type": "item",
+        "childs": [
+          {
+            "id": "q9kvoehkcvjwslvxl09btc3h",
+            "adv": {
+              "js": "<div {...props}>{gpa}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},gpa));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "4.0",
+            "name": "gpa",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#1A5F7A"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "color": "#ffffff",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 10,
+              "br": 10,
+              "tl": 10,
+              "tr": 10
+            }
+          },
+          "padding": {
+            "b": 0,
+            "l": 15,
+            "r": 15,
+            "t": 0
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 10,
+        "l": 15,
+        "r": 15,
+        "t": 10
+      }
+    },
+    "component": {
+      "id": "f372de26-80d9-4b36-8d38-f7151b9e7411",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "gpa": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"4.0\"",
+          "valueBuilt": "\"4.0\";\n"
+        },
+        "credits": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"SKS\"",
+          "valueBuilt": "\"SKS\";\n"
+        },
+        "subject": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"subjectnya\"",
+          "valueBuilt": "\"subjectnya\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-29T09:11:54.045Z",
+  "updated_at": "2023-08-29T09:13:32.426Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

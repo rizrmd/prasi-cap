@@ -1,0 +1,780 @@
+{
+  "id": "c6fab58d-6c83-4704-874a-3de2d5723336",
+  "name": "list-bimbingan-operasi [Cloned]",
+  "url": "/ppds/all/activity/bimbingan/list-cloned",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "bqk4zfainyvmb5g2c1pv7j4t",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ak8o0glmqt506ul11i7k8v47",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "i7nr6gg2ffelirw20tqso6o3",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/ppds/home\"",
+                      "valueBuilt": "\"/ppds/home\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Bimbingan Operasi\"",
+                      "valueBuilt": "\"Bimbingan Operasi\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            }
+          },
+          {
+            "id": "yivznlio1nmbv5qxfrtwmztk",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "fm4m64hpazg8qd08y68qexzj",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "fnenem68ejswv3oexqqss03e",
+                    "adv": {
+                      "js": "<div {...props}>\n  <Local\n    name=\"data\"\n    value={{\n      //local object\n      ready: false,\n      list: [],\n    }}\n    effect={async (local) => {\n      const query = async (filter: any) => {\n        if (filter && Object.keys(filter).length > 0) {\n          local.ready = false;\n          local.render();\n        }\n\n        if (isEditor) {\n          try {\n            if (mode === \"sample\") {\n              local.list = await sample(filter);\n            } else {\n              local.list = await load(filter);\n            }\n          } catch (e) {}\n          local.render();\n        } else {\n          try {\n            local.list = await load(filter);\n            if (local.list === null) {\n              try {\n                local.list = await sample(filter);\n              } catch (e) {}\n            }\n          } catch (e) {\n            console.log(e);\n          }\n\n          local.ready = true;\n          local.render();\n        }\n      };\n\n      if (!(window as any).filterForm) {\n        (window as any).filterForm = {};\n      }\n      if (!(window as any).filterForm[location.pathname]) {\n        (window as any).filterForm[location.pathname] = {};\n      }\n\n      const f = (window as any).filterForm[location.pathname];\n      if (!f[id_filter]) {\n        f[id_filter] = {\n          filter: {},\n          query: query,\n        };\n      }\n\n      if (f[id_filter]) {\n        f[id_filter].query = query;\n      }\n\n      await query(f[id_filter].filter);\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"data\",value:{ready:!1,list:[]},effect:async e=>{let t=async i=>{if(i&&Object.keys(i).length>0&&(e.ready=!1,e.render()),isEditor){try{mode===\"sample\"?e.list=await sample(i):e.list=await load(i)}catch{}e.render()}else{try{if(e.list=await load(i),e.list===null)try{e.list=await sample(i)}catch{}}catch(r){console.log(r)}e.ready=!0,e.render()}};window.filterForm||(window.filterForm={}),window.filterForm[location.pathname]||(window.filterForm[location.pathname]={});let a=window.filterForm[location.pathname];a[id_filter]||(a[id_filter]={filter:{},query:t}),a[id_filter]&&(a[id_filter].query=t),await t(a[id_filter].filter)}},children)));\n"
+                    },
+                    "name": "local",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "i1sbbm2ovww35vs1fcagiky8",
+                        "adv": {
+                          "js": "<>\n  {debug === \"y\" && <div {...props}>{JSON.stringify(data.list, null, 2)}</div>}\n</>",
+                          "css": "& {\n  display: flex;\n  white-space: pre;\n  font-size: 13px;\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(React.Fragment,null,debug===\"y\"&&React.createElement(\"div\",{...props},JSON.stringify(data.list,null,2))));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "debug",
+                        "type": "item",
+                        "childs": []
+                      },
+                      {
+                        "id": "u45og3ps2adbeq58uc1k0pvs",
+                        "adv": {
+                          "js": "<>\n  {((isEditor && preview === \"loading\") || (!isEditor && !data.ready)) && (\n    <div {...props}>{loading}</div>\n  )}\n</>",
+                          "css": "& {\n  display: flex;\n  position: sticky;\n  left: 0px;\n  top: 0px;\n  right: 0px;\n\n  .shine {\n    background: #f6f7f8;\n    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);\n    background-repeat: no-repeat;\n    background-size: 800px 104px;\n    display: inline-block;\n    position: relative;\n\n    animation-duration: 2s;\n    animation-fill-mode: forwards;\n    animation-iteration-count: infinite;\n    animation-name: placeholderShimmer;\n    animation-timing-function: linear;\n  }\n\n  @keyframes placeholderShimmer {\n    0% {\n      background-position: -468px 0;\n    }\n\n    100% {\n      background-position: 468px 0;\n    }\n  }\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(React.Fragment,null,(isEditor&&preview===\"loading\"||!isEditor&&!data.ready)&&React.createElement(\"div\",{...props},loading)));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "loading",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          }
+                        }
+                      },
+                      {
+                        "id": "n819xxpm4mivqbt3hfpl1h0q",
+                        "adv": {
+                          "js": "<div\n  {...props}\n  className={cx(\n    props.className,\n    css`\n/** Custom CSS **/\nopacity: ${\n      (isEditor && preview === \"ready\") || (!isEditor && data.ready) ? 1 : 0\n    };\n`\n  )}\n>\n  {children}\n</div>",
+                          "css": "",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props,className:cx(props.className,css`\n/** Custom CSS **/\nopacity: ${isEditor&&preview===\"ready\"||!isEditor&&data.ready?1:0};\n`)},children));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "ready",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "lejlwhpbr6ko3to2q7appx74",
+                            "adv": {
+                              "js": "<> {ready_header}</>",
+                              "css": "",
+                              "jsBuilt": "render(React.createElement(React.Fragment,null,\" \",ready_header));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "header",
+                            "type": "item",
+                            "childs": []
+                          },
+                          {
+                            "id": "dgxafns19gzq8dy18dmcmhf7",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "b5iyfkbjzux4q9wfnl1g8bam",
+                                "adv": {
+                                  "js": "<div {...props}>\n  {(data.list || []).map((item, idx) => (\n    <PassProp item={item} key={idx}>\n      {ready_item}\n    </PassProp>\n  ))}\n</div>",
+                                  "css": "",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props},(data.list||[]).map((a,e)=>React.createElement(PassProp,{item:a,key:e},ready_item))));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "item",
+                                "type": "item",
+                                "childs": [],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full"
+                                  },
+                                  "layout": {
+                                    "dir": "col",
+                                    "gap": 0,
+                                    "wrap": "flex-nowrap",
+                                    "align": "top-left"
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "full",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              }
+                            }
+                          },
+                          {
+                            "id": "vi7lrj09t6qsw64frjysy3da",
+                            "adv": {
+                              "js": "<div {...props}>{ready_footer}</div>",
+                              "css": "",
+                              "jsBuilt": "render(React.createElement(\"div\",{...props},ready_footer));\n"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "footer",
+                            "type": "item",
+                            "childs": []
+                          }
+                        ],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "center"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full",
+                        "hUnit": "px",
+                        "wUnit": "px"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-nowrap",
+                        "align": "center"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "dim": {
+                    "h": "full",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "center"
+                  }
+                },
+                "component": {
+                  "id": "6b17438d-778a-4f32-a72d-554692783af7",
+                  "group": {
+                    "id": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc"
+                  },
+                  "props": {
+                    "load": {
+                      "idx": 11,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "(filter:any) => Promise<any[]>",
+                      "value": "async () => {\n  let data = await db.v_bimbingan_ops.findMany({});\n  return data.map((item) => {\n    return {\n      id: item.id,\n    };\n  });\n}",
+                      "valueBuilt": " async()=>(await db.v_bimbingan_ops.findMany({})).map(a=>({id:a.id}));\n"
+                    },
+                    "mode": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"sample\",\n    value: \"sample\"\n  },\n  {\n    label: \"load\",\n    value: \"load\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"load\"",
+                      "valueBuilt": "\"load\";\n"
+                    },
+                    "debug": {
+                      "idx": 13,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"y\"",
+                      "valueBuilt": "\"y\";\n"
+                    },
+                    "sample": {
+                      "idx": 12,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "(filter:any) => Promise<any[]>",
+                      "value": "async (filter) => {\n  return [{ id: 1 }, { id: 2 }];\n}",
+                      "valueBuilt": " async r=>[{id:1},{id:2}];\n"
+                    },
+                    "loading": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "k97n3id9gttv3o3delmgxoki",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "loading",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "c0zq8q73yhklbwv3i4y631wd"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "preview": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"Ready\",\n    value: \"ready\"\n  },\n  {\n    label: \"Loading\",\n    value: \"loading\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"ready\"",
+                      "valueBuilt": "\"ready\";\n"
+                    },
+                    "id_filter": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"filter-1\"",
+                      "valueBuilt": "\"filter-1\";\n"
+                    },
+                    "ready_item": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "nkwcx3qtyf63hv2hshxsiagd",
+                        "adv": {
+                          "css": "",
+                          "html": ""
+                        },
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "ready_item",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "mqq4px4pa7c3b37raihgjp11",
+                            "name": "Wrapped",
+                            "type": "item",
+                            "childs": [
+                              {
+                                "id": "vn9z2wgs1qajvxwtiajr8d39",
+                                "adv": {
+                                  "js": "<div\n  {...props}\n  onClick={() => {\n    if (item.url !== undefined) {\n      navigate(item.url);\n    }\n  }}\n>\n  {children}\n</div>",
+                                  "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                                  "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:()=>{item.url!==void 0&&navigate(item.url)}},children));\n"
+                                },
+                                "dim": {
+                                  "h": "fit",
+                                  "w": "fit"
+                                },
+                                "name": "item",
+                                "type": "item",
+                                "childs": [
+                                  {
+                                    "id": "dmwyu4wy48vb2qlq0w3zxzjq",
+                                    "adv": {
+                                      "js": ""
+                                    },
+                                    "dim": {
+                                      "h": "fit",
+                                      "w": "fit"
+                                    },
+                                    "name": "text",
+                                    "type": "item",
+                                    "childs": [
+                                      {
+                                        "id": "xlz0ooiecneny7tct9gu5gl0",
+                                        "adv": {
+                                          "js": "<div {...props}>{item.id}</div>",
+                                          "css": "& {\n  display: flex;\n  font-weight: 450;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                                          "jsBuilt": "render(React.createElement(\"div\",{...props},item.id));\n"
+                                        },
+                                        "dim": {
+                                          "h": "fit",
+                                          "w": "full"
+                                        },
+                                        "html": "PPDS Senior",
+                                        "name": "name",
+                                        "text": "",
+                                        "type": "text",
+                                        "childs": [],
+                                        "layout": {
+                                          "dir": "col",
+                                          "gap": 0,
+                                          "align": "center"
+                                        },
+                                        "mobile": {
+                                          "dim": {
+                                            "h": "fit",
+                                            "w": "full"
+                                          },
+                                          "font": {
+                                            "size": 16,
+                                            "height": "auto"
+                                          },
+                                          "layout": {
+                                            "dir": "col",
+                                            "gap": 0,
+                                            "align": "left"
+                                          },
+                                          "padding": {
+                                            "b": 0,
+                                            "l": 10,
+                                            "r": 10,
+                                            "t": 0
+                                          }
+                                        },
+                                        "component": {
+                                          "props": {}
+                                        }
+                                      },
+                                      {
+                                        "id": "ac243ji7o3ndoifd24z0m16e",
+                                        "adv": {
+                                          "js": "<div {...props}>\r\n  {item.quantity}\r\n</div>",
+                                          "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\r\n  font-weight: 500;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+                                          "jsBuilt": "render(React.createElement(\"div\",{...props},item.quantity));\n"
+                                        },
+                                        "dim": {
+                                          "h": "fit",
+                                          "w": "full"
+                                        },
+                                        "html": "10",
+                                        "name": "quantity",
+                                        "text": "",
+                                        "type": "text",
+                                        "childs": [],
+                                        "layout": {
+                                          "dir": "col",
+                                          "gap": 0,
+                                          "align": "center"
+                                        },
+                                        "mobile": {
+                                          "bg": {
+                                            "pos": "center",
+                                            "size": "cover",
+                                            "color": "#E6EFF6"
+                                          },
+                                          "dim": {
+                                            "h": "fit",
+                                            "w": "fit"
+                                          },
+                                          "font": {
+                                            "size": 14,
+                                            "color": "#000000",
+                                            "family": "Poppins",
+                                            "height": "auto"
+                                          },
+                                          "border": {
+                                            "style": "solid",
+                                            "rounded": {
+                                              "bl": 6,
+                                              "br": 6,
+                                              "tl": 6,
+                                              "tr": 6
+                                            }
+                                          },
+                                          "layout": {
+                                            "dir": "col",
+                                            "gap": 0,
+                                            "align": "center"
+                                          },
+                                          "padding": {
+                                            "b": 1,
+                                            "l": 8,
+                                            "r": 8,
+                                            "t": 1
+                                          }
+                                        },
+                                        "component": {
+                                          "props": {}
+                                        }
+                                      },
+                                      {
+                                        "id": "tapr8rb3s5dl1p21le25v5s9",
+                                        "adv": {
+                                          "css": "& {\n  display: flex;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n  font-weight: 500;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                                          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\">\r\n<mask id=\"mask0_2499_4691\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"19\" height=\"19\">\r\n<rect width=\"19\" height=\"19\" fill=\"#D9D9D9\"/>\r\n</mask>\r\n<g mask=\"url(#mask0_2499_4691)\">\r\n<path d=\"M8.70898 12.6665H10.2923V9.38109L11.559 10.628L12.6871 9.49984L9.50065 6.33317L6.33398 9.49984L7.46211 10.6082L8.70898 9.3613V12.6665ZM3.16732 15.8332C2.7319 15.8332 2.35916 15.6781 2.04909 15.3681C1.73902 15.058 1.58398 14.6853 1.58398 14.2498V4.74984C1.58398 4.31442 1.73902 3.94168 2.04909 3.63161C2.35916 3.32154 2.7319 3.1665 3.16732 3.1665H15.834C16.2694 3.1665 16.6421 3.32154 16.9522 3.63161C17.2623 3.94168 17.4173 4.31442 17.4173 4.74984V14.2498C17.4173 14.6853 17.2623 15.058 16.9522 15.3681C16.6421 15.6781 16.2694 15.8332 15.834 15.8332H3.16732ZM3.16732 14.2498H15.834V4.74984H3.16732V14.2498Z\" fill=\"#06610F\"/>\r\n</g>\r\n</svg>"
+                                        },
+                                        "dim": {
+                                          "h": "fit",
+                                          "w": "fit"
+                                        },
+                                        "name": "status-verified",
+                                        "type": "item",
+                                        "childs": [],
+                                        "mobile": {
+                                          "bg": {
+                                            "pos": "center",
+                                            "size": "cover",
+                                            "color": "#E6EFF6"
+                                          },
+                                          "border": {
+                                            "style": "solid",
+                                            "rounded": {
+                                              "bl": 6,
+                                              "br": 6,
+                                              "tl": 6,
+                                              "tr": 6
+                                            }
+                                          },
+                                          "padding": {
+                                            "b": 1,
+                                            "l": 5,
+                                            "r": 5,
+                                            "t": 1
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "mobile": {
+                                      "dim": {
+                                        "h": "fit",
+                                        "w": "full"
+                                      },
+                                      "font": {
+                                        "size": 15,
+                                        "color": "#002B5B",
+                                        "family": "Poppins",
+                                        "height": "auto"
+                                      },
+                                      "layout": {
+                                        "dir": "row",
+                                        "gap": 15,
+                                        "align": "left"
+                                      },
+                                      "padding": {
+                                        "b": 7,
+                                        "l": 14,
+                                        "r": 14,
+                                        "t": 7
+                                      }
+                                    },
+                                    "component": {
+                                      "props": {}
+                                    }
+                                  }
+                                ],
+                                "mobile": {
+                                  "dim": {
+                                    "h": "fit",
+                                    "w": "full"
+                                  },
+                                  "border": {
+                                    "style": "solid",
+                                    "rounded": {
+                                      "bl": 8,
+                                      "br": 8,
+                                      "tl": 8,
+                                      "tr": 8
+                                    }
+                                  },
+                                  "layout": {
+                                    "dir": "row",
+                                    "gap": 0,
+                                    "align": "left"
+                                  },
+                                  "padding": {
+                                    "b": 0,
+                                    "l": 0,
+                                    "r": 0,
+                                    "t": 0
+                                  }
+                                }
+                              }
+                            ],
+                            "mobile": {
+                              "dim": {
+                                "h": "fit",
+                                "w": "full",
+                                "hUnit": "px",
+                                "wUnit": "px"
+                              },
+                              "layout": {
+                                "dir": "col",
+                                "gap": 0,
+                                "wrap": "flex-nowrap",
+                                "align": "top-left"
+                              },
+                              "padding": {
+                                "b": 0,
+                                "l": 20,
+                                "r": 20,
+                                "t": 0
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "wrap": "flex-nowrap",
+                            "align": "top-center"
+                          },
+                          "padding": {
+                            "b": 10,
+                            "l": 0,
+                            "r": 0,
+                            "t": 10
+                          }
+                        },
+                        "parentInstanceId": "c0zq8q73yhklbwv3i4y631wd"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "ready_footer": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "usg58rshcqjxmucouw79518d",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "ready_footer",
+                        "type": "item",
+                        "childs": [],
+                        "parentInstanceId": "c0zq8q73yhklbwv3i4y631wd"
+                      },
+                      "valueBuilt": "\"hello\""
+                    },
+                    "ready_header": {
+                      "idx": 0,
+                      "meta": {
+                        "type": "content-element"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"hello\"",
+                      "content": {
+                        "id": "qefpg2u5pbj5grhfuaknvo5i",
+                        "dim": {
+                          "h": "full",
+                          "w": "full"
+                        },
+                        "name": "ready_header",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          }
+                        },
+                        "parentInstanceId": "c0zq8q73yhklbwv3i4y631wd"
+                      },
+                      "valueBuilt": "\"hello\""
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 20,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              },
+              "padding": {
+                "b": 12,
+                "l": 0,
+                "r": 0,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "idqkf10msdgqfn0r271ltfkh",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "cl4w7z4ld67vxh0iorcy7cqz",
+                "name": "menu-ppds",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "dbff71a3-2123-4f33-b9b6-7155d4418522",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-18T03:48:25.743Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-14T02:24:00.176Z",
+  "id_folder": "cff9e076-42f3-42e1-b8f6-eb8dc144aea2",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

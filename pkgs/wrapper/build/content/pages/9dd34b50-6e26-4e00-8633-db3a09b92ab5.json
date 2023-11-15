@@ -1,0 +1,473 @@
+{
+  "id": "9dd34b50-6e26-4e00-8633-db3a09b92ab5",
+  "name": "edit-schedule",
+  "url": "/ppds-senior/schedule/edit",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "bxbqmfuf19abpp0y44k80h4g",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "page-content",
+        "type": "section",
+        "childs": [
+          {
+            "id": "er3ctdrzcjsz30h4k3izxq0t",
+            "adv": {},
+            "name": "title",
+            "type": "item",
+            "childs": [
+              {
+                "id": "vfjpzcg36idi5a2fel73q2b2",
+                "adv": {},
+                "name": "page-title-with-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Edit Schedule\"",
+                      "valueBuilt": "\"Edit Schedule\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 15,
+                "r": 15,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "himyqdp68e9c0mthrefo7cz1",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "form",
+            "type": "item",
+            "childs": [
+              {
+                "id": "g9zm0cflv8gctnxntjtjht7m",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {},
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "yke3zog4mdwhco80qsyclwvf",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "hls16y8jh99qmms3b636wmlb",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Activity Type\"",
+                      "valueBuilt": "\"Activity Type\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"dropdown\"",
+                      "valueBuilt": "\"dropdown\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "ca57k5kf3cf7qu6hg0u2i68a",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Reminder\"",
+                      "valueBuilt": "\"Reminder\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"toggle\"",
+                      "valueBuilt": "\"toggle\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "pcw8pbvfqiw4wk1ys8y0qj6n",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "add-participants",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "y1yukudnip06t8evrn2z1bw4",
+                    "name": "low-level-sub-menu-with-icon",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "20ec8e4e-3204-40ff-bc03-a4656c51a7b1",
+                      "props": {
+                        "icon_props": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"edit\",\n    value: \"edit\"\n  },\n  {\n    label: \"add\",\n    value: \"add\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"add\"",
+                          "valueBuilt": "\"add\";\n"
+                        },
+                        "sub_menu_name": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Add Participants\"",
+                          "valueBuilt": "\"Add Participants\";\n"
+                        }
+                      },
+                      "updated_at": 1692081133413
+                    }
+                  },
+                  {
+                    "id": "mtcrik7b5qd5vpv7k4yz6df7",
+                    "adv": {},
+                    "name": "text-wrapped",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "wui9zwimyjavx3so5uxyxime",
+                        "adv": {},
+                        "name": "text-normal",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                          "props": {},
+                          "updated_at": 1691746438931
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 53,
+                        "r": 53,
+                        "t": 0
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "pn4v5l6fhirxugt12rmykkf2",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Reminder Date\"",
+                      "valueBuilt": "\"Reminder Date\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"datetime\"",
+                      "valueBuilt": "\"datetime\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "dsiqxp542pbyuxfj4ppj41r8",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Start Time\"",
+                      "valueBuilt": "\"Start Time\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"datetime\"",
+                      "valueBuilt": "\"datetime\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              },
+              {
+                "id": "tqf5alt9isac0ct7g0wvi4iu",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"End Time\"",
+                      "valueBuilt": "\"End Time\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Location\"",
+                      "valueBuilt": "\"Location\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"datetime\"",
+                      "valueBuilt": "\"datetime\";\n"
+                    }
+                  },
+                  "updated_at": 1692086694043
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 13,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "z3knsjegd9j6ep3cpk3tg1cm",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "yyvrzq4r2r2cs00wachgi4on",
+            "adv": {},
+            "name": "menu-senior-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dea9302f-d473-48f1-9da8-a6897bb3e999",
+              "props": {},
+              "updated_at": 1691996254641
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T04:40:05.654Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-15T09:03:49.306Z",
+  "id_folder": "4412f44f-6fcd-40c8-8d4a-70318c4b6169",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

@@ -1,0 +1,605 @@
+{
+  "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+  "name": "filter",
+  "content_tree": {
+    "id": "ozrf0z6iwhz9hvlpa9gxx3jc",
+    "adv": {
+      "js": "<div {...props}>{children}</div>"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "filter",
+    "type": "item",
+    "childs": [
+      {
+        "id": "zbhjiea6ii2v09n30eb0rk48",
+        "adv": {
+          "js": "<div {...props}>\n  <Local\n    name=\"form\"\n    value={{}}\n    effect={(local) => {\n      if (!(window as any).filterForm) {\n        (window as any).filterForm = {};\n      }\n      if (!(window as any).filterForm[location.pathname]) {\n        (window as any).filterForm[location.pathname] = {};\n      }\n\n      const f = (window as any).filterForm[location.pathname];\n      if (f[id_filter]) {\n        f[id_filter].filter = local;\n      }\n      local.render()\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"form\",value:{},effect:i=>{window.filterForm||(window.filterForm={}),window.filterForm[location.pathname]||(window.filterForm[location.pathname]={});let a=window.filterForm[location.pathname];a[id_filter]&&(a[id_filter].filter=i),i.render()}},children)));\n"
+        },
+        "name": "form",
+        "type": "item",
+        "childs": [
+          {
+            "id": "gg68a6d0o1plj5svz5a55m39",
+            "adv": {
+              "js": "<div {...props}>\n  <Local\n    name=\"filter\"\n    value={{\n      show: false,\n    }}\n    deps={[modal]}\n    effect={async (local) => {\n      //local effect\n      if (isEditor) {\n        local.show = modal === \"opened\";\n        local.render();\n      } else {\n        local.show = false;\n        local.render();\n      }\n    }}\n  >\n    {children}\n  </Local>\n</div>",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"filter\",value:{show:!1},deps:[modal],effect:async e=>{isEditor?(e.show=modal===\"opened\",e.render()):(e.show=!1,e.render())}},children)));\n"
+            },
+            "name": "filter",
+            "type": "item",
+            "childs": [
+              {
+                "id": "dcvi1jr7ypcyywzr8mrlfj7f",
+                "adv": {
+                  "js": "<>\n  {(isEditor ? modal === \"opened\" : filter.show) && (\n    <div {...props}>{children}</div>\n  )}\n</>",
+                  "css": "& {\n  display: flex;\n  position: fixed;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  z-index: 100;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(React.Fragment,null,(isEditor?modal===\"opened\":filter.show)&&React.createElement(\"div\",{...props},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "popup",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "qe0wmq426witycsozgx0zl7j",
+                    "adv": {
+                      "js": "<form\n  {...props}\n  onSubmit={(e) => {\n    e.preventDefault();\n\n    if (!(window as any).filterForm) {\n      (window as any).filterForm = {};\n    }\n\n    if (!(window as any).filterForm[location.pathname]) {\n      (window as any).filterForm[location.pathname] = {};\n    }\n\n    const f = (window as any).filterForm[location.pathname];\n\n    filter.show = false;\n    filter.render();\n    \n    if (f && !!id_filter && f[id_filter]) {\n      f[id_filter].query(form);\n    }\n  }}\n>\n  {children}\n</form>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"form\",{...props,onSubmit:r=>{r.preventDefault(),window.filterForm||(window.filterForm={}),window.filterForm[location.pathname]||(window.filterForm[location.pathname]={});let i=window.filterForm[location.pathname];filter.show=!1,filter.render(),i&&id_filter&&i[id_filter]&&i[id_filter].query(form)}},children));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "form",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "bj5ctkeog7r7qd1mi2ss3rti",
+                        "adv": {
+                          "js": "<div {...props}>{popup}</div>",
+                          "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},popup));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "body",
+                        "type": "item",
+                        "childs": [],
+                        "mobile": {
+                          "dim": {
+                            "h": "full",
+                            "w": "full"
+                          }
+                        }
+                      },
+                      {
+                        "id": "ep7ddn4n4w40jntj4uhhazah",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "footer",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "lh6jdjdk874ly4q1uyl6qtr1",
+                            "name": "button",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                              "props": {
+                                "action": {
+                                  "idx": 4,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"function\"",
+                                  "visible": "type_button !== 'Submit'",
+                                  "valueBuilt": "\"function\";\n"
+                                },
+                                "type_button": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Danger\"",
+                                  "valueBuilt": "\"Danger\";\n"
+                                },
+                                "label_button": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Clear\"",
+                                  "valueBuilt": "\"Clear\";\n"
+                                },
+                                "width_button": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"110px\"",
+                                  "valueBuilt": "\"110px\";\n"
+                                },
+                                "navigate_link": {
+                                  "idx": 6,
+                                  "meta": {
+                                    "oldName": "navigate"
+                                  },
+                                  "type": "string",
+                                  "value": "\"/login\"",
+                                  "visible": "type_button !== 'Submit' && action === 'navigate'",
+                                  "valueBuilt": "\"/login\";\n"
+                                },
+                                "action_function": {
+                                  "idx": 5,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop_1"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {\n  for (const [k, v] of Object.entries(form)) {\n    if (k !== \"render\" && k !== \"_id\") {\n      delete form[k];\n    }\n  }\n\n  if (!(window as any).filterForm) {\n    (window as any).filterForm = {};\n  }\n\n  if (!(window as any).filterForm[location.pathname]) {\n    (window as any).filterForm[location.pathname] = {};\n  }\n\n  const f = (window as any).filterForm[location.pathname];\n\n  filter.show = false;\n  if (f && f[id_filter]) {\n    f[id_filter].query(form);\n  }\n  filter.render();\n  // form.render();\n}",
+                                  "visible": "type_button !== 'Submit' && action === 'function'",
+                                  "valueBuilt": "()=>{for(let[e,i]of Object.entries(form))e!==\"render\"&&e!==\"_id\"&&delete form[e];window.filterForm||(window.filterForm={}),window.filterForm[location.pathname]||(window.filterForm[location.pathname]={});let r=window.filterForm[location.pathname];filter.show=!1,r&&r[id_filter]&&r[id_filter].query(form),filter.render()};\n"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "id": "w0p2l973pe6l8bddxhi4c1rg",
+                            "name": "button",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                              "props": {
+                                "action": {
+                                  "idx": 4,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"function\"",
+                                  "visible": "type_button !== 'Submit'",
+                                  "valueBuilt": "\"function\";\n"
+                                },
+                                "type_button": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Submit\"",
+                                  "valueBuilt": "\"Submit\";\n"
+                                },
+                                "label_button": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Filter\"",
+                                  "valueBuilt": "\"Filter\";\n"
+                                },
+                                "width_button": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"200px\"",
+                                  "valueBuilt": "\"200px\";\n"
+                                },
+                                "navigate_link": {
+                                  "idx": 6,
+                                  "meta": {
+                                    "oldName": "navigate"
+                                  },
+                                  "type": "string",
+                                  "value": "\"/login\"",
+                                  "visible": "type_button !== 'Submit' && action === 'navigate'",
+                                  "valueBuilt": "\"/login\";\n"
+                                },
+                                "action_function": {
+                                  "idx": 5,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop_1"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "visible": "type_button !== 'Submit' && action === 'function'",
+                                  "valueBuilt": "()=>{};\n"
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "mobile": {
+                          "bg": {
+                            "pos": "center",
+                            "size": "cover",
+                            "color": ""
+                          },
+                          "dim": {
+                            "h": 80,
+                            "w": "full"
+                          },
+                          "layout": {
+                            "dir": "row",
+                            "gap": 16,
+                            "wrap": "flex-nowrap",
+                            "align": "center"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "full"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#ffffff"
+                  },
+                  "dim": {
+                    "h": "full",
+                    "w": "full"
+                  }
+                }
+              },
+              {
+                "id": "ajilgctnwdqvw8gtugdlwwtw",
+                "adv": {
+                  "js": "<div\n  {...props}\n  onClick={(e) => {\n    e.preventDefault();\n    if (!isEditor) {\n      filter.show = true;\n      filter.render();\n    }\n  }}\n>\n  {children}\n</div>",
+                  "css": "& {\n  display: flex;\n  cursor: pointer;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props,onClick:e=>{e.preventDefault(),isEditor||(filter.show=!0,filter.render())}},children));\n"
+                },
+                "name": "btn",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "td9730pa6n0wl4eq4q81nkqu",
+                    "adv": {
+                      "js": "<>\n  {Object.keys(form).length - 2 > 0 && (\n    <div {...props}>\n      {\n        Object.keys(form).filter((e) => !e.startsWith(\"_\") && e !== \"render\")\n          .length\n      }\n    </div>\n  )}\n</>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(React.Fragment,null,Object.keys(form).length-2>0&&React.createElement(\"div\",{...props},Object.keys(form).filter(e=>!e.startsWith(\"_\")&&e!==\"render\").length)));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "count",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#3e7ec8"
+                      },
+                      "font": {
+                        "size": 12,
+                        "align": "left",
+                        "color": "#ffffff",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-nowrap"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 5,
+                          "br": 5,
+                          "tl": 5,
+                          "tr": 5
+                        }
+                      },
+                      "padding": {
+                        "b": 1,
+                        "l": 11,
+                        "r": 11,
+                        "t": 1
+                      }
+                    }
+                  },
+                  {
+                    "id": "ivfum0y490xs8csvb05dl1vl",
+                    "adv": {},
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Filter",
+                    "name": "text",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-nowrap"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "wrap": "flex-wrap",
+                        "align": "left"
+                      }
+                    }
+                  },
+                  {
+                    "id": "mi29spr8xkm1nwomheqi4x87",
+                    "adv": {
+                      "css": "",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\r\n<path d=\"M5.25192 12.5C5.03997 12.5 4.8623 12.4281 4.71892 12.2844C4.57554 12.1406 4.50385 11.9625 4.50385 11.75V7.25L0.165016 1.7C-0.0220022 1.45 -0.050055 1.1875 0.0808581 0.9125C0.211771 0.6375 0.439311 0.5 0.763476 0.5H11.2365C11.5607 0.5 11.7882 0.6375 11.9191 0.9125C12.0501 1.1875 12.022 1.45 11.835 1.7L7.49615 7.25V11.75C7.49615 11.9625 7.42446 12.1406 7.28108 12.2844C7.1377 12.4281 6.96003 12.5 6.74807 12.5H5.25192ZM6 6.725L9.70297 2H2.29703L6 6.725Z\" fill=\"#002B5B\"/>\r\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "icon",
+                    "type": "item",
+                    "childs": []
+                  }
+                ],
+                "mobile": {
+                  "border": {
+                    "color": "#cccccc",
+                    "style": "solid",
+                    "stroke": {
+                      "b": 1,
+                      "l": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "rounded": {
+                      "bl": 7,
+                      "br": 7,
+                      "tl": 7,
+                      "tr": 7
+                    }
+                  },
+                  "layout": {
+                    "dir": "row",
+                    "gap": 7,
+                    "wrap": "flex-nowrap",
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 3,
+                    "l": 8,
+                    "r": 8,
+                    "t": 3
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "padding": {
+                "b": 0,
+                "l": 14,
+                "r": 14,
+                "t": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "full",
+        "w": "fit"
+      },
+      "border": {
+        "color": "#dbdbdb",
+        "style": "solid",
+        "stroke": {
+          "b": 0,
+          "l": 0,
+          "r": 0,
+          "t": 0
+        },
+        "rounded": {
+          "bl": 0,
+          "br": 0,
+          "tl": 0,
+          "tr": 0
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "left"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+      "name": "filter",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "body": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "content": {
+            "id": "xpx6yrq2f9o63u6yhlwn4fj5",
+            "dim": {
+              "h": "full",
+              "w": "full"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [],
+            "originalId": "t68us07iuy569s5i0habm9ue",
+            "parentInstanceId": "mj2jpo9784ltqjl1uk93r7s6"
+          },
+          "valueBuilt": "\"hello\""
+        },
+        "form": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "content": {
+            "id": "xxp7hutbsosjd7oxrbvoeehg",
+            "dim": {
+              "h": "full",
+              "w": "full"
+            },
+            "name": "form",
+            "type": "item",
+            "childs": [],
+            "originalId": "b5jpq7cr78o8pag03ixgwska",
+            "parentInstanceId": "tuka3s2vh288mmpe2te6un2s"
+          },
+          "valueBuilt": "\"hello\""
+        },
+        "modal": {
+          "gen": "async () => {\n  return `\"\"`\n}",
+          "idx": 5,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"closed\",\n    value: \"closed\"\n  },\n  {\n    label: \"opened\",\n    value: \"opened\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"opened\"",
+          "valueBuilt": "\"opened\";\n"
+        },
+        "popup": {
+          "idx": 6,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "valueBuilt": "\"hello\""
+        },
+        "popover": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "content": {
+            "id": "f8jy9pcvo5ch53ispl27lk74",
+            "dim": {
+              "h": "full",
+              "w": "full"
+            },
+            "name": "popover",
+            "type": "item",
+            "childs": [],
+            "originalId": "v3opa99vb69gh84t5xzp3lid",
+            "parentInstanceId": "mj2jpo9784ltqjl1uk93r7s6"
+          },
+          "valueBuilt": "\"hello\""
+        },
+        "id_filter": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"filter-1\"",
+          "valueBuilt": "\"filter-1\";\n"
+        },
+        "form_filter": {
+          "idx": 1,
+          "meta": {
+            "type": "content-element"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"hello\"",
+          "content": {
+            "id": "kxsgb4vog57gypirg28se81j",
+            "dim": {
+              "h": "full",
+              "w": "full"
+            },
+            "name": "form_filter",
+            "type": "item",
+            "childs": [],
+            "originalId": "txnqxi35jhen2w374vjs3iwr",
+            "parentInstanceId": "tuka3s2vh288mmpe2te6un2s"
+          },
+          "valueBuilt": "\"hello\""
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-28T02:43:55.896Z",
+  "updated_at": "2023-11-09T04:49:55.273Z",
+  "type": "item",
+  "id_component_group": "6a510a13-9fc1-4e52-9252-2489a1d4d2fc",
+  "props": []
+}

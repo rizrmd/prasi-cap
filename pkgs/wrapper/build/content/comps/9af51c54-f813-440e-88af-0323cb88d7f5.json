@@ -1,0 +1,253 @@
+{
+  "id": "9af51c54-f813-440e-88af-0323cb88d7f5",
+  "name": "two-row-data-with-icon",
+  "content_tree": {
+    "id": "idx4pixbjhgg1aryhtfj6ym4",
+    "adv": {
+      "js": "<div {...props}>{children}</div>",
+      "css": "& {\r\n  display: flex;\r\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "two-row-data-with-icon",
+    "type": "item",
+    "childs": [
+      {
+        "id": "fxpeci8w5szpx1von57aimad",
+        "adv": {
+          "js": "<div {...props}>\r\n  {icon_props === \"medical\" ? (\r\n    <svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width=\"25\"\r\n      height=\"25\"\r\n      viewBox=\"0 0 25 25\"\r\n      fill=\"none\"\r\n    >\r\n      <path\r\n        d=\"M8.71771 16.5177C7.84449 17.3226 6.6938 17.7586 5.50644 17.7345C4.31908 17.7103 3.18707 17.2279 2.34731 16.3881C1.50755 15.5484 1.02511 14.4163 1.00095 13.229C0.976798 12.0416 1.4128 10.8909 2.21771 10.0177L10.0177 2.21771C10.8909 1.4128 12.0416 0.976798 13.229 1.00095C14.4163 1.02511 15.5484 1.50755 16.3881 2.34731C17.2279 3.18707 17.7103 4.31908 17.7345 5.50644C17.7586 6.6938 17.3226 7.84449 16.5177 8.71771M6.11671 6.11671L10.3667 10.3667\"\r\n        stroke=\"#002B5B\"\r\n        stroke-width=\"1.5\"\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n      />\r\n      <path\r\n        d=\"M17.3677 15.1177V19.6177M15.1177 17.3677H19.6177M23.3677 15.8677C23.3711 17.6142 22.7782 19.3095 21.6872 20.6733C20.5962 22.0371 19.0723 22.9876 17.3677 23.3677C15.6631 22.9876 14.1392 22.0371 13.0482 20.6733C11.9572 19.3095 11.3643 17.6142 11.3677 15.8677V13.6177C11.3677 13.2199 11.5257 12.8384 11.807 12.557C12.0883 12.2757 12.4699 12.1177 12.8677 12.1177H21.8677C22.2655 12.1177 22.647 12.2757 22.9283 12.557C23.2097 12.8384 23.3677 13.2199 23.3677 13.6177V15.8677Z\"\r\n        stroke=\"#002B5B\"\r\n        stroke-width=\"1.5\"\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n      />\r\n    </svg>\r\n  ) : icon_props === \"comment\" ? (\r\n    <svg\r\n      width=\"24\"\r\n      height=\"25\"\r\n      viewBox=\"0 0 24 24\"\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n    >\r\n      <path\r\n        fill=\"#002B5B\"\r\n        d=\"M16 14q-1.25 0-2.125-.875T13 11q0-1.25.875-2.125T16 8q1.25 0 2.125.875T19 11q0 1.25-.875 2.125T16 14Zm-5 6q-.425 0-.713-.288T10 19v-.9q0-.525.25-1t.7-.75q1.125-.675 2.388-1.012T16 15q1.4 0 2.663.338t2.387 1.012q.45.275.7.75t.25 1v.9q0 .425-.288.713T21 20H11Zm1.15-2h7.7q-.875-.5-1.85-.75T16 17q-1.025 0-2 .25t-1.85.75ZM16 12q.425 0 .713-.288T17 11q0-.425-.288-.713T16 10q-.425 0-.713.288T15 11q0 .425.288.713T16 12Zm0-1Zm0 7Zm-6-4H4q-.425 0-.713-.288T3 13q0-.425.288-.713T4 12h6q.425 0 .713.288T11 13q0 .425-.288.713T10 14Zm4-8H4q-.425 0-.713-.288T3 5q0-.425.288-.713T4 4h10q.425 0 .713.288T15 5q0 .425-.288.713T14 6Zm-2.9 4H4q-.425 0-.713-.288T3 9q0-.425.288-.713T4 8h8q-.35.425-.563.925T11.1 10Z\"\r\n      />\r\n    </svg>\r\n  ) : (\r\n    <svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width=\"30\"\r\n      height=\"25\"\r\n      viewBox=\"0 0 30 25\"\r\n      fill=\"none\"\r\n    >\r\n      <path\r\n        d=\"M14.6667 24.5L5.33333 19.4333V11.4333L0 8.5L14.6667 0.5L29.3333 8.5V19.1667H26.6667V9.96667L24 11.4333V19.4333L14.6667 24.5ZM14.6667 13.4333L23.8 8.5L14.6667 3.56667L5.53333 8.5L14.6667 13.4333ZM14.6667 21.4667L21.3333 17.8667V12.8333L14.6667 16.5L8 12.8333V17.8667L14.6667 21.4667Z\"\r\n        fill=\"#002B5B\"\r\n      />\r\n    </svg>\r\n  )}\r\n</div>",
+          "html": "",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},icon_props===\"medical\"?React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"25\",height:\"25\",viewBox:\"0 0 25 25\",fill:\"none\"},React.createElement(\"path\",{d:\"M8.71771 16.5177C7.84449 17.3226 6.6938 17.7586 5.50644 17.7345C4.31908 17.7103 3.18707 17.2279 2.34731 16.3881C1.50755 15.5484 1.02511 14.4163 1.00095 13.229C0.976798 12.0416 1.4128 10.8909 2.21771 10.0177L10.0177 2.21771C10.8909 1.4128 12.0416 0.976798 13.229 1.00095C14.4163 1.02511 15.5484 1.50755 16.3881 2.34731C17.2279 3.18707 17.7103 4.31908 17.7345 5.50644C17.7586 6.6938 17.3226 7.84449 16.5177 8.71771M6.11671 6.11671L10.3667 10.3667\",stroke:\"#002B5B\",\"stroke-width\":\"1.5\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\"}),React.createElement(\"path\",{d:\"M17.3677 15.1177V19.6177M15.1177 17.3677H19.6177M23.3677 15.8677C23.3711 17.6142 22.7782 19.3095 21.6872 20.6733C20.5962 22.0371 19.0723 22.9876 17.3677 23.3677C15.6631 22.9876 14.1392 22.0371 13.0482 20.6733C11.9572 19.3095 11.3643 17.6142 11.3677 15.8677V13.6177C11.3677 13.2199 11.5257 12.8384 11.807 12.557C12.0883 12.2757 12.4699 12.1177 12.8677 12.1177H21.8677C22.2655 12.1177 22.647 12.2757 22.9283 12.557C23.2097 12.8384 23.3677 13.2199 23.3677 13.6177V15.8677Z\",stroke:\"#002B5B\",\"stroke-width\":\"1.5\",\"stroke-linecap\":\"round\",\"stroke-linejoin\":\"round\"})):icon_props===\"comment\"?React.createElement(\"svg\",{width:\"24\",height:\"25\",viewBox:\"0 0 24 24\",xmlns:\"http://www.w3.org/2000/svg\"},React.createElement(\"path\",{fill:\"#002B5B\",d:\"M16 14q-1.25 0-2.125-.875T13 11q0-1.25.875-2.125T16 8q1.25 0 2.125.875T19 11q0 1.25-.875 2.125T16 14Zm-5 6q-.425 0-.713-.288T10 19v-.9q0-.525.25-1t.7-.75q1.125-.675 2.388-1.012T16 15q1.4 0 2.663.338t2.387 1.012q.45.275.7.75t.25 1v.9q0 .425-.288.713T21 20H11Zm1.15-2h7.7q-.875-.5-1.85-.75T16 17q-1.025 0-2 .25t-1.85.75ZM16 12q.425 0 .713-.288T17 11q0-.425-.288-.713T16 10q-.425 0-.713.288T15 11q0 .425.288.713T16 12Zm0-1Zm0 7Zm-6-4H4q-.425 0-.713-.288T3 13q0-.425.288-.713T4 12h6q.425 0 .713.288T11 13q0 .425-.288.713T10 14Zm4-8H4q-.425 0-.713-.288T3 5q0-.425.288-.713T4 4h10q.425 0 .713.288T15 5q0 .425-.288.713T14 6Zm-2.9 4H4q-.425 0-.713-.288T3 9q0-.425.288-.713T4 8h8q-.35.425-.563.925T11.1 10Z\"})):React.createElement(\"svg\",{xmlns:\"http://www.w3.org/2000/svg\",width:\"30\",height:\"25\",viewBox:\"0 0 30 25\",fill:\"none\"},React.createElement(\"path\",{d:\"M14.6667 24.5L5.33333 19.4333V11.4333L0 8.5L14.6667 0.5L29.3333 8.5V19.1667H26.6667V9.96667L24 11.4333V19.4333L14.6667 24.5ZM14.6667 13.4333L23.8 8.5L14.6667 3.56667L5.53333 8.5L14.6667 13.4333ZM14.6667 21.4667L21.3333 17.8667V12.8333L14.6667 16.5L8 12.8333V17.8667L14.6667 21.4667Z\",fill:\"#002B5B\"}))));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "blrb3o0byeffpfetplqq9kvd",
+        "adv": {},
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "data",
+        "type": "item",
+        "childs": [
+          {
+            "id": "zyrn9ln2eqvstfpd65y1fhrx",
+            "adv": {},
+            "name": "row1_wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "etwgs65801x78m0hkixmxqmd",
+                "adv": {},
+                "name": "text-normal",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                  "props": {
+                    "label": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "row1_props",
+                      "valueBuilt": " row1_props;\n"
+                    },
+                    "weight": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "font_weight",
+                        "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"bold\"",
+                      "valueBuilt": "\"bold\";\n"
+                    },
+                    "text_type": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  {\n    label: \"primary\",\n    value: \"primary\"\n  },\n  {\n    label: \"secondary\",\n    value: \"secondary\"\n  },\n  {\n   label: \"danger\",\n   value: \"danger\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"primary\"",
+                      "valueBuilt": "\"primary\";\n"
+                    }
+                  },
+                  "updated_at": 1691383801170
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "a2me6543gdb9tsmdoghv7lvm",
+            "adv": {},
+            "name": "row1_wrapped",
+            "type": "item",
+            "childs": [
+              {
+                "id": "m3q25jias49oshbmtsfxnqrq",
+                "adv": {},
+                "name": "text-normal",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+                  "props": {
+                    "label": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "row2_props",
+                      "valueBuilt": " row2_props;\n"
+                    },
+                    "weight": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "font_weight",
+                        "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"normal\"",
+                      "valueBuilt": "\"normal\";\n"
+                    },
+                    "text_type": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  {\n    label: \"primary\",\n    value: \"primary\"\n  },\n  {\n    label: \"secondary\",\n    value: \"secondary\"\n  },\n  {\n   label: \"danger\",\n   value: \"danger\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"primary\"",
+                      "valueBuilt": "\"primary\";\n"
+                    }
+                  },
+                  "updated_at": 1691383801170
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 20,
+          "br": 20,
+          "tl": 20,
+          "tr": 20
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 9,
+        "align": "center"
+      },
+      "padding": {
+        "b": 10,
+        "l": 16,
+        "r": 16,
+        "t": 10
+      }
+    },
+    "component": {
+      "id": "9af51c54-f813-440e-88af-0323cb88d7f5",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "icon_props": {
+          "idx": 3,
+          "meta": {
+            "type": "option",
+            "oldName": "new_prop",
+            "options": "[\n  {\n    label: \"medical\",\n    value: \"medical\"\n  },\n  {\n    label: \"comment\",\n    value: \"comment\"\n  },\n]"
+          },
+          "type": "string",
+          "value": "\"medical\"",
+          "valueBuilt": "\"medical\";\n"
+        },
+        "row1_props": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "item.semester",
+          "valueBuilt": " item.semester;\n"
+        },
+        "row2_props": {
+          "idx": 2,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"hello\""
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-07T05:29:47.029Z",
+  "updated_at": "2023-08-24T02:23:45.821Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

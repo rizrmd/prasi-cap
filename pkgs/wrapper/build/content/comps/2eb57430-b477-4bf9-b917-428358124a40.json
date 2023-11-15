@@ -1,0 +1,630 @@
+{
+  "id": "2eb57430-b477-4bf9-b917-428358124a40",
+  "name": "popup",
+  "content_tree": {
+    "id": "ub7s5mi6ydnzqawueqmpz97z",
+    "adv": {
+      "js": "<>\n  {visible === \"show\" && (\n    <div {...props}>\n      <Local\n        name=\"local\"\n        value={{\n          is_visible: visible,\n        }}\n        effect={async (local) => {\n          //local effect\n        }}\n      >\n        {children}\n      </Local>\n    </div>\n  )}\n</>",
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 99;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+      "html": "",
+      "jsBuilt": "render(React.createElement(React.Fragment,null,visible===\"show\"&&React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{is_visible:visible},effect:async l=>{}},children))));\n"
+    },
+    "name": "popup",
+    "type": "item",
+    "childs": [
+      {
+        "id": "c3ajma87wco4mpj19igtaxsi",
+        "adv": {
+          "js": "<div {...props}>{title}</div>",
+          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},title));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Ini textnya",
+        "name": "title",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 17,
+            "align": "left",
+            "color": "#002B5B",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          }
+        }
+      },
+      {
+        "id": "lep0h449v241od7wgl7o6hvu",
+        "adv": {
+          "js": "<div {...props}>{caption}</div>",
+          "css": "",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},caption));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Ini textnya",
+        "name": "info",
+        "text": "",
+        "type": "text",
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 13,
+            "align": "left",
+            "color": "#002B5B",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          }
+        }
+      },
+      {
+        "id": "kl8ayt8dzsn1m4s8exj8o6gr",
+        "name": "button",
+        "type": "item",
+        "childs": [
+          {
+            "id": "n69xkom0rdhhatwcfi8odnjk",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": 0,
+              "wUnit": "px"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "v3dnw8sooy3r600rukak9llg",
+                "adv": {
+                  "js": "<button\n  {...props}\n  style={{\n    backgroundColor:\n      type_button === \"Success\"\n        ? \"green\"\n        : type_button === \"Edit\"\n        ? \"#FFFFFF\"\n        : type_button === \"Danger\"\n        ? \"#ffffff\"\n        : type_button === \"Checkout\"\n        ? \"#159895\"\n        : type_button === \"Disabled\"\n        ? \"gray\"\n        : \"#0062A3\",\n    border:\n      type_button === \"Edit\"\n        ? \"2px solid #002B5B\"\n        : type_button === \"Danger\"\n        ? \"2px solid #870707\"\n        : \"0px\",\n    borderRadius: type_button === \"Checkout\" ? \"20px\" : \"10px\",\n    width: type_button === \"Checkout\" ? \"100px\" : width_button,\n  }}\n  type={type_button === \"Submit\" ? \"submit\" : \"button\"}\n  onPointerUp={(e) => {\n    if (type_button !== \"Disabled\" && type_button !== \"Submit\") {\n      if (action === \"navigate\") {\n        navigate(navigate_link);\n      } else {\n        action_function(e);\n      }\n    }\n  }}\n>\n  {children}\n</button>",
+                  "css": "& {\n  display: flex;\n  min-height: 39px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"button\",{...props,style:{backgroundColor:type_button===\"Success\"?\"green\":type_button===\"Edit\"?\"#FFFFFF\":type_button===\"Danger\"?\"#ffffff\":type_button===\"Checkout\"?\"#159895\":type_button===\"Disabled\"?\"gray\":\"#0062A3\",border:type_button===\"Edit\"?\"2px solid #002B5B\":type_button===\"Danger\"?\"2px solid #870707\":\"0px\",borderRadius:type_button===\"Checkout\"?\"20px\":\"10px\",width:type_button===\"Checkout\"?\"100px\":width_button},type:type_button===\"Submit\"?\"submit\":\"button\",onPointerUp:t=>{type_button!==\"Disabled\"&&type_button!==\"Submit\"&&(action===\"navigate\"?navigate(navigate_link):action_function(t))}},children));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "inside",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "l2cv9kvth8pk9sc2fulfzp9u",
+                    "adv": {
+                      "js": "<div\n  {...props}\n  style={{\n    color:\n      type_button === \"Edit\"\n        ? \"#002B5B\"\n        : type_button === \"Danger\"\n        ? \"#870707\"\n        : \"white\",\n  }}\n>\n  {label_button}\n</div>",
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:type_button===\"Edit\"?\"#002B5B\":type_button===\"Danger\"?\"#870707\":\"white\"}},label_button));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "html": "Login",
+                    "name": "text_button",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 16,
+                        "color": "",
+                        "family": "Poppins",
+                        "height": "auto"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "dim": {
+                    "h": 39,
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 15,
+                    "height": "auto"
+                  },
+                  "border": {
+                    "color": "",
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 0,
+                      "br": 0,
+                      "tl": 0,
+                      "tr": 0
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "linktag": {
+                    "link": ""
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "left"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 0,
+                  "br": 0,
+                  "tl": 0,
+                  "tr": 0
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "linktag": {
+                "link": ""
+              }
+            },
+            "component": {
+              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+              "name": "button",
+              "group": {
+                "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                "name": "All"
+              },
+              "props": {
+                "action": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"function\"",
+                  "visible": "type_button !== 'Submit'",
+                  "valueBuilt": "\"function\";\n"
+                },
+                "type_button": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Action\", \n    value: \"Action\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Edit\"",
+                  "valueBuilt": "\"Edit\";\n"
+                },
+                "label_button": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "cancel_button",
+                  "valueBuilt": " cancel_button;\n"
+                },
+                "width_button": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"100px\"",
+                  "valueBuilt": "\"100px\";\n"
+                },
+                "navigate_link": {
+                  "idx": 6,
+                  "meta": {
+                    "oldName": "navigate"
+                  },
+                  "type": "string",
+                  "value": "\"/login\"",
+                  "visible": "type_button !== 'Submit' && action === 'navigate'",
+                  "valueBuilt": "\"/login\";\n"
+                },
+                "action_function": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop_1"
+                  },
+                  "type": "() => void",
+                  "value": "() => {\n  local.is_visible = \"hide\"\n  visible = local.is_visible\n  local.render()\n}",
+                  "visible": "type_button !== 'Submit' && action === 'function'",
+                  "valueBuilt": "()=>{local.is_visible=\"hide\",visible=local.is_visible,local.render()};\n"
+                }
+              }
+            }
+          },
+          {
+            "id": "ayu81pmri4t1859w873xhsu6",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": 0,
+              "wUnit": "px"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "qvvpm4mpu3k3owwgiei8ygmm",
+                "adv": {
+                  "js": "<button\n  {...props}\n  style={{\n    backgroundColor:\n      type_button === \"Success\"\n        ? \"green\"\n        : type_button === \"Edit\"\n        ? \"#FFFFFF\"\n        : type_button === \"Danger\"\n        ? \"#ffffff\"\n        : type_button === \"Checkout\"\n        ? \"#159895\"\n        : type_button === \"Disabled\"\n        ? \"gray\"\n        : \"#0062A3\",\n    border:\n      type_button === \"Edit\"\n        ? \"2px solid #002B5B\"\n        : type_button === \"Danger\"\n        ? \"2px solid #870707\"\n        : \"0px\",\n    borderRadius: type_button === \"Checkout\" ? \"20px\" : \"10px\",\n    width: type_button === \"Checkout\" ? \"100px\" : width_button,\n  }}\n  type={type_button === \"Submit\" ? \"submit\" : \"button\"}\n  onPointerUp={(e) => {\n    if (type_button !== \"Disabled\" && type_button !== \"Submit\") {\n      if (action === \"navigate\") {\n        navigate(navigate_link);\n      } else {\n        action_function(e);\n      }\n    }\n  }}\n>\n  {children}\n</button>",
+                  "css": "& {\n  display: flex;\n  min-height: 39px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"button\",{...props,style:{backgroundColor:type_button===\"Success\"?\"green\":type_button===\"Edit\"?\"#FFFFFF\":type_button===\"Danger\"?\"#ffffff\":type_button===\"Checkout\"?\"#159895\":type_button===\"Disabled\"?\"gray\":\"#0062A3\",border:type_button===\"Edit\"?\"2px solid #002B5B\":type_button===\"Danger\"?\"2px solid #870707\":\"0px\",borderRadius:type_button===\"Checkout\"?\"20px\":\"10px\",width:type_button===\"Checkout\"?\"100px\":width_button},type:type_button===\"Submit\"?\"submit\":\"button\",onPointerUp:t=>{type_button!==\"Disabled\"&&type_button!==\"Submit\"&&(action===\"navigate\"?navigate(navigate_link):action_function(t))}},children));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "inside",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "haopizgby94oy50edvtbmno8",
+                    "adv": {
+                      "js": "<div\n  {...props}\n  style={{\n    color:\n      type_button === \"Edit\"\n        ? \"#002B5B\"\n        : type_button === \"Danger\"\n        ? \"#870707\"\n        : \"white\",\n  }}\n>\n  {label_button}\n</div>",
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  &:hover {\n    display: flex;\n  }\n}",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props,style:{color:type_button===\"Edit\"?\"#002B5B\":type_button===\"Danger\"?\"#870707\":\"white\"}},label_button));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "html": "Login",
+                    "name": "text_button",
+                    "text": "",
+                    "type": "text",
+                    "childs": [],
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "font": {
+                        "size": 16,
+                        "color": "",
+                        "family": "Poppins",
+                        "height": "auto"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": ""
+                  },
+                  "dim": {
+                    "h": 39,
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 15,
+                    "height": "auto"
+                  },
+                  "border": {
+                    "color": "",
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 0,
+                      "br": 0,
+                      "tl": 0,
+                      "tr": 0
+                    }
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "linktag": {
+                    "link": ""
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "left"
+            },
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "fit"
+              },
+              "border": {
+                "style": "solid",
+                "rounded": {
+                  "bl": 0,
+                  "br": 0,
+                  "tl": 0,
+                  "tr": 0
+                }
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "center"
+              },
+              "linktag": {
+                "link": ""
+              }
+            },
+            "component": {
+              "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+              "name": "button",
+              "group": {
+                "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+                "name": "All"
+              },
+              "props": {
+                "action": {
+                  "idx": 4,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"function\"",
+                  "visible": "type_button !== 'Submit'",
+                  "valueBuilt": "\"function\";\n"
+                },
+                "type_button": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "option",
+                    "oldName": "new_prop",
+                    "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Action\", \n    value: \"Action\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                  },
+                  "type": "string",
+                  "value": "\"Action\"",
+                  "valueBuilt": "\"Action\";\n"
+                },
+                "label_button": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "confirm_button",
+                  "valueBuilt": " confirm_button;\n"
+                },
+                "width_button": {
+                  "idx": 3,
+                  "meta": {
+                    "type": "text",
+                    "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"100px\"",
+                  "valueBuilt": "\"100px\";\n"
+                },
+                "navigate_link": {
+                  "idx": 6,
+                  "meta": {
+                    "oldName": "navigate"
+                  },
+                  "type": "string",
+                  "value": "\"/login\"",
+                  "visible": "type_button !== 'Submit' && action === 'navigate'",
+                  "valueBuilt": "\"/login\";\n"
+                },
+                "action_function": {
+                  "idx": 5,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop_1"
+                  },
+                  "type": "() => void",
+                  "value": "on_confirm",
+                  "visible": "type_button !== 'Submit' && action === 'function'",
+                  "valueBuilt": " on_confirm;\n"
+                }
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "row",
+            "gap": 10,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "bg": {
+        "pos": "center",
+        "size": "cover",
+        "color": "#FBFBFB"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 20,
+        "wrap": "flex-nowrap",
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 20,
+        "l": 20,
+        "r": 20,
+        "t": 20
+      }
+    },
+    "component": {
+      "id": "2eb57430-b477-4bf9-b917-428358124a40",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5"
+      },
+      "props": {
+        "title": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"ini title nya\"",
+          "valueBuilt": "\"ini title nya\";\n"
+        },
+        "caption": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"ini captionnya\"",
+          "valueBuilt": "\"ini captionnya\";\n"
+        },
+        "visible": {
+          "idx": 0,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"show\",\n    value: \"show\"\n  },\n  {\n    label: \"hide\",\n    value: \"hide\"\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "local.is_visible",
+          "valueBuilt": " local.is_visible;\n"
+        },
+        "on_confirm": {
+          "idx": 4,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "() => void",
+          "value": "() => {}",
+          "valueBuilt": "()=>{};\n"
+        },
+        "cancel_button": {
+          "idx": 5,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Batal\"",
+          "valueBuilt": "\"Batal\";\n"
+        },
+        "confirm_button": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Simpan\"",
+          "valueBuilt": "\"Simpan\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-09-18T06:50:01.367Z",
+  "updated_at": "2023-09-21T04:59:33.570Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

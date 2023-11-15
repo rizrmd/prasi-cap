@@ -1,0 +1,1574 @@
+{
+  "id": "a9c9e4ad-4ddd-4523-9d21-b6d1c4048f7a",
+  "name": "detail-khs",
+  "url": "/staff-pengajar/data-management/khs/detail",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "sly0c01gptfvbpdtrkee5oq7",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "zj19ea22fm6cl5h9gyndqb9g",
+            "name": "page-tittle",
+            "type": "item",
+            "childs": [
+              {
+                "id": "n4mc2l549nfx6y1ao6reu8la",
+                "adv": {},
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/ppds/home/home-ppds/detail\"",
+                      "valueBuilt": "\"/ppds/home/home-ppds/detail\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"KHS\"",
+                      "valueBuilt": "\"KHS\";\n"
+                    },
+                    "name_page": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  },
+                  "child_ids": {
+                    "jzs4f7pqesf82f0c0wbsjb8g": "h65ci0c1xaj5c5srv74rmma4",
+                    "kk01mmgdeev5fsniwb47hbsj": "p6m2mjxsidhgcjpj134419oj",
+                    "sk60ygaym1y056tlymedyccj": "f9jmt3m5lqj4egezswbrcbk4",
+                    "wgmya2spijp28j59sf2iypbh": "nbx8ky03uzr9y1skt807tn9s"
+                  },
+                  "updated_at": 1691568262168
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              }
+            }
+          },
+          {
+            "id": "liaip7luk1yo6yvuib8q3v3v",
+            "name": "header-khs-staffpengajar",
+            "type": "item",
+            "childs": [],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "padding": {
+                "b": 0,
+                "l": 25,
+                "r": 25,
+                "t": 0
+              }
+            },
+            "component": {
+              "id": "49634ce1-7251-4244-af85-58e4468e156c",
+              "name": "",
+              "props": {},
+              "child_ids": {
+                "bghs1wvkhwghprnwepek7w5e": "l6vvv20rwuxg4hlw9dkpp8ig",
+                "e8vz1fpd46oz8c4c2bqa1882": "miitl92tad0u06z2rvx0h1iz",
+                "liaip7luk1yo6yvuib8q3v3v": "mrrqoxabk0cx31vvq3qlu2fq",
+                "odr9lqy60ck4dyccjds57t9m": "i9vt3r8a7min8mka6pq5wip3",
+                "v20la5p3o9u87q5vyv135sy6": "q6hefmhq3uvzlt2h3qk455m9",
+                "ws9vwg260psfrbgiinu6ty97": "ddeuhm0vh5duicghf4wjpbsh",
+                "xe973l2gh2m5brj1qnvga42n": "rfl2wi7slw81k59l1iozni07"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        }
+      },
+      {
+        "id": "uga5j9yolx661rt8f0wm8nzz",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: auto;\n  padding-top: 10%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "j9t656f8k963v55v522t3xv6",
+            "adv": {
+              "css": "& {\n  display: flex;\n  padding-bottom: 200px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "name": "content",
+            "type": "item",
+            "childs": [
+              {
+                "id": "zo3fihd22wysa7dzexfk4xy2",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"01\",\r\n          subject: \"Perioperatif\",\r\n          credits: \"3 SKS\",\r\n          gpa: \"-\",\r\n        },\r\n      ],\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"01\",subject:\"Perioperatif\",credits:\"3 SKS\",gpa:\"-\"}]}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "data-khs",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "e30nkby9761joqdvmw1e9m59",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "item-khs",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "a3z49i7a86xy71z57afza1wh",
+                        "name": "khs-staff-pengajar",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "f372de26-80d9-4b36-8d38-f7151b9e7411",
+                          "props": {
+                            "gpa": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.gpa",
+                              "valueBuilt": " item.gpa;\n"
+                            },
+                            "credits": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.credits",
+                              "valueBuilt": " item.credits;\n"
+                            },
+                            "subject": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.subject",
+                              "valueBuilt": " item.subject;\n"
+                            }
+                          },
+                          "child_ids": {
+                            "feupez5of8j0t2qi257jnu4o": "b32n5zf2f95jzvjv1dw53wml",
+                            "imb1g2uebbctljky5czjkfn0": "c81zpy1ci6qft8facby2e1zf",
+                            "ombhk00ah71kqg5w4qirj7nk": "j5m0y2w9ou29mw9drr7ab27h",
+                            "q6ls7t0r910b79np477ylqdb": "pu8qiyjkkrc7jg0pleturmvu",
+                            "q9kvoehkcvjwslvxl09btc3h": "xw5v57y7pag937n92bc56qkl",
+                            "qxd0q4t2gg6z9zse1xdpa1by": "yf5bkrlj4b9em0twffg03fg0"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 20,
+                        "wrap": "flex-wrap",
+                        "align": "top-left"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-wrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "t229x3i3vcmp9lfxos6bii8x",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "field-notes",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "de040o7hzwcb9amnkufrgg7p",
+                    "name": "input_field",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                      "props": {
+                        "label": {
+                          "idx": 3,
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Notes\"",
+                          "valueBuilt": "\"Notes\";\n"
+                        },
+                        "value": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Notes\"",
+                          "valueBuilt": "\"Notes\";\n"
+                        },
+                        "width": {
+                          "idx": 20,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"80%\"",
+                          "valueBuilt": "\"80%\";\n"
+                        },
+                        "toggle": {
+                          "idx": 9,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"off\"",
+                          "valueBuilt": "\"off\";\n"
+                        },
+                        "checked": {
+                          "idx": 8,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop_1",
+                            "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"true\"",
+                          "valueBuilt": "\"true\";\n"
+                        },
+                        "bind_key": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"\"",
+                          "valueBuilt": "\"\";\n"
+                        },
+                        "disabled": {
+                          "idx": 21,
+                          "meta": {
+                            "type": "option",
+                            "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"FALSE\"",
+                          "valueBuilt": "\"FALSE\";\n"
+                        },
+                        "bind_form": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "any",
+                          "value": "local",
+                          "valueBuilt": " local;\n"
+                        },
+                        "multiline": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"false\"",
+                          "valueBuilt": "\"false\";\n"
+                        },
+                        "type_input": {
+                          "idx": 1,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "type",
+                            "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"text\"",
+                          "valueBuilt": "\"text\";\n"
+                        },
+                        "value_date": {
+                          "idx": 11,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "\"string\"",
+                          "value": "\"2013-01-08\"",
+                          "valueBuilt": "\"2013-01-08\";\n"
+                        },
+                        "value_time": {
+                          "idx": 12,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"00:00\"",
+                          "valueBuilt": "\"00:00\";\n"
+                        },
+                        "multiline_row": {
+                          "idx": 5,
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"3\"",
+                          "valueBuilt": "\"3\";\n"
+                        },
+                        "on_change_text": {
+                          "idx": 2,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "valueBuilt": "()=>{};\n"
+                        },
+                        "value_dropdown": {
+                          "idx": 13,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "type": "[]",
+                          "value": "[{label: \"a\", value: \"a\"},{label: \"b\", value: \"b\"}, {label: \"c\", value: \"c\"}]",
+                          "valueBuilt": "[{label:\"a\",value:\"a\"},{label:\"b\",value:\"b\"},{label:\"c\",value:\"c\"}];\n"
+                        },
+                        "dropdown_expand": {
+                          "idx": 14,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"off\"",
+                          "valueBuilt": "\"off\";\n"
+                        },
+                        "label_checkboxs": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"hello\""
+                        },
+                        "on_click_toggle": {
+                          "idx": 10,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "onClickToggle"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "valueBuilt": "()=>{};\n"
+                        },
+                        "dropdown_open_key": {
+                          "idx": 20,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"\"",
+                          "valueBuilt": "\"\";\n"
+                        },
+                        "on_click_checkbox": {
+                          "idx": 7,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "onClickCheckbox"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "valueBuilt": "()=>{};\n"
+                        },
+                        "on_click_dropdown": {
+                          "idx": 15,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "onClickDropdown"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "valueBuilt": "()=>{};\n"
+                        },
+                        "selected_dropdown": {
+                          "idx": 19,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"\"",
+                          "valueBuilt": "\"\";\n"
+                        }
+                      },
+                      "child_ids": {
+                        "b8e4mn1m8awwbsb4z989qob6": "vygl6l3ry7vuuwu2ji9r64u3",
+                        "cfo4c8oi0mo3jm8pxlj5jgnc": "vim56nix85ciokw0l5npbw3h",
+                        "cmkdbcij6zz7zek4jrp2jdtc": "adeyybgch62ceaci0a7np40m",
+                        "e1z1dj5yc0p90nuchn9dtsrw": "fqaj7ng0zw7lewdvaf9va7y8",
+                        "e2h374ggesjooy6kfe0as6nx": "etc7dajs5kv9bpzc5ebqrfo5",
+                        "gvz548xq31gszyd83pqfud4s": "jehmnxuhavjx78k136e0oyxw",
+                        "iuzqzb0k7bj6c7jxwlrpn1nr": "byk8rsfpnsl9edf0t5ytpznz",
+                        "j1a6hwdojvhmmsxheoo824iz": "ms42tmjhz693ndg2wd5ucb45",
+                        "k84vrmgotievs8ypbi8yqcvg": "n2zz9clvq62m23fflqodg3m6",
+                        "mnl8udzm9r2vs8jkb9jh3btq": "pahuescoagrz126yfgt1twjb",
+                        "mtexe11fj32ehv2mtaqwldvw": "gju84jxrohvu1dtxqrpah53u",
+                        "nzqscdafkptn54jrtbeh5iza": "iyleeg6j0enlgetrqnzxyeid",
+                        "pr5d7aicqwkjrjmgfia4mjfa": "mpbcr7tc3mmiow97lxk6uk0p",
+                        "pxm79omutrxv6msdtdzl3w6p": "bs919tlipqm3rphskv182agj",
+                        "tuo4297djdd2gxd2imur81o4": "i4mna8uyztk82fwot65079rd",
+                        "u9ptziwqq4ezzw7i8u0yr1fl": "ukdk12sfmw2bnhgjns2bk5lp",
+                        "ui6lj5rzq1rui7fi5ja2jx6n": "co4uot23jg03l3cld5dezfrt",
+                        "v4c5f97kx2ulbt5mvhvpi12s": "kccqhl8xgg7h7apnp81zok5o",
+                        "vg56jcu982nemy4sagrjl725": "e072kgcgf4uqydq1hv0649b5",
+                        "vnwmx1tcq6vf29yfpzkrpiyp": "dg451z8saoktl4d6cmtfvtwe",
+                        "vu39kh447ilyomgxpw9yo57o": "ksx2pq2raewlqa4d3c8w0myn",
+                        "wcknhii12d6fmhaycn9a31d6": "n626g0dkh5xduf0g2yvlk7pr",
+                        "wzsee1okx2dbeu8axl6zver2": "wg1dao7bwoap5taydlqpk75q",
+                        "x9jedf2hu3iv3ljfsa8vo7mm": "ymh0z59w7dj3abe1746fqe0o",
+                        "xks5sko5fguaiwaw2ln2gj7m": "djiqep33y0m3dhhvu4u6yefr",
+                        "y6avjn03n24v9nzcu2ao6apx": "ulyn8g02w324yhmzjpdf4i5o",
+                        "yjiycjvh6jok19mqtj871tzw": "k2jifgqnno9qagqdqbh84obs"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                }
+              },
+              {
+                "id": "vj6or1qn7p374v20iincyciq",
+                "name": "penilaian",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "qo3w8btksw8xvmpcypnnu4aw",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "name": "header",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "edtv6egt2gcz5smyhmtpu8wl",
+                        "adv": {
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Indikator Penilaian",
+                        "name": "tittle",
+                        "text": "",
+                        "type": "text",
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "id": "i1pe5que2k5k9iun01llenid",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "button",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "r4gnwglud6jdgohtf1xnq22y",
+                            "adv": {
+                              "css": "",
+                              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"25\" height=\"24\" viewBox=\"0 0 25 24\" fill=\"none\">\r\n  <mask id=\"mask0_604_13040\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"25\" height=\"24\">\r\n    <rect width=\"24.5824\" height=\"24\" fill=\"#D9D9D9\" />\r\n  </mask>\r\n  <g mask=\"url(#mask0_604_13040)\">\r\n    <path\r\n      d=\"M11.2671 17.001H13.3157V13.001H17.4127V11.001H13.3157V7.00098H11.2671V11.001H7.17005V13.001H11.2671V17.001ZM12.2914 22.001C10.8745 22.001 9.54293 21.7385 8.29674 21.2135C7.05055 20.6885 5.96653 19.976 5.04469 19.076C4.12285 18.176 3.39306 17.1176 2.85532 15.901C2.31758 14.6843 2.04871 13.3843 2.04871 12.001C2.04871 10.6176 2.31758 9.31764 2.85532 8.10098C3.39306 6.88431 4.12285 5.82598 5.04469 4.92598C5.96653 4.02598 7.05055 3.31348 8.29674 2.78848C9.54293 2.26348 10.8745 2.00098 12.2914 2.00098C13.7083 2.00098 15.0398 2.26348 16.286 2.78848C17.5322 3.31348 18.6162 4.02598 19.5381 4.92598C20.4599 5.82598 21.1897 6.88431 21.7275 8.10098C22.2652 9.31764 22.5341 10.6176 22.5341 12.001C22.5341 13.3843 22.2652 14.6843 21.7275 15.901C21.1897 17.1176 20.4599 18.176 19.5381 19.076C18.6162 19.976 17.5322 20.6885 16.286 21.2135C15.0398 21.7385 13.7083 22.001 12.2914 22.001ZM12.2914 20.001C14.5789 20.001 16.5165 19.226 18.1041 17.676C19.6917 16.126 20.4855 14.2343 20.4855 12.001C20.4855 9.76764 19.6917 7.87598 18.1041 6.32598C16.5165 4.77598 14.5789 4.00098 12.2914 4.00098C10.0039 4.00098 8.06628 4.77598 6.47867 6.32598C4.89105 7.87598 4.09724 9.76764 4.09724 12.001C4.09724 14.2343 4.89105 16.126 6.47867 17.676C8.06628 19.226 10.0039 20.001 12.2914 20.001Z\"\r\n      fill=\"#002B5B\" />\r\n  </g>\r\n</svg>"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "fit"
+                            },
+                            "name": "add",
+                            "type": "item",
+                            "childs": []
+                          },
+                          {
+                            "id": "wmxtneow7viap030dmuwsmvw",
+                            "adv": {
+                              "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                            },
+                            "dim": {
+                              "h": "fit",
+                              "w": "full"
+                            },
+                            "html": "Create",
+                            "name": "text-create",
+                            "text": "",
+                            "type": "text",
+                            "layout": {
+                              "dir": "col",
+                              "gap": 0,
+                              "align": "left"
+                            }
+                          }
+                        ],
+                        "layout": {
+                          "dir": "row",
+                          "gap": 5,
+                          "wrap": "flex-nowrap",
+                          "align": "top-left"
+                        }
+                      }
+                    ],
+                    "layout": {
+                      "dir": "row",
+                      "gap": 0,
+                      "wrap": "flex-nowrap",
+                      "align": "top-left"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#002B5B",
+                        "family": "Poppins",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 40,
+                        "r": 40,
+                        "t": 0
+                      }
+                    }
+                  },
+                  {
+                    "id": "ud1z4bick3a6q3y1hhjfj3fe",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "list-field",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "rxmo7l70gkiagtjaje08ohc8",
+                        "name": "category",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "vbxshiyg2kp72om4d82g1fao",
+                            "name": "input_field",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                              "props": {
+                                "label": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Category\"",
+                                  "valueBuilt": "\"Category\";\n"
+                                },
+                                "value": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Afektif\"",
+                                  "valueBuilt": "\"Afektif\";\n"
+                                },
+                                "width": {
+                                  "idx": 20,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"80%\"",
+                                  "valueBuilt": "\"80%\";\n"
+                                },
+                                "toggle": {
+                                  "idx": 9,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"off\"",
+                                  "valueBuilt": "\"off\";\n"
+                                },
+                                "checked": {
+                                  "idx": 8,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop_1",
+                                    "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"true\"",
+                                  "valueBuilt": "\"true\";\n"
+                                },
+                                "bind_key": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                },
+                                "disabled": {
+                                  "idx": 21,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"FALSE\"",
+                                  "valueBuilt": "\"FALSE\";\n"
+                                },
+                                "bind_form": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "any",
+                                  "value": "local",
+                                  "valueBuilt": " local;\n"
+                                },
+                                "multiline": {
+                                  "idx": 4,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"false\"",
+                                  "valueBuilt": "\"false\";\n"
+                                },
+                                "type_input": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "type",
+                                    "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"dropdown\"",
+                                  "valueBuilt": "\"dropdown\";\n"
+                                },
+                                "value_date": {
+                                  "idx": 11,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "\"string\"",
+                                  "value": "\"2013-01-08\"",
+                                  "valueBuilt": "\"2013-01-08\";\n"
+                                },
+                                "value_time": {
+                                  "idx": 12,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"00:00\"",
+                                  "valueBuilt": "\"00:00\";\n"
+                                },
+                                "multiline_row": {
+                                  "idx": 5,
+                                  "meta": {
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"3\"",
+                                  "valueBuilt": "\"3\";\n"
+                                },
+                                "on_change_text": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "value_dropdown": {
+                                  "idx": 13,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "type": "[]",
+                                  "value": "[\r\n  { label: \"Afektif\", value: \"Afektif\" },\r\n  { label: \"Knowledge\", value: \"Knowledge\" },\r\n  { label: \"Performance\", value: \"Performance\" },\r\n]",
+                                  "valueBuilt": "[{label:\"Afektif\",value:\"Afektif\"},{label:\"Knowledge\",value:\"Knowledge\"},{label:\"Performance\",value:\"Performance\"}];\n"
+                                },
+                                "dropdown_expand": {
+                                  "idx": 14,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"off\"",
+                                  "valueBuilt": "\"off\";\n"
+                                },
+                                "label_checkboxs": {
+                                  "idx": 6,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"hello\""
+                                },
+                                "on_click_toggle": {
+                                  "idx": 10,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickToggle"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "dropdown_open_key": {
+                                  "idx": 20,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                },
+                                "on_click_checkbox": {
+                                  "idx": 7,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickCheckbox"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "on_click_dropdown": {
+                                  "idx": 15,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickDropdown"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "selected_dropdown": {
+                                  "idx": 19,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                }
+                              },
+                              "child_ids": {
+                                "b8e4mn1m8awwbsb4z989qob6": "mxfiqeuyurdc9jqu9hk1ohos",
+                                "cfo4c8oi0mo3jm8pxlj5jgnc": "n6lzrz0wmv8pbw5lw0pv75yb",
+                                "cmkdbcij6zz7zek4jrp2jdtc": "op4qihcykcl1zaejoi4p0mzc",
+                                "e1z1dj5yc0p90nuchn9dtsrw": "eeaszwjv2cw45nnrcr1sa4br",
+                                "e2h374ggesjooy6kfe0as6nx": "nlf3tux9dwi7ge9yuzw59g4o",
+                                "gvz548xq31gszyd83pqfud4s": "z4xxs1an2rtd5hj6dot3b69u",
+                                "iuzqzb0k7bj6c7jxwlrpn1nr": "oyy86a46t6xd2w7jk1qqlrkm",
+                                "j1a6hwdojvhmmsxheoo824iz": "v9oygb0l8i8dtby0cqg7b2mc",
+                                "k84vrmgotievs8ypbi8yqcvg": "psrnjhfgyhag6r1ks8c0rhfq",
+                                "mnl8udzm9r2vs8jkb9jh3btq": "w3daddkelqtf3l0obeq027mz",
+                                "mtexe11fj32ehv2mtaqwldvw": "muez3q9abu7wsnzxykfcragj",
+                                "nzqscdafkptn54jrtbeh5iza": "rditzn3ishsy89cq5fckzchy",
+                                "pr5d7aicqwkjrjmgfia4mjfa": "pbzw5k4wea1h204tpqhqkjkm",
+                                "pxm79omutrxv6msdtdzl3w6p": "jcl9ijlrheaj3qrr88yhlu6i",
+                                "tuo4297djdd2gxd2imur81o4": "c7rbltyq224it9ww2zzo4g29",
+                                "u9ptziwqq4ezzw7i8u0yr1fl": "chk047x89c8jyssjoy4cjntr",
+                                "ui6lj5rzq1rui7fi5ja2jx6n": "cfwc9sqym78tb6f4mf56veqf",
+                                "v4c5f97kx2ulbt5mvhvpi12s": "czi8cbmc03rq1mmlnz7zacxv",
+                                "vg56jcu982nemy4sagrjl725": "g5y5xaisq8hh5qattmo93ifv",
+                                "vnwmx1tcq6vf29yfpzkrpiyp": "kjrwjs4izo2uu02f2s2v5abq",
+                                "vu39kh447ilyomgxpw9yo57o": "cdopr7jlh3jmadqnm9cyv5m8",
+                                "wcknhii12d6fmhaycn9a31d6": "oeu6399xklqohzft2f7b1ho0",
+                                "wzsee1okx2dbeu8axl6zver2": "ewzl8927bb4h3tdumstq7985",
+                                "x9jedf2hu3iv3ljfsa8vo7mm": "aovn6xi6tu2bd28mw0ts7j8k",
+                                "xks5sko5fguaiwaw2ln2gj7m": "ryytz0hi781hurchkyfeaxsj",
+                                "y6avjn03n24v9nzcu2ao6apx": "il83e11p7ezlzwlapiglmejg",
+                                "yjiycjvh6jok19mqtj871tzw": "wqd5pkn884o24hhhlvb4cnlx"
+                              }
+                            }
+                          }
+                        ],
+                        "hidden": false,
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full",
+                            "hUnit": "px",
+                            "wUnit": "px"
+                          }
+                        }
+                      },
+                      {
+                        "id": "qzxm71p76w50k95ya27o0iyb",
+                        "adv": {
+                          "css": ""
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "fit"
+                        },
+                        "name": "nilai",
+                        "type": "item",
+                        "childs": [
+                          {
+                            "id": "ck2z1sdq74iz4jiog54pfsz7",
+                            "name": "input_field",
+                            "type": "item",
+                            "childs": [],
+                            "component": {
+                              "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                              "props": {
+                                "label": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Nilai\"",
+                                  "valueBuilt": "\"Nilai\";\n"
+                                },
+                                "value": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"Nilai\"",
+                                  "valueBuilt": "\"Nilai\";\n"
+                                },
+                                "width": {
+                                  "idx": 20,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"80%\"",
+                                  "valueBuilt": "\"80%\";\n"
+                                },
+                                "toggle": {
+                                  "idx": 9,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"off\"",
+                                  "valueBuilt": "\"off\";\n"
+                                },
+                                "checked": {
+                                  "idx": 8,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop_1",
+                                    "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"true\"",
+                                  "valueBuilt": "\"true\";\n"
+                                },
+                                "bind_key": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                },
+                                "disabled": {
+                                  "idx": 21,
+                                  "meta": {
+                                    "type": "option",
+                                    "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                                  },
+                                  "name": "prop",
+                                  "type": "string",
+                                  "value": "\"FALSE\"",
+                                  "valueBuilt": "\"FALSE\";\n"
+                                },
+                                "bind_form": {
+                                  "idx": 3,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "any",
+                                  "value": "local",
+                                  "valueBuilt": " local;\n"
+                                },
+                                "multiline": {
+                                  "idx": 4,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"false\"",
+                                  "valueBuilt": "\"false\";\n"
+                                },
+                                "type_input": {
+                                  "idx": 1,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "type",
+                                    "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"text\"",
+                                  "valueBuilt": "\"text\";\n"
+                                },
+                                "value_date": {
+                                  "idx": 11,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "\"string\"",
+                                  "value": "\"2013-01-08\"",
+                                  "valueBuilt": "\"2013-01-08\";\n"
+                                },
+                                "value_time": {
+                                  "idx": 12,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"00:00\"",
+                                  "valueBuilt": "\"00:00\";\n"
+                                },
+                                "multiline_row": {
+                                  "idx": 5,
+                                  "meta": {
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"3\"",
+                                  "valueBuilt": "\"3\";\n"
+                                },
+                                "on_change_text": {
+                                  "idx": 2,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "value_dropdown": {
+                                  "idx": 13,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "type": "[]",
+                                  "value": "[{label: \"a\", value: \"a\"},{label: \"b\", value: \"b\"}, {label: \"c\", value: \"c\"}]",
+                                  "valueBuilt": "[{label:\"a\",value:\"a\"},{label:\"b\",value:\"b\"},{label:\"c\",value:\"c\"}];\n"
+                                },
+                                "dropdown_expand": {
+                                  "idx": 14,
+                                  "meta": {
+                                    "type": "option",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"off\"",
+                                  "valueBuilt": "\"off\";\n"
+                                },
+                                "label_checkboxs": {
+                                  "idx": 6,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop",
+                                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                                  },
+                                  "type": "string",
+                                  "value": "\"hello\""
+                                },
+                                "on_click_toggle": {
+                                  "idx": 10,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickToggle"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "dropdown_open_key": {
+                                  "idx": 20,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                },
+                                "on_click_checkbox": {
+                                  "idx": 7,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickCheckbox"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "on_click_dropdown": {
+                                  "idx": 15,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "onClickDropdown"
+                                  },
+                                  "type": "() => void",
+                                  "value": "() => {}",
+                                  "valueBuilt": "()=>{};\n"
+                                },
+                                "selected_dropdown": {
+                                  "idx": 19,
+                                  "meta": {
+                                    "type": "text",
+                                    "oldName": "new_prop"
+                                  },
+                                  "type": "string",
+                                  "value": "\"\"",
+                                  "valueBuilt": "\"\";\n"
+                                }
+                              },
+                              "child_ids": {
+                                "b8e4mn1m8awwbsb4z989qob6": "g7sl9ux0zw6jmvrz6dss72gw",
+                                "cfo4c8oi0mo3jm8pxlj5jgnc": "grqxpn393d816183sim8llon",
+                                "cmkdbcij6zz7zek4jrp2jdtc": "kdkz9uxpsygxs9ruk0gf6vid",
+                                "e1z1dj5yc0p90nuchn9dtsrw": "v2f89dprax5pxhx2ttx8x865",
+                                "e2h374ggesjooy6kfe0as6nx": "zq0l13k7hm806aa0h19h4ebz",
+                                "gvz548xq31gszyd83pqfud4s": "so1afccmuwysfgmrcz2fbnqz",
+                                "iuzqzb0k7bj6c7jxwlrpn1nr": "p3vm16mx1ymc8zx2sszkszy2",
+                                "j1a6hwdojvhmmsxheoo824iz": "r6an0wp37pv5ojoqiduppya8",
+                                "k84vrmgotievs8ypbi8yqcvg": "vz5ane68kwcb69t5klfbv0sp",
+                                "mnl8udzm9r2vs8jkb9jh3btq": "mycl1r53jhf4r4bqskx3juhl",
+                                "mtexe11fj32ehv2mtaqwldvw": "r5q1nvtwi1ahjc1phifnbhg4",
+                                "nzqscdafkptn54jrtbeh5iza": "j95ypa4ekbbyscqwxqxhkuy9",
+                                "pr5d7aicqwkjrjmgfia4mjfa": "hnlsnksg0h9ij6jyinib84hl",
+                                "pxm79omutrxv6msdtdzl3w6p": "vqyygiptdptpmwde8y1qx9ra",
+                                "tuo4297djdd2gxd2imur81o4": "hpevnkkv3r0ljl2tz7gpo16c",
+                                "u9ptziwqq4ezzw7i8u0yr1fl": "k4o1ffin1pwiclmjsad9pzaa",
+                                "ui6lj5rzq1rui7fi5ja2jx6n": "eyfmrylko29g2mixwybypcgd",
+                                "v4c5f97kx2ulbt5mvhvpi12s": "f0gozragbcslmmer37fpy7dc",
+                                "vg56jcu982nemy4sagrjl725": "w2l4azl9gj62cjjgytuqvyga",
+                                "vnwmx1tcq6vf29yfpzkrpiyp": "luonchguysabkfbfk4i2m2uo",
+                                "vu39kh447ilyomgxpw9yo57o": "cyuvvi6a15ac7q19o6le1tez",
+                                "wcknhii12d6fmhaycn9a31d6": "y0qel6fioe4xoorvue366lx5",
+                                "wzsee1okx2dbeu8axl6zver2": "g4x88kp2oz5m253atm9q8516",
+                                "x9jedf2hu3iv3ljfsa8vo7mm": "hgx5kbj3l6hngk0ejgnfa6lk",
+                                "xks5sko5fguaiwaw2ln2gj7m": "loh66r7k34auziokpbupts5o",
+                                "y6avjn03n24v9nzcu2ao6apx": "tdmpbttkv901kyyxcrk3dugi",
+                                "yjiycjvh6jok19mqtj871tzw": "kvhyd27uxfisw9ize7zpbvac"
+                              }
+                            }
+                          }
+                        ],
+                        "hidden": false,
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "full"
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 10,
+                        "wrap": "flex-nowrap",
+                        "align": "top-left"
+                      },
+                      "padding": {
+                        "b": 0,
+                        "l": 0,
+                        "r": 0,
+                        "t": 0
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full",
+                    "hUnit": "px",
+                    "wUnit": "px"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 5,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 27
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 20,
+            "wrap": "flex-nowrap",
+            "align": "top-center"
+          }
+        }
+      },
+      {
+        "id": "igxultvx6iwke8qxja9n7rwh",
+        "adv": {
+          "css": "& {\n  display: flex;\n  position: absolute;\n  bottom: 0%;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "l3pa1oarlzq2tlp64bmzio1p",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "v9ehqirpoovfn6wx0ekx3b7s",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Save\"",
+                      "valueBuilt": "\"Save\";\n"
+                    },
+                    "width_button": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "child_ids": {
+                    "lhbebj5irgn10waaupkot8z5": "yqgnd5djcrjkltystvq6xk65",
+                    "qj0c6h2yql08027tzgdytv72": "rwj0mnunubmi0tmphkvieoxb",
+                    "yf6d8en9ugjyvcpevvyze7uh": "int45mjq5q4ikz1wx846m7hi"
+                  },
+                  "updated_at": 1692005629672
+                }
+              },
+              {
+                "id": "appd1y4f7ir4328vo55qay38",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Danger\"",
+                      "valueBuilt": "\"Danger\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Delete\"",
+                      "valueBuilt": "\"Delete\";\n"
+                    },
+                    "width_button": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "child_ids": {
+                    "lhbebj5irgn10waaupkot8z5": "oibd3g0i2wj8w84q8wl108gy",
+                    "qj0c6h2yql08027tzgdytv72": "pmqqwxc869a84aa1i1q286bf",
+                    "yf6d8en9ugjyvcpevvyze7uh": "oo6x98cw5oxnhhuzbeykdi1h"
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 175,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 15,
+                "l": 0,
+                "r": 0,
+                "t": 15
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "if2zs4oauck7m5b9uawqisuu",
+            "name": "menu-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "dbff71a3-2123-4f33-b9b6-7155d4418522",
+              "props": {},
+              "child_ids": {
+                "bl6f0lqlxc9n32ecloxfn38c": "qn1e5d9rvh3pgmdpk51z7zw6",
+                "gp3c5lx3gk86rxeobgamq316": "phuxp7tgj1zp835kirsosgmu",
+                "if2zs4oauck7m5b9uawqisuu": "b2b8p252gx6ffh0nj4bvfhnd",
+                "il8uryqq4cmnkhvczwym9rhq": "hty5tpswbsxnqk6akb3y4umy",
+                "isfgycwn4vcdujkc60uayvxj": "yn0dpf8kyvtczmz5636act7q",
+                "kqxxgql834si4byuttc886o0": "dowrlmi2jr74x65sg5hrirdz",
+                "mok97d5sjz0ykbj95xpnnvhb": "ucnt8ou8iafj505hiyv82xkh",
+                "msxysf2rhq3skyduhezz643g": "juhjolm9g2ef5e13rjrdpbfg",
+                "pji1yksj3l0eerfi7un0rddn": "wuc8b7thquakv7ze99gf2d3j",
+                "qh55n2vwvrhu772phb52gwh5": "r5gpmvfckd0ls3i6y2syxjvy",
+                "qyfnwsnruhkiz1g1w5c2h7jo": "cm1payfntjvfvdoob3js9mw3",
+                "rhatq276pcth4w7s2otf6f0f": "johaza1yxa2t5kkkkjqwndn1",
+                "rug6sawb51ycgq3ms009fpc8": "xlr28qjrwpk26bki7l2fuvh1",
+                "s8h942aal7q635ndhlhabkgh": "wlbdkft06kidpgfir8cjhdrt",
+                "ua3ic5v6ryloymfoibqq6dtn": "spn9ew19p3nypbnr12zu22ru",
+                "uc3n6yqhb1l6t99rp1lradwd": "y7hr5tp41svtc4ux74qrelca",
+                "w9eq3utljx7v052jqatb6iis": "oskvpq4335sygll5azouk9vg"
+              }
+            }
+          }
+        ],
+        "hidden": false,
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-28T15:57:29.030Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-18T05:08:26.028Z",
+  "id_folder": "f413ce98-f5d4-4fb6-ae25-e9fe0a0024fc",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

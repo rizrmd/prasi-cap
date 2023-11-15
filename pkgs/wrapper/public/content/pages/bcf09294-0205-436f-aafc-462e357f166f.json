@@ -1,0 +1,340 @@
+{
+  "id": "bcf09294-0205-436f-aafc-462e357f166f",
+  "name": "notification-institution",
+  "url": "/institution/home/notification",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "rjidkxgcuskjzn7r3fzzgqr1",
+        "adv": {
+          "css": "& {\n  display: flex;\n  overflow: hidden;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "wd542ti35v1l0c25qq0swi5k",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "tf63pk2tryr1d33gg4nczeuz",
+                "name": "title-back",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+                  "props": {
+                    "url": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"/institution/home\"",
+                      "valueBuilt": "\"/institution/home\";\n"
+                    },
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Notifications\"",
+                      "valueBuilt": "\"Notifications\";\n"
+                    }
+                  },
+                  "updated_at": 1691568262168
+                }
+              },
+              {
+                "id": "r5aqqbdqh4nj38xhu0kr9rjo",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "filter",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "qfydwixxyayls5tulontiw21",
+                    "adv": {
+                      "js": "<PassProp text={\"filter\"}><div {...props}>{children}</div></PassProp>",
+                      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": "render(React.createElement(PassProp,{text:\"filter\"},React.createElement(\"div\",{...props},children)));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "filter",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "dim": {
+                        "h": "full",
+                        "w": "fit"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "row",
+                        "gap": 5,
+                        "wrap": "flex-nowrap",
+                        "align": "left"
+                      },
+                      "padding": {
+                        "b": 5,
+                        "l": 15,
+                        "r": 15,
+                        "t": 5
+                      }
+                    },
+                    "component": {
+                      "id": "8317e7b8-7f3d-4d74-a2ec-98c6a0424c4b",
+                      "name": "",
+                      "props": {
+                        "popup": {
+                          "idx": 6,
+                          "meta": {
+                            "type": "content-element"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"hello\"",
+                          "content": {
+                            "id": "qywyc5rh56q6ne6ffu2t2deh",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "popup",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "b8zchafp3n2th7z8fa9rrlpd"
+                          },
+                          "valueBuilt": "\"hello\""
+                        }
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-right"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 25,
+                    "r": 25,
+                    "t": 0
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          },
+          {
+            "id": "ot9eze0kipds5dvpn0zk0jko",
+            "adv": {
+              "css": "& {\n  display: flex;\n  overflow: auto;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "javv4z68cfudd4722yo58ayk",
+                "adv": {
+                  "js": "<div {...props}>\r\n  <Local\r\n    name=\"local\"\r\n    value={{\r\n      list: [\r\n        {\r\n          id: \"001\",\r\n          title: \"Notification Title\",\r\n          message: \"notif message notif message\",\r\n          time: \"10 July 2023\",\r\n        },\r\n        {\r\n          id: \"002\",\r\n          title: \"Notification Title\",\r\n          message: \"notif message notif message\",\r\n          time: \"07 June 2023\",\r\n        },\r\n        {\r\n          id: \"003\",\r\n          title: \"Notification Title\",\r\n          message: \"notif message notif message\",\r\n          time: \"28 May 2023\",\r\n        },\r\n        {\r\n          id: \"004\",\r\n          title: \"Notification Title\",\r\n          message: \"notif message notif message\",\r\n          time: \"07 June 2023\",\r\n        },\r\n        {\r\n          id: \"005\",\r\n          title: \"Notification Title\",\r\n          message: \"notif message notif message\",\r\n          time: \"28 May 2023\",\r\n        },\r\n      ],\r\n    }}\r\n    effect={async (local) => {\r\n      // local.data = [\"world!\"];\r\n      local.render();\r\n    }}\r\n  >\r\n    {children}\r\n  </Local>\r\n</div>",
+                  "css": "",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},React.createElement(Local,{name:\"local\",value:{list:[{id:\"001\",title:\"Notification Title\",message:\"notif message notif message\",time:\"10 July 2023\"},{id:\"002\",title:\"Notification Title\",message:\"notif message notif message\",time:\"07 June 2023\"},{id:\"003\",title:\"Notification Title\",message:\"notif message notif message\",time:\"28 May 2023\"},{id:\"004\",title:\"Notification Title\",message:\"notif message notif message\",time:\"07 June 2023\"},{id:\"005\",title:\"Notification Title\",message:\"notif message notif message\",time:\"28 May 2023\"}]},effect:async e=>{e.render()}},children)));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-notif",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "wtj7bh3ovrfx9afjdbl7gjen",
+                    "adv": {
+                      "js": "<div {...props}>\r\n  {(local.list || []).map((item, idx) => (\r\n    <PassProp item={item} key={idx}>\r\n      {children}\r\n    </PassProp>\r\n  ))}\r\n</div>",
+                      "css": "",
+                      "jsBuilt": "render(React.createElement(\"div\",{...props},(local.list||[]).map((r,s)=>React.createElement(PassProp,{item:r,key:s},children))));\n"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "item-notif",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "az14ol1h2wtxmdadjj4tag8j",
+                        "name": "notification",
+                        "type": "item",
+                        "childs": [],
+                        "component": {
+                          "id": "697d809f-5522-48a2-a3dd-0e8f79068d9f",
+                          "props": {
+                            "time": {
+                              "idx": 2,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.time",
+                              "valueBuilt": " item.time;\n"
+                            },
+                            "title": {
+                              "idx": 0,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.title",
+                              "valueBuilt": " item.title;\n"
+                            },
+                            "message": {
+                              "idx": 1,
+                              "meta": {
+                                "type": "text"
+                              },
+                              "name": "prop",
+                              "type": "string",
+                              "value": "item.message",
+                              "valueBuilt": " item.message;\n"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 15,
+                        "wrap": "flex-nowrap",
+                        "align": "top-left"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "padding": {
+                "b": 12,
+                "l": 30,
+                "r": 30,
+                "t": 12
+              }
+            }
+          },
+          {
+            "id": "z64gdam5nw2zgtlnb8k4h4kv",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "menu",
+            "type": "item",
+            "childs": [
+              {
+                "id": "aauoa0jpt80ordukzujj2gu4",
+                "name": "menu-staff-pengajar",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "34f8ba94-7367-42af-b1e2-bf497d271354",
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-30T12:56:29.488Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-14T03:04:03.413Z",
+  "id_folder": "4b5fbf7d-43a6-448d-8a98-bf52f8cc7782",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

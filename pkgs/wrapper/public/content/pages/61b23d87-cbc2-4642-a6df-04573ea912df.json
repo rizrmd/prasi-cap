@@ -1,0 +1,298 @@
+{
+  "id": "61b23d87-cbc2-4642-a6df-04573ea912df",
+  "name": "edit-academic-credit",
+  "url": "/institution/data/academic-credits/update",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "fnrt5e4y8p4rkmmcmk55fadp",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "iu0qebxgtidct3ilry47t7ow",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/institution/data/academic-credits\"",
+                  "valueBuilt": "\"/institution/data/academic-credits\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Edit Academic Credit \"",
+                  "valueBuilt": "\"Edit Academic Credit \";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 15,
+            "align": "top-left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "tzg9tezjrp8pr4gihld7owxm",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ysm8fgb3me9iob68tmwlf64d",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "field",
+            "type": "item",
+            "childs": [
+              {
+                "id": "f0abzzlifhayh9mu1mte7p01",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Name\"",
+                      "valueBuilt": "\"Name\";\n"
+                    },
+                    "value": {
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"1 SKS\"",
+                      "valueBuilt": "\"1 SKS\";\n"
+                    }
+                  },
+                  "updated_at": 1691985531184
+                }
+              },
+              {
+                "id": "xj8hmvd2g7xt4im9ycijxa56",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Duration\"",
+                      "valueBuilt": "\"Duration\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"120 Minutes\"",
+                      "valueBuilt": "\"120 Minutes\";\n"
+                    }
+                  },
+                  "updated_at": 1691985531184
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "mobile": {
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "top-left"
+          },
+          "padding": {
+            "b": 10,
+            "l": 0,
+            "r": 0,
+            "t": 10
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "z0c6w3xz5oea9qg0pl41sepk",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "iuoxctc707bkf3pxer6xhvia",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "rjophfso5livkz25tnkvtxv1",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Save\"",
+                      "valueBuilt": "\"Save\";\n"
+                    }
+                  },
+                  "updated_at": 1691745046454
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 15,
+                "l": 0,
+                "r": 0,
+                "t": 15
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "kg7tm2at7flb0gmgj7j687ut",
+            "adv": {},
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1691986276634
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "top-left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-30T12:32:50.441Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-14T05:26:53.600Z",
+  "id_folder": "81b9abf4-6157-4810-af4c-65bd798e1844",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

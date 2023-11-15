@@ -1,0 +1,381 @@
+{
+  "id": "1dce10b5-cf20-40fd-a0fe-5d21650caeda",
+  "name": "data-semester",
+  "content_tree": {
+    "id": "opzzbqqafnamfbnxo5i3ijmz",
+    "adv": {
+      "js": "",
+      "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "data-semester",
+    "type": "item",
+    "childs": [
+      {
+        "id": "e18sq063zlri4k63ps5hbu0m",
+        "adv": {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"24\" viewBox=\"0 0 30 24\" fill=\"none\">\r\n  <path\r\n    d=\"M14.6667 24L5.33333 18.9333V10.9333L0 8L14.6667 0L29.3333 8V18.6667H26.6667V9.46667L24 10.9333V18.9333L14.6667 24ZM14.6667 12.9333L23.8 8L14.6667 3.06667L5.53333 8L14.6667 12.9333ZM14.6667 20.9667L21.3333 17.3667V12.3333L14.6667 16L8 12.3333V17.3667L14.6667 20.9667Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "icon",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "tdfpt94si0tx9oc5x3nhhpgi",
+        "adv": {
+          "css": ""
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "list-text",
+        "type": "item",
+        "childs": [
+          {
+            "id": "cn21n7qzhe185iq34vtz3kut",
+            "adv": {
+              "css": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "text-top",
+            "type": "item",
+            "childs": [
+              {
+                "id": "lm5cx5syv6ffcato945yyq3w",
+                "adv": {
+                  "js": "<div {...props}>{semester}</div>",
+                  "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                  "jsBuilt": "render(React.createElement(\"div\",{...props},semester));\n"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Semester 2",
+                "name": "semester",
+                "text": "",
+                "type": "text",
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "align": "left"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                }
+              },
+              {
+                "id": "sdt4lariix5jxyn2ko8vuhi0",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "status",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "s76gdy029q7od44vda0nhr2b",
+                    "adv": {
+                      "js": "<div\r\n  {...props}\r\n  style={{\r\n    color:\r\n      status === \"Active\"\r\n        ? \"#1A5F7A\"\r\n        : status === \"Inactive\"\r\n        ? \"#159895\"\r\n  }}\r\n>\r\n  {status}\r\n</div>",
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);\n  background: #159895;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}",
+                      "jsBuilt": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Active",
+                    "name": "status",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": "#1A5F7A"
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": "fit"
+                      },
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#ffffff",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "border": {
+                        "style": "solid",
+                        "rounded": {
+                          "bl": 10,
+                          "br": 10,
+                          "tl": 10,
+                          "tr": 10
+                        }
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      },
+                      "padding": {
+                        "b": 2,
+                        "l": 15,
+                        "r": 15,
+                        "t": 2
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-right"
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": "auto",
+                "wrap": "flex-nowrap",
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "ysq4jcwsr4cx2cvop6elqhpn",
+            "adv": {
+              "js": "<div {...props}>{year}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},year));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "2023 / 2023",
+            "name": "year",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          },
+          {
+            "id": "nn2ci0sxc2le670bs1ptljyn",
+            "adv": {
+              "js": "<div {...props}>{date}</div>",
+              "css": "",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},date));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "full"
+            },
+            "html": "31/08/2023 - 27/09/2023",
+            "name": "date",
+            "text": "",
+            "type": "text",
+            "layout": {
+              "dir": "col",
+              "gap": 0,
+              "align": "center"
+            },
+            "mobile": {
+              "font": {
+                "size": 15,
+                "align": "left",
+                "color": "#002B5B",
+                "height": "auto",
+                "wordBreak": "break-normal",
+                "whitespace": "whitespace-normal"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "font": {
+            "size": 15,
+            "align": "left",
+            "family": "Poppins",
+            "height": "auto",
+            "wordBreak": "break-normal",
+            "whitespace": "whitespace-normal"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "wrap": "flex-nowrap",
+            "align": "top-left"
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 10,
+          "br": 10,
+          "tl": 10,
+          "tr": 10
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 15,
+        "wrap": "flex-nowrap",
+        "align": "left"
+      },
+      "padding": {
+        "b": 5,
+        "l": 15,
+        "r": 15,
+        "t": 5
+      }
+    },
+    "component": {
+      "id": "1dce10b5-cf20-40fd-a0fe-5d21650caeda",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "date": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"dateeeee\"",
+          "valueBuilt": "\"dateeeee\";\n"
+        },
+        "year": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"2023/2024\"",
+          "valueBuilt": "\"2023/2024\";\n"
+        },
+        "status": {
+          "idx": 1,
+          "meta": {
+            "type": "option",
+            "options": "[\n  {\n    label: \"Active\",\n    value: \"Active\",\n  },\n  {\n    label: \"Inactive\",\n    value: \"Inactive\",\n  },\n]"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Active\"",
+          "valueBuilt": "\"Active\";\n"
+        },
+        "semester": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"semester 2\"",
+          "valueBuilt": "\"semester 2\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-18T10:03:51.805Z",
+  "updated_at": "2023-08-18T13:33:22.361Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

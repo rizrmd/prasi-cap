@@ -1,0 +1,246 @@
+{
+  "id": "cc86b95b-b058-450d-9666-a3ecd8cad112",
+  "name": "create-stage",
+  "url": "/ppds-senior/data/stage/create",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "vx1h7sqy1w3t0bolw97r6730",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "qukftdev3onnj070p4rf4zro",
+            "adv": {},
+            "name": "title-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"ppds-senior/data/subject-category\"",
+                  "valueBuilt": "\"ppds-senior/data/subject-category\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Create Subject Category\"",
+                  "valueBuilt": "\"Create Subject Category\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "b19itwpq4igwkpi5nx8ihlby",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "w680r01tvie00riv00uvubdo",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "field",
+            "type": "item",
+            "childs": [
+              {
+                "id": "qt9fz89psvr88bssjosfwfp6",
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Name\"",
+                      "valueBuilt": "\"Name\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Name\"",
+                      "valueBuilt": "\"Name\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1692073030853
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "dd5zn3gnau4m8tcz1ugz9sci",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "w0az97lggldaa8tpko9cvnz1",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "f54ksxtyxfp7w4qfxpo26nxj",
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Save\"",
+                      "valueBuilt": "\"Save\";\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 15,
+                "l": 0,
+                "r": 0,
+                "t": 15
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "tjapnw1km16ue1mab26vfcta",
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1691986276634
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-14T03:40:27.746Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-12T05:20:43.967Z",
+  "id_folder": "000f466e-0edf-47f7-ab98-abcbae8f3127",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

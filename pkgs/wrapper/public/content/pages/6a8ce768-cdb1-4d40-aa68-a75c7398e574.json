@@ -1,0 +1,911 @@
+{
+  "id": "6a8ce768-cdb1-4d40-aa68-a75c7398e574",
+  "name": "edit-subject",
+  "url": "/ppds-senior/data/subject/update",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "jcxso302zprowue882vh2vka",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ux23zy5cq29fl18uk0zvaf21",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/ppds-senior/data/subject\"",
+                  "valueBuilt": "\"/ppds-senior/data/subject\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Edit Subject\"",
+                  "valueBuilt": "\"Edit Subject\";\n"
+                },
+                "name_page": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text"
+                  },
+                  "name": "prop",
+                  "type": "string",
+                  "value": "\"\"",
+                  "valueBuilt": "\"\";\n"
+                }
+              },
+              "child_ids": {
+                "jzs4f7pqesf82f0c0wbsjb8g": "nsbus3vit08g0mb38wsbbo4n",
+                "kk01mmgdeev5fsniwb47hbsj": "kl5zffo78ahcj2e3bpb6eyr8",
+                "sk60ygaym1y056tlymedyccj": "x0f9srw7z84k4f10b1gbb5yy",
+                "wgmya2spijp28j59sf2iypbh": "jpj5r6i5eatr1r15wl6zlram"
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "zhbdcv93fe5qorxudb0179z7",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "auv7tqhe51qqy18kysdvjvcu",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-input-field",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ugncro4c6xkz3el6f0lqyz6y",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Name\"",
+                      "valueBuilt": "\"Name\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Perioperatif\"",
+                      "valueBuilt": "\"Perioperatif\";\n"
+                    },
+                    "width": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"80%\"",
+                      "valueBuilt": "\"80%\";\n"
+                    },
+                    "toggle": {
+                      "idx": 9,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"off\"",
+                      "valueBuilt": "\"off\";\n"
+                    },
+                    "checked": {
+                      "idx": 8,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop_1",
+                        "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"true\"",
+                      "valueBuilt": "\"true\";\n"
+                    },
+                    "bind_key": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "disabled": {
+                      "idx": 21,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"FALSE\"",
+                      "valueBuilt": "\"FALSE\";\n"
+                    },
+                    "bind_form": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "any",
+                      "value": "local",
+                      "valueBuilt": " local;\n"
+                    },
+                    "multiline": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"false\"",
+                      "valueBuilt": "\"false\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  },\n  {\n    label: \"multiselect\",\n    value: \"multiselect\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    },
+                    "value_date": {
+                      "idx": 11,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "\"string\"",
+                      "value": "\"2013-01-08\"",
+                      "valueBuilt": "\"2013-01-08\";\n"
+                    },
+                    "value_time": {
+                      "idx": 12,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"00:00\"",
+                      "valueBuilt": "\"00:00\";\n"
+                    },
+                    "multiline_row": {
+                      "idx": 5,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"3\"",
+                      "valueBuilt": "\"3\";\n"
+                    },
+                    "on_change_text": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "value_dropdown": {
+                      "idx": 13,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "[]",
+                      "value": "[{label: \"a\", value: \"a\"},{label: \"b\", value: \"b\"}, {label: \"c\", value: \"c\"}]",
+                      "valueBuilt": "[{label:\"a\",value:\"a\"},{label:\"b\",value:\"b\"},{label:\"c\",value:\"c\"}];\n"
+                    },
+                    "dropdown_expand": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"off\"",
+                      "valueBuilt": "\"off\";\n"
+                    },
+                    "label_checkboxs": {
+                      "idx": 6,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"hello\""
+                    },
+                    "on_click_toggle": {
+                      "idx": 10,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickToggle"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "dropdown_open_key": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "on_click_checkbox": {
+                      "idx": 7,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickCheckbox"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "on_click_dropdown": {
+                      "idx": 15,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickDropdown"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "selected_dropdown": {
+                      "idx": 19,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  },
+                  "child_ids": {
+                    "b8e4mn1m8awwbsb4z989qob6": "yh9xn4dwc84evydnouudvjym",
+                    "cfo4c8oi0mo3jm8pxlj5jgnc": "u5bhgggq6axzsvkk6n3klhph",
+                    "cmkdbcij6zz7zek4jrp2jdtc": "nd8p6ciywqsfurgcd67q52xu",
+                    "e1z1dj5yc0p90nuchn9dtsrw": "nz9hqx2tbmf6chty3ntkznc3",
+                    "e2h374ggesjooy6kfe0as6nx": "bcgr8aynbu8aqhj0cgaq50ra",
+                    "gvz548xq31gszyd83pqfud4s": "tl8sm1ho3iop05rptvzh1m68",
+                    "iuzqzb0k7bj6c7jxwlrpn1nr": "shrf9mgf1sgllrm9v1tpd3g3",
+                    "j1a6hwdojvhmmsxheoo824iz": "urkwemg34s8kd5o13s75dg2y",
+                    "k84vrmgotievs8ypbi8yqcvg": "t2oplklem7wkkv0nf0y6p2zm",
+                    "mnl8udzm9r2vs8jkb9jh3btq": "g7rgjsxdnl0wl1vftxtan52z",
+                    "mtexe11fj32ehv2mtaqwldvw": "u1xlaw4bybg80czv8ln25oai",
+                    "nzqscdafkptn54jrtbeh5iza": "egfvlskbrlf6j4jwrsjtsoh7",
+                    "pr5d7aicqwkjrjmgfia4mjfa": "utt10tvilccf6qrns0h4vl8f",
+                    "pxm79omutrxv6msdtdzl3w6p": "xghr3w13gh4z85dvdoejupkq",
+                    "tuo4297djdd2gxd2imur81o4": "jzw5nn1up2u0cxx7b6cxqnjo",
+                    "u9ptziwqq4ezzw7i8u0yr1fl": "lirbfracagkf2a6tl88n9l6u",
+                    "ui6lj5rzq1rui7fi5ja2jx6n": "mstpzpwgygdc7e6gkbj76z06",
+                    "v4c5f97kx2ulbt5mvhvpi12s": "vejvb7bsmtvfqp3bs2f6nlb7",
+                    "vg56jcu982nemy4sagrjl725": "dixfu553lp2icq7l2t9v642q",
+                    "vnwmx1tcq6vf29yfpzkrpiyp": "lcb535zpxps6nie9yr4gavid",
+                    "vu39kh447ilyomgxpw9yo57o": "x3ykuiapk6hfob2nyxhwzsp1",
+                    "wcknhii12d6fmhaycn9a31d6": "h5fn538yrhtd6xj0j5wemguw",
+                    "wzsee1okx2dbeu8axl6zver2": "mbb6tvo8za3djs7jfaahi0is",
+                    "x9jedf2hu3iv3ljfsa8vo7mm": "wof77vz3a49yffuj59w8ldwf",
+                    "xks5sko5fguaiwaw2ln2gj7m": "pgwlg0pz1a2ey2flxnz0u872",
+                    "y6avjn03n24v9nzcu2ao6apx": "c1xkrv92vdpx1azbjsrjtm0q",
+                    "yjiycjvh6jok19mqtj871tzw": "q8qui6us5wagz7ha11pbyv4v"
+                  },
+                  "updated_at": 1692073030853
+                }
+              },
+              {
+                "id": "ycvowllp8cjsjm0pl9czva89",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Subject Category\"",
+                      "valueBuilt": "\"Subject Category\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Orthopaedi Dasar\"",
+                      "valueBuilt": "\"Orthopaedi Dasar\";\n"
+                    },
+                    "width": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"100%\",\n    value: \"100%\"\n  },\n  {\n    label: \"80%\",\n    value: \"80%\"\n  },\n  {\n    label: \"50%\",\n    value: \"50%\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"80%\"",
+                      "valueBuilt": "\"80%\";\n"
+                    },
+                    "toggle": {
+                      "idx": 9,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"off\"",
+                      "valueBuilt": "\"off\";\n"
+                    },
+                    "checked": {
+                      "idx": 8,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop_1",
+                        "options": "[\n  {\n    label: \"true\",\n    value: \"true\"\n  },\n  {\n    label: \"false\",\n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"true\"",
+                      "valueBuilt": "\"true\";\n"
+                    },
+                    "bind_key": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "disabled": {
+                      "idx": 21,
+                      "meta": {
+                        "type": "option",
+                        "options": "[\n  {\n    label: \"TRUE\",\n    value: \"TRUE\"\n  },\n  {\n    label: \"FALSE\",\n    value: \"FALSE\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"FALSE\"",
+                      "valueBuilt": "\"FALSE\";\n"
+                    },
+                    "bind_form": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "any",
+                      "value": "local",
+                      "valueBuilt": " local;\n"
+                    },
+                    "multiline": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"true\", \n    value: \"true \"\n  },\n  { \n    label: \"false\", \n    value: \"false\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"false\"",
+                      "valueBuilt": "\"false\";\n"
+                    },
+                    "type_input": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n  {\n    label: \"toggle\",\n    value: \"toggle\"\n  },\n  {\n    label: \"dropdown\",\n    value: \"dropdown\"\n  },\n  {\n    label: \"datetime\",\n    value: \"datetime\"\n  },\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    },
+                    "value_date": {
+                      "idx": 11,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "\"string\"",
+                      "value": "\"2013-01-08\"",
+                      "valueBuilt": "\"2013-01-08\";\n"
+                    },
+                    "value_time": {
+                      "idx": 12,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"00:00\"",
+                      "valueBuilt": "\"00:00\";\n"
+                    },
+                    "multiline_row": {
+                      "idx": 5,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"3\"",
+                      "valueBuilt": "\"3\";\n"
+                    },
+                    "on_change_text": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "value_dropdown": {
+                      "idx": 13,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "[]",
+                      "value": "[{label: \"a\", value: \"a\"},{label: \"b\", value: \"b\"}, {label: \"c\", value: \"c\"}]",
+                      "valueBuilt": "[{label:\"a\",value:\"a\"},{label:\"b\",value:\"b\"},{label:\"c\",value:\"c\"}];\n"
+                    },
+                    "dropdown_expand": {
+                      "idx": 14,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"on\",\n    value: \"on\"\n  },\n  {\n    label: \"off\",\n    value: \"off\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"off\"",
+                      "valueBuilt": "\"off\";\n"
+                    },
+                    "label_checkboxs": {
+                      "idx": 6,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"hello\""
+                    },
+                    "on_click_toggle": {
+                      "idx": 10,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickToggle"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "dropdown_open_key": {
+                      "idx": 20,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    },
+                    "on_click_checkbox": {
+                      "idx": 7,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickCheckbox"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "on_click_dropdown": {
+                      "idx": 15,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "onClickDropdown"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    },
+                    "selected_dropdown": {
+                      "idx": 19,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"\"",
+                      "valueBuilt": "\"\";\n"
+                    }
+                  },
+                  "child_ids": {
+                    "b8e4mn1m8awwbsb4z989qob6": "pyxl407zh0tcx016y55csk52",
+                    "cfo4c8oi0mo3jm8pxlj5jgnc": "xal6anj81h8266ctgh6dqfkm",
+                    "cmkdbcij6zz7zek4jrp2jdtc": "iy83vthfy4126w8erheohh8o",
+                    "e1z1dj5yc0p90nuchn9dtsrw": "lya0gf2vdpfpeovc5xzky2ub",
+                    "e2h374ggesjooy6kfe0as6nx": "opv856jxtlw5f8fdgxox9k0h",
+                    "gvz548xq31gszyd83pqfud4s": "z3vnz9oo8s05cj3jjcmqnmk3",
+                    "iuzqzb0k7bj6c7jxwlrpn1nr": "rwjofpaibs45q3zcr03h75bn",
+                    "j1a6hwdojvhmmsxheoo824iz": "z4ve5f2tepucrre24paeh8oz",
+                    "k84vrmgotievs8ypbi8yqcvg": "gfmjwhejycehzba75nz26ahn",
+                    "mnl8udzm9r2vs8jkb9jh3btq": "a0igya41fcoblxgkvwmep0s5",
+                    "mtexe11fj32ehv2mtaqwldvw": "r0r2w5ulyyzd7j0meria4shj",
+                    "nzqscdafkptn54jrtbeh5iza": "ihci2e0ok4nynrkurl2lbc39",
+                    "pr5d7aicqwkjrjmgfia4mjfa": "s2a8l22w837ith8n9ctaesqy",
+                    "pxm79omutrxv6msdtdzl3w6p": "n2hkewd6wpm5y535uy2v3q05",
+                    "tuo4297djdd2gxd2imur81o4": "ts8rjnkx7pp58np8z52dqznu",
+                    "u9ptziwqq4ezzw7i8u0yr1fl": "dt0pahfissiae1k4hae9n1t0",
+                    "ui6lj5rzq1rui7fi5ja2jx6n": "biq9oblnpaijci98vki9e7x0",
+                    "v4c5f97kx2ulbt5mvhvpi12s": "azmlfn6e8a5gt6bi2eunhadr",
+                    "vg56jcu982nemy4sagrjl725": "ai4f8tuyf09uzvxoao2nphpi",
+                    "vnwmx1tcq6vf29yfpzkrpiyp": "e87v3yzybq5luqy1zvnhfpkd",
+                    "vu39kh447ilyomgxpw9yo57o": "s743h9r0qplazlqwwagjhvti",
+                    "wcknhii12d6fmhaycn9a31d6": "b923tcqcuq49n5zfe6i6yd4h",
+                    "wzsee1okx2dbeu8axl6zver2": "rqi9u6dtwg8p4ogls7dzd79t",
+                    "x9jedf2hu3iv3ljfsa8vo7mm": "ezropv1ytyni3e10ir5wz7bd",
+                    "xks5sko5fguaiwaw2ln2gj7m": "aajaa5u9l75853wz3b658asl",
+                    "y6avjn03n24v9nzcu2ao6apx": "tccq8ad6k9zoqigd1jrb87zn",
+                    "yjiycjvh6jok19mqtj871tzw": "e81jguy4lhghb73dxfy8rqfk"
+                  },
+                  "updated_at": 1692073030853
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 15,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "ussov4yiyqkvkheufo2xkqhe",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "oe4k0wkxoqggufo5e5q79fk3",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "y0ptsyotqbemoavcqgzwaoxs",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "visible": "type_button !== 'Submit'",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Save\"",
+                      "valueBuilt": "\"Save\";\n"
+                    },
+                    "width_button": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 6,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "visible": "type_button !== 'Submit' && action === 'navigate'",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "visible": "type_button !== 'Submit' && action === 'function'",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "child_ids": {
+                    "lhbebj5irgn10waaupkot8z5": "tumc567j1jjqxqza2eizo0xl",
+                    "qj0c6h2yql08027tzgdytv72": "llmyqykfc2g8ult29zqp8pve",
+                    "yf6d8en9ugjyvcpevvyze7uh": "drpngpj2yqehjttph0f85j30"
+                  },
+                  "updated_at": 1692005629672
+                }
+              },
+              {
+                "id": "m2req9s09u17c01as1tea1ft",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "visible": "type_button !== 'Submit'",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Danger\"",
+                      "valueBuilt": "\"Danger\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Delete\"",
+                      "valueBuilt": "\"Delete\";\n"
+                    },
+                    "width_button": {
+                      "idx": 3,
+                      "meta": {
+                        "type": "text",
+                        "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                      },
+                      "name": "prop",
+                      "type": "string",
+                      "value": "\"250px\"",
+                      "valueBuilt": "\"250px\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 6,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "visible": "type_button !== 'Submit' && action === 'navigate'",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "visible": "type_button !== 'Submit' && action === 'function'",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "child_ids": {
+                    "lhbebj5irgn10waaupkot8z5": "ayhhwq2o6cboy2w4xk22ns8d",
+                    "qj0c6h2yql08027tzgdytv72": "szmfxv03tduurcfbuhnjdqxk",
+                    "yf6d8en9ugjyvcpevvyze7uh": "gpecs1im1w3djzjrpp41h3ft"
+                  },
+                  "updated_at": 1692005629672
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": 175,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 15,
+                "l": 0,
+                "r": 0,
+                "t": 15
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "fc094hhc7eqgn2jsknqd9dmi",
+            "adv": {},
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "child_ids": {
+                "a2ozuyi075d5t44bmkb5eyda": "l0dj9yi3yohznz8szyqyusu5",
+                "cemoayq2lvhs15i64ftwck0f": "mjdsepmwlcvw7s9e0rvel91f",
+                "cmwbxam3i6e4639ubljkegpf": "idrdnr049u6jx4tfzlb4scis",
+                "gth3p1gaah9qgvdxrx50mnmk": "oeh8skdas0xf2wpb25tlbapq",
+                "i7ms8yy14qqaedbmuv2skuks": "ouup16jexokdbp5y80tmtk4v",
+                "jzf6upafegawlyqe71vmze08": "bvcdi6nou2cb186er0pf7zwx",
+                "mudi4iqvspkf7b3tsl8flzqc": "cq819h52znyodnfs2xav86en",
+                "nu07bqb550vr01hdkg90qitn": "ys9knyk5sotvsbid68jug57y",
+                "q285g9u15xl9emcj4f5v0we9": "gg44mt0j5jjl0upmxxfsojao",
+                "q4pn62at2n74jmw6gvzwvnjl": "cr6au8pbyx8jcvsqy7hzb75i",
+                "qpjzx7zcxza0e1l3su99l004": "ldhz5vh0rpceqsghy9chmm6n",
+                "r45xce5s3civ4okakvbm29k6": "we6rctxjxoodz4kswap1gw1e",
+                "s0qcl7d6r7vd6a41y3u7xjpe": "mjyzbz4je5e814od4owujrea",
+                "vpy64gu1rsq18tgw5nyumi3s": "x06dw6k85mopg3bi65yadpec",
+                "wnsi50n8gu9o4y3txtg4zoq4": "e9izrpbd6ld84xmdcr1ug0ef",
+                "wq5t08e45wznmwxc8iejge5x": "hv0ralem994nlsfd9woi3ri0",
+                "z5x1osuy5ie7ksn8jp0mribd": "v8x99wodadtnp1fl4qgf45fq"
+              },
+              "updated_at": 1691986276634
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T04:26:25.610Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-09-18T12:23:35.153Z",
+  "id_folder": "6caa02d7-56b3-4211-ac90-9d383c67d57e",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

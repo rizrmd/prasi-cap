@@ -1,0 +1,598 @@
+{
+  "id": "29d54328-d3d1-45f0-9551-4b2010dde33a",
+  "name": "update-student",
+  "url": "/institution/data/classes/student/update",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "yywk552n96hd9sd3i4mzg7d4",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  top: 0%;\r\n  z-index: 50;\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "l46lr86f7tjb3awm84pitrx0",
+            "adv": {},
+            "name": "page-title-with-back",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "a88a28fb-cc37-4910-8ebb-0bd20444d8f4",
+              "props": {
+                "url": {
+                  "idx": 2,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"/institution/data/edit-classes\"",
+                  "valueBuilt": "\"/institution/data/edit-classes\";\n"
+                },
+                "label": {
+                  "idx": 1,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"Update Student\"",
+                  "valueBuilt": "\"Update Student\";\n"
+                }
+              },
+              "updated_at": 1691568262168
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "wqlswi5c8twm502et9eps0jd",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  padding-top: 10%;\r\n  padding-bottom: 175px;\r\n  \r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "il5bl79iv0pftip8cln0nmcx",
+            "adv": {
+              "css": "& {\r\n  display: flex;\r\n  padding-bottom: 150px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-student",
+            "type": "item",
+            "childs": [
+              {
+                "id": "vwwbv5zmb6iudov37oluofw4",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {},
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "m100dw0ml24yo7f5lu774abb",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092792\"",
+                      "valueBuilt": "\"10092792\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Ahmada Nasution\"",
+                      "valueBuilt": "\"dr Ahmada Nasution\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "zefgyog6fpuezpeue94kx4ay",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092788\"",
+                      "valueBuilt": "\"10092788\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Chris Martin\"",
+                      "valueBuilt": "\"dr Chris Martin\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "l7mgfdqkijhtnurenh36mf06",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092772\"",
+                      "valueBuilt": "\"10092772\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Taylor Swift\"",
+                      "valueBuilt": "\"dr Taylor Swift\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "odrzuqgrjq4nswa4s6fhxfad",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092790\"",
+                      "valueBuilt": "\"10092790\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Wong Salim\"",
+                      "valueBuilt": "\"dr Wong Salim\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "op9k9g2mimllf45ykn0rvoto",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092703\"",
+                      "valueBuilt": "\"10092703\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Iswahyudi\"",
+                      "valueBuilt": "\"dr Iswahyudi\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "toon8mqeia8ed5f67brd7ldg",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092754\"",
+                      "valueBuilt": "\"10092754\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Pratama Arhan\"",
+                      "valueBuilt": "\"dr Pratama Arhan\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "vl9zedz9a6r7d959d2at335y",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"100927771\"",
+                      "valueBuilt": "\"100927771\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Angela Sorpolia\"",
+                      "valueBuilt": "\"dr Angela Sorpolia\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              },
+              {
+                "id": "n3rtk9zi00zmf5hn5ntipuwa",
+                "adv": {},
+                "name": "item-checkbox",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "2f065a2a-a759-46e1-8db5-577215ac0afd",
+                  "props": {
+                    "code": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "number",
+                      "value": "\"10092811\"",
+                      "valueBuilt": "\"10092811\";\n"
+                    },
+                    "name": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Berliana\"",
+                      "valueBuilt": "\"dr Berliana\";\n"
+                    }
+                  },
+                  "updated_at": 1692086220147
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "padding": {
+                "b": 0,
+                "l": 15,
+                "r": 15,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "f3iy1gjpd2gplrtilgzrm3fb",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "ab4wn02qtd0o5pzy2uueie26",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "qjcgpdnjujeg68rghxh7fvar",
+                "adv": {},
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Update\"",
+                      "valueBuilt": "\"Update\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  },
+                  "updated_at": 1692005629672
+                }
+              },
+              {
+                "id": "uaga1oumugu17fnjokv5vuxj",
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "action": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"navigate\"",
+                      "valueBuilt": "\"navigate\";\n"
+                    },
+                    "type_button": {
+                      "idx": 1,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n  {\n    label:\"Checkout\",\n    value: \"Checkout\"\n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Danger\"",
+                      "valueBuilt": "\"Danger\";\n"
+                    },
+                    "label_button": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Delete\"",
+                      "valueBuilt": "\"Delete\";\n"
+                    },
+                    "navigate_link": {
+                      "idx": 3,
+                      "meta": {
+                        "oldName": "navigate"
+                      },
+                      "type": "string",
+                      "value": "\"/login\"",
+                      "valueBuilt": "\"/login\";\n"
+                    },
+                    "action_function": {
+                      "idx": 5,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop_1"
+                      },
+                      "type": "() => void",
+                      "value": "() => {}",
+                      "valueBuilt": "()=>{};\n"
+                    }
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 175,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "top-center"
+              },
+              "padding": {
+                "b": 10,
+                "l": 0,
+                "r": 0,
+                "t": 10
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "jlm513eh3sileuwncontll4q",
+            "adv": {},
+            "name": "menu_institution",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "8b9f1161-4778-47c7-8feb-5444587a49bc",
+              "props": {},
+              "updated_at": 1691986276634
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-08-15T07:27:47.427Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-16T00:48:36.201Z",
+  "id_folder": "4318af64-34b1-4b23-a305-39c6f0df2e0b",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

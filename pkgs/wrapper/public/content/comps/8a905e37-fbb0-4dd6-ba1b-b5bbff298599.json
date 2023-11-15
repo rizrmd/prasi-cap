@@ -1,0 +1,150 @@
+{
+  "id": "8a905e37-fbb0-4dd6-ba1b-b5bbff298599",
+  "name": "text_field",
+  "content_tree": {
+    "id": "cif52xl0t7n7sq6750dreh8f",
+    "adv": {},
+    "name": "text_field",
+    "type": "item",
+    "childs": [
+      {
+        "id": "our6z3ksa8yx7avc4rt3qrva",
+        "adv": {
+          "js": "<div {...props}>\n  {label}\n</div>",
+          "css": "& {\n  display: flex;\n  font-weight: bold !important;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},label));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "Username",
+        "name": "label",
+        "text": "",
+        "type": "text",
+        "childs": [],
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "fit"
+          },
+          "font": {
+            "size": 15,
+            "color": "{\"id\":\"k3nrp6xsvmtz3dz11t9bjor7\",\"adv\":{\"css\":\"& {\\n  display: flex;\\n  height: 80%;\\n  \\n  &:hover {\\n    display: flex;\\n  }\\n}\",\"html\":\"\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"name\":\"body\",\"type\":\"item\",\"childs\":[{\"id\":\"ub7e9f4vqzh5yp48ksmq8qnb\",\"adv\":{\"css\":\"& {\\n  display: flex;\\n  font-weight: bold;\\n  width: 100%;\\n  \\n  &:hover {\\n    display: flex;\\n  }\\n}\"},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Login\",\"name\":\"greeting_text\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"font\":{\"size\":24,\"family\":\"Poppins\",\"height\":\"auto\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"padding\":{\"b\":0,\"l\":0,\"r\":0,\"t\":0}},\"component\":{\"props\":{}}},{\"id\":\"ezr48ggezp40q3ddd24y7k4j\",\"adv\":{\"html\":\"\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"name\":\"image_body\",\"type\":\"item\",\"childs\":[{\"id\":\"xseuhf13kri5ohsq35f60p7e\",\"adv\":{\"css\":\"& {\\n  display: flex;\\n  \\n  &:hover {\\n    display: flex;\\n  }\\n}\\n\",\"html\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" version=\\\"1.1\\\" width=\\\"136px\\\" height=\\\"157px\\\" style=\\\"shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd\\\">\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#fefdfc\\\" d=\\\"M -0.5,-0.5 C 18.5,-0.5 37.5,-0.5 56.5,-0.5C 56.265,11.7788 52.9317,23.1121 46.5,33.5C 45.2603,29.939 43.2603,26.939 40.5,24.5C 34.668,18.357 27.668,16.857 19.5,20C 9.19715,26.5296 6.69715,35.3629 12,46.5C 15.3652,51.1864 19.8652,54.3531 25.5,56C 19.6012,60.0227 13.2678,63.1894 6.5,65.5C 4.13895,65.6741 1.80562,66.0074 -0.5,66.5C -0.5,44.1667 -0.5,21.8333 -0.5,-0.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#fdfcfd\\\" d=\\\"M 79.5,-0.5 C 98.1667,-0.5 116.833,-0.5 135.5,-0.5C 135.5,21.8333 135.5,44.1667 135.5,66.5C 127.332,65.2484 119.666,62.5817 112.5,58.5C 112.047,57.5416 111.381,56.7083 110.5,56C 124.875,50.5045 129.375,40.6712 124,26.5C 114.572,16.6725 104.572,16.0059 94,24.5C 92.1005,27.6656 90.2672,30.6656 88.5,33.5C 87.0475,29.6048 85.3809,25.9381 83.5,22.5C 81.5153,16.5187 80.182,10.5187 79.5,4.5C 79.5,2.83333 79.5,1.16667 79.5,-0.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f1852d\\\" d=\\\"M 40.5,24.5 C 39.1877,25.8123 37.8543,27.1457 36.5,28.5C 35.5481,30.0453 35.2148,31.712 35.5,33.5C 33.8008,33.3398 32.1341,33.5065 30.5,34C 32.8584,36.4713 32.1917,37.9713 28.5,38.5C 30.1852,51.25 32.5186,63.9167 35.5,76.5C 34.8333,77.1667 34.1667,77.8333 33.5,78.5C 28.6065,80.7806 23.6065,82.7806 18.5,84.5C 16.8969,82.8336 15.2302,82.1669 13.5,82.5C 14.3742,80.2534 14.7076,77.9201 14.5,75.5C 13.1667,75.5 11.8333,75.5 10.5,75.5C 10.2962,72.4824 9.96286,69.4824 9.5,66.5C 8.20895,66.7373 7.20895,66.404 6.5,65.5C 13.2678,63.1894 19.6012,60.0227 25.5,56C 19.8652,54.3531 15.3652,51.1864 12,46.5C 6.69715,35.3629 9.19715,26.5296 19.5,20C 27.668,16.857 34.668,18.357 40.5,24.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#4b0e4a\\\" d=\\\"M 79.5,4.5 C 80.182,10.5187 81.5153,16.5187 83.5,22.5C 82.85,26.1397 81.35,29.473 79,32.5C 75.5576,36.1144 72.0576,39.4478 68.5,42.5C 70.0349,38.5621 71.3682,34.5621 72.5,30.5C 74.7446,27.2464 76.2446,23.5798 77,19.5C 77.6428,14.4548 78.4762,9.45475 79.5,4.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f18e29\\\" d=\\\"M 56.5,-0.5 C 64.1667,-0.5 71.8333,-0.5 79.5,-0.5C 79.5,1.16667 79.5,2.83333 79.5,4.5C 78.4762,9.45475 77.6428,14.4548 77,19.5C 76.2446,23.5798 74.7446,27.2464 72.5,30.5C 72.0423,27.6062 72.709,25.1062 74.5,23C 71.5,22.3333 68.5,22.3333 65.5,23C 63.0167,25.4062 60.35,27.5729 57.5,29.5C 55.576,33.0171 53.9094,36.6837 52.5,40.5C 51.5713,39.3112 51.238,37.9778 51.5,36.5C 49.8561,36.2865 48.3561,36.6198 47,37.5C 46.5757,41.9992 45.7424,46.3326 44.5,50.5C 44.7683,53.5175 45.1016,56.5175 45.5,59.5C 48.4658,59.8897 51.1324,59.223 53.5,57.5C 54.1818,58.2427 54.8485,58.9094 55.5,59.5C 50.0839,66.5785 43.4172,72.2451 35.5,76.5C 32.5186,63.9167 30.1852,51.25 28.5,38.5C 32.1917,37.9713 32.8584,36.4713 30.5,34C 32.1341,33.5065 33.8008,33.3398 35.5,33.5C 35.2148,31.712 35.5481,30.0453 36.5,28.5C 37.8543,27.1457 39.1877,25.8123 40.5,24.5C 43.2603,26.939 45.2603,29.939 46.5,33.5C 52.9317,23.1121 56.265,11.7788 56.5,-0.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#77509e\\\" d=\\\"M 112.5,58.5 C 109.813,58.6641 107.146,58.4974 104.5,58C 104.043,57.586 103.709,57.086 103.5,56.5C 99.8876,55.4532 96.2209,54.6198 92.5,54C 86.2113,48.187 82.2113,41.0203 80.5,32.5C 81,32.1667 81.5,31.8333 82,31.5C 83.9214,33.0028 86.088,33.6695 88.5,33.5C 90.2672,30.6656 92.1005,27.6656 94,24.5C 104.572,16.0059 114.572,16.6725 124,26.5C 129.375,40.6712 124.875,50.5045 110.5,56C 111.381,56.7083 112.047,57.5416 112.5,58.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#6e4b96\\\" d=\\\"M 83.5,22.5 C 85.3809,25.9381 87.0475,29.6048 88.5,33.5C 86.088,33.6695 83.9214,33.0028 82,31.5C 81.5,31.8333 81,32.1667 80.5,32.5C 82.2113,41.0203 86.2113,48.187 92.5,54C 96.2209,54.6198 99.8876,55.4532 103.5,56.5C 103.709,57.086 104.043,57.586 104.5,58C 107.146,58.4974 109.813,58.6641 112.5,58.5C 119.666,62.5817 127.332,65.2484 135.5,66.5C 135.5,66.8333 135.5,67.1667 135.5,67.5C 123.199,68.4038 111.866,72.0705 101.5,78.5C 87.5642,69.6511 76.5642,57.9844 68.5,43.5C 68.5,43.1667 68.5,42.8333 68.5,42.5C 72.0576,39.4478 75.5576,36.1144 79,32.5C 81.35,29.473 82.85,26.1397 83.5,22.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f19625\\\" d=\\\"M 72.5,30.5 C 71.3682,34.5621 70.0349,38.5621 68.5,42.5C 68.5,42.8333 68.5,43.1667 68.5,43.5C 64.6457,49.2001 60.3124,54.5334 55.5,59.5C 54.8485,58.9094 54.1818,58.2427 53.5,57.5C 51.1324,59.223 48.4658,59.8897 45.5,59.5C 45.1016,56.5175 44.7683,53.5175 44.5,50.5C 45.7424,46.3326 46.5757,41.9992 47,37.5C 48.3561,36.6198 49.8561,36.2865 51.5,36.5C 51.238,37.9778 51.5713,39.3112 52.5,40.5C 53.9094,36.6837 55.576,33.0171 57.5,29.5C 60.35,27.5729 63.0167,25.4062 65.5,23C 68.5,22.3333 71.5,22.3333 74.5,23C 72.709,25.1062 72.0423,27.6062 72.5,30.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#fdfcfc\\\" d=\\\"M 68.5,43.5 C 76.5642,57.9844 87.5642,69.6511 101.5,78.5C 88.4578,86.5422 78.1245,97.2088 70.5,110.5C 69.2719,111.306 68.2719,112.306 67.5,113.5C 59.5513,98.5512 48.218,86.8846 33.5,78.5C 34.1667,77.8333 34.8333,77.1667 35.5,76.5C 43.4172,72.2451 50.0839,66.5785 55.5,59.5C 60.3124,54.5334 64.6457,49.2001 68.5,43.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f1772d\\\" d=\\\"M 6.5,65.5 C 7.20895,66.404 8.20895,66.7373 9.5,66.5C 9.96286,69.4824 10.2962,72.4824 10.5,75.5C 11.8333,75.5 13.1667,75.5 14.5,75.5C 14.7076,77.9201 14.3742,80.2534 13.5,82.5C 15.2302,82.1669 16.8969,82.8336 18.5,84.5C 12.5721,87.292 6.23874,88.9587 -0.5,89.5C -0.5,81.8333 -0.5,74.1667 -0.5,66.5C 1.80562,66.0074 4.13895,65.6741 6.5,65.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f1872d\\\" d=\\\"M 135.5,67.5 C 135.5,75.1667 135.5,82.8333 135.5,90.5C 125.448,91.9048 116.448,95.7381 108.5,102C 110.315,102.757 111.981,103.59 113.5,104.5C 111.167,104.5 108.833,104.5 106.5,104.5C 106.719,103.325 106.386,102.325 105.5,101.5C 100.235,103.27 94.9016,104.77 89.5,106C 87.0829,107.626 84.5829,109.126 82,110.5C 81.586,110.043 81.086,109.709 80.5,109.5C 79.5481,111.045 79.2148,112.712 79.5,114.5C 76.4503,115.077 74.4503,113.91 73.5,111C 72.552,110.517 71.552,110.351 70.5,110.5C 78.1245,97.2088 88.4578,86.5422 101.5,78.5C 111.866,72.0705 123.199,68.4038 135.5,67.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#553779\\\" d=\\\"M 33.5,78.5 C 48.218,86.8846 59.5513,98.5512 67.5,113.5C 67.5,114.5 67.5,115.5 67.5,116.5C 66.5987,117.29 65.9321,118.29 65.5,119.5C 63.629,119.859 62.129,120.859 61,122.5C 57.9829,126.534 55.4829,130.867 53.5,135.5C 51.4643,131.101 49.1309,126.767 46.5,122.5C 42.8126,138.679 33.1459,143.845 17.5,138C 7.71007,128.569 7.0434,118.569 15.5,108C 19.3563,105.158 23.6897,103.491 28.5,103C 19.8183,96.6042 10.1516,92.4375 -0.5,90.5C -0.5,90.1667 -0.5,89.8333 -0.5,89.5C 6.23874,88.9587 12.5721,87.292 18.5,84.5C 23.6065,82.7806 28.6065,80.7806 33.5,78.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#fcfbfc\\\" d=\\\"M -0.5,90.5 C 10.1516,92.4375 19.8183,96.6042 28.5,103C 23.6897,103.491 19.3563,105.158 15.5,108C 7.0434,118.569 7.71007,128.569 17.5,138C 33.1459,143.845 42.8126,138.679 46.5,122.5C 49.1309,126.767 51.4643,131.101 53.5,135.5C 54.5879,140.61 55.5879,145.61 56.5,150.5C 56.5,152.5 56.5,154.5 56.5,156.5C 37.5,156.5 18.5,156.5 -0.5,156.5C -0.5,134.5 -0.5,112.5 -0.5,90.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#fefcfa\\\" d=\\\"M 135.5,90.5 C 135.5,112.5 135.5,134.5 135.5,156.5C 116.833,156.5 98.1667,156.5 79.5,156.5C 79.6133,151.482 79.9466,146.482 80.5,141.5C 82.8454,135.129 85.512,128.796 88.5,122.5C 89.1667,122.5 89.8333,122.5 90.5,122.5C 92.4506,135.819 100.117,141.319 113.5,139C 123.823,134.524 127.99,126.691 126,115.5C 125.065,112.405 123.231,110.071 120.5,108.5C 118.948,105.888 116.614,104.555 113.5,104.5C 111.981,103.59 110.315,102.757 108.5,102C 116.448,95.7381 125.448,91.9048 135.5,90.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f0802b\\\" d=\\\"M 113.5,104.5 C 116.614,104.555 118.948,105.888 120.5,108.5C 113.955,110.523 107.955,113.69 102.5,118C 97.7069,118.436 93.0403,119.436 88.5,121C 89.4158,121.278 90.0825,121.778 90.5,122.5C 89.8333,122.5 89.1667,122.5 88.5,122.5C 83.2589,121.239 77.9256,120.239 72.5,119.5C 70.3449,118.999 68.6782,117.999 67.5,116.5C 67.5,115.5 67.5,114.5 67.5,113.5C 68.2719,112.306 69.2719,111.306 70.5,110.5C 71.552,110.351 72.552,110.517 73.5,111C 74.4503,113.91 76.4503,115.077 79.5,114.5C 79.2148,112.712 79.5481,111.045 80.5,109.5C 81.086,109.709 81.586,110.043 82,110.5C 84.5829,109.126 87.0829,107.626 89.5,106C 94.9016,104.77 100.235,103.27 105.5,101.5C 106.386,102.325 106.719,103.325 106.5,104.5C 108.833,104.5 111.167,104.5 113.5,104.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f17631\\\" d=\\\"M 120.5,108.5 C 123.231,110.071 125.065,112.405 126,115.5C 127.99,126.691 123.823,134.524 113.5,139C 100.117,141.319 92.4506,135.819 90.5,122.5C 90.0825,121.778 89.4158,121.278 88.5,121C 93.0403,119.436 97.7069,118.436 102.5,118C 107.955,113.69 113.955,110.523 120.5,108.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#4c0f4c\\\" d=\\\"M 65.5,119.5 C 62.3202,126.199 59.9869,133.199 58.5,140.5C 58.5,140.833 58.5,141.167 58.5,141.5C 57.7552,144.39 57.0885,147.39 56.5,150.5C 55.5879,145.61 54.5879,140.61 53.5,135.5C 55.4829,130.867 57.9829,126.534 61,122.5C 62.129,120.859 63.629,119.859 65.5,119.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#ee7430\\\" d=\\\"M 67.5,116.5 C 68.6782,117.999 70.3449,118.999 72.5,119.5C 77.9256,120.239 83.2589,121.239 88.5,122.5C 85.512,128.796 82.8454,135.129 80.5,141.5C 80.0825,140.778 79.4158,140.278 78.5,140C 72.9468,139.197 67.4468,138.364 62,137.5C 60.9609,138.71 59.7942,139.71 58.5,140.5C 59.9869,133.199 62.3202,126.199 65.5,119.5C 65.9321,118.29 66.5987,117.29 67.5,116.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#f0692f\\\" d=\\\"M 80.5,141.5 C 79.9466,146.482 79.6133,151.482 79.5,156.5C 72.1667,156.5 64.8333,156.5 57.5,156.5C 58.0534,151.518 58.3867,146.518 58.5,141.5C 58.5,141.167 58.5,140.833 58.5,140.5C 59.7942,139.71 60.9609,138.71 62,137.5C 67.4468,138.364 72.9468,139.197 78.5,140C 79.4158,140.278 80.0825,140.778 80.5,141.5 Z\\\"/></g>\\n<g><path style=\\\"opacity:1\\\" fill=\\\"#b54c41\\\" d=\\\"M 58.5,141.5 C 58.3867,146.518 58.0534,151.518 57.5,156.5C 57.1667,156.5 56.8333,156.5 56.5,156.5C 56.5,154.5 56.5,152.5 56.5,150.5C 57.0885,147.39 57.7552,144.39 58.5,141.5 Z\\\"/></g>\\n</svg>\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"name\":\"image_bodyy\",\"type\":\"item\",\"childs\":[],\"mobile\":{\"bg\":{\"pos\":\"center\",\"size\":\"cover\",\"color\":\"\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"bottom-center\"}},\"component\":{\"props\":{}}}],\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"}},\"component\":{\"props\":{}}},{\"id\":\"vwwzqezqmmnugjp8ro5946r8\",\"adv\":{},\"name\":\"text_field\",\"type\":\"item\",\"childs\":[{\"id\":\"qs1vrok1z6kxjq9to7blhuyz\",\"adv\":{\"js\":\"<div {...props}>\\n  {label}\\n</div>\",\"jsBuilt\":\"render(React.createElement(\\\"div\\\",{...props},label));\\n\"},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Username\",\"name\":\"label\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"left\"}},\"component\":{\"props\":{}}},{\"id\":\"t48thqjd9f536zuc88qvoo2w\",\"adv\":{\"js\":\"<input type={input_type} placeholder={label} value={value} {...props} />\\n\",\"css\":\"& {\\n  display: flex;\\n  border-radius: 10px !important;\\n  background: #FFF !important;\\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) !important;\\n  width: 252px !important;\\n  padding: 6px 10px !important;\\n  align-items: flex-start !important;\\n  gap: 10px !important;\\n\\n  &:hover {\\n    display: flex;\\n  }\\n}\",\"jsBuilt\":\"render(React.createElement(\\\"input\\\",{type:input_type,placeholder:label,value,...props}));\\n\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"name\":\"text_input\",\"type\":\"item\",\"border\":{\"color\":\"#000000\",\"style\":\"solid\",\"stroke\":{\"b\":1,\"l\":1,\"r\":1,\"t\":1}},\"childs\":[],\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"border\":{\"color\":\"#000000\",\"style\":\"solid\",\"stroke\":{\"b\":0,\"l\":0,\"r\":0,\"t\":0}}},\"component\":{\"props\":{}}}],\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"left\"}},\"component\":{\"group\":{\"id\":\"e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5\",\"name\":\"All\"},\"props\":{\"label\":{\"type\":\"string\",\"value\":\"\\\"Username\\\"\",\"valueBuilt\":\"\\\"Username\\\";\\n\",\"meta\":{\"oldName\":\"new_prop\"}},\"value\":{\"type\":\"string\",\"value\":\"\\\"chotto matte\\\"\",\"meta\":{\"oldName\":\"new_prop\"},\"valueBuilt\":\"\\\"chotto matte\\\";\\n\",\"content\":{\"id\":\"cfatw6k4hui7190so9llzx6o\",\"name\":\"value\",\"type\":\"item\",\"dim\":{\"w\":\"fit\",\"h\":\"fit\"},\"isPropContent\":true,\"childs\":[]}},\"input_type\":{\"type\":\"string\",\"value\":\"\\\"text\\\"\",\"meta\":{\"oldName\":\"type\"},\"valueBuilt\":\"\\\"text\\\";\\n\"}},\"id\":\"8a905e37-fbb0-4dd6-ba1b-b5bbff298599\",\"name\":\"\"}},{\"id\":\"cif52xl0t7n7sq6750dreh8f\",\"adv\":{},\"name\":\"text_field\",\"type\":\"item\",\"childs\":[{\"id\":\"nlvb3f4epan6lha4t8mbzvtw\",\"adv\":{\"js\":\"<div {...props}>\\n  {label}\\n</div>\",\"jsBuilt\":\"render(React.createElement(\\\"div\\\",{...props},label));\\n\"},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Username\",\"name\":\"label\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"left\"}},\"component\":{\"props\":{}}},{\"id\":\"oasccn1o8cstn4zxi9a5f9v3\",\"adv\":{\"js\":\"<input type={input_type} placeholder={label} value={value} {...props} />\\n\",\"css\":\"& {\\n  display: flex;\\n  border-radius: 10px !important;\\n  background: #FFF !important;\\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) !important;\\n  width: 252px !important;\\n  padding: 6px 10px !important;\\n  align-items: flex-start !important;\\n  gap: 10px !important;\\n\\n  &:hover {\\n    display: flex;\\n  }\\n}\",\"jsBuilt\":\"render(React.createElement(\\\"input\\\",{type:input_type,placeholder:label,value,...props}));\\n\"},\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"name\":\"text_input\",\"type\":\"item\",\"border\":{\"color\":\"#000000\",\"style\":\"solid\",\"stroke\":{\"b\":1,\"l\":1,\"r\":1,\"t\":1}},\"childs\":[],\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"border\":{\"color\":\"#000000\",\"style\":\"solid\",\"stroke\":{\"b\":0,\"l\":0,\"r\":0,\"t\":0}}},\"component\":{\"props\":{}}}],\"mobile\":{\"dim\":{\"h\":\"fit\",\"w\":\"fit\"},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"left\"}},\"component\":{\"group\":{\"id\":\"e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5\",\"name\":\"All\"},\"props\":{\"label\":{\"type\":\"string\",\"value\":\"\\\"Password\\\"\",\"valueBuilt\":\"\\\"Password\\\";\\n\",\"meta\":{\"oldName\":\"new_prop\"}},\"value\":{\"type\":\"string\",\"value\":\"\\\"chotto matte\\\"\",\"meta\":{\"oldName\":\"new_prop\"},\"valueBuilt\":\"\\\"chotto matte\\\";\\n\",\"content\":{\"id\":\"hwbxnzw64tf4r7c63f0c6qrl\",\"name\":\"value\",\"type\":\"item\",\"dim\":{\"w\":\"fit\",\"h\":\"fit\"},\"isPropContent\":true,\"childs\":[]}},\"input_type\":{\"type\":\"string\",\"value\":\"\\\"password\\\"\",\"meta\":{\"oldName\":\"type\"},\"valueBuilt\":\"\\\"password\\\";\\n\"}},\"id\":\"8a905e37-fbb0-4dd6-ba1b-b5bbff298599\",\"name\":\"\"}},{\"id\":\"itvmqo55hcnqz4l7koae0w4u\",\"adv\":{},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Does'nt have account? Register\",\"name\":\"text_register\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"font\":{\"size\":15,\"family\":\"Poppins\",\"height\":\"auto\"}},\"component\":{\"props\":{}}},{\"id\":\"tiuewjq91mec7dofpv6b6sjx\",\"adv\":{},\"name\":\"button\",\"type\":\"item\",\"childs\":[{\"id\":\"dge90eh1b0fquc4il897t0av\",\"adv\":{\"js\":\"<div {...props} style={{backgroundColor: type_button === 'Success' ? '#C4EBE5' : type_button === 'Danger' ? 'red' : type_button === 'Disabled' ? 'gray' : '#0062A3' }}>\\n    {children}\\n</div>;\\n\",\"css\":\"& {\\n  display: flex;\\n  \\n  &:hover {\\n    display: flex;\\n  }\\n}\",\"jsBuilt\":\"render(React.createElement(\\\"div\\\",{...props,style:{backgroundColor:type_button===\\\"Success\\\"?\\\"#C4EBE5\\\":type_button===\\\"Danger\\\"?\\\"red\\\":type_button===\\\"Disabled\\\"?\\\"gray\\\":\\\"#0062A3\\\"}},children));\\n\"},\"name\":\"inside\",\"type\":\"item\",\"childs\":[{\"id\":\"vnmq5n6bu03ags6itaio8hxc\",\"adv\":{\"js\":\"<div {...props} style={{color: type_button === 'Success' ? '#008EFD' : 'white'}}>\\n  {label_button}\\n</div>\",\"css\":\"& {\\n  display: flex;\\n  font-weight: bold;\\n\\n  &:hover {\\n    display: flex;\\n  }\\n}\",\"jsBuilt\":\"render(React.createElement(\\\"div\\\",{...props,style:{color:type_button===\\\"Success\\\"?\\\"#008EFD\\\":\\\"white\\\"}},label_button));\\n\"},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Login\",\"name\":\"text_button\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"font\":{\"size\":16,\"color\":\"#ffffff\",\"family\":\"Poppins\",\"height\":\"auto\"}},\"component\":{\"props\":{}}}],\"mobile\":{\"bg\":{\"pos\":\"center\",\"size\":\"cover\",\"color\":\"#008EFD\"},\"dim\":{\"h\":39,\"w\":250},\"border\":{\"style\":\"solid\",\"rounded\":{\"bl\":5,\"br\":5,\"tl\":5,\"tr\":5}},\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"linktag\":{\"link\":\"/login\"}},\"component\":{\"props\":{}}}],\"mobile\":{\"linktag\":{\"link\":\"/menu\"},\"layout\":{\"dir\":\"col\",\"align\":\"center\",\"gap\":0},\"dim\":{\"w\":\"fit\",\"h\":\"fit\"}},\"component\":{\"props\":{\"label_button\":{\"type\":\"string\",\"value\":\"\\\"Login\\\"\",\"meta\":{\"oldName\":\"new_prop\"},\"valueBuilt\":\"\\\"Login\\\";\\n\"},\"button_color\":{\"type\":\"string\",\"value\":\"\\\"\\\"\",\"meta\":{\"oldName\":\"new_prop\"},\"valueBuilt\":\"\\\"\\\";\\n\"},\"type_button\":{\"type\":\"string\",\"value\":\"\\\"Submit\\\"\",\"meta\":{\"oldName\":\"new_prop\",\"type\":\"option\",\"options\":\"[\\n  { \\n    label: \\\"Success\\\", \\n    value: \\\"Success\\\" \\n  },\\n  { \\n    label: \\\"Danger\\\", \\n    value: \\\"Danger\\\" \\n  },\\n  { \\n    label: \\\"Submit\\\", \\n    value: \\\"Submit\\\" \\n  },\\n  { \\n    label: \\\"Disabled\\\", \\n    value: \\\"Disabled\\\" \\n  },\\n]\"},\"valueBuilt\":\"\\\"Submit\\\";\\n\"}},\"id\":\"8680d22d-b66f-49e7-ae8b-fa1151993a47\",\"name\":\"\",\"group\":{\"id\":\"e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5\",\"name\":\"All\"}}},{\"id\":\"nbuef5mzwynlzbld0tnmo183\",\"adv\":{},\"dim\":{\"h\":\"fit\",\"w\":\"full\"},\"html\":\"Forgot password\",\"name\":\"text_register\",\"text\":\"\",\"type\":\"text\",\"childs\":[],\"layout\":{\"dir\":\"col\",\"gap\":0,\"align\":\"center\"},\"mobile\":{\"font\":{\"size\":15,\"family\":\"Poppins\",\"height\":\"auto\"}},\"component\":{\"props\":{}}}],\"mobile\":{\"dim\":{\"h\":\"full\",\"w\":288},\"layout\":{\"dir\":\"col\",\"gap\":\"auto\",\"align\":\"center\"},\"padding\":{\"b\":0,\"l\":0,\"r\":0,\"t\":0}},\"component\":{\"props\":{}}}_prasi",
+            "family": "Poppins",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "a9dmdab6cee4aqb84ho3h7cd",
+        "adv": {
+          "js": "<input type={input_type} placeholder={label} value={value} {...props} />\n",
+          "css": "& {\n  display: flex;\n  border-radius: 10px !important;\n  background: #FFF !important;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) !important;\n  width: 252px !important;\n  padding: 6px 10px !important;\n  align-items: flex-start !important;\n  gap: 10px !important;\n\n  &:hover {\n    display: flex;\n  }\n}",
+          "jsBuilt": "render(React.createElement(\"input\",{type:input_type,placeholder:label,value,...props}));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "fit"
+        },
+        "name": "text_input",
+        "type": "item",
+        "border": {
+          "color": "#000000",
+          "style": "solid",
+          "stroke": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          }
+        },
+        "childs": [],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "border": {
+            "color": "#000000",
+            "style": "solid",
+            "stroke": {
+              "b": 0,
+              "l": 0,
+              "r": 0,
+              "t": 0
+            }
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "fit"
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "align": "left"
+      }
+    },
+    "component": {
+      "id": "8a905e37-fbb0-4dd6-ba1b-b5bbff298599",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "label": {
+          "idx": 1,
+          "meta": {
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"user\"",
+          "valueBuilt": "\"user\";\n"
+        },
+        "value": {
+          "idx": 2,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"hello\""
+        },
+        "input_type": {
+          "idx": 3,
+          "meta": {
+            "oldName": "type"
+          },
+          "type": "string",
+          "value": "\"text\"",
+          "valueBuilt": "\"text\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-07-24T06:53:12.367Z",
+  "updated_at": "2023-08-01T03:53:58.811Z",
+  "type": "item",
+  "id_component_group": "947acf75-2762-49ab-878c-2e82fabf2577",
+  "props": []
+}

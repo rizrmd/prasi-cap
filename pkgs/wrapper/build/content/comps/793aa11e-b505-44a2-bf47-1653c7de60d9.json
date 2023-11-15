@@ -1,0 +1,80 @@
+{
+  "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+  "name": "timestamp-text",
+  "content_tree": {
+    "id": "jxs1ito6qlhjk63ft1apyy7o",
+    "adv": {},
+    "name": "timestamp-text",
+    "type": "item",
+    "childs": [
+      {
+        "id": "g55cpsx12ce4h6r0n6me0d84",
+        "adv": {
+          "js": "<div {...props}>{timestamps_date}</div>",
+          "jsBuilt": "render(React.createElement(\"div\",{...props},timestamps_date));\n"
+        },
+        "dim": {
+          "h": "fit",
+          "w": "full"
+        },
+        "html": "27 minutes ago",
+        "name": "time",
+        "text": "",
+        "type": "text",
+        "childs": [],
+        "layout": {
+          "dir": "col",
+          "gap": 0,
+          "align": "center"
+        },
+        "mobile": {
+          "font": {
+            "size": 12,
+            "color": "#0062A3",
+            "height": "auto"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "left"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ],
+    "mobile": {
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "timestamps_date": {
+          "idx": 1,
+          "meta": {
+            "type": "text",
+            "oldName": "new_prop"
+          },
+          "type": "string",
+          "value": "\"timestamps value\"",
+          "valueBuilt": "\"timestamps value\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-02T08:53:29.122Z",
+  "updated_at": "2023-09-13T09:57:14.908Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

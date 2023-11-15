@@ -1,0 +1,448 @@
+{
+  "id": "ff38c1a4-d3ec-4a3e-8670-185eb87b5f40",
+  "name": "splash-screen",
+  "url": "/",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "rto5r6qlasfcq2zpfqofurt5",
+        "adv": {},
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "k3nrp6xsvmtz3dz11t9bjor7",
+            "adv": {
+              "css": "& {\n  display: flex;\n  height: 80%;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+              "html": ""
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "body",
+            "type": "item",
+            "childs": [
+              {
+                "id": "a2snyc81sr1dzl0w70l3pjkt",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  height: 60%;\n  \n  &:hover {\n    display: flex;\n  }\n}"
+                },
+                "name": "top",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "ewnt3h9qzjhqokg5pbe6qyac",
+                    "adv": {
+                      "js": "<PassProp val_props={\"Let's Get Started\"}><div {...props}>{children}</div></PassProp>",
+                      "jsBuilt": "render(React.createElement(PassProp,{val_props:\"Let's Get Started\"},React.createElement(\"div\",{...props},children)));\n"
+                    },
+                    "name": "heading 1",
+                    "type": "item",
+                    "childs": [
+                      {
+                        "id": "mos9b3xrdm8jch58qdf1xrol",
+                        "adv": {
+                          "js": "<div {...props}>{val_props}</div>",
+                          "css": "& {\n  display: flex;\n  font-weight: bold;\n  width: 100%;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+                          "jsBuilt": "render(React.createElement(\"div\",{...props},val_props));\n"
+                        },
+                        "dim": {
+                          "h": "fit",
+                          "w": "full"
+                        },
+                        "html": "Lets Get Started",
+                        "name": "greeting_text",
+                        "text": "",
+                        "type": "text",
+                        "childs": [],
+                        "layout": {
+                          "dir": "col",
+                          "gap": 0,
+                          "align": "center"
+                        },
+                        "mobile": {
+                          "dim": {
+                            "h": "fit",
+                            "w": "fit"
+                          },
+                          "font": {
+                            "size": 24,
+                            "family": "Poppins",
+                            "height": "auto"
+                          },
+                          "layout": {
+                            "dir": "col",
+                            "gap": 0,
+                            "align": "left"
+                          },
+                          "padding": {
+                            "b": 0,
+                            "l": 0,
+                            "r": 0,
+                            "t": 0
+                          }
+                        },
+                        "component": {
+                          "props": {}
+                        }
+                      }
+                    ],
+                    "mobile": {
+                      "dim": {
+                        "h": "fit",
+                        "w": "full"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    },
+                    "component": {}
+                  },
+                  {
+                    "id": "vet1x5vasmpmnsfedcyslo52",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  -webkit-transform: scaleX(-1);\n  transform: scaleX(-1);\n  align-self: center;\n  \n  &:hover {\n    display: flex;\n  }\n}",
+                      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width= '100%' height=\"29\" fill=\"none\">\n<rect width=\"28\" height=\"29\" rx=\"10\" transform=\"matrix(1 0 0 -1 0 29)\" fill=\"#0062A3\"/>\n<rect width=\"28\" height=\"29\" rx=\"10\" transform=\"matrix(1 0 0 -1 55 29)\" fill=\"#57C5B6\" fill-opacity=\"0.35\"/>\n<path d=\"M107 19C107 24.5228 111.477 29 117 29H125C130.523 29 135 24.5228 135 19V10C135 4.47715 130.523 0 125 0H117C111.477 0 107 4.47715 107 10V19Z\" fill=\"#0062A3\"/>\n</svg>"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "fit"
+                    },
+                    "name": "image_body",
+                    "type": "item",
+                    "childs": [],
+                    "mobile": {
+                      "bg": {
+                        "pos": "center",
+                        "size": "cover",
+                        "color": ""
+                      },
+                      "dim": {
+                        "h": "fit",
+                        "w": 246
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "center"
+                      }
+                    },
+                    "component": {
+                      "props": {}
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": 120,
+                    "w": 250
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 18,
+                    "align": "bottom-center"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "yp5lkhokhv3oiwwyyi474ovp",
+                "adv": {
+                  "css": "& {\n  display: flex;\n  height: 30%;\n  \n  &:hover {\n    display: flex;\n  }\n}"
+                },
+                "name": "bottom",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "p0ykqspxi1khgajkrnexzzgn",
+                    "name": "button",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                      "props": {
+                        "action": {
+                          "value": "\"navigate\"",
+                          "valueBuilt": "\"navigate\";\n"
+                        },
+                        "text_color": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"\"",
+                          "valueBuilt": "\"\";\n"
+                        },
+                        "name_button": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"login\"",
+                          "valueBuilt": "\"login\";\n"
+                        },
+                        "type_button": {
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"Action\"",
+                          "valueBuilt": "\"Action\";\n"
+                        },
+                        "button_color": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"\"",
+                          "valueBuilt": "\"\";\n"
+                        },
+                        "label_button": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Login\"",
+                          "content": {
+                            "id": "r3syw23iwn0xf0w5lautam1f",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "label_button",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "p0ykqspxi1khgajkrnexzzgn"
+                          },
+                          "valueBuilt": "\"Login\";\n"
+                        },
+                        "width_button": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"250px\"",
+                          "valueBuilt": "\"250px\";\n"
+                        },
+                        "navigate_link": {
+                          "idx": 6,
+                          "meta": {
+                            "oldName": "navigate"
+                          },
+                          "type": "string",
+                          "value": "\"/auth/login\"",
+                          "visible": "type_button !== 'Submit' && action === 'navigate'",
+                          "valueBuilt": "\"/auth/login\";\n"
+                        },
+                        "action_function": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop_1"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "visible": "type_button !== 'Submit' && action === 'function'",
+                          "valueBuilt": "()=>{};\n"
+                        }
+                      },
+                      "updated_at": 1692005629672
+                    }
+                  },
+                  {
+                    "id": "qj0c6h2yql08027tzgdytv72",
+                    "name": "button",
+                    "type": "item",
+                    "childs": [],
+                    "component": {
+                      "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                      "props": {
+                        "action": {
+                          "idx": 4,
+                          "meta": {
+                            "type": "option",
+                            "oldName": "new_prop",
+                            "options": "[\n  {\n    label: \"function\",\n    value: \"function\"\n  },\n  {\n    label: \"navigate\",\n    value: \"navigate\"\n  },\n]"
+                          },
+                          "type": "string",
+                          "value": "\"navigate\"",
+                          "visible": "type_button !== 'Submit'",
+                          "valueBuilt": "\"navigate\";\n"
+                        },
+                        "text_color": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"#0062A3\"",
+                          "valueBuilt": "\"#0062A3\";\n"
+                        },
+                        "name_button": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"register\"",
+                          "valueBuilt": "\"register\";\n"
+                        },
+                        "type_button": {
+                          "value": "\"Action\"",
+                          "valueBuilt": "\"Action\";\n"
+                        },
+                        "button_color": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"#C4EBE5\"",
+                          "valueBuilt": "\"#C4EBE5\";\n"
+                        },
+                        "label_button": {
+                          "meta": {
+                            "oldName": "new_prop"
+                          },
+                          "type": "string",
+                          "value": "\"Register\"",
+                          "content": {
+                            "id": "jyv5gfv8leeuhcrfi5nzkef8",
+                            "dim": {
+                              "h": "full",
+                              "w": "full"
+                            },
+                            "name": "label_button",
+                            "type": "item",
+                            "childs": [],
+                            "parentInstanceId": "qj0c6h2yql08027tzgdytv72"
+                          },
+                          "valueBuilt": "\"Register\";\n"
+                        },
+                        "width_button": {
+                          "idx": 3,
+                          "meta": {
+                            "type": "text",
+                            "options": "[\n  {\n    label: \"100\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                          },
+                          "name": "prop",
+                          "type": "string",
+                          "value": "\"250px\"",
+                          "valueBuilt": "\"250px\";\n"
+                        },
+                        "navigate_link": {
+                          "meta": {
+                            "oldName": "navigate"
+                          },
+                          "type": "string",
+                          "value": "\"/auth/register\"",
+                          "valueBuilt": "\"/auth/register\";\n"
+                        },
+                        "action_function": {
+                          "idx": 5,
+                          "meta": {
+                            "type": "text",
+                            "oldName": "new_prop_1"
+                          },
+                          "type": "() => void",
+                          "value": "() => {}",
+                          "visible": "type_button !== 'Submit' && action === 'function'",
+                          "valueBuilt": "()=>{};\n"
+                        }
+                      },
+                      "updated_at": 1692005629672
+                    }
+                  }
+                ],
+                "mobile": {
+                  "layout": {
+                    "dir": "col",
+                    "gap": 24,
+                    "align": "center"
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 0,
+                    "r": 0,
+                    "t": 0
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "full",
+                "w": 250
+              },
+              "layout": {
+                "dir": "col",
+                "gap": "auto",
+                "align": "center"
+              },
+              "padding": {
+                "b": 0,
+                "l": 0,
+                "r": 0,
+                "t": 0
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "vdhbxir14qtcqo9pmq3l82v9",
+            "adv": {},
+            "name": "footer",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "3b8b07b8-c564-4cd1-9a8d-854225974b69",
+              "props": {},
+              "updated_at": 1690515041827
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "full",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-17T08:54:35.192Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-10-25T06:12:48.189Z",
+  "id_folder": "3aad61d1-bc0c-4d9c-b8cf-f7daf70c83d3",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}

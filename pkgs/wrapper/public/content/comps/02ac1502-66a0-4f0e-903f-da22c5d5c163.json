@@ -1,0 +1,370 @@
+{
+  "id": "02ac1502-66a0-4f0e-903f-da22c5d5c163",
+  "name": "detail-transcript-staffpengajar",
+  "content_tree": {
+    "id": "i5p26obzqyyjg130uh3sd31a",
+    "adv": {
+      "js": "childen",
+      "css": "",
+      "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "detail-transcript-staffpengajar",
+    "type": "item",
+    "childs": [
+      {
+        "id": "u1qbo3ru7xejmxp29uueeoqd",
+        "adv": {
+          "css": "& {\n  display: flex;\n  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\n  border-radius: 10px;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+        },
+        "name": "Wrapped",
+        "type": "item",
+        "childs": [
+          {
+            "id": "kql2jw0sqgyo0pisy6l3av2h",
+            "adv": {
+              "css": "",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"24\" viewBox=\"0 0 30 24\" fill=\"none\">\r\n  <path\r\n    d=\"M14.6667 24L5.33333 18.9333V10.9333L0 8L14.6667 0L29.3333 8V18.6667H26.6667V9.46667L24 10.9333V18.9333L14.6667 24ZM14.6667 12.9333L23.8 8L14.6667 3.06667L5.53333 8L14.6667 12.9333ZM14.6667 20.9667L21.3333 17.3667V12.3333L14.6667 16L8 12.3333V17.3667L14.6667 20.9667Z\"\r\n    fill=\"#002B5B\" />\r\n</svg>"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "icon",
+            "type": "item",
+            "childs": []
+          },
+          {
+            "id": "kxw7q0gzmb0azbc05l5aaw0u",
+            "name": "detail",
+            "type": "item",
+            "childs": [
+              {
+                "id": "wwjafniwwf08whqhw53h8d9s",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "list-text",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "tmh0xyeurf32kbh2mt22zwj1",
+                    "adv": {
+                      "css": "& {\n  display: flex;\n  font-weight: bold;\n\n  // &.mobile {}\n  // &.desktop {}\n  // &:hover {}\n}"
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "Semester 1",
+                    "name": "semester",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    }
+                  },
+                  {
+                    "id": "owuyqrtcxrk8enhz4itgjgtz",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "2023/2024",
+                    "name": "year",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    }
+                  },
+                  {
+                    "id": "uicvwl8rj63krck9fh8krtq9",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "3 Ungraded Subject",
+                    "name": "notif",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    },
+                    "mobile": {
+                      "font": {
+                        "size": 15,
+                        "align": "left",
+                        "color": "#0062A3",
+                        "height": "auto",
+                        "wordBreak": "break-normal",
+                        "whitespace": "whitespace-normal"
+                      },
+                      "layout": {
+                        "dir": "col",
+                        "gap": 0,
+                        "align": "left"
+                      }
+                    }
+                  }
+                ],
+                "mobile": {
+                  "dim": {
+                    "h": "fit",
+                    "w": "full"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "layout": {
+                    "dir": "col",
+                    "gap": 0,
+                    "wrap": "flex-nowrap",
+                    "align": "top-left"
+                  }
+                }
+              },
+              {
+                "id": "hgs6q5p8yqurd2a2fibhgavk",
+                "adv": {
+                  "css": ""
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "gpa",
+                "type": "item",
+                "childs": [
+                  {
+                    "id": "z9fxbeiwwxs2bkehp0eq7mxl",
+                    "adv": {
+                      "css": ""
+                    },
+                    "dim": {
+                      "h": "fit",
+                      "w": "full"
+                    },
+                    "html": "4.0",
+                    "name": "gpa",
+                    "text": "",
+                    "type": "text",
+                    "layout": {
+                      "dir": "col",
+                      "gap": 0,
+                      "align": "center"
+                    }
+                  }
+                ],
+                "mobile": {
+                  "bg": {
+                    "pos": "center",
+                    "size": "cover",
+                    "color": "#1A5F7A"
+                  },
+                  "dim": {
+                    "h": "fit",
+                    "w": "fit"
+                  },
+                  "font": {
+                    "size": 15,
+                    "align": "left",
+                    "color": "#ffffff",
+                    "height": "auto",
+                    "wordBreak": "break-normal",
+                    "whitespace": "whitespace-normal"
+                  },
+                  "border": {
+                    "style": "solid",
+                    "rounded": {
+                      "bl": 10,
+                      "br": 10,
+                      "tl": 10,
+                      "tr": 10
+                    }
+                  },
+                  "padding": {
+                    "b": 0,
+                    "l": 15,
+                    "r": 15,
+                    "t": 0
+                  }
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full",
+                "hUnit": "px",
+                "wUnit": "px"
+              },
+              "layout": {
+                "dir": "row",
+                "gap": 0,
+                "wrap": "flex-nowrap",
+                "align": "top-left"
+              }
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full",
+            "hUnit": "px",
+            "wUnit": "px"
+          },
+          "border": {
+            "style": "solid",
+            "rounded": {
+              "bl": 0,
+              "br": 0,
+              "tl": 0,
+              "tr": 0
+            }
+          },
+          "layout": {
+            "dir": "row",
+            "gap": 10,
+            "wrap": "flex-nowrap",
+            "align": "left"
+          },
+          "padding": {
+            "b": 5,
+            "l": 15,
+            "r": 15,
+            "t": 5
+          }
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "fit",
+        "w": "full"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 0,
+          "br": 0,
+          "tl": 0,
+          "tr": 0
+        }
+      },
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "wrap": "flex-nowrap",
+        "align": "left"
+      },
+      "padding": {
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "t": 0
+      }
+    },
+    "component": {
+      "id": "02ac1502-66a0-4f0e-903f-da22c5d5c163",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {
+        "gpa": {
+          "idx": 3,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"3.99\"",
+          "valueBuilt": "\"3.99\";\n"
+        },
+        "year": {
+          "idx": 1,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"2023\"",
+          "valueBuilt": "\"2023\";\n"
+        },
+        "subject": {
+          "idx": 2,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"Ungraded\"",
+          "valueBuilt": "\"Ungraded\";\n"
+        },
+        "semester": {
+          "idx": 0,
+          "meta": {
+            "type": "text"
+          },
+          "name": "prop",
+          "type": "string",
+          "value": "\"semester\"",
+          "valueBuilt": "\"semester\";\n"
+        }
+      }
+    }
+  },
+  "created_at": "2023-08-30T04:51:30.256Z",
+  "updated_at": "2023-08-30T05:57:29.780Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

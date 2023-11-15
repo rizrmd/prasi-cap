@@ -1,0 +1,141 @@
+{
+  "id": "9a8c7d60-ac0b-40e1-920f-7e2933770347",
+  "name": "data-chat",
+  "content_tree": {
+    "id": "pju8nqsnmy6uzrgx985i9ncc",
+    "adv": {
+      "js": "",
+      "css": "& {\r\n  display: flex;\r\n    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+    },
+    "dim": {
+      "h": "fit",
+      "w": "fit"
+    },
+    "name": "data-chat",
+    "type": "item",
+    "childs": [
+      {
+        "id": "ojcbxx24gtrtshnbjerwonqd",
+        "name": "text-normal",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+          "props": {
+            "label": {
+              "idx": 2,
+              "meta": {
+                "type": "text",
+                "oldName": "new_prop"
+              },
+              "type": "string",
+              "value": "\"dr. Meikarta ignatius\"",
+              "valueBuilt": "\"dr. Meikarta ignatius\";\n"
+            },
+            "weight": {
+              "idx": 1,
+              "meta": {
+                "type": "option",
+                "oldName": "font_weight",
+                "options": "[\n  {\n    label: \"normal\",\n    value: \"normal\"\n  },\n  {\n    label: \"bold\",\n    value: \"bold\"\n  },\n  {\n    label: \"semi\",\n    value: \"semi\"\n  },\n]"
+              },
+              "type": "string",
+              "value": "\"bold\"",
+              "valueBuilt": "\"bold\";\n"
+            }
+          },
+          "updated_at": 1691746438931
+        }
+      },
+      {
+        "id": "ccf8qga60z591am4ue8szjqm",
+        "name": "text-normal",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "id": "e16d18a9-54b6-4ae8-834c-b49430d88de0",
+          "props": {
+            "label": {
+              "idx": 2,
+              "meta": {
+                "type": "text",
+                "oldName": "new_prop"
+              },
+              "type": "string",
+              "value": "\"Where to get other reference journals about this materials?\"",
+              "valueBuilt": "\"Where to get other reference journals about this materials?\";\n"
+            }
+          },
+          "updated_at": 1691746438931
+        }
+      },
+      {
+        "id": "pgi143aeotbxsrgg7zf3ubxe",
+        "name": "timestamp-text",
+        "type": "item",
+        "childs": [],
+        "component": {
+          "id": "793aa11e-b505-44a2-bf47-1653c7de60d9",
+          "props": {
+            "timestamps_date": {
+              "idx": 1,
+              "meta": {
+                "type": "text",
+                "oldName": "new_prop"
+              },
+              "type": "string",
+              "value": "item.time",
+              "valueBuilt": " item.time;\n"
+            }
+          },
+          "updated_at": 1691468169611
+        }
+      }
+    ],
+    "mobile": {
+      "dim": {
+        "h": "full",
+        "w": "full"
+      },
+      "font": {
+        "size": 15,
+        "color": "#002B5B",
+        "family": "Poppins",
+        "height": "auto"
+      },
+      "border": {
+        "style": "solid",
+        "rounded": {
+          "bl": 5,
+          "br": 5,
+          "tl": 5,
+          "tr": 5
+        }
+      },
+      "layout": {
+        "dir": "col",
+        "gap": 0,
+        "align": "top-left"
+      },
+      "padding": {
+        "b": 7,
+        "l": 32,
+        "r": 32,
+        "t": 7
+      }
+    },
+    "component": {
+      "id": "9a8c7d60-ac0b-40e1-920f-7e2933770347",
+      "group": {
+        "id": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+        "name": "All"
+      },
+      "props": {}
+    }
+  },
+  "created_at": "2023-08-21T00:49:49.680Z",
+  "updated_at": "2023-08-21T00:49:52.522Z",
+  "type": "item",
+  "id_component_group": "e08f9ffa-e31f-4540-b651-a8b9ebd6e0e5",
+  "props": []
+}

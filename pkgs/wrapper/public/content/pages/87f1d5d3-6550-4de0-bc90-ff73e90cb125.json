@@ -1,0 +1,595 @@
+{
+  "id": "87f1d5d3-6550-4de0-bc90-ff73e90cb125",
+  "name": "update-ppds",
+  "url": "/ppds-senior/data/ppds/update",
+  "content_tree": {
+    "id": "root",
+    "type": "root",
+    "childs": [
+      {
+        "id": "ykbjlkfa38hyt1wiuz2wjj1x",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  top: 0%;\r\n  z-index: 50;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "top",
+        "type": "section",
+        "childs": [
+          {
+            "id": "vi3pqvdtrs58413w7kw56fhx",
+            "name": "page-title",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "9112f529-187c-49a1-a0ce-71176723f914",
+              "props": {
+                "label": {
+                  "idx": 0,
+                  "meta": {
+                    "type": "text",
+                    "oldName": "label_props",
+                    "options": "[\n  {\n    label: \"YES\",\n    value: \"y\"\n  },\n  {\n    label: \"NO\",\n    value: \"n\"\n  },\n]"
+                  },
+                  "type": "text",
+                  "value": "\"Update PPDS\"",
+                  "valueBuilt": "\"Update PPDS\";\n"
+                },
+                "label_props": {
+                  "meta": {
+                    "type": "text",
+                    "oldName": "new_prop"
+                  },
+                  "type": "string",
+                  "value": "\"PPDS Senior\"",
+                  "valueBuilt": "\"PPDS Senior\";\n"
+                }
+              },
+              "updated_at": 1690939230974
+            }
+          }
+        ],
+        "mobile": {
+          "bg": {
+            "pos": "center",
+            "size": "cover",
+            "color": "#ffffff"
+          },
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "ux00ely04an6ey7uu69r5mot",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  overflow: auto;\r\n  padding-top: 10%;\r\n  \r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "screen",
+        "type": "section",
+        "childs": [
+          {
+            "id": "tio4vvkjs3icdnzzc69qaeol",
+            "adv": {},
+            "name": "image_container",
+            "type": "item",
+            "childs": [
+              {
+                "id": "kzlbn50k337b9ie473mv003i",
+                "adv": {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"52\" height=\"52\" fill=\"none\">\n<mask id=\"mask0_201_98\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"52\" height=\"52\">\n<rect width=\"52\" height=\"52\" fill=\"#D9D9D9\"/>\n</mask>\n<g mask=\"url(#mask0_201_98)\">\n<path d=\"M12.3417 37.5301C14.1833 36.0867 16.2417 34.9487 18.5167 34.116C20.7917 33.2833 23.175 32.8669 25.6667 32.8669C28.1583 32.8669 30.5417 33.2833 32.8167 34.116C35.0917 34.9487 37.15 36.0867 38.9917 37.5301C40.2556 36.0127 41.2396 34.2918 41.9438 32.3673C42.6479 30.4429 43 28.3889 43 26.2053C43 21.2832 41.3118 17.0919 37.9354 13.6316C34.559 10.1712 30.4694 8.44107 25.6667 8.44107C20.8639 8.44107 16.7743 10.1712 13.3979 13.6316C10.0215 17.0919 8.33333 21.2832 8.33333 26.2053C8.33333 28.3889 8.68542 30.4429 9.38958 32.3673C10.0938 34.2918 11.0778 36.0127 12.3417 37.5301ZM25.6667 28.4259C23.5361 28.4259 21.7396 27.6764 20.2771 26.1776C18.8146 24.6787 18.0833 22.8375 18.0833 20.654C18.0833 18.4705 18.8146 16.6293 20.2771 15.1304C21.7396 13.6316 23.5361 12.8821 25.6667 12.8821C27.7972 12.8821 29.5938 13.6316 31.0563 15.1304C32.5188 16.6293 33.25 18.4705 33.25 20.654C33.25 22.8375 32.5188 24.6787 31.0563 26.1776C29.5938 27.6764 27.7972 28.4259 25.6667 28.4259ZM25.6667 48.4107C22.6694 48.4107 19.8528 47.8278 17.2167 46.662C14.5806 45.4962 12.2875 43.9141 10.3375 41.9156C8.3875 39.9171 6.84375 37.5671 5.70625 34.8654C4.56875 32.1638 4 29.2771 4 26.2053C4 23.1336 4.56875 20.2469 5.70625 17.5453C6.84375 14.8436 8.3875 12.4935 10.3375 10.4951C12.2875 8.49658 14.5806 6.91445 17.2167 5.74867C19.8528 4.58289 22.6694 4 25.6667 4C28.6639 4 31.4806 4.58289 34.1167 5.74867C36.7528 6.91445 39.0458 8.49658 40.9958 10.4951C42.9458 12.4935 44.4896 14.8436 45.6271 17.5453C46.7646 20.2469 47.3333 23.1336 47.3333 26.2053C47.3333 29.2771 46.7646 32.1638 45.6271 34.8654C44.4896 37.5671 42.9458 39.9171 40.9958 41.9156C39.0458 43.9141 36.7528 45.4962 34.1167 46.662C31.4806 47.8278 28.6639 48.4107 25.6667 48.4107ZM25.6667 43.9696C27.5806 43.9696 29.3861 43.6828 31.0833 43.1092C32.7806 42.5355 34.3333 41.7121 35.7417 40.6388C34.3333 39.5656 32.7806 38.7421 31.0833 38.1685C29.3861 37.5948 27.5806 37.308 25.6667 37.308C23.7528 37.308 21.9472 37.5948 20.25 38.1685C18.5528 38.7421 17 39.5656 15.5917 40.6388C17 41.7121 18.5528 42.5355 20.25 43.1092C21.9472 43.6828 23.7528 43.9696 25.6667 43.9696ZM25.6667 23.9848C26.6056 23.9848 27.3819 23.6702 27.9958 23.0411C28.6097 22.4119 28.9167 21.6162 28.9167 20.654C28.9167 19.6918 28.6097 18.8961 27.9958 18.2669C27.3819 17.6378 26.6056 17.3232 25.6667 17.3232C24.7278 17.3232 23.9514 17.6378 23.3375 18.2669C22.7236 18.8961 22.4167 19.6918 22.4167 20.654C22.4167 21.6162 22.7236 22.4119 23.3375 23.0411C23.9514 23.6702 24.7278 23.9848 25.6667 23.9848Z\" fill=\"#002B5B\"/>\n</g>\n</svg>"
+                },
+                "dim": {
+                  "h": "fit",
+                  "w": "fit"
+                },
+                "name": "image_profile",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "props": {}
+                }
+              },
+              {
+                "id": "gjexw6ey2wd1t6bivztbt99c",
+                "adv": {},
+                "dim": {
+                  "h": "fit",
+                  "w": "full"
+                },
+                "html": "Upload Profile",
+                "name": "text",
+                "text": "",
+                "type": "text",
+                "childs": [],
+                "layout": {
+                  "dir": "col",
+                  "gap": 0,
+                  "align": "center"
+                },
+                "mobile": {
+                  "font": {
+                    "size": 15,
+                    "color": "#002B5B",
+                    "family": "Poppins",
+                    "height": "auto"
+                  }
+                },
+                "component": {
+                  "props": {}
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 10,
+                "align": "center"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "a0aq6yrava2x8mxt476327wu",
+            "adv": {
+              "js": "<div {...props}>{children}</div>",
+              "css": "& {\r\n  display: flex;\r\n  padding-bottom: 175px;\r\n\r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}",
+              "jsBuilt": "render(React.createElement(\"div\",{...props},children));\n"
+            },
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "list-inputfield",
+            "type": "item",
+            "childs": [
+              {
+                "id": "ikbx1tig9s9xo599rve9lqd3",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Name\"",
+                      "valueBuilt": "\"Name\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"dr Ahmada Nasution\"",
+                      "valueBuilt": "\"dr Ahmada Nasution\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "di5v85d8d4xwolwd43l1um54",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Date of Birth\"",
+                      "valueBuilt": "\"Date of Birth\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"27 June 1996\"",
+                      "valueBuilt": "\"27 June 1996\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "uniskmhylb3jbeh2zu149gpp",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Gender\"",
+                      "valueBuilt": "\"Gender\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Male\"",
+                      "valueBuilt": "\"Male\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "liecho53e8cltw5ed2pffwdr",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Specialist\"",
+                      "valueBuilt": "\"Specialist\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Orthopedic Spot Injury\"",
+                      "valueBuilt": "\"Orthopedic Spot Injury\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "hmioxnrnxecvhf4k0pmzjqc1",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Phone\"",
+                      "valueBuilt": "\"Phone\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"0814765112\"",
+                      "valueBuilt": "\"0814765112\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "qz56e4ukq1397wkafpod713q",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Email\"",
+                      "valueBuilt": "\"Email\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"ahmda18001@mail.com\"",
+                      "valueBuilt": "\"ahmda18001@mail.com\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              },
+              {
+                "id": "ovib395sm3s7pbdt7w3b7ycc",
+                "adv": {},
+                "name": "input_field",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "578f3a48-fffd-477e-918c-e92c449572dc",
+                  "props": {
+                    "label": {
+                      "idx": 1,
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Address\"",
+                      "valueBuilt": "\"Address\";\n"
+                    },
+                    "value": {
+                      "idx": 2,
+                      "meta": {
+                        "type": "text",
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"pahlawan street no 17 Surabaya\"",
+                      "valueBuilt": "\"pahlawan street no 17 Surabaya\";\n"
+                    },
+                    "type_input": {
+                      "idx": 4,
+                      "meta": {
+                        "type": "option",
+                        "oldName": "type",
+                        "options": "[\n  { \n    label: \"text\", \n    value: \"text\" \n  },\n{\nlabel: \"toggle\",\nvalue: \"toggle\"\n},\n  { \n    label: \"number\", \n    value: \"number\" \n  },\n  { \n    label: \"password\", \n    value: \"password\" \n  },\n  { \n    label: \"date\", \n    value: \"date\" \n  },\n  { \n    label: \"file\", \n    value: \"file\" \n  },\n  {\n    label: \"checkbox\",\n    value: \"checkbox\"\n  }\n]"
+                      },
+                      "type": "string",
+                      "value": "\"text\"",
+                      "valueBuilt": "\"text\";\n"
+                    }
+                  },
+                  "updated_at": 1691402405967
+                }
+              }
+            ],
+            "mobile": {
+              "dim": {
+                "h": "fit",
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 16,
+                "align": "top-left"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          }
+        ],
+        "component": {
+          "props": {}
+        }
+      },
+      {
+        "id": "idu16mxxtmr08dntk49pqltd",
+        "adv": {
+          "css": "& {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0%;\r\n  \r\n  &:hover {\r\n    display: flex;\r\n  }\r\n}"
+        },
+        "dim": {
+          "h": "full",
+          "w": "full"
+        },
+        "name": "menu",
+        "type": "section",
+        "childs": [
+          {
+            "id": "oem4mr1esutfnomu032xmmf9",
+            "adv": {},
+            "dim": {
+              "h": "fit",
+              "w": "fit"
+            },
+            "name": "button",
+            "type": "item",
+            "childs": [
+              {
+                "id": "o3pnng7zllb1pr1jbhpazf2c",
+                "name": "button",
+                "type": "item",
+                "childs": [],
+                "component": {
+                  "id": "8680d22d-b66f-49e7-ae8b-fa1151993a47",
+                  "props": {
+                    "type_button": {
+                      "meta": {
+                        "type": "option",
+                        "oldName": "new_prop",
+                        "options": "[\n  { \n    label: \"Success\", \n    value: \"Success\" \n  },\n{ label: \"Edit\",\nvalue: \"Edit\"},\n  { \n    label: \"Danger\", \n    value: \"Danger\" \n  },\n  { \n    label: \"Submit\", \n    value: \"Submit\" \n  },\n  { \n    label: \"Disabled\", \n    value: \"Disabled\" \n  },\n]"
+                      },
+                      "type": "string",
+                      "value": "\"Submit\"",
+                      "valueBuilt": "\"Submit\";\n"
+                    },
+                    "label_button": {
+                      "meta": {
+                        "oldName": "new_prop"
+                      },
+                      "type": "string",
+                      "value": "\"Create\"",
+                      "valueBuilt": "\"Create\";\n"
+                    }
+                  },
+                  "updated_at": 1691129495881
+                }
+              }
+            ],
+            "mobile": {
+              "bg": {
+                "pos": "center",
+                "size": "cover",
+                "color": "#ffffff"
+              },
+              "dim": {
+                "h": 120,
+                "w": "full"
+              },
+              "layout": {
+                "dir": "col",
+                "gap": 0,
+                "align": "top-center"
+              }
+            },
+            "component": {
+              "props": {}
+            }
+          },
+          {
+            "id": "ura5pg77mmsng7qbjmy5sfqb",
+            "name": "menu-ppds",
+            "type": "item",
+            "childs": [],
+            "component": {
+              "id": "29696634-35d5-4f70-8e2d-b3496984bd04",
+              "props": {},
+              "updated_at": 1691466520380
+            }
+          }
+        ],
+        "mobile": {
+          "dim": {
+            "h": "fit",
+            "w": "full"
+          },
+          "layout": {
+            "dir": "col",
+            "gap": 0,
+            "align": "center"
+          }
+        },
+        "component": {
+          "props": {}
+        }
+      }
+    ]
+  },
+  "id_site": "2512068e-fd68-44f5-9700-5153ccecf6a5",
+  "created_at": "2023-07-25T06:39:57.852Z",
+  "js_compiled": null,
+  "js": null,
+  "updated_at": "2023-08-08T04:18:27.098Z",
+  "id_folder": "643669c1-125a-4e8a-8c34-03596fb74e26",
+  "is_deleted": false,
+  "id_layout": null,
+  "is_default_layout": false
+}
