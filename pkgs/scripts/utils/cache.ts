@@ -45,7 +45,7 @@ export const prepareSiteCache = async (target: string) => {
     html = html.replace(/\[\[site_id\]\]/gi, AppState.site_id);
     html = html.replace(
       `<script>`,
-      `<script>window.mobilepath = "https://localhost/content";`
+      `<script>window.mobilepath = "https://localhost";`
     );
     await Bun.write(Bun.file(`${pubdir}/index.html`), html);
     await Bun.write(
@@ -60,14 +60,21 @@ export const prepareSiteCache = async (target: string) => {
     const res = gunzipSync(new Uint8Array(await contentz.arrayBuffer()));
     const content = JSON.parse(decoder.decode(res)) as CONTENT;
     await $`rm -rf ${pubdir}/content`;
+    const pages = {} as any;
+
+    const npm_pages = [] as string[];
     for (const c of Object.keys(content)) {
       const sdir = `${pubdir}/content/${c}`;
       const child = (content as any)[c] as Record<string, any>;
       await $`mkdir -p ${sdir}`;
       if (Array.isArray(child)) {
-        for (const c of child) {
-          const file = Bun.file(`${sdir}/${c.id}.json`);
-          await Bun.write(file, JSON.stringify(c, null, 2));
+        for (const item of child) {
+          if (c === "pages") {
+            pages[item.id] = { ...item, content_tree: undefined };
+          }
+
+          const file = Bun.file(`${sdir}/${item.id}.json`);
+          await Bun.write(file, JSON.stringify(item, null, 2));
         }
       } else {
         if (c === "npm") {
@@ -78,6 +85,7 @@ export const prepareSiteCache = async (target: string) => {
                 await $`mkdir -p ${sdir}/${k}/${i}`;
                 for (const [r, s] of Object.entries(j as any)) {
                   const file = Bun.file(`${sdir}/${k}/${i}/${r}`);
+                  npm_pages.push(i);
                   await Bun.write(
                     file,
                     typeof s === "string" ? s : JSON.stringify(s, null, 2)
@@ -97,6 +105,14 @@ export const prepareSiteCache = async (target: string) => {
         }
       }
     }
+    await Bun.write(
+      `${pubdir}/content/site/pages.json`,
+      JSON.stringify(Object.values(pages), null, 2)
+    );
+    await Bun.write(
+      `${pubdir}/content/site/npm_pages.json`,
+      JSON.stringify(npm_pages, null, 2)
+    );
 
     await $`rm ${pubdir}/content.z`;
   }
@@ -108,7 +124,7 @@ const downloadArchive = async (target: string) => {
     !(await Bun.file(`${pubdir}/content.md5`).exists()) ||
     !Bun.file(`${pubdir}/content`).size
   ) {
-    console.log("downloading content.z", await urlmap("content.gz"));
+    console.log("downloading content.z");
     const md5 = await fetch(await urlmap("content.md5"));
     await Bun.write(Bun.file(`${pubdir}/content.md5`), await md5.arrayBuffer());
     const gz = await fetch(await urlmap("content.gz"));
@@ -117,7 +133,7 @@ const downloadArchive = async (target: string) => {
     const md5 = await fetch(await urlmap("content.md5"));
     const md5text = await md5.text();
     if (md5text !== (await Bun.file(`${pubdir}/content.md5`).text())) {
-      console.log("downloading content.z", await urlmap("content.gz"));
+      console.log("downloading content.z");
       await Bun.write(Bun.file(`${pubdir}/content.md5`), md5text);
       const gz = await fetch(await urlmap("content.gz"));
       await Bun.write(Bun.file(`${pubdir}/content.z`), await gz.arrayBuffer());
