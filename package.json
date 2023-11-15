@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "cap": "cd pkgs/capacitor && bun cap",
-    "dev": " bun --hot run pkgs/scripts/dev.ts",
+    "dev": " bun run pkgs/scripts/dev.ts",
     "setup": " bun run pkgs/scripts/setup.ts"
   },
   "devDependencies": {

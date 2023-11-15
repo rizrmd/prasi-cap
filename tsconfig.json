@@ -1,4 +1,9 @@
 {
+
+  "include": [
+    "./pkgs/scripts/**/*",
+    "./res/config.json"
+  ],
   "compilerOptions": {
     "lib": ["ESNext"],
     "module": "esnext",

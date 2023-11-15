@@ -1,15 +1,17 @@
 import { gunzipSync } from "bun";
 import { AsyncUnzipInflate, Unzip } from "fflate";
 import { $ } from "zx";
-import { CONTENT, getText, urlmap } from "../../wrapper/src/utils/cache-utils";
 import { dir } from "./dir";
-import { AppState } from "../../wrapper/src/utils/app-state";
+import { CONTENT, getText, urlmap } from "./cache-utils";
+import { AppState } from "./app-state";
 const decoder = new TextDecoder();
 export const prepareSiteCache = async (target: string) => {
   const pubdir = dir.root(target);
+  $.verbose = false;
+
+  await $`mkdir -p ${pubdir}`;
   await downloadArchive(target);
 
-  $.verbose = false;
   const sitezip = Bun.file(`${pubdir}/site.zip`);
   if (await sitezip.exists()) {
     await $`rm -rf ${pubdir}/site`;
