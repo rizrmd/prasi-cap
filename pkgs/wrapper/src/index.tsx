@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import App from "./comps/App";
 import "./default.css";
 import "./global";
-import { siteCache } from "./utils/site-cache";
+import { siteCache } from "./utils/cache-site";
 
 siteCache();
 

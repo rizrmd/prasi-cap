@@ -1,24 +1,14 @@
+import { spawn } from "bun";
 import { BuildContext, context } from "esbuild";
 import { statSync } from "fs";
 import * as path from "path";
-import { $, cd } from "zx";
-import { urlmap } from "../wrapper/src/utils/site-cache";
-import { spawn } from "bun";
+import { $ } from "zx";
+import { urlmap } from "../wrapper/src/utils/cache-utils";
+import { BUILD_DIR, PROJECT_ROOT, PUBLIC_DIR, dir } from "./utils/dir";
+import { prepareSiteCache } from "./utils/cache";
 
-const PROJECT_ROOT = path.join(process.cwd(), "pkgs", "wrapper");
-const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
-const BUILD_DIR = path.resolve(PROJECT_ROOT, "build");
 const g = global as unknown as {
   bundler: BuildContext;
-};
-
-const dir = {
-  root: (to: string) => {
-    return path.join(process.cwd(), to);
-  },
-  path: (to: string) => {
-    return path.join(PROJECT_ROOT, to);
-  },
 };
 
 if (g.bundler) {
@@ -140,3 +130,4 @@ const server = Bun.serve({
 });
 
 console.log(`Listening on http://localhost:${server.port}`);
+prepareSiteCache();
