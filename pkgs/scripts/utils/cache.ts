@@ -4,7 +4,9 @@ import { $ } from "zx";
 import { dir } from "./dir";
 import { CONTENT, getText, urlmap } from "./cache-utils";
 import { AppState } from "./app-state";
+
 const decoder = new TextDecoder();
+
 export const prepareSiteCache = async (target: string) => {
   const pubdir = dir.root(target);
   $.verbose = false;
@@ -59,58 +61,71 @@ export const prepareSiteCache = async (target: string) => {
 
   const contentz = Bun.file(`${pubdir}/content.z`);
   if (await contentz.exists()) {
-    const res = gunzipSync(new Uint8Array(await contentz.arrayBuffer()));
-    const content = JSON.parse(decoder.decode(res)) as CONTENT;
-    await $`rm -rf ${pubdir}/content`;
+    const ab = await contentz.arrayBuffer();
+    const res = gunzipSync(new Uint8Array(ab));
     const pages = {} as any;
-
     const npm_pages = [] as string[];
-    for (const c of Object.keys(content)) {
-      const sdir = `${pubdir}/content/${c}`;
-      const child = (content as any)[c] as Record<string, any>;
-      await $`mkdir -p ${sdir}`;
-      if (Array.isArray(child)) {
-        for (const item of child) {
-          if (c === "pages") {
-            pages[item.id] = { ...item, content_tree: undefined };
-          }
 
-          const file = Bun.file(`${sdir}/${item.id}.json`);
-          await Bun.write(file, JSON.stringify(item, null, 2));
-        }
-      } else {
-        if (c === "npm") {
-          for (const [k, v] of Object.entries(child)) {
-            await $`mkdir -p ${sdir}/${k}`;
-            for (const [i, j] of Object.entries(v)) {
-              if (k === "pages") {
-                await $`mkdir -p ${sdir}/${k}/${i}`;
-                for (const [r, s] of Object.entries(j as any)) {
-                  const file = Bun.file(`${sdir}/${k}/${i}/${r}`);
-                  npm_pages.push(i);
+    try {
+      const dec = decoder.decode(res);
+      const content = JSON.parse(dec) as CONTENT;
+      await $`rm -rf ${pubdir}/content`;
+      for (const c of Object.keys(content)) {
+        const sdir = `${pubdir}/content/${c}`;
+        const child = (content as any)[c] as Record<string, any>;
+        await $`mkdir -p ${sdir}`;
+        if (Array.isArray(child)) {
+          for (const item of child) {
+            if (c === "pages") {
+              pages[item.id] = { ...item, content_tree: undefined };
+            }
+
+            const file = Bun.file(`${sdir}/${item.id}.json`);
+            await Bun.write(file, JSON.stringify(item, null, 2));
+          }
+        } else {
+          if (c === "npm") {
+            for (const [k, v] of Object.entries(child)) {
+              await $`mkdir -p ${sdir}/${k}`;
+              for (const [i, j] of Object.entries(v)) {
+                if (k === "pages") {
+                  await $`mkdir -p ${sdir}/${k}/${i}`;
+                  for (const [r, s] of Object.entries(j as any)) {
+                    const file = Bun.file(`${sdir}/${k}/${i}/${r}`);
+                    npm_pages.push(i);
+                    await Bun.write(
+                      file,
+                      typeof s === "string" ? s : JSON.stringify(s, null, 2)
+                    );
+                  }
+                } else {
+                  const file = Bun.file(`${sdir}/${k}/${i}`);
                   await Bun.write(
                     file,
-                    typeof s === "string" ? s : JSON.stringify(s, null, 2)
+                    typeof j === "string" ? j : JSON.stringify(j, null, 2)
                   );
                 }
-              } else {
-                const file = Bun.file(`${sdir}/${k}/${i}`);
-                await Bun.write(
-                  file,
-                  typeof j === "string" ? j : JSON.stringify(j, null, 2)
-                );
               }
             }
+          } else if (c === "site") {
+            await Bun.write(
+              `${sdir}/site.json`,
+              JSON.stringify(child, null, 2)
+            );
           }
-        } else if (c === "site") {
-          await Bun.write(`${sdir}/site.json`, JSON.stringify(child, null, 2));
         }
       }
+    } catch (e) {
+      await $`rm ${pubdir}/content.z`;
     }
+
+    await $`mkdir -p ${pubdir}/content/site`;
+
     await Bun.write(
       `${pubdir}/content/site/pages.json`,
       JSON.stringify(Object.values(pages), null, 2)
     );
+
     await Bun.write(
       `${pubdir}/content/site/npm_pages.json`,
       JSON.stringify(npm_pages, null, 2)
