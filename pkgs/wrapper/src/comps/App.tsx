@@ -22,7 +22,11 @@ export default () => {
       ) : (
         <iframe
           className={cx(`flex flex-1`)}
-          src={`https://localhost/` + AppState.base_path + "/site/index.html"}
+          src={
+            `https://localhost` +
+            (AppState.base_path ? `/${AppState.base_path}` : "") +
+            "/site/index.html"
+          }
         ></iframe>
       )}
     </div>

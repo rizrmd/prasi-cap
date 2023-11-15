@@ -41,12 +41,13 @@ export const prepareSiteCache = async (target: string) => {
     });
 
     let html = await getText(await urlmap(`site.html`));
-    html = html.replace(
-      /\[\[base_url\]\]/gi,
-      `https://localhost/site`
-    );
+    html = html.replace(/\[\[base_url\]\]/gi, `https://localhost/site`);
     html = html.replace(/\[\[site_id\]\]/gi, AppState.site_id);
-    await Bun.write(Bun.file(`${pubdir}/site/index.html`), html);
+    html = html.replace(
+      `</script>`,
+      `window.basepath = "https://localhost/content";\n</script>`
+    );
+    await Bun.write(Bun.file(`${pubdir}/index.html`), html);
     await Bun.write(
       Bun.file(`${pubdir}/site/index.css`),
       await getText("https://prasi.app/index.css")
@@ -103,7 +104,11 @@ export const prepareSiteCache = async (target: string) => {
 
 const downloadArchive = async (target: string) => {
   const pubdir = dir.root(target);
-  if (!(await Bun.file(`${pubdir}/content.md5`).exists())) {
+  if (
+    !(await Bun.file(`${pubdir}/content.md5`).exists()) ||
+    !(await Bun.file(`${pubdir}/content`).exists())
+  ) {
+    console.log("downloading content.z", await urlmap("content.gz"));
     const md5 = await fetch(await urlmap("content.md5"));
     await Bun.write(Bun.file(`${pubdir}/content.md5`), await md5.arrayBuffer());
     const gz = await fetch(await urlmap("content.gz"));
@@ -119,6 +124,8 @@ const downloadArchive = async (target: string) => {
   }
 
   if (!(await Bun.file(`${pubdir}/site.md5`).exists())) {
+    console.log("downloading content.zip");
+
     const md5 = await fetch(await urlmap("site.md5"));
     await Bun.write(Bun.file(`${pubdir}/site.md5`), await md5.arrayBuffer());
     const zip = await fetch(await urlmap("site.zip"));

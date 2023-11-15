@@ -47,7 +47,8 @@ export type CONTENT = {
 
 export const getText = async (url: string) => {
   try {
-    return await (await fetch(url)).text();
+    const res = await fetch(url);
+    return await res.text();
   } catch (e) {
     return "";
   }
@@ -73,7 +74,7 @@ export const urlmap = async (
 };
 
 const url = (strings: any, ...values: string[]) => {
-  const u = new URL(config.url);
+  const u = new URL(config.dev_url || config.url);
   let result = "";
   let i = 0;
   let k = 0;
