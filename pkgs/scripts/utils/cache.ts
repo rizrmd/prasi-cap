@@ -1,11 +1,44 @@
 import { gunzipSync } from "bun";
+import { AsyncUnzipInflate, Unzip } from "fflate";
+import { $ } from "zx";
 import { CONTENT, urlmap } from "../../wrapper/src/utils/cache-utils";
 import { dir } from "./dir";
-import { $ } from "zx";
 const decoder = new TextDecoder();
 export const prepareSiteCache = async (target: string) => {
   const pubdir = dir.root(target);
   await downloadArchive(target);
+
+  $.verbose = false;
+  const sitezip = Bun.file(`${pubdir}/site.zip`);
+  if (await sitezip.exists()) {
+    await new Promise<void>(async (resolve) => {
+      await $`mkdir -p ${pubdir}/site`;
+      const files = {} as Record<string, Uint8Array[]>;
+      const unzip = new Unzip(async (stream) => {
+        if (!files[stream.name] && stream.size) files[stream.name] = [];
+
+        stream.ondata = async (err, chunk, final) => {
+          if (stream.size) {
+            files[stream.name].push(chunk);
+            if (final) {
+              await Bun.write(
+                Bun.file(`${pubdir}/${stream.name}`),
+                new Blob(files[stream.name])
+              );
+              delete files[stream.name];
+              if (Object.keys(files).length === 0) {
+                resolve();
+              }
+            }
+          }
+        };
+        stream.start();
+      });
+      unzip.register(AsyncUnzipInflate);
+      unzip.push(new Uint8Array(await sitezip.arrayBuffer()), true);
+    });
+    await $`rm ${pubdir}/site.zip`;
+  }
 
   const contentz = Bun.file(`${pubdir}/content.z`);
   if (await contentz.exists()) {
@@ -50,7 +83,7 @@ export const prepareSiteCache = async (target: string) => {
       }
     }
 
-    await $`rm -rf ${pubdir}/content.z`;
+    await $`rm ${pubdir}/content.z`;
   }
 };
 
