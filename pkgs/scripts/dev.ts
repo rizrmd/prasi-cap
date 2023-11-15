@@ -3,9 +3,8 @@ import { BuildContext, context } from "esbuild";
 import { statSync } from "fs";
 import * as path from "path";
 import { $ } from "zx";
-import { urlmap } from "../wrapper/src/utils/cache-utils";
-import { BUILD_DIR, PROJECT_ROOT, PUBLIC_DIR, dir } from "./utils/dir";
 import { prepareSiteCache } from "./utils/cache";
+import { BUILD_DIR, PROJECT_ROOT, PUBLIC_DIR, dir } from "./utils/dir";
 
 const g = global as unknown as {
   bundler: BuildContext;

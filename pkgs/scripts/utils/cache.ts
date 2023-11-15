@@ -1,8 +1,9 @@
 import { gunzipSync } from "bun";
 import { AsyncUnzipInflate, Unzip } from "fflate";
 import { $ } from "zx";
-import { CONTENT, urlmap } from "../../wrapper/src/utils/cache-utils";
+import { CONTENT, getText, urlmap } from "../../wrapper/src/utils/cache-utils";
 import { dir } from "./dir";
+import { AppState } from "../../wrapper/src/utils/app-state";
 const decoder = new TextDecoder();
 export const prepareSiteCache = async (target: string) => {
   const pubdir = dir.root(target);
@@ -11,6 +12,7 @@ export const prepareSiteCache = async (target: string) => {
   $.verbose = false;
   const sitezip = Bun.file(`${pubdir}/site.zip`);
   if (await sitezip.exists()) {
+    await $`rm -rf ${pubdir}/site`;
     await new Promise<void>(async (resolve) => {
       await $`mkdir -p ${pubdir}/site`;
       const files = {} as Record<string, Uint8Array[]>;
@@ -37,6 +39,18 @@ export const prepareSiteCache = async (target: string) => {
       unzip.register(AsyncUnzipInflate);
       unzip.push(new Uint8Array(await sitezip.arrayBuffer()), true);
     });
+
+    let html = await getText(await urlmap(`site.html`));
+    html = html.replace(
+      /\[\[base_url\]\]/gi,
+      `https://localhost/site`
+    );
+    html = html.replace(/\[\[site_id\]\]/gi, AppState.site_id);
+    await Bun.write(Bun.file(`${pubdir}/site/index.html`), html);
+    await Bun.write(
+      Bun.file(`${pubdir}/site/index.css`),
+      await getText("https://prasi.app/index.css")
+    );
     await $`rm ${pubdir}/site.zip`;
   }
 
