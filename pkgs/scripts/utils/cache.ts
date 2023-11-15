@@ -44,8 +44,8 @@ export const prepareSiteCache = async (target: string) => {
     html = html.replace(/\[\[base_url\]\]/gi, `https://localhost/site`);
     html = html.replace(/\[\[site_id\]\]/gi, AppState.site_id);
     html = html.replace(
-      `</script>`,
-      `window.basepath = "https://localhost/content";\n</script>`
+      `<script>`,
+      `<script>window.mobilepath = "https://localhost/content";`
     );
     await Bun.write(Bun.file(`${pubdir}/index.html`), html);
     await Bun.write(
@@ -106,7 +106,7 @@ const downloadArchive = async (target: string) => {
   const pubdir = dir.root(target);
   if (
     !(await Bun.file(`${pubdir}/content.md5`).exists()) ||
-    !(await Bun.file(`${pubdir}/content`).exists())
+    !Bun.file(`${pubdir}/content`).size
   ) {
     console.log("downloading content.z", await urlmap("content.gz"));
     const md5 = await fetch(await urlmap("content.md5"));
@@ -117,6 +117,7 @@ const downloadArchive = async (target: string) => {
     const md5 = await fetch(await urlmap("content.md5"));
     const md5text = await md5.text();
     if (md5text !== (await Bun.file(`${pubdir}/content.md5`).text())) {
+      console.log("downloading content.z", await urlmap("content.gz"));
       await Bun.write(Bun.file(`${pubdir}/content.md5`), md5text);
       const gz = await fetch(await urlmap("content.gz"));
       await Bun.write(Bun.file(`${pubdir}/content.z`), await gz.arrayBuffer());
@@ -124,7 +125,7 @@ const downloadArchive = async (target: string) => {
   }
 
   if (!(await Bun.file(`${pubdir}/site.md5`).exists())) {
-    console.log("downloading content.zip");
+    console.log("downloading site.zip");
 
     const md5 = await fetch(await urlmap("site.md5"));
     await Bun.write(Bun.file(`${pubdir}/site.md5`), await md5.arrayBuffer());
@@ -134,6 +135,8 @@ const downloadArchive = async (target: string) => {
     const md5 = await fetch(await urlmap("site.md5"));
     const md5text = await md5.text();
     if (md5text !== (await Bun.file(`${pubdir}/site.md5`).text())) {
+      console.log("downloading site.zip");
+
       await Bun.write(Bun.file(`${pubdir}/site.md5`), md5text);
       const zip = await fetch(await urlmap("site.zip"));
       await Bun.write(Bun.file(`${pubdir}/site.zip`), await zip.arrayBuffer());
